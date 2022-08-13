@@ -28,17 +28,25 @@ export default function IndexPage() {
                 <p className="investing-title_subtext">{t.tp1}</p>
               </Col>
             </Container>
-            <Container className="mt-60 mb-120">
+            <Container className="mt-60 ">
               <Row>
                 <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <Image src={Video} alt="banner immage" />
+                <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/ZVT5S0XYQDY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </Col>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-60">
                   <p className="investing-title_subtext">{t.tp2}</p>
                 </Col>
               </Row>
             </Container>
-            <Container className="mt-120 mb-120">
+            <Container className="mt-60 mb-60">
               <Row className="mb-60">
                 <h3>{t.services}</h3>
               </Row>
@@ -128,7 +136,7 @@ export default function IndexPage() {
                 <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
                   <Image src={Sample} alt="#" />
                 </Col>
-                <Col xxl="4" xs="4" lg="4" md="4" sm="4" xl="4" xs="12" >
+                <Col xxl="4" lg="4" md="4" sm="4" xl="4" xs="12" >
                   <h3 className="special-margin-class">{t.apartForCommercialUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp2}</p>
                 </Col>
@@ -139,100 +147,101 @@ export default function IndexPage() {
                   <p className="investing-title_subtext">{t.pmText}</p>
                 </Col>
                 <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-                  <Col xs="12" className="col-5 padding-0">
+                  <Col xs="12" className="col-5 mt-60">
                     <p className="section1-form-text">
                       Leave us your contact information and our team will reach out to you.
                     </p>
                     <h4 className="section-1-form-subtext">Apartment type:</h4>
                     <Row>
-                      <Col xs="3">
-                        <Form>
-                          {["checkbox"].map(type => (
-                            <div key={`inline-${type}`} className="">
-                              <Form.Check
-                                inline
-                                label="Studio"
-                                name="group1"
-                                type={type}
-                                id={`inline-${type}-1`}
-                              />
-                            </div>
-                          ))}
-                        </Form>
-                      </Col>
-                      <Col xs="3">
-                        <Form>
-                          {["checkbox"].map(type => (
-                            <div key={`inline-${type}`} className=" home--inputs">
-                              <Form.Check
-                                inline
-                                label="1 Bedroom"
-                                name="group1"
-                                type={type}
-                                id={`inline-${type}-2`}
-                              />
-                            </div>
-                          ))}
-                        </Form>
-                      </Col>
-                      <Col xs="6" className="col-6">
-                        <Form>
-                          {["checkbox"].map(type => (
-                            <div key={`inline-${type}`} className=" home--inputs">
-                              <Form.Check
-                                inline
-                                label="2+ Bedrooms"
-                                name="group1"
-                                type={type}
-                                id={`inline-${type}-3`}
-                              />
-                            </div>
-                          ))}
-                        </Form>
-                      </Col>
-                      <Col className="mb-60">
-                        <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                          <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                            <Col xs="12">
-                              <div className="md-form mb-0">
-                                <Form.Control
-                                  type="text"
-                                  id="name"
-                                  name="name"
-                                  className="form-control input__main"
-                                  placeholder="Name"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs="12">
-                              <div className="md-form mb-0">
-                                <Form.Control
-                                  type="text"
-                                  id="email"
-                                  name="email"
-                                  className="form-control input__main"
-                                  placeholder="Email"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs="12">
-                              <div className="md-form mb-0">
-                                <Form.Control
-                                  type="text"
-                                  id="email"
-                                  name="email"
-                                  className="form-control input__main"
-                                  placeholder="Phone Number"
-                                />
-                              </div>
-                            </Col>
-                          </Form>
-                          <div className="text-center text-md-left home--get-contacted">
-                            <Button className="btn-send">Get contacted</Button>
+                    <Col xs="3">
+                      <Form>
+                        {["checkbox"].map(type => (
+                          <div key={`inline-${type}`} className="mb-3">
+                            <Form.Check
+                              inline
+                              label="Studio"
+                              name="group1"
+                              type={type}
+                              id={`inline-${type}-1`}
+                            />
                           </div>
+                        ))}
+                      </Form>
+                    </Col>
+                    <Col xs="3">
+                      <Form>
+                        {["checkbox"].map(type => (
+                          <div key={`inline-${type}`} className="mb-3 home--inputs">
+                            <Form.Check
+                              className="text-nowrap"
+                              inline
+                              label="1 Bedroom"
+                              name="group1"
+                              type={type}
+                              id={`inline-${type}-2`}
+                            />
+                          </div>
+                        ))}
+                      </Form>
+                    </Col>
+                    <Col xs="6" className="col-6">
+                      <Form>
+                        {["checkbox"].map(type => (
+                          <div key={`inline-${type}`} className="mb-3 home--inputs">
+                            <Form.Check
+                              inline
+                              label="2+ Bedrooms"
+                              name="group1"
+                              type={type}
+                              id={`inline-${type}-3`}
+                            />
+                          </div>
+                        ))}
+                      </Form>
+                    </Col>
+                    <Col className="mb-60">
+                      <div xs="12" className="mb-md-0 mb-5 home--inputs">
+                        <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                          <Col xs="12">
+                            <div className="md-form mb-0">
+                              <Form.Control
+                                type="text"
+                                id="name"
+                                name="name"
+                                className="form-control input__main"
+                                placeholder="Name"
+                              />
+                            </div>
+                          </Col>
+                          <Col xs="12">
+                            <div className="md-form mb-0">
+                              <Form.Control
+                                type="mail"
+                                id="email"
+                                name="email"
+                                className="form-control input__main"
+                                placeholder="Email"
+                              />
+                            </div>
+                          </Col>
+                          <Col xs="12">
+                            <div className="md-form mb-0">
+                              <Form.Control
+                                type="phone"
+                                id="email"
+                                name="email"
+                                className="form-control input__main"
+                                placeholder="Phone Number"
+                              />
+                            </div>
+                          </Col>
+                        </Form>
+                        <div className="text-center text-md-left home--get-contacted">
+                          <Button className="btn-send">Get contacted</Button>
                         </div>
-                      </Col>
-                    </Row>
+                      </div>
+                    </Col>
+                  </Row>
                   </Col>
                 </Col>
               </Row>

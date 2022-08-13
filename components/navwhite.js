@@ -26,6 +26,16 @@ export default function Nav({ mode, setMode }) {
   return (
     <div className="nav__container">
       <Container className="mobile_container">
+        <Row>
+          <Col xs="12" className="social__mobile">
+          <ul className="navbar-nav">
+              <li className=" mobile_social_platgorms"> <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile">+995 32 2 11 11 44</a><span className="soc__icon__mobile"> | </span>  </li>
+              <li className=" mobile_social_platgorms"> <a className="soc__icon__mobile" href="#">{t.v} </a> <span className="soc__icon__mobile"> |</span> </li>
+              <li className=" mobile_social_platgorms"><a className="soc__icon__mobile"href="#">{t.w}</a></li>
+            </ul>
+          </Col>
+        </Row>
+        <Row>
         <Col xs="6">
         <a className="navbar-brand nav_white" href="/">
               <Image className="logo" src={Logo} alt="Picture of the author" />
@@ -38,15 +48,32 @@ export default function Nav({ mode, setMode }) {
           <span></span>
         </label>
         <ul className="menu__box">
-          <li><a className="menu__item" href="#">Hhome</a></li>
-          <li><a className="menu__item" href="#">About us</a></li>
-          <li><a className="menu__item" href="#">prpjects</a></li>
-          <li><a className="menu__item" href="#">invesign</a></li>
-          <li><a className="menu__item" href="#">blog</a></li>
-          <li><a className="menu__item" href="#">contact</a></li>
+          <li><a className="menu__item" href="/About">{t.about}</a></li>
+          <li><a className="menu__item" href="/Investing"> {t.investing}</a></li>
+          <li><a className="menu__item" href="/projects"> {t.projects}</a></li>
+          <li><a className="menu__item" href="/Blog"> {t.blog}</a></li>
+          <li><a className="menu__item" href="/Contact"> {t.contact}</a></li>
+          <li>
+          <select
+              onChange={changeLanguage}
+              defaultValue={locale}
+              className="form-select lang__drop menu__item"
+            >
+              <option className="text-dark" value="en">
+                EN
+              </option>
+              <option className="text-dark" value="ru">
+                RU
+              </option>
+              <option className="text-dark" value="ge">
+                GE
+              </option>
+            </select>
+          </li>
         </ul>
       </div>
         </Col>
+        </Row>
       </Container>
 
       <Container className="desktop__menu">

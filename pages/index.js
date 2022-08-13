@@ -69,7 +69,7 @@ export default function IndexPage() {
                 </Row>
               </Col>
               <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-                <Col xs="12" className="col-5 padding-0">
+                <Col xs="12" className="col-5 mt-60">
                   <p className="section1-form-text">
                     Leave us your contact information and our team will reach out to you.
                   </p>
@@ -138,7 +138,7 @@ export default function IndexPage() {
                           <Col xs="12">
                             <div className="md-form mb-0">
                               <Form.Control
-                                type="text"
+                                type="mail"
                                 id="email"
                                 name="email"
                                 className="form-control input__main"
@@ -149,7 +149,7 @@ export default function IndexPage() {
                           <Col xs="12">
                             <div className="md-form mb-0">
                               <Form.Control
-                                type="text"
+                                type="phone"
                                 id="email"
                                 name="email"
                                 className="form-control input__main"

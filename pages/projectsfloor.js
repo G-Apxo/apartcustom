@@ -17,15 +17,15 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  const calcInputVal = useRef(0);
-  const calcInputVal2 = useRef(0);
-  const calcInputVal3 = useRef(0);
+  // const calcInputVal = useRef(0);
+  // const calcInputVal2 = useRef(0);
+  // const calcInputVal3 = useRef(0);
 
-  const [calc, setCalc] = useState(0);
+  // const [calc, setCalc] = useState(0);
 
-  const calculated = () => {
-    setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
-  };
+  // const calculated = () => {
+  //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
+  // };
 
   return (
     <div>
@@ -132,7 +132,7 @@ export default function IndexPage() {
               </Col>
             </Row>
           </form>
-          <Col xs="12 mt-5 mb-5">
+          {/* <Col xs="12 mt-5 mb-5">
             <input
               type="text"
               className="calculator"
@@ -160,7 +160,7 @@ export default function IndexPage() {
               placeholder={calc}
               value={calculated}
             />
-          </Col>
+          </Col> */}
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
