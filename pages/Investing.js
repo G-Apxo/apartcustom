@@ -45,7 +45,7 @@ export default function IndexPage() {
               <Row className="desktop__view">
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                   <Row>
-                    <Col xs="3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
                       <p className="counter_number">
                         1
                       </p>
@@ -53,7 +53,7 @@ export default function IndexPage() {
                       {t.spa}
                       </p>
                     </Col>
-                    <Col xs="3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
                       <p className="counter_number">
                         2
                       </p>
@@ -61,7 +61,7 @@ export default function IndexPage() {
                       {t.pool}
                       </p>
                     </Col>
-                    <Col xs="3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
                       <p className="counter_number">
                         3
                       </p>
@@ -69,7 +69,7 @@ export default function IndexPage() {
                       {t.fitness}
                       </p>
                     </Col>
-                    <Col xs="3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
                       <p className="counter_number">
                         4
                       </p>
@@ -77,7 +77,7 @@ export default function IndexPage() {
                       {t.cafe}
                       </p>
                     </Col>
-                    <Col xs="3" className="mt-3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
                       <p className="counter_number">
                         5
                       </p>
@@ -85,7 +85,7 @@ export default function IndexPage() {
                       {t.room}
                       </p>
                     </Col>
-                    <Col xs="3" className="mt-3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
                       <p className="counter_number">
                         6
                       </p>
@@ -93,7 +93,7 @@ export default function IndexPage() {
                       {t.consierge}
                       </p>
                     </Col>
-                    <Col xs="3" className="mt-3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
                       <p className="counter_number">
                         7
                       </p>
@@ -101,7 +101,7 @@ export default function IndexPage() {
                       {t.hour}
                       </p>
                     </Col>
-                    <Col xs="3" className="mt-3">
+                    <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
                       <p className="counter_number">
                         8
                       </p>
@@ -112,20 +112,6 @@ export default function IndexPage() {
                   </Row>
                 </Col>
               </Row>
-              {/* <Row className="mob__view">
-                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
-                  <ul className="investing-services">
-                    <li>{t.spa}</li>
-                    <li>{t.pool}</li>
-                    <li>{t.fitness}</li>
-                    <li>{t.cafe}</li>
-                    <li>{t.room}</li>
-                    <li>{t.consierge}</li>
-                    <li>{t.hour}</li>
-                    <li>{t.cleaning}</li>
-                  </ul>
-                </Col>
-              </Row> */}
             </Container>
             <Container>
               {/* <Row className="investing-goal mb-80">
@@ -142,7 +128,7 @@ export default function IndexPage() {
                 <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
                   <Image src={Sample} alt="#" />
                 </Col>
-                <Col xxl="6" xs="4" lg="4" md="4" sm="4" xl="4">
+                <Col xxl="4" xs="4" lg="4" md="4" sm="4" xl="4" xs="12" >
                   <h3 className="special-margin-class">{t.apartForCommercialUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp2}</p>
                 </Col>
