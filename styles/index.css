@@ -1114,7 +1114,7 @@ h2 {
   background-size: 26px;
   border: 1px solid black;
   border-radius: 15px !important;
-  background-position-x:10%;
+  background-position-x: 10%;
 }
 .white__switcher.form-switch .form-check-input:checked {
   width: 26px;
@@ -1132,7 +1132,7 @@ h2 {
   background-size: 26px;
   border: 1px solid black;
   border-radius: 15px !important;
-  background-position-x:10%;
+  background-position-x: 10%;
 }
 .form-switch .form-check-input:checked {
   width: 26px;
@@ -1142,23 +1142,23 @@ h2 {
   background-position-x: 90%;
   border-radius: 15px !important;
 }
-.soc__icon{
+.soc__icon {
   font-weight: 100;
   line-height: 17px;
   font-size: 12px;
   text-decoration: none;
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   margin-left: 5px;
 }
-.soc__icon:hover{
+.soc__icon:hover {
   font-weight: 100;
   line-height: 17px;
   font-size: 12px;
   text-decoration: none;
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 .form-select {
@@ -1180,7 +1180,7 @@ h2 {
 }
 .dark-mode .form-select {
   background-color: transparent;
-  color: white;
+  color: white !important;
 }
 .dark-mode .section1-title {
   color: white;
@@ -1419,7 +1419,7 @@ flickity-enabled {
 .flickity-page-dots {
   display: none;
 }
-.readmore{
+.readmore {
   max-width: 20% !important;
   width: 20% !important;
   height: 20px !important;
@@ -1584,7 +1584,7 @@ flickity-enabled {
   background-position-x: right !important;
   width: 40px !important;
 }
-.contact__platforms{
+.contact__platforms {
   font-size: 13px !important;
 }
 .nav-styles-select::after {
@@ -1613,32 +1613,32 @@ flickity-enabled {
 /* .navbar-nav li:last-child {
   margin: 0 10px;
 } */
-.logo{
+.logo {
   width: 150px;
 }
 .container__video {
-   position:relative; 
+  position: relative;
 }
 .container__video video {
-    position:relative;
-    z-index:0;
+  position: relative;
+  z-index: 0;
 }
 .overlay {
-  position:absolute;
-  top:40vh;
-  z-index:1;
+  position: absolute;
+  top: 40vh;
+  z-index: 1;
 }
-.banner__header{
+.banner__header {
   font-weight: 400;
   font-size: 54px;
   line-height: 65px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.mt-60{
+.mt-60 {
   margin-top: 60px;
 }
-.form-control::placeholder{
-  color: rgba(0, 0, 0, 0.400) !important;
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 #menu__toggle {
   opacity: 0;
@@ -1683,14 +1683,14 @@ flickity-enabled {
 
   background-color: #fdfdfd;
 
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
@@ -1699,7 +1699,7 @@ flickity-enabled {
   position: fixed;
   visibility: hidden;
   top: 0;
-  left:90%;
+  left: 90%;
 
   width: 100%;
   height: 100%;
@@ -1709,10 +1709,10 @@ flickity-enabled {
 
   list-style: none;
 
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
 .menu__item {
@@ -1721,51 +1721,51 @@ flickity-enabled {
 
   color: #333;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
 
   text-decoration: none;
 
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #cfd8dc;
 }
 @media screen and (max-width: 600px) {
   .desktop__menu {
     display: none;
   }
-  .hamburger-menu{
+  .hamburger-menu {
     display: block !important;
   }
-  body{
+  body {
     background-image: none !important;
   }
-  .mobile_container{
+  .mobile_container {
     display: block !important;
   }
-  .destkop__view{
+  .destkop__view {
     display: none;
   }
-  .mob__view{
+  .mob__view {
     display: block !important;
   }
 }
-.mobile_container{
-  display: none ;
-}
-.hamburger-menu{
+.mobile_container {
   display: none;
 }
-.advanteges__main_title{
+.hamburger-menu {
+  display: none;
+}
+.advanteges__main_title {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #121927;
 }
-.advanteges___sub_head{
+.advanteges___sub_head {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1773,7 +1773,7 @@ flickity-enabled {
   color: #121927 !important;
   opacity: 0.6;
 }
-.advantages__sub_content{
+.advantages__sub_content {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
