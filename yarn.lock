@@ -35,9 +35,9 @@
   "resolved" "https://registry.npmjs.org/@next/env/-/env-12.2.4.tgz"
   "version" "12.2.4"
 
-"@next/swc-darwin-x64@12.2.4":
-  "integrity" "sha512-IUlFMqeLjdIzDorrGC2Dt+2Ae3DbKQbRzCzmDq4/CP1+jJGeDXo/2AHnlE+WYnwQAC4KtAz6pbVnd3KstZWsVA=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.2.4.tgz"
+"@next/swc-darwin-arm64@12.2.4":
+  "integrity" "sha512-DcUO6MGBL9E3jj5o86MUnTOy4WawIJJhyCcFYO4f51sbl7+uPIYIx40eo98A6NwJEXazCqq1hLeqOaNTAIvDiQ=="
+  "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.2.4.tgz"
   "version" "12.2.4"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -963,6 +963,11 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
+"react-hook-form@^7.34.1":
+  "integrity" "sha512-tH7TaZgAURMhjzVE2M/EFmxHz2HdaPMAVs9FXTweNW551VlhXSuVcpcYlkiMZf2zHQiTztupVFpBHJFTma+N7w=="
+  "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.34.1.tgz"
+  "version" "7.34.1"
+
 "react-is@^16.13.1", "react-is@^16.3.2":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -983,7 +988,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.6":
+"react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.6":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

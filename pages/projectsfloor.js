@@ -1,7 +1,7 @@
 import Nav from "../components/nav";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
 import en from "../locales/enProjectFloor";
 import ru from "../locales/ruProjectsFloor";
@@ -10,6 +10,7 @@ import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
+import { useForm } from "react-hook-form";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -17,6 +18,7 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
+<<<<<<< Updated upstream
   // const calcInputVal = useRef(0);
   // const calcInputVal2 = useRef(0);
   // const calcInputVal3 = useRef(0);
@@ -26,6 +28,11 @@ export default function IndexPage() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
+=======
+  const { register, setValue, handleSubmit, getValues } = useForm();
+
+  const onSubmit = data => console.log(data);
+>>>>>>> Stashed changes
 
   return (
     <div>
@@ -97,23 +104,11 @@ export default function IndexPage() {
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="3">
                 <label htmlFor="name"></label>
-                <input
-                  className="btn-test"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t.name}
-                />
+                <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
               <Col xs="3">
                 <label htmlFor="email"></label>
-                <input
-                  className="btn-test"
-                  type="mail"
-                  id="email"
-                  name="email"
-                  placeholder={t.email}
-                />
+                <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
               <Col xs="3">
                 <label htmlFor="tel"></label>
@@ -132,6 +127,7 @@ export default function IndexPage() {
               </Col>
             </Row>
           </form>
+<<<<<<< Updated upstream
           {/* <Col xs="12 mt-5 mb-5">
             <input
               type="text"
@@ -161,16 +157,26 @@ export default function IndexPage() {
               value={calculated}
             />
           </Col> */}
+=======
+          <Col xs="12 mt-5 mb-5">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <input {...register("field1")} />
+              <input {...register("field2")} />
+              <input {...register("field3")} />
+              <input type="submit" {...register("field4")} />
+            </form>
+          </Col>
+>>>>>>> Stashed changes
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">
-                {t.apt}
-              </p>
+              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
                 <Row>
                   <h3 className="advanteges__main_title">{t.adv}</h3>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -182,7 +188,9 @@ export default function IndexPage() {
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -194,7 +202,9 @@ export default function IndexPage() {
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -207,10 +217,7 @@ export default function IndexPage() {
                 </Row>
               </Col>
             </Col>
-            <Col
-              xs="6"
-              className="d-flex justify-content-center align-items-center"
-            >
+            <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
                 <iframe
                   allowFullScreen
@@ -219,7 +226,7 @@ export default function IndexPage() {
                   loading="lazy"
                   frameBorder="0"
                   src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
-                  ></iframe>
+                ></iframe>
               </div>
             </Col>
           </Row>
@@ -228,7 +235,7 @@ export default function IndexPage() {
               src="https://snazzymaps.com/embed/408105"
               width="100%"
               height="600px"
-            // style="border:none;"
+              // style="border:none;"
             ></iframe>
           </Col>
         </Container>
