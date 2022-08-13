@@ -1579,7 +1579,7 @@ flickity-enabled {
   position: relative;
   font-size: 13px !important;
   margin-right: 5px;
-  background-image: url(/_next/static/media/dropdowndark.4c8d38b2.svg) !important;
+  background-image: url("../assets/dropdowndark.svg") !important;
   background-size: 22% !important;
   background-position-x: right !important;
   width: 40px !important;
@@ -1778,5 +1778,18 @@ flickity-enabled {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  color: #121927;
+}
+.counter_number{
+  font-size: 14px;
+  line-height: 17px;
+  color: #121927;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.counter_content{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
   color: #121927;
 }

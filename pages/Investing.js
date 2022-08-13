@@ -44,19 +44,75 @@ export default function IndexPage() {
               </Row>
               <Row className="desktop__view">
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
-                  <ul className="investing-services">
-                    <li>{t.spa}</li>
-                    <li>{t.pool}</li>
-                    <li>{t.fitness}</li>
-                    <li>{t.cafe}</li>
-                    <li>{t.room}</li>
-                    <li>{t.consierge}</li>
-                    <li>{t.hour}</li>
-                    <li>{t.cleaning}</li>
-                  </ul>
+                  <Row>
+                    <Col xs="3">
+                      <p className="counter_number">
+                        1
+                      </p>
+                      <p className="counter_content">
+                      {t.spa}
+                      </p>
+                    </Col>
+                    <Col xs="3">
+                      <p className="counter_number">
+                        2
+                      </p>
+                      <p className="counter_content">
+                      {t.pool}
+                      </p>
+                    </Col>
+                    <Col xs="3">
+                      <p className="counter_number">
+                        3
+                      </p>
+                      <p className="counter_content">
+                      {t.fitness}
+                      </p>
+                    </Col>
+                    <Col xs="3">
+                      <p className="counter_number">
+                        4
+                      </p>
+                      <p className="counter_content">
+                      {t.cafe}
+                      </p>
+                    </Col>
+                    <Col xs="3" className="mt-3">
+                      <p className="counter_number">
+                        5
+                      </p>
+                      <p className="counter_content">
+                      {t.room}
+                      </p>
+                    </Col>
+                    <Col xs="3" className="mt-3">
+                      <p className="counter_number">
+                        6
+                      </p>
+                      <p className="counter_content">
+                      {t.consierge}
+                      </p>
+                    </Col>
+                    <Col xs="3" className="mt-3">
+                      <p className="counter_number">
+                        7
+                      </p>
+                      <p className="counter_content">
+                      {t.hour}
+                      </p>
+                    </Col>
+                    <Col xs="3" className="mt-3">
+                      <p className="counter_number">
+                        8
+                      </p>
+                      <p className="counter_content">
+                      {t.cleaning}
+                      </p>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
-              <Row className="mob__view">
+              {/* <Row className="mob__view">
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                   <ul className="investing-services">
                     <li>{t.spa}</li>
@@ -69,7 +125,7 @@ export default function IndexPage() {
                     <li>{t.cleaning}</li>
                   </ul>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
             <Container>
               {/* <Row className="investing-goal mb-80">
