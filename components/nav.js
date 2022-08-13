@@ -25,7 +25,31 @@ export default function Nav({ mode, setMode }) {
   }
   return (
     <div className="nav__container">
-    <Container>
+      <Container className="mobile_container">
+        <Col xs="6">
+        <a className="navbar-brand nav_white" href="/">
+              <Image className="logo" src={Logo} alt="Picture of the author" />
+            </a>
+        </Col>
+        <Col xs="6">
+        <div className="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label className="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a className="menu__item" href="#">Hhome</a></li>
+          <li><a className="menu__item" href="#">About us</a></li>
+          <li><a className="menu__item" href="#">prpjects</a></li>
+          <li><a className="menu__item" href="#">invesign</a></li>
+          <li><a className="menu__item" href="#">blog</a></li>
+          <li><a className="menu__item" href="#">contact</a></li>
+        </ul>
+      </div>
+        </Col>
+      </Container>
+
+      <Container className="desktop__menu">
       <Row className="align-items-center">
         <Col xs="2">
           <a className="navbar-brand nav_white" href="/">
