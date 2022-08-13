@@ -16,13 +16,13 @@ function Footer() {
     };
 
   return (
-      <div className="footer-inside-white footer-inside-black ">
+      <div className="footer-inside-white footer-inside-black">
         <Container>
-          <Row>
-            <Col md={2}>
+          <Row className="justify-space-between">
+            <Col md={3}>
               <p className="copyright">{t.copy}</p>
             </Col>
-            <Col md={2}>
+            <Col md={3}>
               <p className="policy">{t.policy}</p>
             </Col>
             <Col md={2}>
@@ -34,14 +34,22 @@ function Footer() {
               </p>
             </Col>
             <Col md={2}>
-              <div className="box">
+              <Row>
+                <Col xs="6">
+                <div className="box">
                 <p className="social">{t.fb}</p>
                 <p className="social">{t.ig}</p>
+              </div>
+                </Col>
+                <Col xs="6">
+                <div className="box">
                 <p className="social">{t.yt}</p>
                 <p className="social">{t.p}</p>
               </div>
+                </Col>
+              </Row>
             </Col>
-            <Col md={4}>
+            <Col md={2}>
               <p className="languages">{t.ge} /{t.en} / {t.ru}</p>
               <p className="languages">{t.terms}</p>
             </Col>

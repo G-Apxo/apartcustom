@@ -14,7 +14,7 @@ import Footer from "../components/footer";
 import Navwhite from "../components/navwhite";
 import Malongo from "../assets/malongo2.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
-
+import Readmore from "../assets/readmore.svg"
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -24,58 +24,36 @@ export default function IndexPage() {
 
   return (
     <div>
-      <div>
-        <div className="hero">
+
           <Navwhite mode={mode} setMode={setMode} />
           <Carousel style={{ opacity: 1 }} className="carousle__inner">
             <Carousel.Item className="fuul__width">
-              <div>
+              <div className="container__video">
                 <video autoPlay="" loop={true} muted="" className="video">
                   <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
-              </div>
-              <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
-                <Col className="d-flex align-items-center">
-                  <div className="test">
-                    <Image src={Taghi} alt="banner immage" className="Taghi" />
+                <Container>
+                <div className="overlay">
+                      <p className="text-white">Architecture</p>
+                      <h2 className="text-white banner__header">
+                      Renewed Life <br/> of Old Tbilisi
+                      </h2>
+                      <p className="text-white">Dream building for you</p>
+                      <p className="text-white">Read more </p>
                   </div>
-                </Col>
-              </Col>
+                </Container>
+              </div>
+
             </Carousel.Item>
-            <Carousel.Item className="fuul__width">
+            {/* <Carousel.Item className="fuul__width">
               <div>
                 <video autoPlay="" loop={true} muted="" className="video">
                   <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
               </div>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
-          <Container>
-            <Row></Row>
-            <Row>
-              <Col lg="6" md="6" sm="6" xl="6" xxl="6">
-                <Image src={Slide1} />
-              </Col>
-              <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
-                <Col className="d-flex align-items-center">
-                  <div className="test">
-                    <Image src={Taghi} alt="banner immage" className="Taghi" />
-                    <p>
-                      {t.oldCityP}
-                      <br />
-                      {t.taghi}
-                      <br />
-                      <br />
-                      {t.ezo}
-                      <br />
-                      {t.bukhaidze}
-                    </p>
-                  </div>
-                </Col>
-              </Col>
-            </Row>
-          </Container>
-          <Container className="container-marginer additional__padding">
+          <Container className="container-marginer additional__padding mt-60">
             <Row className="justify-content-between">
               <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                 <Row>
@@ -189,40 +167,7 @@ export default function IndexPage() {
               </Col>
             </Row>
           </Container>
-          <Container className="partners-container mb-60 mt-60">
-            <Row className="justify-content-between align-items-center ">
-              <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
-                <div className="partners home--section__texts">
-                  <p className="home--section__texts">{t.partners}</p>
-                </div>
-              </Col>
-              <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
-                <Row className="justify-content-between">
-                  <div className="col-3 ">
-                    <div className="partners">
-                      <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                  {/* <div className="col-2">
-          <div className="partners">
-            <Image src={Greenlife} alt="banner immage" className="partners_wite" />
-          </div>
-        </div> */}
-                  <div className="col-3">
-                    <div className="partners">
-                      <Image src={Malongo} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                  <div className="col-2">
-                    <div className="partners">
-                      <Image src={Tbc} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-          <Container className="mb-60 mt-60">
+          <Container className="mb-60">
             <Row>
               <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <p className="home--section__texts">{t.pm}</p>
@@ -231,33 +176,44 @@ export default function IndexPage() {
                 <iframe
                   src="https://snazzymaps.com/embed/408105"
                   width="100%"
-                  height="600px"
+                  height="400px"
                   // style="border:none;"
                 ></iframe>
               </Col>
             </Row>
           </Container>
-          {/* <section className="pt-8 pb-20 flex flex-col items-center">
-          <nav aria-label="breadcrumb">
-            <ol className="flex space-x-2 text-white text-sm mb-8 text-shadow">
-              <li>
-                <a href="#">{'Science >'}</a>
-              </li>
-              <li>
-                <a href="#">{'Computing >'}</a>
-              </li>
-              <li>Birth web</li>
-            </ol>
-          </nav>
-          <h1 className="text-5xl text-white text-shadow font-bold px-8 text-center">
-            {t.hero}
-          </h1>
-          <hr className="mt-16 mb-8 w-32 border-t-2 border-white" />
-          <p className="text-white text-shadow px-8">{t.description}</p>
-        </section> */}
+          <Container className="partners-container mb-60 mt-60">
+            <Row className="justify-content-between align-items-center">
+              <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
+                <div className="partners home--section__texts">
+                  <p className="home--section__texts">{t.partners}</p>
+                </div>
+              </Col>
+              <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
+                <Row className="justify-content-between">
+                  <div className="col-4 ">
+                    <div className="partners">
+                      <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="partners">
+                      <Image src={Malongo} alt="banner immage" className="partners_wite" />
+                    </div>
+                  </div>
+                  <div className="col-4 d-flex justify-content-end">
+                    <div className="partners">
+                      <Image src={Tbc} alt="banner immage" className="partners_wite" />
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+      
           <Footer />
-        </div>
-      </div>
+       
+  
     </div>
   );
 }

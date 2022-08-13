@@ -12,5 +12,5 @@ export default {
   ap: "For the Apart Development team, it is priority to preserve the charm of the old city, to use old architectural fragments in modern construction, and at the same time, taking into account modern technologies, to give new life to forgotten areas.Our finished, current and future projects are localized in Old Tbilisi. Right there, from where you can see a unique, panoramic view of the entire city, from Narikali to Lisi Lake.",
 
   partners: "Partners",
-  pm: "Projects Map",
+  pm: "Project’s Map",
 };

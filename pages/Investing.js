@@ -65,24 +65,23 @@ export default function IndexPage() {
                 <h3>{t.goal}</h3>
               </Row>
               <Row>
-                <Col xxl="4">
+                <Col  xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
                   <h3>{t.apartForPersonUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp1}</p>
                 </Col>
-                <Col className="mt-80" xxl="4">
+                <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
                   <Image src={Sample} alt="#" />
                 </Col>
-                <Col xxl="4">
+                <Col xxl="6" xs="4" lg="4" md="4" sm="4" xl="4">
                   <h3 className="special-margin-class">{t.apartForCommercialUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp2}</p>
                 </Col>
               </Row>
-              <Row className="special-margin-row">
-                <Col xxl="6">
+              <Row className="special-margin-row justify-content-between">
+                <Col xxl="6" xs="12" lg="6" md="6" sm="6" xl="6">
                   <h3>{t.pmAndRs}</h3>
                   <p className="investing-title_subtext">{t.pmText}</p>
                 </Col>
-                <Col xxl="1"></Col>
                 <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
                   <Col xs="12" className="col-5 padding-0">
                     <p className="section1-form-text">

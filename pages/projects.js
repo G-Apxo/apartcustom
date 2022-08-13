@@ -64,7 +64,7 @@ export default function IndexPage() {
                             <p className="projects--texts__op">{t.prj1l}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/projectsfloor">
-                              <i className="project--see cursor   ">
+                              <i className="project--see cursor  mt-5">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
@@ -104,7 +104,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/projectsfloor">
-                          <i className="project--see cursor  ">
+                          <i className="project--see cursor  mt-5">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -154,7 +154,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/projectsfloor">
-                          <i className="project--see cursor  ">
+                          <i className="project--see cursor  mt-5">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -203,7 +203,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/projectsfloor">
-                          <i className="project--see cursor  ">
+                          <i className="project--see cursor mt-5 ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -252,7 +252,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/projectsfloor">
-                          <i className="project--see cursor  ">
+                          <i className="project--see cursor mt-5 ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -301,7 +301,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/projectsfloor">
-                          <i className="project--see cursor  ">
+                          <i className="project--see cursor mt-5  ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
