@@ -1,7 +1,7 @@
 import Nav from "../components/nav";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
 import en from "../locales/enProjectFloor";
 import ru from "../locales/ruProjectsFloor";
@@ -10,7 +10,6 @@ import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-import { useForm } from "react-hook-form";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -18,7 +17,6 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-<<<<<<< Updated upstream
   // const calcInputVal = useRef(0);
   // const calcInputVal2 = useRef(0);
   // const calcInputVal3 = useRef(0);
@@ -28,11 +26,6 @@ export default function IndexPage() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
-=======
-  const { register, setValue, handleSubmit, getValues } = useForm();
-
-  const onSubmit = data => console.log(data);
->>>>>>> Stashed changes
 
   return (
     <div>
@@ -127,7 +120,6 @@ export default function IndexPage() {
               </Col>
             </Row>
           </form>
-<<<<<<< Updated upstream
           {/* <Col xs="12 mt-5 mb-5">
             <input
               type="text"
@@ -157,16 +149,6 @@ export default function IndexPage() {
               value={calculated}
             />
           </Col> */}
-=======
-          <Col xs="12 mt-5 mb-5">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <input {...register("field1")} />
-              <input {...register("field2")} />
-              <input {...register("field3")} />
-              <input type="submit" {...register("field4")} />
-            </form>
-          </Col>
->>>>>>> Stashed changes
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
