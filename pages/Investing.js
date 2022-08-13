@@ -42,7 +42,21 @@ export default function IndexPage() {
               <Row className="mb-60">
                 <h3>{t.services}</h3>
               </Row>
-              <Row>
+              <Row className="desktop__view">
+                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
+                  <ul className="investing-services">
+                    <li>{t.spa}</li>
+                    <li>{t.pool}</li>
+                    <li>{t.fitness}</li>
+                    <li>{t.cafe}</li>
+                    <li>{t.room}</li>
+                    <li>{t.consierge}</li>
+                    <li>{t.hour}</li>
+                    <li>{t.cleaning}</li>
+                  </ul>
+                </Col>
+              </Row>
+              <Row className="mob__view">
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                   <ul className="investing-services">
                     <li>{t.spa}</li>

@@ -34,10 +34,10 @@ export default function Nav({ mode, setMode }) {
         <Col xs="6">
         <div className="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
-        <label className="menu__btn" for="menu__toggle">
+        <label className="menu__btn" htmlFor="menu__toggle">
           <span></span>
         </label>
-        <ul class="menu__box">
+        <ul className="menu__box">
           <li><a className="menu__item" href="#">Hhome</a></li>
           <li><a className="menu__item" href="#">About us</a></li>
           <li><a className="menu__item" href="#">prpjects</a></li>
@@ -72,7 +72,7 @@ export default function Nav({ mode, setMode }) {
             <div className="collapse navbar-collapse navbar13" id="navbarNav">
               <ul className="navbar-nav ">
                 <li className="nav-item active">
-                  <a className="nav-link " href="/About">
+                  <a className="nav-link text-nowrap" href="/About">
                     {t.about}
                   </a>
                 </li>

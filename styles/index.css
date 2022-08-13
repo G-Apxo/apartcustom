@@ -1579,9 +1579,10 @@ flickity-enabled {
   position: relative;
   font-size: 13px !important;
   margin-right: 5px;
-  background-image: url("../assets/dropdowndark.svg") !important;
-  background-size: 42% !important;
-  background-position-x: right;
+  background-image: url(/_next/static/media/dropdowndark.4c8d38b2.svg) !important;
+  background-size: 22% !important;
+  background-position-x: right !important;
+  width: 40px !important;
 }
 .contact__platforms{
   font-size: 13px !important;
@@ -1744,10 +1745,38 @@ flickity-enabled {
   .mobile_container{
     display: block !important;
   }
+  .destkop__view{
+    display: none;
+  }
+  .mob__view{
+    display: block !important;
+  }
 }
 .mobile_container{
   display: none ;
 }
 .hamburger-menu{
   display: none;
+}
+.advanteges__main_title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #121927;
+}
+.advanteges___sub_head{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #121927 !important;
+  opacity: 0.6;
+}
+.advantages__sub_content{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #121927;
 }

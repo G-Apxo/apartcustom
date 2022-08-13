@@ -169,40 +169,40 @@ export default function IndexPage() {
               </p>
               <Col xs="12">
                 <Row>
-                  <h3>{t.adv}</h3>
-                  <h5 className="projects-floor-first-one text-secondary mt-4">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <h3 className="advanteges__main_title">{t.adv}</h3>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-4">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-4">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                  </Col>
+                </Row>
+                <Row>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
                 </Row>
               </Col>

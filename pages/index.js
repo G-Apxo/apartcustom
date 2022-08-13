@@ -95,6 +95,7 @@ export default function IndexPage() {
                         {["checkbox"].map(type => (
                           <div key={`inline-${type}`} className="mb-3 home--inputs">
                             <Form.Check
+                              className="text-nowrap"
                               inline
                               label="1 Bedroom"
                               name="group1"
