@@ -1176,7 +1176,7 @@ h2 {
 }
 .dark-mode .form-select {
   background-color: transparent;
-  color: white !important;
+  color: black !important;
 }
 .dark-mode .section1-title {
   color: white;
@@ -1535,10 +1535,10 @@ flickity-enabled {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 } */
-.menu__item_mobile{
-  margin-left: 20px;
+.menu__item_mobile {
+  margin-left: 25px;
 }
-.nav__container{
+.nav__container {
   margin-top: 16px;
 }
 .white__switcher {
@@ -1793,29 +1793,29 @@ flickity-enabled {
   text-transform: uppercase;
   color: #121927;
 }
-.counter_number{
+.counter_number {
   font-size: 14px;
   line-height: 17px;
   color: #121927;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-.counter_content{
+.counter_content {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #121927;
 }
-.social__mobile{
+.social__mobile {
   height: 69px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mobile_social_platgorms{
+.mobile_social_platgorms {
   font-size: 15px !important;
 }
-.soc__icon__mobile{
+.soc__icon__mobile {
   font-weight: 100;
   line-height: 17px;
   font-size: 15px;
@@ -1824,4 +1824,15 @@ flickity-enabled {
   color: #ffffff;
   opacity: 0.8;
   margin-left: 14px;
+}
+
+.hamburger-menu select {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.hamburger-menu .form-switch {
+  margin: 0 0 0 20px;
+}
+.dark-mode .social__mobile.col-12 li a {
+  color: white !important;
 }

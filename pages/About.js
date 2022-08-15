@@ -8,29 +8,29 @@ import ru from "../locales/ruAbout";
 import ge from "../locales/geAbout";
 import Beqa from "../assets/beqa.svg";
 import Quote from "../assets/quote.svg";
-import Team1 from "../assets/teamgen/gia.png";
-import Team2 from "../assets/teamgen/tata.JPG";
-import Team3 from "../assets/teamgen/tornikewil.JPG";
-import Team4 from "../assets/teamgen/lashasaban.JPG";
-import Team5 from "../assets/teamgen/vaxtang.JPG";
-import Team6 from "../assets/teamgen/ani.JPG";
-import Team7 from "../assets/teamgen/sabajan.JPG";
-import Team8 from "../assets/teamgen/archil.JPG";
-import Team9 from "../assets/teamgen/natuka.jpg";
-import Team10 from "../assets/teamgen/giorgijap.jpg";
-import Team11 from "../assets/teamgen/iraklichrik.JPG";
-import Team12 from "../assets/teamgen/tika.png";
-import Team13 from "../assets/teamgen/anano.png";
-import Team14 from "../assets/teamgen/levankand.JPG";
-import Team15 from "../assets/teamgen/avto.JPG";
-import Team16 from "../assets/teamgen/mamukabarat.JPG";
-import Team17 from "../assets/teamgen/sandrokavel.JPG";
-import Team18 from "../assets/teamgen/lizilaz.JPG";
-import Team19 from "../assets/teamgen/kaxapircx.png";
-import Team20 from "../assets/teamgen/irakliiob.JPG";
-import Team21 from "../assets/teamgen/lashachikob.JPG";
-import Team22 from "../assets/teamgen/kaxapircx.png";
-import Team23 from "../assets/teamgen/kaxagab.png";
+import Team1 from "../assets/teamfinal/giaxoperia.jpg";
+import Team2 from "../assets/teamfinal/tatadgebuadze.JPG";
+import Team3 from "../assets/teamfinal/tornikewilosani.JPG";
+import Team4 from "../assets/teamfinal/lashasabanidze.JPG";
+import Team5 from "../assets/teamfinal/vaxtangchixradze.JPG";
+import Team6 from "../assets/teamfinal/animurvanidze.JPG";
+import Team7 from "../assets/teamfinal/sabajanashia.JPG";
+import Team8 from "../assets/teamfinal/archilkurcxalia.JPG";
+import Team9 from "../assets/teamfinal/natukaxoperia.jpg";
+import Team10 from "../assets/teamfinal/giorgijaparidze.jpg";
+import Team11 from "../assets/teamfinal/iraklichrikashvili.JPG";
+import Team12 from "../assets/teamfinal/tikasamxaradze.jpg";
+import Team13 from "../assets/teamfinal/ananojigauri.jpg";
+import Team14 from "../assets/teamfinal/levankandelaki.JPG";
+import Team15 from "../assets/teamfinal/avtosepiashvili.JPG";
+import Team16 from "../assets/teamfinal/mamukabaratashvili.JPG";
+import Team17 from "../assets/teamfinal/sandroyavelashvili.JPG";
+import Team18 from "../assets/teamfinal/lizilazashvili.JPG";
+import Team19 from "../assets/teamfinal/kaxafircxalava.jpg";
+import Team20 from "../assets/teamfinal/irakliiobashvili.JPG";
+import Team21 from "../assets/teamfinal/lashachikobava.JPG";
+import Team22 from "../assets/teamfinal/tornikesixarulidze.jpg";
+import Team23 from "../assets/teamfinal/kaxagabatashvili.jpg";
 import Footer from "../components/footer";
 
 export default function IndexPage() {
@@ -73,53 +73,52 @@ export default function IndexPage() {
             {/* <Row> */}
             <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="test13">
               <Row>
-              <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-                <h3 className="about--text__hmod">{t.ath} </h3>
-              </Col>
-              <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
-                <p className="about--text__ptmod2">{t.att}</p>
-              </Col>
+                <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
+                  <h3 className="about--text__hmod">{t.ath} </h3>
+                </Col>
+                <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
+                  <p className="about--text__ptmod2">{t.att}</p>
+                </Col>
               </Row>
             </Col>
             <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
               <Row>
-              <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14 test15">
-                <Row>
-                <Col
-                  xs="12"
-                  lg="5"
-                  md="5"
-                  sm="5"
-                  xl="5"
-                  xxl="5"
-                  // className="mt-60 "
-                >
-                  <h3 className="about--text__hmod">{t.ath2}</h3>
+                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14 test15">
+                  <Row>
+                    <Col
+                      xs="12"
+                      lg="5"
+                      md="5"
+                      sm="5"
+                      xl="5"
+                      xxl="5"
+                      // className="mt-60 "
+                    >
+                      <h3 className="about--text__hmod">{t.ath2}</h3>
+                    </Col>
+                    <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
+                      <p className="about--text__ptmod__mod ">{t.att2}</p>
+                    </Col>
+                  </Row>
                 </Col>
-                <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
-                  <p className="about--text__ptmod__mod ">{t.att2}</p>
+                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14">
+                  <Row>
+                    <Col
+                      xs="12"
+                      lg="5"
+                      md="5"
+                      sm="5"
+                      xl="5"
+                      xxl="5"
+                      // className="mt-60 "
+                    >
+                      <h3 className="about--text__hmod">{t.ath3}</h3>
+                    </Col>
+                    <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
+                      <p className="about--text__ptmod__mod ">{t.att3}</p>
+                    </Col>
+                  </Row>
                 </Col>
-                </Row>
-              </Col>
-              <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14">
-                <Row>
-                <Col
-                  xs="12"
-                  lg="5"
-                  md="5"
-                  sm="5"
-                  xl="5"
-                  xxl="5"
-                  // className="mt-60 "
-                >
-                  <h3 className="about--text__hmod">{t.ath3}</h3>
-                </Col>
-                <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
-                  <p className="about--text__ptmod__mod ">{t.att3}</p>
-                </Col>
-                </Row>
-             
-              </Col>
               </Row>
             </Col>
 
@@ -275,7 +274,7 @@ export default function IndexPage() {
               <Image src={Team19} alt="banner immage" />
 
               <h3>{t.tt19} </h3>
-              <p>{t.tt19p}</p>
+              <p>{t.tt1p}</p>
             </Col>
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team20} alt="banner immage" />
@@ -301,7 +300,7 @@ export default function IndexPage() {
               <Image src={Team23} alt="banner immage" />
 
               <h3>{t.tt23} </h3>
-              <p>{t.tt23p}</p>
+              <p>{t.tt2p}</p>
             </Col>
             {/* <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team24} alt="banner immage" />

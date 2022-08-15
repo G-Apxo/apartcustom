@@ -88,15 +88,15 @@ export default {
   //line break
   //line break
   tt20: "Irakli Iobashvili",
-  tt20xp: "Logistics Manager",
+  tt20p: "Logistics Manager",
   //line break
   tt21: "Lasha Chikobava",
-  tt21xp: "Supply Manager",
+  tt21p: "Supply Manager",
   //line break
   tt22: "Tornike Sikharulidze",
-  tt22xp: "Warehouse Manager",
+  tt22p: "Warehouse Manager",
   //line break
   tt23: "Kakha Gabatashvili",
-  tt23xp: "Assistant to the Head of Construction",
+  tt23p: "Assistant to the Head of Construction",
   //line break
 };
