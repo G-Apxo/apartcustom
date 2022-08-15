@@ -1176,7 +1176,7 @@ h2 {
 }
 .dark-mode .form-select {
   background-color: transparent;
-  color: black !important;
+  color: white !important;
 }
 .dark-mode .section1-title {
   color: white;
@@ -1835,4 +1835,10 @@ flickity-enabled {
 }
 .dark-mode .social__mobile.col-12 li a {
   color: white !important;
+}
+
+@media (max-width: 600px) {
+  .dark-mode .form-select {
+    color: black !important;
+  }
 }
