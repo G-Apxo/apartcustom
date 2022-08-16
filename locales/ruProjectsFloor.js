@@ -6,7 +6,7 @@ export default {
   treeNum: "132",
   exhibitionSpace: "exhibition spaces",
   esm: "3245 m2",
-  chooseFloor: "Chose floor 1-10",
+  chooseFloor: "Chose floor 1 - 10",
   chooseOne: "One",
   chooseTwo: "Two",
   chooseThree: "Three",

@@ -23,6 +23,12 @@ export default function Nav({ mode, setMode }) {
     element.classList.toggle("dark-mode");
     // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
+  function LebalHandler() {
+    var element = document.body;
+
+    element.classList.toggle("fixed");
+    // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
+  }
   return (
     <div className="nav__container">
       <Container className="mobile_container">
@@ -60,7 +66,7 @@ export default function Nav({ mode, setMode }) {
           <Col xs="12">
             <div className="hamburger-menu">
               <input id="menu__toggle" type="checkbox" />
-              <label className="menu__btn menu__dark" htmlFor="menu__toggle">
+              <label className="menu__btn menu__dark" onClick={LebalHandler} htmlFor="menu__toggle">
                 <span></span>
               </label>
               <ul className="menu__box">
@@ -121,7 +127,6 @@ export default function Nav({ mode, setMode }) {
           </Col>
         </Row>
       </Container>
-
       <Container className="desktop__menu">
         <Row className="align-items-center">
           <Col xs="2">

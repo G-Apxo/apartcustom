@@ -14,7 +14,7 @@ import Footer from "../components/footer";
 import Navwhite from "../components/navwhite";
 import Malongo from "../assets/malongo2.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
-import Readmore from "../assets/readmore.svg"
+import Readmore from "../assets/readmore.svg";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -24,197 +24,188 @@ export default function IndexPage() {
 
   return (
     <div>
-
-          <Navwhite mode={mode} setMode={setMode} />
-          <Carousel style={{ opacity: 1 }} className="carousle__inner">
-            <Carousel.Item className="fuul__width">
-              <div className="container__video">
-                <video autoPlay="" loop={true} muted="" className="video">
-                  <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-                <Container>
-                <div className="overlay">
-                      <p className="text-white">Architecture</p>
-                      <h2 className="text-white banner__header">
-                      Renewed Life <br/> of Old Tbilisi
-                      </h2>
-                      <p className="text-white">Dream building for you</p>
-                      <p className="text-white">Read more </p>
-                  </div>
-                </Container>
+      <Navwhite mode={mode} setMode={setMode} />
+      <Carousel style={{ opacity: 1 }} className="carousle__inner">
+        <Carousel.Item className="fuul__width">
+          <div className="container__video">
+            <video autoPlay={true} loop={true} muted="" className="video">
+              <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <p className="text-white">Architecture</p>
+                <h2 className="text-white banner__header">
+                  Renewed Life <br /> of Old Tbilisi
+                </h2>
+                <p className="text-white">Dream building for you</p>
+                <p className="text-white">Read more </p>
               </div>
-
-            </Carousel.Item>
-            {/* <Carousel.Item className="fuul__width">
-              <div>
-                <video autoPlay="" loop={true} muted="" className="video">
-                  <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </Carousel.Item> */}
-          </Carousel>
-          <Container className="container-marginer additional__padding mt-60">
-            <Row className="justify-content-between">
-              <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                <Row>
-                  <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
-                    <p className="home--section__texts">{t.aabout}</p>
-                  </Col>
-                  <Col></Col>
-                  <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
-                    <h1 className="section1-title">{t.aheader}</h1>
-
-                    <p className="section1-subtitle">{t.ap}</p>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-                <Col xs="12" className="col-5 mt-60">
-                  <p className="section1-form-text">
-                    Leave us your contact information and our team will reach out to you.
-                  </p>
-                  <h4 className="section-1-form-subtext">Apartment type:</h4>
-                  <Row>
-                    <Col xs="3">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3">
-                            <Form.Check
-                              inline
-                              label="Studio"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-1`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col xs="3">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3 home--inputs">
-                            <Form.Check
-                              className="text-nowrap"
-                              inline
-                              label="1 Bedroom"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-2`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col xs="6" className="col-6">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3 home--inputs">
-                            <Form.Check
-                              inline
-                              label="2+ Bedrooms"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-3`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col className="mb-60">
-                      <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                        <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="text"
-                                id="name"
-                                name="name"
-                                className="form-control input__main"
-                                placeholder="Name"
-                              />
-                            </div>
-                          </Col>
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="mail"
-                                id="email"
-                                name="email"
-                                className="form-control input__main"
-                                placeholder="Email"
-                              />
-                            </div>
-                          </Col>
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="phone"
-                                id="email"
-                                name="email"
-                                className="form-control input__main"
-                                placeholder="Phone Number"
-                              />
-                            </div>
-                          </Col>
-                        </Form>
-                        <div className="text-center text-md-left home--get-contacted">
-                          <Button className="btn-send">Get contacted</Button>
-                        </div>
-                      </div>
-                    </Col>
-                  </Row>
-                </Col>
-              </Col>
-            </Row>
-          </Container>
-          <Container className="mb-60">
+            </Container>
+          </div>
+        </Carousel.Item>
+        {/* <Carousel.Item className="fuul__width">
+          <div>
+            ver gamomyavs
+            <video autoPlay="" loop={true} muted="" className="video">
+              <source src="../assets/videos/taghi.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </Carousel.Item> */}
+      </Carousel>
+      <Container className="container-marginer additional__padding mt-60">
+        <Row className="justify-content-between">
+          <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
             <Row>
-              <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
-                <p className="home--section__texts">{t.pm}</p>
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+                <p className="home--section__texts">{t.aabout}</p>
               </Col>
-              <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
-                <iframe
-                  src="https://snazzymaps.com/embed/408105"
-                  width="100%"
-                  height="400px"
-                  // style="border:none;"
-                ></iframe>
+              <Col></Col>
+              <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
+                <h1 className="section1-title">{t.aheader}</h1>
+
+                <p className="section1-subtitle">{t.ap}</p>
               </Col>
             </Row>
-          </Container>
-          <Container className="partners-container mb-60 mt-60">
-            <Row className="justify-content-between align-items-center">
-              <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
-                <div className="partners home--section__texts">
-                  <p className="home--section__texts">{t.partners}</p>
+          </Col>
+          <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
+            <Col xs="12" className="col-5 mt-60">
+              <p className="section1-form-text">
+                Leave us your contact information and our team will reach out to you.
+              </p>
+              <h4 className="section-1-form-subtext">Apartment type:</h4>
+              <Row>
+                <Col xs="3">
+                  <Form>
+                    {["checkbox"].map(type => (
+                      <div key={`inline-${type}`}>
+                        <Form.Check inline label="Studio" name="group1" type={type} id={`inline-${type}-1`} />
+                      </div>
+                    ))}
+                  </Form>
+                </Col>
+                <Col xs="3">
+                  <Form>
+                    {["checkbox"].map(type => (
+                      <div key={`inline-${type}`} className=" home--inputs">
+                        <Form.Check
+                          className="text-nowrap"
+                          inline
+                          label="1 Bedroom"
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-2`}
+                        />
+                      </div>
+                    ))}
+                  </Form>
+                </Col>
+                <Col xs="6" className="col-6">
+                  <Form>
+                    {["checkbox"].map(type => (
+                      <div key={`inline-${type}`} className="home--inputs">
+                        <Form.Check
+                          inline
+                          label="2+ Bedrooms"
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-3`}
+                        />
+                      </div>
+                    ))}
+                  </Form>
+                </Col>
+                <Col className="mb-60">
+                  <div xs="12" className="mb-md-0 mb-5 home--inputs">
+                    <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                      <Col xs="12">
+                        <div className="md-form mb-0">
+                          <Form.Control
+                            type="text"
+                            id="name"
+                            name="name"
+                            className="form-control input__main"
+                            placeholder="Name"
+                          />
+                        </div>
+                      </Col>
+                      <Col xs="12">
+                        <div className="md-form mb-0">
+                          <Form.Control
+                            type="mail"
+                            id="email"
+                            name="email"
+                            className="form-control input__main"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </Col>
+                      <Col xs="12">
+                        <div className="md-form mb-0">
+                          <Form.Control
+                            type="phone"
+                            id="email"
+                            name="email"
+                            className="form-control input__main"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </Col>
+                    </Form>
+                    <div className="text-center text-md-left home--get-contacted">
+                      <Button className="btn-send">Get contacted</Button>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="mb-60">
+        <Row>
+          <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
+            <p className="home--section__texts">{t.pm}</p>
+          </Col>
+          <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
+            <iframe
+              src="https://snazzymaps.com/embed/408105"
+              width="100%"
+              height="400px"
+              // style="border:none;"
+            ></iframe>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="partners-container mb-60 mt-60">
+        <Row className="justify-content-between align-items-center">
+          <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
+            <div className="partners home--section__texts">
+              <p className="home--section__texts">{t.partners}</p>
+            </div>
+          </Col>
+          <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
+            <Row className="justify-content-between">
+              <div className="col-4 ">
+                <div className="partners">
+                  <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
                 </div>
-              </Col>
-              <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
-                <Row className="justify-content-between">
-                  <div className="col-4 ">
-                    <div className="partners">
-                      <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                  <div className="col-4">
-                    <div className="partners">
-                      <Image src={Malongo} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                  <div className="col-4 d-flex justify-content-end">
-                    <div className="partners">
-                      <Image src={Tbc} alt="banner immage" className="partners_wite" />
-                    </div>
-                  </div>
-                </Row>
-              </Col>
+              </div>
+              <div className="col-4">
+                <div className="partners">
+                  <Image src={Malongo} alt="banner immage" className="partners_wite" />
+                </div>
+              </div>
+              <div className="col-4 d-flex justify-content-end">
+                <div className="partners">
+                  <Image src={Tbc} alt="banner immage" className="partners_wite" />
+                </div>
+              </div>
             </Row>
-          </Container>
-      
-          <Footer />
-       
-  
+          </Col>
+        </Row>
+      </Container>
+
+      <Footer />
     </div>
   );
 }

@@ -1662,7 +1662,7 @@ flickity-enabled {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 75px;
+  top: 85px;
   right: 20px;
   width: 26px;
   height: 26px;
@@ -1840,5 +1840,28 @@ flickity-enabled {
 @media (max-width: 600px) {
   .dark-mode .form-select {
     color: black !important;
+  }
+
+  .dark-mode .menu__dark > span,
+  .dark-mode .menu__dark > span::before,
+  .dark-mode .menu__dark > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #fff;
+
+    transition-duration: 0.25s;
+  }
+  .otherPgs {
+    margin: 10px 0 10px 25px !important;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .nav__container {
+    margin-top: 0;
   }
 }

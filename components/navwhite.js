@@ -12,7 +12,7 @@ export default function Nav({ mode, setMode }) {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  const changeLanguage = (e) => {
+  const changeLanguage = e => {
     const locale = e.target.value;
     router.push(router.pathname, router.asPath, { locale });
   };
@@ -23,59 +23,112 @@ export default function Nav({ mode, setMode }) {
     element.classList.toggle("dark-mode");
     element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
+  function LebalHandler() {
+    var element = document.body;
+
+    element.classList.toggle("fixed");
+    // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
+  }
   return (
     <div className="nav__container">
       <Container className="mobile_container">
         <Row>
           <Col xs="12" className="social__mobile">
-          <ul className="navbar-nav">
-              <li className=" mobile_social_platgorms"> <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile">+995 32 2 11 11 44</a><span className="soc__icon__mobile"> | </span>  </li>
-              <li className=" mobile_social_platgorms"> <a className="soc__icon__mobile" href="#">{t.v} </a> <span className="soc__icon__mobile"> |</span> </li>
-              <li className=" mobile_social_platgorms"><a className="soc__icon__mobile"href="#">{t.w}</a></li>
+            <ul className="navbar-nav">
+              <li className=" mobile_social_platgorms">
+                {" "}
+                <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile">
+                  +995 32 2 11 11 44
+                </a>
+                <span className="soc__icon__mobile"> | </span>{" "}
+              </li>
+              <li className=" mobile_social_platgorms">
+                {" "}
+                <a className="soc__icon__mobile" href="#">
+                  {t.v}{" "}
+                </a>{" "}
+                <span className="soc__icon__mobile"> |</span>{" "}
+              </li>
+              <li className=" mobile_social_platgorms">
+                <a className="soc__icon__mobile" href="#">
+                  {t.w}
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>
         <Row>
-        <Col xs="6">
-        <a className="navbar-brand nav_white" href="/">
+          <Col xs="6">
+            <a className="navbar-brand nav_white" href="/">
               <Image className="logo" src={Logo} alt="Picture of the author" />
             </a>
-        </Col>
-        <Col xs="6">
-        <div className="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label className="menu__btn" htmlFor="menu__toggle">
-          <span></span>
-        </label>
-        <ul className="menu__box">
-          <li><a className="menu__item" href="/About">{t.about}</a></li>
-          <li><a className="menu__item" href="/Investing"> {t.investing}</a></li>
-          <li><a className="menu__item" href="/projects"> {t.projects}</a></li>
-          <li><a className="menu__item" href="/Blog"> {t.blog}</a></li>
-          <li><a className="menu__item" href="/Contact"> {t.contact}</a></li>
-          <li>
-          <select
-              onChange={changeLanguage}
-              defaultValue={locale}
-              className="form-select lang__drop menu__item"
-            >
-              <option className="text-dark" value="en">
-                EN
-              </option>
-              <option className="text-dark" value="ru">
-                RU
-              </option>
-              <option className="text-dark" value="ge">
-                GE
-              </option>
-            </select>
-          </li>
-        </ul>
-      </div>
-        </Col>
+          </Col>
+          <Col xs="6">
+            <div className="hamburger-menu">
+              <input id="menu__toggle" type="checkbox" />
+              <label className="menu__btn" onClick={LebalHandler} htmlFor="menu__toggle">
+                <span></span>
+              </label>
+              <ul className="menu__box">
+                <li>
+                  <a className="menu__item" href="/About">
+                    {t.about}
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/Investing">
+                    {" "}
+                    {t.investing}
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/projects">
+                    {" "}
+                    {t.projects}
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/Blog">
+                    {" "}
+                    {t.blog}
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/Contact">
+                    {" "}
+                    {t.contact}
+                  </a>
+                </li>
+                <li>
+                  <select
+                    onChange={changeLanguage}
+                    defaultValue={locale}
+                    className="form-select lang__drop menu__item  otherPgs"
+                  >
+                    <option className="text-dark" value="en">
+                      EN
+                    </option>
+                    <option className="text-dark" value="ru">
+                      RU
+                    </option>
+                    <option className="text-dark" value="ge">
+                      GE
+                    </option>
+                  </select>
+                </li>
+                <Form>
+                  <Form.Check
+                    onClick={myFunction}
+                    type="switch"
+                    id="custom-switch"
+                    className="white__switcher"
+                  />
+                </Form>
+              </ul>
+            </div>
+          </Col>
         </Row>
       </Container>
-
       <Container className="desktop__menu">
         <Row className="align-items-center">
           <Col xs="2">
@@ -129,11 +182,7 @@ export default function Nav({ mode, setMode }) {
           </Col>
 
           <Col xs="2" className="d-flex justify-content-around">
-          <select
-              onChange={changeLanguage}
-              defaultValue={locale}
-              className="form-select lang__drop_white "
-            >
+            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop_white ">
               <option className="text-white" value="en">
                 EN
               </option>
@@ -145,19 +194,30 @@ export default function Nav({ mode, setMode }) {
               </option>
             </select>
             <Form>
-              <Form.Check
-                onClick={myFunction}
-                type="switch"
-                id="custom-switch"
-                className="white__switcher"
-              />
+              <Form.Check onClick={myFunction} type="switch" id="custom-switch" className="white__switcher" />
             </Form>
           </Col>
           <Col xs="3">
             <ul className="navbar-nav">
-              <li className="contact__platforms "> <a href="tel:+995-32-2-11-11-44" className="soc__icon">+995 32 2 11 11 44</a><span className="soc__icon"> | </span>  </li>
-              <li className="contact__platforms"> <a className="soc__icon" href="#">{t.v} </a> <span className="soc__icon"> |</span> </li>
-              <li className="contact__platforms"><a className="soc__icon"href="#">{t.w}</a></li>
+              <li className="contact__platforms ">
+                {" "}
+                <a href="tel:+995-32-2-11-11-44" className="soc__icon">
+                  +995 32 2 11 11 44
+                </a>
+                <span className="soc__icon"> | </span>{" "}
+              </li>
+              <li className="contact__platforms">
+                {" "}
+                <a className="soc__icon" href="#">
+                  {t.v}{" "}
+                </a>{" "}
+                <span className="soc__icon"> |</span>{" "}
+              </li>
+              <li className="contact__platforms">
+                <a className="soc__icon" href="#">
+                  {t.w}
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>

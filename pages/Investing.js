@@ -31,7 +31,7 @@ export default function IndexPage() {
             <Container className="mt-60 ">
               <Row>
                 <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                <iframe
+                  <iframe
                     width="100%"
                     height="250"
                     src="https://www.youtube.com/embed/ZVT5S0XYQDY"
@@ -41,7 +41,7 @@ export default function IndexPage() {
                     allowfullscreen
                   ></iframe>
                 </Col>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-60">
+                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <p className="investing-title_subtext">{t.tp2}</p>
                 </Col>
               </Row>
@@ -54,68 +54,36 @@ export default function IndexPage() {
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                   <Row>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">
-                        1
-                      </p>
-                      <p className="counter_content">
-                      {t.spa}
-                      </p>
+                      <p className="counter_number">1</p>
+                      <p className="counter_content">{t.spa}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">
-                        2
-                      </p>
-                      <p className="counter_content">
-                      {t.pool}
-                      </p>
+                      <p className="counter_number">2</p>
+                      <p className="counter_content">{t.pool}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">
-                        3
-                      </p>
-                      <p className="counter_content">
-                      {t.fitness}
-                      </p>
+                      <p className="counter_number">3</p>
+                      <p className="counter_content">{t.fitness}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">
-                        4
-                      </p>
-                      <p className="counter_content">
-                      {t.cafe}
-                      </p>
+                      <p className="counter_number">4</p>
+                      <p className="counter_content">{t.cafe}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">
-                        5
-                      </p>
-                      <p className="counter_content">
-                      {t.room}
-                      </p>
+                      <p className="counter_number">5</p>
+                      <p className="counter_content">{t.room}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">
-                        6
-                      </p>
-                      <p className="counter_content">
-                      {t.consierge}
-                      </p>
+                      <p className="counter_number">6</p>
+                      <p className="counter_content">{t.consierge}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">
-                        7
-                      </p>
-                      <p className="counter_content">
-                      {t.hour}
-                      </p>
+                      <p className="counter_number">7</p>
+                      <p className="counter_content">{t.hour}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">
-                        8
-                      </p>
-                      <p className="counter_content">
-                      {t.cleaning}
-                      </p>
+                      <p className="counter_number">8</p>
+                      <p className="counter_content">{t.cleaning}</p>
                     </Col>
                   </Row>
                 </Col>
@@ -129,14 +97,14 @@ export default function IndexPage() {
                 <h3>{t.goal}</h3>
               </Row>
               <Row>
-                <Col  xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
+                <Col xxl="4" xs="12" lg="4" md="4" sm="4" xl="4">
                   <h3>{t.apartForPersonUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp1}</p>
                 </Col>
-                <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4" >
+                <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4">
                   <Image src={Sample} alt="#" />
                 </Col>
-                <Col xxl="4" lg="4" md="4" sm="4" xl="4" xs="12" >
+                <Col xxl="4" lg="4" md="4" sm="4" xl="4" xs="12">
                   <h3 className="special-margin-class">{t.apartForCommercialUse}</h3>
                   <p className="investing-title_subtext mt-30">{t.textAp2}</p>
                 </Col>
@@ -153,95 +121,95 @@ export default function IndexPage() {
                     </p>
                     <h4 className="section-1-form-subtext">Apartment type:</h4>
                     <Row>
-                    <Col xs="3">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3">
-                            <Form.Check
-                              inline
-                              label="Studio"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-1`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col xs="3">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3 home--inputs">
-                            <Form.Check
-                              className="text-nowrap"
-                              inline
-                              label="1 Bedroom"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-2`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col xs="6" className="col-6">
-                      <Form>
-                        {["checkbox"].map(type => (
-                          <div key={`inline-${type}`} className="mb-3 home--inputs">
-                            <Form.Check
-                              inline
-                              label="2+ Bedrooms"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-3`}
-                            />
-                          </div>
-                        ))}
-                      </Form>
-                    </Col>
-                    <Col className="mb-60">
-                      <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                        <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="text"
-                                id="name"
-                                name="name"
-                                className="form-control input__main"
-                                placeholder="Name"
+                      <Col xs="3">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`}>
+                              <Form.Check
+                                inline
+                                label="Studio"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-1`}
                               />
                             </div>
-                          </Col>
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="mail"
-                                id="email"
-                                name="email"
-                                className="form-control input__main"
-                                placeholder="Email"
-                              />
-                            </div>
-                          </Col>
-                          <Col xs="12">
-                            <div className="md-form mb-0">
-                              <Form.Control
-                                type="phone"
-                                id="email"
-                                name="email"
-                                className="form-control input__main"
-                                placeholder="Phone Number"
-                              />
-                            </div>
-                          </Col>
+                          ))}
                         </Form>
-                        <div className="text-center text-md-left home--get-contacted">
-                          <Button className="btn-send">Get contacted</Button>
+                      </Col>
+                      <Col xs="3">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className=" home--inputs">
+                              <Form.Check
+                                className="text-nowrap"
+                                inline
+                                label="1 Bedroom"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-2`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
+                      </Col>
+                      <Col xs="6" className="col-6">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className=" home--inputs">
+                              <Form.Check
+                                inline
+                                label="2+ Bedrooms"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-3`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
+                      </Col>
+                      <Col className="mb-60">
+                        <div xs="12" className="mb-md-0 mb-5 home--inputs">
+                          <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="text"
+                                  id="name"
+                                  name="name"
+                                  className="form-control input__main"
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </Col>
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="mail"
+                                  id="email"
+                                  name="email"
+                                  className="form-control input__main"
+                                  placeholder="Email"
+                                />
+                              </div>
+                            </Col>
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="phone"
+                                  id="email"
+                                  name="email"
+                                  className="form-control input__main"
+                                  placeholder="Phone Number"
+                                />
+                              </div>
+                            </Col>
+                          </Form>
+                          <div className="text-center text-md-left home--get-contacted">
+                            <Button className="btn-send">Get contacted</Button>
+                          </div>
                         </div>
-                      </div>
-                    </Col>
-                  </Row>
+                      </Col>
+                    </Row>
                   </Col>
                 </Col>
               </Row>
