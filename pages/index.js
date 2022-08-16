@@ -25,11 +25,11 @@ export default function IndexPage() {
   return (
     <div>
       <Navwhite mode={mode} setMode={setMode} />
-      <Carousel style={{ opacity: 1 }} className="carousle__inner">
-        <Carousel.Item className="fuul__width">
+      <Carousel fade style={{ opacity: 1 }} className="carousle__inner">
+        <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video autoPlay={true} loop={true} muted="" className="video">
-              <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+            <video autoPlay loop muted playsInline className="video">
+              <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -43,14 +43,74 @@ export default function IndexPage() {
             </Container>
           </div>
         </Carousel.Item>
-        {/* <Carousel.Item className="fuul__width">
-          <div>
-            ver gamomyavs
-            <video autoPlay="" loop={true} muted="" className="video">
-              <source src="../assets/videos/taghi.mp4" type="video/mp4" />
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video autoPlay loop muted playsInline className="video">
+              <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
+            <Container>
+              <div className="overlay">
+                <p className="text-white">Architecture</p>
+                <h2 className="text-white banner__header">
+                  Renewed Life <br /> of Old Tbilisi
+                </h2>
+                <p className="text-white">Dream building for you</p>
+                <p className="text-white">Read more </p>
+              </div>
+            </Container>
           </div>
-        </Carousel.Item> */}
+        </Carousel.Item>
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video autoPlay loop muted playsInline className="video">
+              <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <p className="text-white">Architecture</p>
+                <h2 className="text-white banner__header">
+                  Renewed Life <br /> of Old Tbilisi
+                </h2>
+                <p className="text-white">Dream building for you</p>
+                <p className="text-white">Read more </p>
+              </div>
+            </Container>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video autoPlay loop muted playsInline className="video">
+              <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <p className="text-white">Architecture</p>
+                <h2 className="text-white banner__header">
+                  Renewed Life <br /> of Old Tbilisi
+                </h2>
+                <p className="text-white">Dream building for you</p>
+                <p className="text-white">Read more </p>
+              </div>
+            </Container>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video autoPlay loop muted playsInline className="video">
+              <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <p className="text-white">Architecture</p>
+                <h2 className="text-white banner__header">
+                  Renewed Life <br /> of Old Tbilisi
+                </h2>
+                <p className="text-white">Dream building for you</p>
+                <p className="text-white">Read more </p>
+              </div>
+            </Container>
+          </div>
+        </Carousel.Item>
       </Carousel>
       <Container className="container-marginer additional__padding mt-60">
         <Row className="justify-content-between">
