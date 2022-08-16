@@ -68,7 +68,7 @@ export default function IndexPage() {
             </Row>
           </Col>
           <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-            <Col xs="12" className="col-5 mt-60">
+            <Col xs="12" className="col-5">
               <p className="section1-form-text">
                 Leave us your contact information and our team will reach out to you.
               </p>
