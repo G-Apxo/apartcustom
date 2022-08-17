@@ -3,6 +3,7 @@ export default {
   aparttype: "Apartment type",
   name: "Name",
   telnum: "Phone Number",
+  vw: "WhatsApp/Viber",
   company: "Company",
   email: "Email",
   subject: "Subject",

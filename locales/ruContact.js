@@ -3,6 +3,7 @@ export default {
   aparttype: "Тип квартиры",
   name: "Имя",
   telnum: "Номер телефона",
+  vw: "WhatsApp/Viber",
   company: "Company",
   email: "Эл. адрес",
   subject: "Subject",

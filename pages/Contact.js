@@ -28,11 +28,12 @@ export default function IndexPage() {
                     <Row>
                       <Col xs="3" className=" contact__number">
                         <h3>{t.telnum}</h3>
-                        <h5>+995 544 44 44 31</h5>
+                        <h5>+995 2 11 11 44</h5>
                       </Col>
                       <Col xs="3" className="contact__number">
-                        <h3>{t.telnum}</h3>
+                        <h3>{t.vw}</h3>
                         <h5>+995 544 44 44 31</h5>
+                        <h5>+995 544 44 44 39</h5>
                       </Col>
                       <Col xs="3" className="contact__number">
                         <h3>{t.email}</h3>
@@ -42,7 +43,7 @@ export default function IndexPage() {
                         <h3>{t.location}</h3>
                         <h5>{t.locPl}</h5>
                       </Col>
-                      <Col xs="3" className=" contact__number">
+                      <Col xs="3" className="marginer-30 contact__number">
                         <h3>{t.om}</h3>
                         <h5>Facebook</h5>
                       </Col>

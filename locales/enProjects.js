@@ -1,7 +1,7 @@
 export default {
   title: "Comming Soon",
   prj1d: "Current",
-  prj1c: "Old City \n Panorama",
+  prj1t: "Old City \n Panorama",
   prj1l: "Location",
   prj1lt: "Mikheil Bukhaidze #48",
   viewPrj: "View Projects",

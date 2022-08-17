@@ -21,5 +21,5 @@ export default {
   email: "ელექთრონული მაილი",
   subject: "შესახებ",
   textarea: "ტექსტი",
-  getContacted: "დაგვიკავშირდით",
+  getContacted: "მოითხოვე ზარი",
 };

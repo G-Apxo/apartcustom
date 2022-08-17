@@ -7,7 +7,7 @@ import en from "../locales/enBlog";
 import ru from "../locales/ruBlog";
 import ge from "../locales/geBlog";
 import Link from "next/link";
-import Footer from '../components/footer';
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -23,7 +23,7 @@ export default function IndexPage() {
           <Container>
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <Row>
-              <Link className="blog-single-blog" href="/SingleBlog">
+              <Link className="blog-single-blog" href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__1">
                     <div className="blog-image__content">
@@ -34,7 +34,7 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Link>
-              <Link className="blog-single-blog" href="/SingleBlog">
+              <Link className="blog-single-blog" href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__2">
                     <div className="blog-image__content">
@@ -46,7 +46,7 @@ export default function IndexPage() {
               </Link>
             </Row>
             <Row>
-              <Link className="blog-single-blog" href="/SingleBlog">
+              <Link className="blog-single-blog" href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__3">
                     <div className="blog-image__content">
@@ -56,7 +56,7 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Link>
-              <Link className="blog-single-blog" href="/SingleBlog">
+              <Link className="blog-single-blog" href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__4">
                     <div className="blog-image__content">
@@ -68,7 +68,7 @@ export default function IndexPage() {
               </Link>
             </Row>
             <Row>
-              <Link href="/SingleBlog">
+              <Link href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__5">
                     <div className="blog-image__content">
@@ -78,7 +78,7 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Link>
-              <Link href="/SingleBlog">
+              <Link href="/singleblog">
                 <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <div className="image__box blog__6">
                     <div className="blog-image__content">
@@ -92,7 +92,7 @@ export default function IndexPage() {
           </Container>
         </div>
       </div>
-     
+
       <Footer />
     </div>
   );
