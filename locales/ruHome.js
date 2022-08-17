@@ -11,4 +11,13 @@ export default {
 
   partners: "Партнеры",
   pm: "Карта Проектов",
+  contactInfo: "Оставьте нам свои контактные данные и наша команда свяжется с вами.",
+  aparttype: "Тип квартиры",
+  name: "Имя",
+  telnum: "Номер телефона",
+  company: "Company",
+  email: "Эл. адрес",
+  subject: "Subject",
+  textarea: "Text",
+  getContacted: "Свяжитесь с нами",
 };

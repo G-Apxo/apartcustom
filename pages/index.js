@@ -12,7 +12,7 @@ import Taghi from "../assets/taghi.svg";
 import Apart_showroom from "../assets/apartshowroom.svg";
 import Footer from "../components/footer";
 import Navwhite from "../components/navwhite";
-import Malongo from "../assets/malongo2.png";
+import Malongo from "../assets/malongo-dark-mode.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
 import Readmore from "../assets/readmore.svg";
 export default function IndexPage() {
@@ -28,95 +28,95 @@ export default function IndexPage() {
       <Carousel fade style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video  loop muted playsInline className="video vid-bg">
+            <video loop muted playsInline className="video vid-bg">
               <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
-            <div className="overlay">
-              <Container className="innerContent">
-              <p className="text-white">Architecture</p>
-                <h2 className="text-white banner__header">
-                  Renewed Life <br /> of Old Tbilisi
-                </h2>
-                <p className="text-white">Dream building for you</p>
-                <p className="text-white">Read more </p>
-              </Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <p className="text-white">Architecture</p>
+                  <h2 className="text-white banner__header">
+                    Renewed Life <br /> of Old Tbilisi
+                  </h2>
+                  <p className="text-white">Dream building for you</p>
+                  <p className="text-white">Read more </p>
+                </Container>
               </div>
             </Container>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video  loop muted playsInline className="video">
+            <video loop muted playsInline className="video">
               <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
-            <div className="overlay">
-              <Container className="innerContent">
-              <p className="text-white">Architecture</p>
-                <h2 className="text-white banner__header">
-                  Renewed Life <br /> of Old Tbilisi
-                </h2>
-                <p className="text-white">Dream building for you</p>
-                <p className="text-white">Read more </p>
-              </Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <p className="text-white">Architecture</p>
+                  <h2 className="text-white banner__header">
+                    Renewed Life <br /> of Old Tbilisi
+                  </h2>
+                  <p className="text-white">Dream building for you</p>
+                  <p className="text-white">Read more </p>
+                </Container>
               </div>
             </Container>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video  loop muted playsInline className="video">
+            <video loop muted playsInline className="video">
               <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
-            <div className="overlay">
-              <Container className="innerContent">
-              <p className="text-white">Architecture</p>
-                <h2 className="text-white banner__header">
-                  Renewed Life <br /> of Old Tbilisi
-                </h2>
-                <p className="text-white">Dream building for you</p>
-                <p className="text-white">Read more </p>
-              </Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <p className="text-white">Architecture</p>
+                  <h2 className="text-white banner__header">
+                    Renewed Life <br /> of Old Tbilisi
+                  </h2>
+                  <p className="text-white">Dream building for you</p>
+                  <p className="text-white">Read more </p>
+                </Container>
               </div>
             </Container>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video  loop muted playsInline className="video">
+            <video loop muted playsInline className="video">
               <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
-            <div className="overlay">
-              <Container className="innerContent">
-              <p className="text-white">Architecture</p>
-                <h2 className="text-white banner__header">
-                  Renewed Life <br /> of Old Tbilisi
-                </h2>
-                <p className="text-white">Dream building for you</p>
-                <p className="text-white">Read more </p>
-              </Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <p className="text-white">Architecture</p>
+                  <h2 className="text-white banner__header">
+                    Renewed Life <br /> of Old Tbilisi
+                  </h2>
+                  <p className="text-white">Dream building for you</p>
+                  <p className="text-white">Read more </p>
+                </Container>
               </div>
             </Container>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video  loop muted playsInline className="video">
+            <video loop muted playsInline className="video">
               <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
-            <div className="overlay">
-              <Container className="innerContent">
-              <p className="text-white">Architecture</p>
-                <h2 className="text-white banner__header">
-                  Renewed Life <br /> of Old Tbilisi
-                </h2>
-                <p className="text-white">Dream building for you</p>
-                <p className="text-white">Read more </p>
-              </Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <p className="text-white">Architecture</p>
+                  <h2 className="text-white banner__header">
+                    Renewed Life <br /> of Old Tbilisi
+                  </h2>
+                  <p className="text-white">Dream building for you</p>
+                  <p className="text-white">Read more </p>
+                </Container>
               </div>
             </Container>
           </div>
@@ -139,10 +139,8 @@ export default function IndexPage() {
           </Col>
           <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
             <Col xs="12" className="col-5">
-              <p className="section1-form-text">
-                Leave us your contact information and our team will reach out to you.
-              </p>
-              <h4 className="section-1-form-subtext">Apartment type:</h4>
+              <p className="section1-form-text">{t.contactInfo}</p>
+              <h4 className="section-1-form-subtext">{t.aparttype}</h4>
               <Row>
                 <Col xs="3">
                   <Form>
@@ -194,7 +192,7 @@ export default function IndexPage() {
                             id="name"
                             name="name"
                             className="form-control input__main"
-                            placeholder="Name"
+                            placeholder={t.name}
                           />
                         </div>
                       </Col>
@@ -205,7 +203,7 @@ export default function IndexPage() {
                             id="email"
                             name="email"
                             className="form-control input__main"
-                            placeholder="Email"
+                            placeholder={t.email}
                           />
                         </div>
                       </Col>
@@ -216,13 +214,13 @@ export default function IndexPage() {
                             id="email"
                             name="email"
                             className="form-control input__main"
-                            placeholder="Phone Number"
+                            placeholder={t.telnum}
                           />
                         </div>
                       </Col>
                     </Form>
                     <div className="text-center text-md-left home--get-contacted">
-                      <Button className="btn-send">Get contacted</Button>
+                      <Button className="btn-send">{t.getContacted}</Button>
                     </div>
                   </div>
                 </Col>

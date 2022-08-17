@@ -665,10 +665,11 @@ a.nav-link {
 }
 .cover {
   height: 300px;
-  background-image: url("../assets/cover.svg");
+  background-image: url("../assets/gundisfoto.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+  object-fit: cover;
 }
 .Calculator {
   height: 548px;
@@ -708,7 +709,7 @@ a.nav-link {
 .fuul__width img {
   object-fit: cover;
 }
-.full_width .desktop img{
+.full_width .desktop img {
   height: 390px !important;
 }
 .projects__image img {
@@ -1879,10 +1880,9 @@ flickity-enabled {
   transition: 1s ease-in-out left !important;
 }
 
-
 .overlay {
-  background-image: linear-gradient(to bottom right,#000000,#242424);
-  opacity: .8;
+  background-image: linear-gradient(to bottom right, #000000, #242424);
+  opacity: 0.8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1895,16 +1895,32 @@ flickity-enabled {
   padding: 15% 32px;
   line-height: 1.5;
   text-align: center;
-  :last-child { margin-bottom: 0; }
-  h1 {font-size: 32pt; font-weight: bold; text-shadow: 0 0 .3em #000; margin: 0 0 1em;}
-  p {font-size: 11pt;text-shadow: 0 0 .3em #000;margin: 1em 0;}
-  a {color: #fff;}
+  :last-child {
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 32pt;
+    font-weight: bold;
+    text-shadow: 0 0 0.3em #000;
+    margin: 0 0 1em;
+  }
+  p {
+    font-size: 11pt;
+    text-shadow: 0 0 0.3em #000;
+    margin: 1em 0;
+  }
+  a {
+    color: #fff;
+  }
 }
 
-.innerContent{
+.innerContent {
   text-align: left;
   margin-top: 15%;
 }
+<<<<<<< Updated upstream
 .full_desktop{
   height: 390px !important;
 }
+=======
+>>>>>>> Stashed changes

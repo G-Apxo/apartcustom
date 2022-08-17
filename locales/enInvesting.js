@@ -23,7 +23,9 @@ export default {
   pmText:
     "We have also developed customer-tailored remote services that will simplify and facilitate apartment purchasing decisions for residents abroad. We will assist you in resolving legal issues remotely. We will provide you with an online consultation at a time convenient to you (taking into account the time difference). Remote services also apply to people who are not Georgian citizens. The company also has an interest-free installment plan, the terms of which are as follows: if you buy an apartment with us, you can use the 15-month interest-free installment plan, the down payment is 30% and the rest is distributed at the customer s request.",
   contactInfo: "Leave us your contact information and our team will reach out to you.",
+  aparttype: "Apartment type",
   name: "Name",
+  telnum: "Phone Number",
   company: "Company",
   email: "Email",
   subject: "Subject",

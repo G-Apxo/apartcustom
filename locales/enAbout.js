@@ -76,7 +76,7 @@ export default {
   //line break
   //line break
   tt17: "Sandro Kavelashvili",
-  tt17p: "junior Architect",
+  tt17p: "Junior Architect",
   //line break
   //line break
   tt18: "Liza Lazashvili",

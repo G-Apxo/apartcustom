@@ -300,7 +300,7 @@ export default function IndexPage() {
               <Image src={Team23} alt="banner immage" />
 
               <h3>{t.tt23} </h3>
-              <p>{t.tt2p}</p>
+              <p>{t.tt23p}</p>
             </Col>
             {/* <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team24} alt="banner immage" />
