@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/nav";
+import Nav from "../../components/nav";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
