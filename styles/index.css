@@ -1876,3 +1876,30 @@ flickity-enabled {
   -o-transition: 1s ease-in-out left !important;
   transition: 1s ease-in-out left !important;
 }
+
+
+.overlay {
+  background-image: linear-gradient(to bottom right,#000000,#242424);
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 15% 32px;
+  line-height: 1.5;
+  text-align: center;
+  :last-child { margin-bottom: 0; }
+  h1 {font-size: 32pt; font-weight: bold; text-shadow: 0 0 .3em #000; margin: 0 0 1em;}
+  p {font-size: 11pt;text-shadow: 0 0 .3em #000;margin: 1em 0;}
+  a {color: #fff;}
+}
+
+.innerContent{
+  text-align: left;
+  margin-top: 15%;
+}
