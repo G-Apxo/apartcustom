@@ -947,7 +947,33 @@ h2 {
 .mobile_menu {
   display: none;
 }
+.destkop__view{
+  display: block;
+}
+.mob__view{
+  display: none;
+}
+.goback{
+  display: block;
+}
 @media screen and (max-width: 568px) {
+  .innerContent{
+    margin-top: 60% !important;
+    width: 100% !important;
+  }
+  .goback{
+    display: none;
+  }
+  .mob__view{
+    display: block;
+  }
+  .desktop__view{
+    display: none;
+  }
+  .projects-floor-title{
+    font-size: 24px;
+    line-height: 25px;
+  }
   .parent_only_mobile {
     display: block;
   }
@@ -1755,6 +1781,10 @@ flickity-enabled {
   background-color: #cfd8dc;
 }
 @media screen and (max-width: 600px) {
+  .iframe__mobile{
+    width: 100% !important;
+    height: 250px !important;
+  }
   .desktop__menu {
     display: none;
   }
@@ -1879,10 +1909,10 @@ flickity-enabled {
 .carousel-inner > .item {
   position: relative;
   display: none;
-  -webkit-transition: 1s ease-in-out left !important;
-  -moz-transition: 1s ease-in-out left !important;
-  -o-transition: 1s ease-in-out left !important;
-  transition: 1s ease-in-out left !important;
+  -webkit-transition: 0.3s ease-in-out left !important;
+  -moz-transition: 0.3s ease-in-out left !important;
+  -o-transition: 0.3s ease-in-out left !important;
+  transition: 0.3s ease-in-out left !important;
 }
 
 .overlay {
@@ -1935,4 +1965,8 @@ flickity-enabled {
 }
 .projects--1rem {
   margin-top: 16px !important;
+}
+.taghi_smaller{
+  /* width: 90% !important;
+  min-width: 90% !important; */
 }
