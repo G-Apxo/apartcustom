@@ -23,7 +23,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
-    <div>
+    <>
       <Navwhite mode={mode} setMode={setMode} />
       <Carousel fade style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
@@ -276,6 +276,6 @@ export default function IndexPage() {
       </Container>
 
       <Footer />
-    </div>
+    </>
   );
 }

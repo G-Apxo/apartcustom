@@ -10,7 +10,11 @@ import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-
+import Panorama1 from "../assets/projectsInside/panorama1.jpg"
+import Panorama2 from "../assets/projectsInside/panorama2.jpg"
+import Panorama3 from "../assets/projectsInside/panorama3.jpg"
+import Panorama4 from "../assets/projectsInside/panorama4.jpg"
+import Panorama5 from "../assets/projectsInside/panorama5.jpg"
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -219,6 +223,30 @@ export default function IndexPage() {
               height="600px"
               // style="border:none;"
             ></iframe>
+          </Col>
+          <Col xs="12" className="mt-120">
+            <Row>
+              <Col xs="4">
+              <Image src={Panorama3} className="" />
+              
+              </Col>
+              <Col xs="8">
+                <Row>
+                  <Col xs="6">
+                  <Image src={Panorama2} className="" />
+                  </Col>
+                  <Col xs="6">
+                  <Image src={Panorama1} className="" />
+                    </Col>
+                    <Col xs="6">
+                    <Image src={Panorama4} className="" />
+                    </Col>
+                    <Col xs="6">
+                    <Image src={Panorama5} className="" />
+                    </Col>
+                </Row>
+              </Col>
+            </Row>
           </Col>
         </Container>
       </div>

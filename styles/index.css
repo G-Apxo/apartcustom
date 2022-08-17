@@ -31,6 +31,8 @@ body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
   background-image: url("../assets/backgound.svg");
   background-repeat: no-repeat;
   background-repeat: repeat-y;
@@ -1902,4 +1904,7 @@ flickity-enabled {
 .innerContent{
   text-align: left;
   margin-top: 15%;
+}
+.full_desktop{
+  height: 390px !important;
 }
