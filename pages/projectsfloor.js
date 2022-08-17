@@ -205,13 +205,13 @@ export default function IndexPage() {
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
-                <iframe
-                  allowFullScreen
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  frameBorder="0"
-                  src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
+              <iframe
+                allowFullScreen
+                width="640"
+                height="480"
+                loading="lazy"
+                frameBorder="0"
+                src="https://62f2d553c8eb5826d9f1653b--chic-douhua-dc8cf2.netlify.app/"
                 ></iframe>
               </div>
             </Col>

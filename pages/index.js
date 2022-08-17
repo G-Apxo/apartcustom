@@ -28,7 +28,7 @@ export default function IndexPage() {
       <Carousel fade style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop muted playsInline className="video vid-bg">
+            <video loop autoPlay muted playsInline className="video vid-bg">
               <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -47,7 +47,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop muted playsInline className="video">
+            <video loop autoPlay muted playsInline className="video">
               <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -66,7 +66,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop muted playsInline className="video">
+            <video loop autoPlay muted playsInline className="video">
               <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -85,7 +85,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop muted playsInline className="video">
+            <video loop autoPlay muted playsInline className="video">
               <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -104,7 +104,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop muted playsInline className="video">
+            <video loop autoPlay muted playsInline className="video">
               <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>

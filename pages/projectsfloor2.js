@@ -15,7 +15,7 @@ import Panorama2 from "../assets/projectsInside/panorama2.jpg"
 import Panorama3 from "../assets/projectsInside/panorama3.jpg"
 import Panorama4 from "../assets/projectsInside/panorama4.jpg"
 import Panorama5 from "../assets/projectsInside/panorama5.jpg"
-export default function IndexPage1() {
+export default function IndexPage2() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
@@ -211,7 +211,7 @@ export default function IndexPage1() {
                 height="480"
                 loading="lazy"
                 frameBorder="0"
-                src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
+                src="https://62f2db7ad9a68729ee046f70--genuine-sprite-2fa12c.netlify.app/"
                 ></iframe>
               </div>
             </Col>
