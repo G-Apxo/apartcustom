@@ -16,6 +16,7 @@ const Blogpost = () => {
       method: "post",
       url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
       headers: {
+        "Access-Control-Allow-Origin": "*",
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Content-Type": "application/json",
       },
