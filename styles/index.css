@@ -693,7 +693,7 @@ a.nav-link {
 .project--see {
   display: block;
   border-bottom: 1px solid black;
-  max-width: 60%;
+  max-width: 38%;
   margin-bottom: 10px;
   line-height: 2rem;
 }

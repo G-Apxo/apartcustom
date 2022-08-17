@@ -3,18 +3,18 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useRef } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
-import en from "../locales/enProjectFloor";
-import ru from "../locales/ruProjectsFloor";
-import ge from "../locales/geProjectsFloor";
+import en from "../locales/enTaghi";
+import ru from "../locales/ruTaghi";
+import ge from "../locales/geTaghi";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/panorama1.jpg"
-import Panorama2 from "../assets/projectsInside/panorama2.jpg"
-import Panorama3 from "../assets/projectsInside/panorama3.jpg"
-import Panorama4 from "../assets/projectsInside/panorama4.jpg"
-import Panorama5 from "../assets/projectsInside/panorama5.jpg"
+import Taghi1 from "../assets/projectsInside/taghi1.jpg";
+import Taghi2 from "../assets/projectsInside/taghi2.jpg";
+import Taghi3 from "../assets/projectsInside/taghi3.jpg";
+import Taghi4 from "../assets/projectsInside/taghi4.jpg";
+import Taghi5 from "../assets/projectsInside/taghi5.jpg";
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -167,51 +167,32 @@ export default function IndexPage1() {
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
                   <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                    <h5 className="advantages__sub_content">{t.bigBrain2}</h5>
                   </Col>
                   <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                    <h5 className="advantages__sub_content">{t.bigBrain3}</h5>
                   </Col>
                 </Row>
+
                 <Row>
                   <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
                     {t.first}
                   </h5>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                    {t.first}
-                  </h5>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                  <Col xs="6">
+                    <h5 className="advantages__sub_content">{t.bigBrain7}</h5>
                   </Col>
                 </Row>
               </Col>
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
-              <iframe
-                allowFullScreen
-                width="640"
-                height="480"
-                loading="lazy"
-                frameBorder="0"
-                src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
+                <iframe
+                  allowFullScreen
+                  width="640"
+                  height="480"
+                  loading="lazy"
+                  frameBorder="0"
+                  src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
                 ></iframe>
               </div>
             </Col>
@@ -227,23 +208,22 @@ export default function IndexPage1() {
           <Col xs="12" className="mt-120">
             <Row>
               <Col xs="4">
-              <Image src={Panorama3} className="" />
-              
+                <Image src={Taghi1} className="" />
               </Col>
               <Col xs="8">
                 <Row>
                   <Col xs="6">
-                  <Image src={Panorama2} className="" />
+                    <Image src={Taghi2} className="" />
                   </Col>
                   <Col xs="6">
-                  <Image src={Panorama1} className="" />
-                    </Col>
-                    <Col xs="6">
-                    <Image src={Panorama4} className="" />
-                    </Col>
-                    <Col xs="6">
-                    <Image src={Panorama5} className="" />
-                    </Col>
+                    <Image src={Taghi3} className="" />
+                  </Col>
+                  <Col xs="6">
+                    <Image src={Taghi4} className="" />
+                  </Col>
+                  <Col xs="6">
+                    <Image src={Taghi5} className="" />
+                  </Col>
                 </Row>
               </Col>
             </Row>
