@@ -46,7 +46,7 @@ export default function IndexPage() {
                 </Col>
               </Row>
             </Container>
-            <Container className="mt-60 mb-120">
+            <Container className="mt-120 mb-120">
               <Row className="mb-60">
                 <h3>{t.services}</h3>
               </Row>
@@ -112,10 +112,10 @@ export default function IndexPage() {
               <Row className="special-margin-row justify-content-between">
                 <Col xxl="6" xs="12" lg="6" md="6" sm="6" xl="6">
                   <h3>{t.pmAndRs}</h3>
-                  <p className="investing-title_subtext">{t.pmText}</p>
+                  <p className="investing-title_subtext mt-30">{t.pmText}</p>
                 </Col>
                 <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
-                  <Col xs="12" className="col-5 mt-60">
+                  <Col xs="12" className="col-5 mb-120">
                     <p className="section1-form-text">{t.contactInfo}</p>
                     <h4 className="section-1-form-subtext">{t.aparttype}</h4>
                     <Row>

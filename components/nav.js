@@ -101,14 +101,14 @@ export default function Nav({ mode, setMode }) {
                     defaultValue={locale}
                     className="form-select lang__drop menu__item"
                   >
+                    <option className="text-dark" value="ge">
+                      GE
+                    </option>
                     <option className="text-dark" value="en">
                       EN
                     </option>
                     <option className="text-dark" value="ru">
                       RU
-                    </option>
-                    <option className="text-dark" value="ge">
-                      GE
                     </option>
                   </select>
                 </li>
@@ -181,14 +181,14 @@ export default function Nav({ mode, setMode }) {
 
           <Col xs="2" className="d-flex justify-content-around">
             <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop ">
+              <option className="" value="ge">
+                GE
+              </option>
               <option className="" value="en">
                 EN
               </option>
               <option className="" value="ru">
                 RU
-              </option>
-              <option className="" value="ge">
-                GE
               </option>
             </select>
             <Form>
