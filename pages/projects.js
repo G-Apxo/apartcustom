@@ -19,6 +19,9 @@ import Bukhaidze3 from "../assets/projectslider/bukhadize3.jpg";
 import Taghi1 from "../assets/projectslider/taghi1.jpg";
 import Tagh2 from "../assets/projectslider/taghi2.jpg";
 import Tagh3 from "../assets/projectslider/taghi3.jpg";
+import Ezo1 from "../assets/projectslider/ezo1.jpg";
+import Ezo2 from "../assets/projectslider/ezo2.jpg";
+import Ezo3 from "../assets/projectslider/ezo3.jpg";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -94,6 +97,52 @@ export default function IndexPage() {
             <div className="parent_only_desktop">
               <div className="test1313">
                 <Container className="container-borderer">
+                <Row>
+                    <Col xs="3" className="">
+                      <Link href="/projectsfloor">
+                        <div className="mb-5 projects--title cursor">
+                          <p>{t.prj1d}</p>
+                          <h3 className="mt-3">{t.prj1t}</h3>
+                        </div>
+                      </Link>
+                      <div className="projects--legend__top projects--texts__basics">
+                        <p className="projects--texts__op">{t.prj1l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                      </div>
+                      <div className="projects--legend__bot">
+                        <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                      </div>
+                      <div>
+                        <Link href="/projectsfloor">
+                          <i className="project--see cursor  mt-5">
+                            {t.viewPrj} <Image src={Vector} />
+                          </i>
+                        </Link>
+                      </div>
+                    </Col>
+                    <Col className="border__left"></Col>
+                    <Col xs="8" className="projects-margin-fixer">
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                  </Row>
+                </Container>
+                <Container className="container-borderer">
+                
                   <Row>
                     <Col xs="3" className="">
                       <Link href="/projectsfloor">
@@ -122,16 +171,16 @@ export default function IndexPage() {
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
-                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                          <Image src={Ezo1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
-                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                            <Image src={Ezo2} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
-                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
+                            <Image src={Ezo3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
