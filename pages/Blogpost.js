@@ -3,33 +3,34 @@ import Nav from "../components/nav";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import Footer from "../components/footer";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const Blogpost = () => {
   const { register, handleSubmit, getValues } = useForm();
 
-  const onSubmit = () => {
-    let testData = getValues();
-    var axios = require("axios");
-    testData = JSON.stringify();
+  const onSubmit = data => {
+    // let testData = getValues();
+    console.log(data);
+    // var config = {
+    //   method: "POST",
+    //   url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
+    //   headers: {
+    //     "Access-Control-Allow-Origin": "*",
+    //     Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+    //     "Content-Type": "application/json",
+    //   },
+    //   data: testData,
+    // };
 
-    var config = {
-      method: "post",
-      url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
-        "Content-Type": "application/json",
-      },
-      data: testData,
-    };
+    // axios(config)
+    //   .then(function (response) {
+    //     console.log(JSON.stringify(response.testData));
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
 
-    axios(config)
-      .then(function (response) {
-        console.log(JSON.stringify(response.testData));
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    axios.post("https://3e4c-188-169-132-246.ngrok.io/api/blog", data);
   };
 
   return (
