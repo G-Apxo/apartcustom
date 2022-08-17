@@ -1,0 +1,14 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.editorWrapper {
+  flex: 1;
+}
+
+.editor {
+  height: 100%;
+  margin-bottom: 16px;
+}
