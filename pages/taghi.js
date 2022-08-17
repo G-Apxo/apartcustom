@@ -188,11 +188,11 @@ export default function IndexPage1() {
               <div className="">
                 <iframe
                   allowFullScreen
-                  width="640"
-                  height="480"
+                  width="850"
+                  height="600"
                   loading="lazy"
                   frameBorder="0"
-                  src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
+                  src="https://62fd4f37f9e47a000991e35d--fluffy-fairy-e91678.netlify.app/"
                 ></iframe>
               </div>
             </Col>
