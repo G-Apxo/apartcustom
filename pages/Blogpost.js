@@ -1,84 +1,82 @@
-import React from 'react'
-import Nav from '../components/nav'
+import React from "react";
+import Nav from "../components/nav";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
-import Footer from '../components/footer'
+import Footer from "../components/footer";
+import { useForm } from "react-hook-form";
+
 const Blogpost = () => {
+  const { register, handleSubmit, getValues } = useForm();
+
+  const onSubmit = () => {
+    let testData = getValues();
+    var axios = require("axios");
+    testData = JSON.stringify();
+
+    var config = {
+      method: "post",
+      url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
+      headers: {
+        Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+        "Content-Type": "application/json",
+      },
+      data: testData,
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.testData));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
   return (
     <div>
-        <Nav/>
-        <Container>
-            <Col>
-            <Form>
-                <Row className="mt-5">
-                    <Col xs="6">
-                    <div className="md-form mb-0">
-                        <Form.Control
-                        type="lang"
-                        id="lang"
-                        name="lang"
-                        className="form-control input__main"
-                        placeholder="lang"
-                        />
-                    </div>
-                    </Col>
-                    <Col xs="6">
-                    <div className="md-form mb-0">
-                        <Form.Control
-                        type="mainImage"
-                        id="mainImage"
-                        name="mainImage"
-                        className="form-control input__main"
-                        placeholder="mainImage"
-                        />
-                    </div>
-                    </Col>
-                    <Col xs="6">
-                    <div className="md-form mb-0">
-                        <Form.Control
-                        type="title"
-                        id="title"
-                        name="title"
-                        className="form-control input__main"
-                        placeholder="title"
-                        />
-                    </div>
-                    </Col>
-                    <Col xs="6">
-                    <div className="md-form mb-0">
-                        <Form.Control
-                        type="callonicalUrl"
-                        id="callonicalUrl"
-                        name="callonicalUrl"
-                        className="form-control input__main"
-                        placeholder="callonicalUrl"
-                        />
-                    </div>
-                    </Col>
-                    <Col xs="12">
-                    <div className="md-form mb-20">
-                        <Form.Control
-                        as="textarea"
-                        type="text"
-                        id="text"
-                        className="form-text-area"
-                        name="text"
-                        // className="form-control input__main"
-                        placeholder="description"
-                        cols={39}
-                        rows={3}
-                        />
-                    </div>
-                    </Col>
-                    <Col xs="12">
-                    <Button className="btn-send">Post a Blog</Button>
-                    </Col>
-                </Row>
-            </Form>
-            </Col>
-        </Container>
-        <Footer />
-    </div>
-  )
-}
+      <Nav />
+      <Container>
+        <Col>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {/* <Select name="gender" options={["female", "male", "other"]} /> */}
+            <select {...register("lang")}>
+              <option value=""></option>
+              <option value="GE">GE</option>
+              <option value="EN">EN</option>
+              <option value="RU">RU</option>
+            </select>
+            <input {...register("mainImage")} />
+            <input {...register("title")} />
+            <input {...register("callonicalUrl")} />
+            <textarea {...register("desc")} />
+            <input type="submit" />
+          </form>
+          {/* <Form onSubmit={onSubmit}>
+          <Input name="firstName" />
+          <Input name="lastName" />
+          <Select name="gender" options={["female", "male", "other"]} />
 
-export default Blogpost
+          <Input type="submit" value="Submit" />
+        </Form> */}
+        </Col>
+      </Container>
+      <Footer />
+    </div>
+  );
+};
+
+// export function Input({ register, name, ...rest }) {
+//   return <input {...register(name)} {...rest} />;
+// }
+
+// export function Select({ register, options, name, ...rest }) {
+//   return (
+//     <select {...register(name)} {...rest}>
+//       {options.map(value => (
+//         <option key={value} value={value}>
+//           {value}
+//         </option>
+//       ))}
+//     </select>
+//   );
+// }
+export default Blogpost;
