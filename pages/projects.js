@@ -10,15 +10,15 @@ import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
 import Footer from "../components/footer";
-import Oldcity1 from "../assets/projectslider/OLD CITY 1.jpg"
-import Oldcity2 from "../assets/projectslider/OLD CITY 2.jpg"
-import Oldcity3 from "../assets/projectslider/OLD CITY 3.jpg"
-import Bukhaidze1 from "../assets/projectslider/bukhaidze1.jpg"
-import Bukhaidze2 from "../assets/projectslider/bukhadize2.jpg"
-import Bukhaidze3 from "../assets/projectslider/bukhadize3.jpg"
-import Taghi1 from "../assets/projectslider/taghi1.jpg"
-import Tagh2 from "../assets/projectslider/taghi2.jpg"
-import Tagh3 from "../assets/projectslider/taghi3.jpg"
+import Oldcity1 from "../assets/projectslider/OLD CITY 1.jpg";
+import Oldcity2 from "../assets/projectslider/OLD CITY 2.jpg";
+import Oldcity3 from "../assets/projectslider/OLD CITY 3.jpg";
+import Bukhaidze1 from "../assets/projectslider/bukhaidze1.jpg";
+import Bukhaidze2 from "../assets/projectslider/bukhadize2.jpg";
+import Bukhaidze3 from "../assets/projectslider/bukhadize3.jpg";
+import Taghi1 from "../assets/projectslider/taghi1.jpg";
+import Tagh2 from "../assets/projectslider/taghi2.jpg";
+import Tagh3 from "../assets/projectslider/taghi3.jpg";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -63,7 +63,7 @@ export default function IndexPage() {
                           <Link href="/projectsfloor">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1t}</h3>
+                              <h3>{t.prj1c}</h3>
                             </div>
                           </Link>
                         </Col>
@@ -172,16 +172,16 @@ export default function IndexPage() {
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
-                        <Image src={Taghi1} alt="banner immage" className="full_width" />
+                          <Image src={Taghi1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
-                          <Image src={Tagh2} alt="banner immage" className="full_width" />
+                            <Image src={Tagh2} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
-                          <Image src={Tagh3} alt="banner immage" className="full_width" />
+                            <Image src={Tagh3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -239,7 +239,6 @@ export default function IndexPage() {
                 </Container>
               </div>
             </div>
-
           </div>
         </div>
       </div>
