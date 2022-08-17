@@ -16,7 +16,7 @@ const Blogpost = () => {
     //   url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
     //   headers: {
     //     "Access-Control-Allow-Origin": "*",
-    //     Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+    // Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
     //     "Content-Type": "application/json",
     //   },
     //   data: testData,
@@ -30,7 +30,9 @@ const Blogpost = () => {
     //     console.log(error);
     //   });
 
-    axios.post("https://3e4c-188-169-132-246.ngrok.io/api/blog", data);
+    axios.post("https://cbab-188-169-132-246.ngrok.io/api/blog", data, {
+      Authorization: "YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+    });
   };
 
   return (
@@ -41,15 +43,15 @@ const Blogpost = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* <Select name="gender" options={["female", "male", "other"]} /> */}
             <select {...register("lang")}>
-              <option value=""></option>
-              <option value="GE">GE</option>
-              <option value="EN">EN</option>
-              <option value="RU">RU</option>
+              <option value="ge">GE</option>
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
             </select>
             <input {...register("mainImage")} />
             <input {...register("title")} />
             <input {...register("callonicalUrl")} />
-            <textarea {...register("desc")} />
+            <textarea {...register("text")} />
+            <textarea {...register("url")} />
             <input type="submit" />
           </form>
           {/* <Form onSubmit={onSubmit}>
