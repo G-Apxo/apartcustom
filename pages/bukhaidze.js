@@ -185,14 +185,14 @@ export default function IndexPage3() {
               </Col>
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
-              <div className="">
+            <div className="">
                 <iframe
                   allowFullScreen
-                  width="640"
-                  height="480"
+                  width="850"
+                  height="600"
                   loading="lazy"
                   frameBorder="0"
-                  src="https://62f2db7ad9a68729ee046f70--genuine-sprite-2fa12c.netlify.app/"
+                  src="https://62fd551c99358d0009e6e11b--genuine-sprite-2fa12c.netlify.app/"
                 ></iframe>
               </div>
             </Col>
