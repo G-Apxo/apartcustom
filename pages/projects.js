@@ -43,7 +43,7 @@ export default function IndexPage() {
               <div className="test1313">
                 <Container className="container-borderer">
                   <Row>
-                    <Col xs="12" className="projects-margin-fixer">
+                    <Col xs="12" className="">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width  ">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -94,12 +94,177 @@ export default function IndexPage() {
                 </Container>
               </div>
             </div>
+            <div className="parent_only_mobile mt-5">
+              <div className="test1313">
+                <Container className="container-borderer">
+                  <Row>
+                    <Col xs="12" className="">
+                    <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width ">
+                          <Image src={Ezo1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Ezo2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Ezo3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col xs="12">
+                      <Row>
+                        <Col xs="12">
+                          <Link href="/oldcity">
+                            <div className="mb-5 projects--title cursor">
+                              <p>{t.prj1d}</p>
+                              <h3>{t.prj1c}</h3>
+                            </div>
+                          </Link>
+                        </Col>
+                        <Col xs="6">
+                          <div className=" projects--texts__basics">
+                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                            <Link href="/oldcity">
+                              <i className="project--see cursor  mt-5">
+                                {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
+                              </i>
+                            </Link>
+                          </div>
+                        </Col>
+                        <Col xs="6">
+                          <div>
+                            <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                            <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                          </div>
+                          <div></div>
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </div>
+            <div className="parent_only_mobile mt-5">
+              <div className="test1313">
+                <Container className="container-borderer">
+                  <Row>
+                    <Col xs="12" className="">
+                    <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width ">
+                          <Image src={Taghi1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Tagh2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Tagh3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col xs="12">
+                      <Row>
+                        <Col xs="12">
+                          <Link href="/oldcity">
+                            <div className="mb-5 projects--title cursor">
+                              <p>{t.prj1d}</p>
+                              <h3>{t.prj1c}</h3>
+                            </div>
+                          </Link>
+                        </Col>
+                        <Col xs="6">
+                          <div className=" projects--texts__basics">
+                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                            <Link href="/oldcity">
+                              <i className="project--see cursor  mt-5">
+                                {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
+                              </i>
+                            </Link>
+                          </div>
+                        </Col>
+                        <Col xs="6">
+                          <div>
+                            <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                            <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                          </div>
+                          <div></div>
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </div>
+            <div className="parent_only_mobile mt-5">
+              <div className="test1313">
+                <Container className="container-borderer">
+                  <Row>
+                    <Col xs="12" className="">
+                    <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width ">
+                          <Image src={Bukhaidze1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Bukhaidze2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width ">
+                          <Row>
+                            <Image src={Bukhaidze3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col xs="12">
+                      <Row>
+                        <Col xs="12">
+                          <Link href="/oldcity">
+                            <div className="mb-5 projects--title cursor">
+                              <p>{t.prj1d}</p>
+                              <h3>{t.prj1c}</h3>
+                            </div>
+                          </Link>
+                        </Col>
+                        <Col xs="6">
+                          <div className=" projects--texts__basics">
+                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                            <Link href="/oldcity">
+                              <i className="project--see cursor  mt-5">
+                                {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
+                              </i>
+                            </Link>
+                          </div>
+                        </Col>
+                        <Col xs="6">
+                          <div>
+                            <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                            <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                          </div>
+                          <div></div>
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </div>
             <div className="parent_only_desktop">
               <div className="test1313">
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/oldcity">
+                      <Link href="/ezo">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj1d}</p>
                           <h3 className="mt-3">{t.prj1t}</h3>
@@ -114,7 +279,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                       </div>
                       <div>
-                        <Link href="/oldcity">
+                        <Link href="/ezo">
                           <i className="project--see cursor  mt-5">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -146,7 +311,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ezo">
+                      <Link href="/taghi">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
                           <h3 className="mt-3">{t.prj2t}</h3>
@@ -161,7 +326,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ezo">
+                        <Link href="/taghi">
                           <i className="project--see cursor  mt-5">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
