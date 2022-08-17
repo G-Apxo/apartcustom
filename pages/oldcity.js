@@ -199,14 +199,15 @@ export default function IndexPage() {
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
-                <iframe
-                  allowFullScreen
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  frameBorder="0"
-                  src="https://62f2d553c8eb5826d9f1653b--chic-douhua-dc8cf2.netlify.app/"
-                ></iframe>
+              <iframe
+                allowFullScreen
+                width="850"
+                height="600"
+                loading="lazy"
+                frameBorder="0"
+                src="https://chic-douhua-dc8cf2.netlify.app/">
+
+                </iframe>
               </div>
             </Col>
           </Row>
@@ -232,9 +233,18 @@ export default function IndexPage() {
                     <Image src={Panorama1} className="" />
                   </Col>
                   <Col xs="6">
+
                     <Image src={Panorama4} className="" />
                   </Col>
                   <Col xs="6">
+
+                  <Image src={Panorama1} className="" />
+                    </Col>
+                    <Col xs="6" className="mt-3">
+                    <Image src={Panorama4} className="" />
+                    </Col>
+                    <Col xs="6" className="mt-3">
+
                     <Image src={Panorama5} className="" />
                   </Col>
                 </Row>

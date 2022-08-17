@@ -25,10 +25,15 @@ export default function IndexPage() {
   return (
     <>
       <Navwhite mode={mode} setMode={setMode} />
-      <Carousel fade style={{ opacity: 1 }} className="carousle__inner">
+      <Carousel
+        loop={true}
+        fade
+        style={{ opacity: 1 }}
+        className="carousle__inner"
+      >
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted playsInline className="video vid-bg">
+            <video loop autoPlay muted className="video vid-bg">
               <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -47,7 +52,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted playsInline className="video">
+            <video loop autoPlay muted className="video">
               <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -66,7 +71,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted playsInline className="video">
+            <video loop autoPlay muted className="video">
               <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -85,8 +90,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted playsInline className="video">
-              <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted className="video">
+              <source
+                src="https://apart.ge/Bukhaidze_6_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -104,8 +112,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted playsInline className="video">
-              <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted className="video">
+              <source
+                src="https://apart.ge/Bukhaidze_6a_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -144,16 +155,22 @@ export default function IndexPage() {
               <Row>
                 <Col xs="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`}>
-                        <Form.Check inline label="Studio" name="group1" type={type} id={`inline-${type}-1`} />
+                        <Form.Check
+                          inline
+                          label="Studio"
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-1`}
+                        />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`} className=" home--inputs">
                         <Form.Check
                           className="text-nowrap"
@@ -169,7 +186,7 @@ export default function IndexPage() {
                 </Col>
                 <Col xs="6" className="col-6">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`} className="home--inputs">
                         <Form.Check
                           inline
@@ -184,7 +201,12 @@ export default function IndexPage() {
                 </Col>
                 <Col className="mb-60">
                   <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                    <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <Form
+                      id="contact-form"
+                      name="contact-form"
+                      action="mail.php"
+                      method="POST"
+                    >
                       <Col xs="12">
                         <div className="md-form mb-0">
                           <Form.Control
@@ -255,17 +277,29 @@ export default function IndexPage() {
             <Row className="justify-content-between">
               <div className="col-4 ">
                 <div className="partners">
-                  <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Apart_showroom}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
               <div className="col-4">
                 <div className="partners">
-                  <Image src={Malongo} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Malongo}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
               <div className="col-4 d-flex justify-content-end">
                 <div className="partners">
-                  <Image src={Tbc} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Tbc}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
             </Row>
