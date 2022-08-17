@@ -10,7 +10,12 @@ import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
 import Footer from "../components/footer";
-
+import Oldcity1 from "../assets/projectslider/OLD CITY 1.jpg"
+import Oldcity2 from "../assets/projectslider/OLD CITY 2.jpg"
+import Oldcity3 from "../assets/projectslider/OLD CITY 3.jpg"
+import Bukhaidze1 from "../assets/projectslider/bukhaidze1.jpg"
+import Bukhaidze2 from "../assets/projectslider/bukhadize2.jpg"
+import Bukhaidze3 from "../assets/projectslider/bukhadize3.jpg"
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -34,17 +39,17 @@ export default function IndexPage() {
                   <Row>
                     <Col xs="12" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
-                          <Image src={Slide1} alt="banner immage" className="full_width" />
+                        <Carousel.Item className="fuul__width  ">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width">
                           <Row>
-                            <Image src={Slide1} alt="banner immage " className="full_width" />
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width">
                           <Row>
-                            <Image src={Slide1} alt="banner immage" className="full_width" />
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -113,17 +118,17 @@ export default function IndexPage() {
                     <Col className="border__left"></Col>
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
-                          <Image src={Slide1} alt="banner immage" className="full_width" />
+                        <Carousel.Item className="fuul__width desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
-                            <Image src={Slide1} alt="banner immage " className="full_width" />
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
-                            <Image src={Slide1} alt="banner immage" className="full_width" />
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -163,15 +168,15 @@ export default function IndexPage() {
                     <Col className="border__left"></Col>
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Image src={Slide1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage" className="full_width" />
                           </Row>
@@ -212,15 +217,15 @@ export default function IndexPage() {
                     <Col className="border__left"></Col>
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Image src={Slide1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage" className="full_width" />
                           </Row>
@@ -261,15 +266,15 @@ export default function IndexPage() {
                     <Col className="border__left"></Col>
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Image src={Slide1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage" className="full_width" />
                           </Row>
@@ -310,15 +315,15 @@ export default function IndexPage() {
                     <Col className="border__left"></Col>
                     <Col xs="8" className="projects-margin-fixer">
                       <Carousel style={{ opacity: 1 }}>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Image src={Slide1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage " className="full_width" />
                           </Row>
                         </Carousel.Item>
-                        <Carousel.Item className="fuul__width">
+                        <Carousel.Item className="fuul__width desktop">
                           <Row>
                             <Image src={Slide1} alt="banner immage" className="full_width" />
                           </Row>

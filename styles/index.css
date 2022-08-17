@@ -706,6 +706,9 @@ a.nav-link {
 .fuul__width img {
   object-fit: cover;
 }
+.full_width .desktop img{
+  height: 390px !important;
+}
 .projects__image img {
   object-fit: cover;
   width: 100%;
