@@ -1,9 +1,9 @@
-<svg width="1194" height="2048" viewBox="0 0 1194 2048" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1980" height="2048" viewBox="0 0 1194 2048" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-<line opacity="0.08" x1="193.5" y1="148" x2="193.5" y2="2048" stroke="#121927"/><line opacity="0.08" x1="526.5" y1="148" x2="526.5" y2="2048" stroke="#121927"/><line opacity="0.08" x1="873.5" y1="148" x2="873.5" y2="2048" stroke="#121927"/>
-
-
-<line opacity="0.08" x1="1193.5" y1="148" x2="1193.5" y2="2048" stroke="#121927"/><line y2="2122"/>
+<line opacity="0.08" x1="193.5" y1="148" x2="193.5" y2="2048" stroke="#121927"/>
+<line opacity="0.08" x1="526.5" y1="148" x2="526.5" y2="2048" stroke="#121927"/>
+<line opacity="0.08" x1="873.5" y1="148" x2="873.5" y2="2048" stroke="#121927"/>
+<line opacity="0.08" x1="1193.5" y1="148" x2="1193.5" y2="2048" stroke="#121927"/>
 
 
 <line/></svg>
