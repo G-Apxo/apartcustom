@@ -1923,3 +1923,9 @@ flickity-enabled {
 .full_desktop {
   height: 390px !important;
 }
+
+.whitespacerow h5:last-child {
+  white-space: nowrap;
+}
+.whitespacerow div {
+}

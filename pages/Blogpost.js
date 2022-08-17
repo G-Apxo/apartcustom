@@ -11,24 +11,6 @@ const Blogpost = () => {
   const onSubmit = data => {
     // let testData = getValues();
     console.log(data);
-    // var config = {
-    //   method: "POST",
-    //   url: "https://3e4c-188-169-132-246.ngrok.io/api/blog",
-    //   headers: {
-    //     "Access-Control-Allow-Origin": "*",
-    // Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
-    //     "Content-Type": "application/json",
-    //   },
-    //   data: testData,
-    // };
-
-    // axios(config)
-    //   .then(function (response) {
-    //     console.log(JSON.stringify(response.testData));
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
 
     axios.post("https://cbab-188-169-132-246.ngrok.io/api/blog", data, {
       Authorization: "YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",

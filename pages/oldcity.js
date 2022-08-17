@@ -10,11 +10,11 @@ import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/panorama1.jpg"
-import Panorama2 from "../assets/projectsInside/panorama2.jpg"
-import Panorama3 from "../assets/projectsInside/panorama3.jpg"
-import Panorama4 from "../assets/projectsInside/panorama4.jpg"
-import Panorama5 from "../assets/projectsInside/panorama5.jpg"
+import Panorama1 from "../assets/projectsInside/panorama1.jpg";
+import Panorama2 from "../assets/projectsInside/panorama2.jpg";
+import Panorama3 from "../assets/projectsInside/panorama3.jpg";
+import Panorama4 from "../assets/projectsInside/panorama4.jpg";
+import Panorama5 from "../assets/projectsInside/panorama5.jpg";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -47,8 +47,8 @@ export default function IndexPage() {
               <Image src={Taghi} className="Taghi" />
             </Col>
             <Col xs="4">
-              <h3 className="projects-floor-title">{t.chooseApart}</h3>
-              <p>{t.chooseFloor}</p>
+              {/* <h3 className="projects-floor-title">{t.chooseApart}</h3>
+              <p>{t.chooseFloor}</p> */}
             </Col>
           </Row>
           <Row className="justify-content-between mt-5">
@@ -63,12 +63,12 @@ export default function IndexPage() {
               <h3 className="projects-floor-yard">{t.esm}</h3>
             </Col>
             <Col xs="4">
-              <Form.Select aria-label="Default select example">
+              {/* <Form.Select aria-label="Default select example">
                 <option>{t.chooseFloor}</option>
                 <option value="1">{t.chooseOne}</option>
                 <option value="2">{t.chooseTwo}</option>
                 <option value="3">{t.chooseThree}</option>
-              </Form.Select>
+              </Form.Select> */}
             </Col>
           </Row>
           <Col xs="12" className="mt-5">
@@ -158,7 +158,7 @@ export default function IndexPage() {
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
-                <Row>
+                <Row className="whitespacerow">
                   <h3 className="advanteges__main_title">{t.adv}</h3>
                   <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
                     {t.first}
@@ -167,38 +167,32 @@ export default function IndexPage() {
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
                   <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                    <h5 className="advantages__sub_content">{t.bigBrain2}</h5>
                   </Col>
                   <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                    <h5 className="advantages__sub_content">{t.bigBrain3}</h5>
+                  </Col>
+                </Row>
+                <Row className="whitespacerow">
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first2}
+                  </h5>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain4}</h5>
+                  </Col>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain5}</h5>
+                  </Col>
+                  <Col xs="2">
+                    <h5 className="advantages__sub_content">{t.bigBrain6}</h5>
                   </Col>
                 </Row>
                 <Row>
                   <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                    {t.first}
+                    {t.first2}
                   </h5>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                    {t.first}
-                  </h5>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
+                  <Col xs="6">
+                    <h5 className="advantages__sub_content">{t.bigBrain7}</h5>
                   </Col>
                 </Row>
               </Col>
@@ -227,23 +221,22 @@ export default function IndexPage() {
           <Col xs="12" className="mt-120">
             <Row>
               <Col xs="4">
-              <Image src={Panorama3} className="" />
-              
+                <Image src={Panorama3} className="" />
               </Col>
               <Col xs="8">
                 <Row>
                   <Col xs="6">
-                  <Image src={Panorama2} className="" />
+                    <Image src={Panorama2} className="" />
                   </Col>
                   <Col xs="6">
-                  <Image src={Panorama1} className="" />
-                    </Col>
-                    <Col xs="6">
+                    <Image src={Panorama1} className="" />
+                  </Col>
+                  <Col xs="6">
                     <Image src={Panorama4} className="" />
-                    </Col>
-                    <Col xs="6">
+                  </Col>
+                  <Col xs="6">
                     <Image src={Panorama5} className="" />
-                    </Col>
+                  </Col>
                 </Row>
               </Col>
             </Row>
