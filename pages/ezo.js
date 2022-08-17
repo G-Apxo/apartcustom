@@ -193,11 +193,11 @@ export default function IndexPage2() {
               <div className="">
                 <iframe
                   allowFullScreen
-                  width="640"
-                  height="480"
+                  width="850"
+                  height="600"
                   loading="lazy"
                   frameBorder="0"
-                  src="https://62f2db7ad9a68729ee046f70--genuine-sprite-2fa12c.netlify.app/"
+                  src="https://62fd4ca20bd127049fb816fa--flourishing-jelly-8045ee.netlify.app/"
                 ></iframe>
               </div>
             </Col>
