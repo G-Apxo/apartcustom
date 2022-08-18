@@ -37,13 +37,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-                <Container className="innerContent">
-                  <p className="text-white">Architecture</p>
+              <Container className="innerContent">
+                <Col xl="4">
+                <p className="text-white">Apart Development</p>
                   <h2 className="text-white banner__header">
-                    Renewed Life <br /> of Old Tbilisi
+                  {t.sliderh}
                   </h2>
-                  <p className="text-white">Dream building for you</p>
-                  <p className="text-white">Read more </p>
+                  <p className="text-white"> {t.sliderd}</p>
+                 <a href="/oldcity"><p className="text-white">{t.readmore}</p></a>
+                </Col>
                 </Container>
               </div>
             </Container>
@@ -56,13 +58,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-                <Container className="innerContent">
-                  <p className="text-white">Architecture</p>
+              <Container className="innerContent">
+                <Col xl="4">
+                <p className="text-white">Apart Development</p>
                   <h2 className="text-white banner__header">
-                    Renewed Life <br /> of Old Tbilisi
+                  {t.ezoh}
                   </h2>
-                  <p className="text-white">Dream building for you</p>
-                  <p className="text-white">Read more </p>
+                  <p className="text-white"> {t.ezo}</p>
+                  <a href="/ezo"><p className="text-white">{t.readmore}</p></a>
+                </Col>
                 </Container>
               </div>
             </Container>
@@ -75,13 +79,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-                <Container className="innerContent">
-                  <p className="text-white">Architecture</p>
+              <Container className="innerContent">
+                <Col xl="4">
+                <p className="text-white">Apart Development</p>
                   <h2 className="text-white banner__header">
-                    Renewed Life <br /> of Old Tbilisi
+                  {t.taghih}
                   </h2>
-                  <p className="text-white">Dream building for you</p>
-                  <p className="text-white">Read more </p>
+                  <p className="text-white"> {t.taghi}</p>
+                  <a href="/taghi"><p className="text-white">{t.readmore}</p></a>
+                </Col>
                 </Container>
               </div>
             </Container>
@@ -97,13 +103,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-                <Container className="innerContent">
-                  <p className="text-white">Architecture</p>
+              <Container className="innerContent">
+                <Col xl="4">
+                <p className="text-white">Apart Development</p>
                   <h2 className="text-white banner__header">
-                    Renewed Life <br /> of Old Tbilisi
+                  {t.bukhaidzeh}
                   </h2>
-                  <p className="text-white">Dream building for you</p>
-                  <p className="text-white">Read more </p>
+                  <p className="text-white"> {t.bukhaidze}</p>
+                  <a href="/bukhaidze"><p className="text-white">{t.readmore}</p></a>
+                </Col>
                 </Container>
               </div>
             </Container>
@@ -119,13 +127,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-                <Container className="innerContent">
-                  <p className="text-white">Architecture</p>
+              <Container className="innerContent">
+                <Col xl="4">
+                <p className="text-white">Apart Development</p>
                   <h2 className="text-white banner__header">
-                    Renewed Life <br /> of Old Tbilisi
+                  {t.bukhaidzeh}
                   </h2>
-                  <p className="text-white">Dream building for you</p>
-                  <p className="text-white">Read more </p>
+                  <p className="text-white"> {t.bukhaidze}</p>
+                  <a href="/bukhaidze"><p className="text-white">{t.readmore}</p></a>
+                </Col>
                 </Container>
               </div>
             </Container>
