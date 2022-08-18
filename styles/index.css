@@ -1197,6 +1197,9 @@ h2 {
   color: #ffffff;
   opacity: 1;
 }
+.dark-mode .contact__platforms a {
+  color: white !important;
+}
 .form-select {
   font-size: 14px !important;
   margin-top: 1rem;
