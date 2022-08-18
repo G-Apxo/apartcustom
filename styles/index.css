@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url("../assets/backgound.svg");
+  /* background-image: url("../assets/backgound.svg"); */
   background-repeat: no-repeat;
   background-repeat: repeat-y;
   font-family: "rockridge";
