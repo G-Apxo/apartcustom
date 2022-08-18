@@ -26,8 +26,7 @@ export default function IndexPage() {
     <>
       <Navwhite mode={mode} setMode={setMode} />
       <Carousel
-        loop={true}
-        fade
+        slide={true}
         style={{ opacity: 1 }}
         className="carousle__inner"
       >
@@ -71,7 +70,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted className="video">
+            <video  loop autoPlay muted className="video">
               <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -90,7 +89,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
-            <video loop autoPlay muted className="video">
+            <video loop  autoPlay muted className="video">
               <source
                 src="https://apart.ge/Bukhaidze_6_Intro.mp4"
                 type="video/mp4"
