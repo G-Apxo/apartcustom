@@ -1,10 +1,10 @@
 export default {
-  title: "Comming Soon",
+  title: "პროექტები",
   prj1d: "მიმდინარე",
   prj1t: "Old City \n Panorama",
   prj1l: "ლოკაცია",
-  prj1lt: "მიხეილ ბუხაიძის #48",
-  viewPrj: "View Projects",
+  prj1lt: "მიხეილ ბუხაიძის #44",
+  viewPrj: "სრულად",
   prj1c: "ჩაბარების დრო",
   prj1ct: "2023",
 
@@ -18,12 +18,12 @@ export default {
   prj3d: "მიმდინარე",
   prj3t: "TAGHI OLD TBILISI",
   prj3l: "ლოკაცია",
-  prj3lt: "მიხაილ მუხაძის #48",
+  prj3lt: "მიხაილ ბუხაძის #48",
   prj3c: "ჩაბარების დრო",
   prj3ct: "2024",
 
   prj4d: "მიმდინარე",
-  prj4t: "ბუხაიძის შესახვევი 6ა",
+  prj4t: "ბუხაიძის I შესახვევი 6ა",
   prj4l: "ლოკაცია",
   prj4lt: "ბუხაიძის შესახვევი 6ა",
   prj4c: "ჩაბარების დრო",
@@ -32,7 +32,7 @@ export default {
   prj5d: "დასრულებული",
   prj5t: "ბუხაიძის შესახვევი 6ა",
   prj5l: "ლოკაცია",
-  prj5lt: "ბუხაიძის შესახვევი 6ა",
+  prj5lt: "ბუხაიძის შესახვევი 6",
   prj5c: "დასრულების თარიღი",
   prj5ct: "2022",
 };

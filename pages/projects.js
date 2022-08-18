@@ -16,6 +16,9 @@ import Oldcity3 from "../assets/projectslider/OLD CITY 3.jpg";
 import Bukhaidze1 from "../assets/projectslider/bukhaidze1.jpg";
 import Bukhaidze2 from "../assets/projectslider/bukhadize2.jpg";
 import Bukhaidze3 from "../assets/projectslider/bukhadize3.jpg";
+import Bukhaidze4 from "../assets/projectslider/bukhFin.jpg";
+import Bukhaidze5 from "../assets/projectslider/bukhFin2.jpg";
+import Bukhaidze6 from "../assets/projectslider/bukhFin3.jpg";
 import Taghi1 from "../assets/projectslider/taghi1.jpg";
 import Tagh2 from "../assets/projectslider/taghi2.jpg";
 import Tagh3 from "../assets/projectslider/taghi3.jpg";
@@ -72,10 +75,10 @@ export default function IndexPage() {
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <p className="projects--texts__op">{t.prj1t}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
-                              <i className="project--see cursor  mt-5">
+                              <i className="project--see cursor  ">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
@@ -83,7 +86,7 @@ export default function IndexPage() {
                         </Col>
                         <Col xs="6">
                           <div>
-                            <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                            <p className="projects--texts__op projects--texts__create ">{t.prj1c}</p>
                             <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                           </div>
                           <div></div>
@@ -99,7 +102,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="12" className="">
-                    <Carousel style={{ opacity: 1 }}>
+                      <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width ">
                           <Image src={Ezo1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
@@ -130,7 +133,7 @@ export default function IndexPage() {
                             <p className="projects--texts__op">{t.prj1l}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
-                              <i className="project--see cursor  mt-5">
+                              <i className="project--see cursor  ">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
@@ -154,7 +157,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="12" className="">
-                    <Carousel style={{ opacity: 1 }}>
+                      <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width ">
                           <Image src={Taghi1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
@@ -185,7 +188,7 @@ export default function IndexPage() {
                             <p className="projects--texts__op">{t.prj1l}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
-                              <i className="project--see cursor  mt-5">
+                              <i className="project--see cursor  ">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
@@ -209,7 +212,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="12" className="">
-                    <Carousel style={{ opacity: 1 }}>
+                      <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width ">
                           <Image src={Bukhaidze1} alt="banner immage" className="full_width" />
                         </Carousel.Item>
@@ -240,7 +243,7 @@ export default function IndexPage() {
                             <p className="projects--texts__op">{t.prj1l}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
-                              <i className="project--see cursor  mt-5">
+                              <i className="project--see cursor ">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
@@ -280,7 +283,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/ezo">
-                          <i className="project--see cursor  mt-5">
+                          <i className="project--see cursor  ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -327,7 +330,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/taghi">
-                          <i className="project--see cursor  mt-5">
+                          <i className="project--see cursor ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -377,7 +380,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/taghi">
-                          <i className="project--see cursor  mt-5">
+                          <i className="project--see cursor  ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -426,7 +429,7 @@ export default function IndexPage() {
                       </div>
                       <div>
                         <Link href="/bukhaidze">
-                          <i className="project--see cursor mt-5 ">
+                          <i className="project--see cursor ">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
@@ -446,6 +449,55 @@ export default function IndexPage() {
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
                             <Image src={Bukhaidze3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </div>
+            <div className="parent_only_desktop">
+              <div className="test1313">
+                <Container className="container-borderer">
+                  <Row>
+                    <Col xs="3" className="">
+                      <Link href="/bukhaidze">
+                        <div className="mb-5 projects--title cursor">
+                          <p>{t.prj5d}</p>
+                          <h3 className="mt-3">{t.prj5t}</h3>
+                        </div>
+                      </Link>
+                      <div className="projects--legend__top projects--texts__basics">
+                        <p className="projects--texts__op">{t.prj5l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj5lt}</h3>
+                      </div>
+                      <div className="projects--legend__bot">
+                        <p className="projects--texts__op projects--texts__create">{t.prj5c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj5ct}</h3>
+                      </div>
+                      <div>
+                        <Link href="/bukhaidze">
+                          <i className="project--see cursor ">
+                            {t.viewPrj} <Image src={Vector} />
+                          </i>
+                        </Link>
+                      </div>
+                    </Col>
+                    <Col className="border__left"></Col>
+                    <Col xs="8" className="projects-margin-fixer">
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Bukhaidze4} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Bukhaidze5} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Bukhaidze6} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
