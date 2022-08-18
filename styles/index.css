@@ -853,7 +853,7 @@ h2 {
   margin-top: 120px !important;
 }
 .mb-120 {
-  margin-bottom: 120px;
+  margin-bottom: 120px !important;
 }
 .mb-80 {
   margin-bottom: 80px;
@@ -1830,6 +1830,7 @@ flickity-enabled {
   text-transform: uppercase;
   color: #121927 !important;
   opacity: 0.6;
+  margin-top: 30px !important;
 }
 .advantages__sub_content {
   font-weight: 400;
@@ -1978,7 +1979,9 @@ flickity-enabled {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000;
 }
+
 .slider_logo {
   width: 59% !important;
   max-width: 58% !important;
@@ -1986,4 +1989,17 @@ flickity-enabled {
   height: auto !important;
   min-width: auto !important;
   right: auto !important;
+}
+.lastPhotos {
+  padding: 0 !important;
+}
+.lastPhotos div {
+  padding: 0 6px;
+}
+/* .lastPhotos div:nth-child(n-2) {
+  padding-top: 0px;
+} */
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 20%;
 }

@@ -7,14 +7,14 @@ import en from "../locales/enEzo";
 import ru from "../locales/ruEzo";
 import ge from "../locales/geEzo";
 import Link from "next/link";
-import Taghi from "../assets/Taghi_old_tbilisi.svg";
-import Bukhaidze from "../assets/projects_floor.png";
+import Taghi from "../assets/projectslogofire/ezo_logo_black.png";
+import Bukhaidze from "../assets/projectmainphotos/ezo-main.jpg";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/panorama1.jpg";
-import Panorama2 from "../assets/projectsInside/panorama2.jpg";
-import Panorama3 from "../assets/projectsInside/panorama3.jpg";
-import Panorama4 from "../assets/projectsInside/panorama4.jpg";
-import Panorama5 from "../assets/projectsInside/panorama5.jpg";
+import Panorama1 from "../assets/projectsInside/ezo1.jpg";
+import Panorama2 from "../assets/projectsInside/ezo2.jpg";
+import Panorama3 from "../assets/projectsInside/ezo3.jpg";
+import Panorama4 from "../assets/projectsInside/ezo4.jpg";
+import Panorama5 from "../assets/projectsInside/ezo5.jpg";
 export default function IndexPage2() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -57,10 +57,9 @@ export default function IndexPage2() {
                 <p className="basic-texts-14">{t.exhibitionSpace}</p>
                 <h3 className="projects-floor-yard">{t.esm}</h3>
               </Col>
-              
             </Row>
             <Row className="justify-content-between mt-5">
-            <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4" className="mt-3">
+              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4" className="mt-3">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
                 <p>{t.chooseFloor}</p>
               </Col>
@@ -105,8 +104,7 @@ export default function IndexPage2() {
               </Col>
             </Row>
           </div>
-       
-        
+
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
@@ -156,9 +154,7 @@ export default function IndexPage2() {
               <Col xs="12">
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
-                  <p className=" basic-texts-14 text-secondary mt-2 ">
-                    {t.first}
-                  </p>
+                  <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
                   <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
                     <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
@@ -170,22 +166,28 @@ export default function IndexPage2() {
                   </Col>
                 </Row>
                 <Row>
-                  <p className="projects-floor-first-one text-secondary mt-2 "></p>
+                  {/* <p className="projects-floor-first-one text-secondary mt-2 "></p> */}
                   <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                     <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col>
                 </Row>
                 <Row>
-                  <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">
-                    {t.first2}
-                  </p>
+                  <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">{t.first2}</p>
                   <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                     <h5 className="basic-texts-14">{t.bigBrain7}</h5>
                   </Col>
                 </Row>
               </Col>
             </Col>
-            <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex justify-content-center align-items-center">
+            <Col
+              xs="12"
+              lg="6"
+              md="6"
+              sm="6"
+              xl="6"
+              xxl="6"
+              className="d-flex justify-content-center align-items-center"
+            >
               <div className="">
                 <iframe
                   className="iframe__mobile"
@@ -207,21 +209,21 @@ export default function IndexPage2() {
               // style="border:none;"
             ></iframe>
           </Col>
-          <Col xs="12" className="mt-120">
+          <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
-                <Image src={Panorama3} className="" />
+                <Image src={Panorama4} className="" />
               </Col>
-              <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
+              <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8" className="lastPhotos">
                 <Row>
-                  <Col xs="6">
-                    <Image src={Panorama2} className="" />
-                  </Col>
                   <Col xs="6">
                     <Image src={Panorama1} className="" />
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama4} className="" />
+                    <Image src={Panorama2} className="" />
+                  </Col>
+                  <Col xs="6">
+                    <Image src={Panorama3} className="" />
                   </Col>
                   <Col xs="6">
                     <Image src={Panorama5} className="" />

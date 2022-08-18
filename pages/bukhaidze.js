@@ -7,8 +7,8 @@ import en from "../locales/enBukhaidze";
 import ru from "../locales/ruBukhaidze";
 import ge from "../locales/geBukhaidze";
 import Link from "next/link";
-import Taghi from "../assets/Taghi_old_tbilisi.svg";
-import Bukhaidze from "../assets/projects_floor.png";
+import Taghi from "../assets/projectslogofire/Bukh_6a_ENG_LOGO.png";
+import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6a-main.jpg";
 import Footer from "../components/footer";
 import Bukhaidze1 from "../assets/projectsInside/bukhadize1.jpg";
 import Bukhaidze2 from "../assets/projectsInside/bukhadize2.jpg";
@@ -185,7 +185,7 @@ export default function IndexPage3() {
               </Col>
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
-            <div className="">
+              <div className="">
                 <iframe
                   allowFullScreen
                   width="850"
@@ -205,12 +205,12 @@ export default function IndexPage3() {
               // style="border:none;"
             ></iframe>
           </Col>
-          <Col xs="12" className="mt-120">
+          <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="4">
                 <Image src={Bukhaidze5} className="" />
               </Col>
-              <Col xs="8">
+              <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
                     <Image src={Bukhaidze2} className="" />

@@ -3,20 +3,19 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useRef } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
-import en from "../locales/enProjectFloor";
-import ru from "../locales/ruProjectsFloor";
-import ge from "../locales/geProjectsFloor";
+import en from "../locales/enBukhaidze";
+import ru from "../locales/ruBukhaidze";
+import ge from "../locales/geBukhaidze";
 import Link from "next/link";
-import Taghi from "../assets/projectslogofire/ocp_logo_black.png";
-import Bukhaidze from "../assets/projects_floor.png";
+import Taghi from "../assets/projectslogofire/Bukh_6_ENG_LOGO.png";
+import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6-main.jpg";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/panorama1.jpg";
-import Panorama2 from "../assets/projectsInside/panorama2.jpg";
-import Panorama3 from "../assets/projectsInside/panorama3.jpg";
-import Panorama4 from "../assets/projectsInside/panorama4.jpg";
-import Panorama5 from "../assets/projectsInside/panorama5.jpg";
-import Vector from "../assets/seeprjvector.png";
-export default function IndexPage() {
+import Bukhaidze1 from "../assets/prj_Bukhaidze/1.jpg";
+import Bukhaidze2 from "../assets/prj_Bukhaidze/2.jpg";
+import Bukhaidze3 from "../assets/prj_Bukhaidze/3.jpg";
+import Bukhaidze4 from "../assets/prj_Bukhaidze/4.jpg";
+import Bukhaidze5 from "../assets/prj_Bukhaidze/6.jpeg";
+export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
@@ -31,6 +30,8 @@ export default function IndexPage() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
+
+  const styledpic = { height: "200px" };
 
   return (
     <div>
@@ -48,7 +49,7 @@ export default function IndexPage() {
               <Image src={Taghi} className="Taghi" />
             </Col>
             <Col xs="4">
-              <h3 className="projects-floor-title">{t.chooseApart}</h3>
+              <h3 className="projects-floor-title"> {t.chooseApart}</h3>
               <p>{t.chooseFloor}</p>
             </Col>
           </Row>
@@ -75,28 +76,10 @@ export default function IndexPage() {
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Panorama5} />
+                <Image className="cursor" src={Bukhaidze} />
               </Link>
             </div>
           </Col>
-          <Row className=" mt-40 mb-40 flex-helper">
-            <Col xxl="6">
-              {" "}
-              <a href="https://apart.ge/select-flat/fasadi/" target="_blank">
-                <i className=" cursor flex-helper">
-                  LIVE preview <Image src={Vector} alt="arrow" className="arrow-prj" />
-                </i>
-              </a>
-            </Col>
-            <Col xxl="6">
-              {" "}
-              <a href="  https://apart.ge/360-ocp/  " target="_blank">
-                <i className=" cursor flex-helper">
-                  360 preview <Image src={Vector} alt="arrow" className="arrow-prj" />
-                </i>
-              </a>
-            </Col>
-          </Row>
           <Row className="justify-content-between mt-5">
             <Col xs="3">
               <hr />
@@ -177,7 +160,7 @@ export default function IndexPage() {
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
-                <Row className="whitespacerow">
+                <Row>
                   <h3 className="advanteges__main_title">{t.adv}</h3>
                   <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
                     {t.first}
@@ -192,26 +175,12 @@ export default function IndexPage() {
                     <h5 className="advantages__sub_content">{t.bigBrain3}</h5>
                   </Col>
                 </Row>
-                <Row className="whitespacerow">
-                  {/* <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head"></h5> */}
-                  <Col xs="4">
-                    <h5 className="advantages__sub_content">{t.bigBrain6}</h5>
-                  </Col>
-                  <Col xs="3">
-                    <h5 className="advantages__sub_content">{t.bigBrain4}</h5>
-                  </Col>
-                  <Col xs="3">
-                    <h5 className="advantages__sub_content">{t.bigBrain5}</h5>
-                  </Col>
-                  <Col xs="3">
-                    <h5 className="advantages__sub_content">{t.bigBrain8}</h5>
-                  </Col>
-                </Row>
+
                 <Row>
                   <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
                     {t.first2}
                   </h5>
-                  <Col xs="8">
+                  <Col xs="6">
                     <h5 className="advantages__sub_content">{t.bigBrain7}</h5>
                   </Col>
                 </Row>
@@ -225,7 +194,7 @@ export default function IndexPage() {
                   height="600"
                   loading="lazy"
                   frameBorder="0"
-                  src="https://chic-douhua-dc8cf2.netlify.app/"
+                  src="https://62fd551c99358d0009e6e11b--genuine-sprite-2fa12c.netlify.app/"
                 ></iframe>
               </div>
             </Col>
@@ -241,22 +210,21 @@ export default function IndexPage() {
           <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="4">
-                <Image src={Panorama3} className="" />
+                <Image src={Bukhaidze5} className="" />
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
-                    <Image src={Panorama2} className="" />
+                    <Image src={Bukhaidze2} style={styledpic} className="" />
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama1} className="" />
+                    <Image src={Bukhaidze3} className="" />
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama4} className="" />
+                    <Image src={Bukhaidze4} className="" />
                   </Col>
-
-                  <Col xs="6" className="">
-                    <Image src={Panorama5} className="" />
+                  <Col xs="6">
+                    <Image src={Bukhaidze1} className="" />
                   </Col>
                 </Row>
               </Col>

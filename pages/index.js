@@ -102,7 +102,7 @@ export default function IndexPage() {
                 <Container className="innerContent">
                   <Col xl="4">
                     <p className="text-white">Apart Development</p>
-                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
+                    <h2 className="text-white banner__header">{t.bukhaidzeha}</h2>
                     <p className="text-white"> {t.bukhaidze}</p>
                     <a href="/bukhaidze">
                       <p className="text-white">{t.readmore}</p>

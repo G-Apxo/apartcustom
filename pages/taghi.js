@@ -8,7 +8,7 @@ import ru from "../locales/ruTaghi";
 import ge from "../locales/geTaghi";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
-import Bukhaidze from "../assets/projects_floor.png";
+import Bukhaidze from "../assets/projectmainphotos/taghi-main.png";
 import Footer from "../components/footer";
 import Taghi1 from "../assets/projectsInside/taghi1.jpg";
 import Taghi2 from "../assets/projectsInside/taghi2.jpg";
@@ -205,12 +205,12 @@ export default function IndexPage1() {
               // style="border:none;"
             ></iframe>
           </Col>
-          <Col xs="12" className="mt-120">
+          <Col xs="12" className="mt-120 ">
             <Row>
               <Col xs="4">
                 <Image src={Taghi1} className="" />
               </Col>
-              <Col xs="8">
+              <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
                     <Image src={Taghi2} className="" />
