@@ -1,10 +1,10 @@
 export default {
-  title: "Comming Soon",
+  title: "Проекты",
   prj1d: "Текущий",
   prj1t: "Old City \n Panorama",
   prj1l: "Локация",
   prj1lt: "ул. Михеила Бухаидзе №44",
-  viewPrj: "View Projects",
+  viewPrj: "Посмотреть",
   prj1c: "Время сдачи",
   prj1ct: "2023",
 

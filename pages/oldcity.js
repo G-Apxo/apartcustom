@@ -15,6 +15,7 @@ import Panorama2 from "../assets/projectsInside/panorama2.jpg";
 import Panorama3 from "../assets/projectsInside/panorama3.jpg";
 import Panorama4 from "../assets/projectsInside/panorama4.jpg";
 import Panorama5 from "../assets/projectsInside/panorama5.jpg";
+import Vector from "../assets/seeprjvector.png";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -47,8 +48,8 @@ export default function IndexPage() {
               <Image src={Taghi} className="Taghi" />
             </Col>
             <Col xs="4">
-              {/* <h3 className="projects-floor-title">{t.chooseApart}</h3>
-              <p>{t.chooseFloor}</p> */}
+              <h3 className="projects-floor-title">{t.chooseApart}</h3>
+              <p>{t.chooseFloor}</p>
             </Col>
           </Row>
           <Row className="justify-content-between mt-5">
@@ -63,12 +64,12 @@ export default function IndexPage() {
               <h3 className="projects-floor-yard">{t.esm}</h3>
             </Col>
             <Col xs="4">
-              {/* <Form.Select aria-label="Default select example">
+              <Form.Select aria-label="Default select example">
                 <option>{t.chooseFloor}</option>
                 <option value="1">{t.chooseOne}</option>
                 <option value="2">{t.chooseTwo}</option>
                 <option value="3">{t.chooseThree}</option>
-              </Form.Select> */}
+              </Form.Select>
             </Col>
           </Row>
           <Col xs="12" className="mt-5">
@@ -78,6 +79,24 @@ export default function IndexPage() {
               </Link>
             </div>
           </Col>
+          <Row className=" mt-40 mb-40 flex-helper">
+            <Col xxl="6">
+              {" "}
+              <a href="https://apart.ge/select-flat/fasadi/">
+                <i className=" cursor flex-helper">
+                  LIVE preview <Image src={Vector} alt="arrow" className="arrow" />
+                </i>
+              </a>
+            </Col>
+            <Col xxl="6">
+              {" "}
+              <a href="  https://apart.ge/360-ocp/ ">
+                <i className=" cursor flex-helper">
+                  360 preview <Image src={Vector} alt="arrow" className="arrow" />
+                </i>
+              </a>
+            </Col>
+          </Row>
           <Row className="justify-content-between mt-5">
             <Col xs="3">
               <hr />
@@ -199,15 +218,14 @@ export default function IndexPage() {
             </Col>
             <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
-              <iframe
-                allowFullScreen
-                width="850"
-                height="600"
-                loading="lazy"
-                frameBorder="0"
-                src="https://chic-douhua-dc8cf2.netlify.app/">
-
-                </iframe>
+                <iframe
+                  allowFullScreen
+                  width="850"
+                  height="600"
+                  loading="lazy"
+                  frameBorder="0"
+                  src="https://chic-douhua-dc8cf2.netlify.app/"
+                ></iframe>
               </div>
             </Col>
           </Row>
@@ -233,18 +251,15 @@ export default function IndexPage() {
                     <Image src={Panorama1} className="" />
                   </Col>
                   <Col xs="6">
-
                     <Image src={Panorama4} className="" />
                   </Col>
                   <Col xs="6">
-
-                  <Image src={Panorama1} className="" />
-                    </Col>
-                    <Col xs="6" className="mt-3">
+                    <Image src={Panorama1} className="" />
+                  </Col>
+                  <Col xs="6" className="mt-3">
                     <Image src={Panorama4} className="" />
-                    </Col>
-                    <Col xs="6" className="mt-3">
-
+                  </Col>
+                  <Col xs="6" className="mt-3">
                     <Image src={Panorama5} className="" />
                   </Col>
                 </Row>

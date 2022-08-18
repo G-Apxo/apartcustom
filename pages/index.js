@@ -15,6 +15,9 @@ import Navwhite from "../components/navwhite";
 import Malongo from "../assets/malongo-dark-mode.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
 import Readmore from "../assets/readmore.svg";
+import Ezo from "../assets/projectslider/ezo_logo_white.png";
+import OCP from "../assets/projectslider/ocp_logo_white.png";
+import TaghiWhite from "../assets/projectslider/taghi_logo_white.png";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -25,11 +28,7 @@ export default function IndexPage() {
   return (
     <>
       <Navwhite mode={mode} setMode={setMode} />
-      <Carousel
-        slide={true}
-        style={{ opacity: 1 }}
-        className="carousle__inner"
-      >
+      <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
             <video loop autoPlay muted className="video vid-bg">
@@ -37,15 +36,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-              <Container className="innerContent">
-                <Col xl="4">
-                <p className="text-white">Apart Development</p>
-                  <h2 className="text-white banner__header">
-                  {t.sliderh}
-                  </h2>
-                  <p className="text-white"> {t.sliderd}</p>
-                 <a href="/oldcity"><p className="text-white">{t.readmore}</p></a>
-                </Col>
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={OCP} className="slider_logo mt-3" />
+                    <p className="text-white"> {t.sliderd}</p>
+                    <a href="/oldcity">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
                 </Container>
               </div>
             </Container>
@@ -58,60 +57,15 @@ export default function IndexPage() {
             </video>
             <Container>
               <div className="overlay">
-              <Container className="innerContent">
-                <Col xl="4">
-                <p className="text-white">Apart Development</p>
-                  <h2 className="text-white banner__header">
-                  {t.ezoh}
-                  </h2>
-                  <p className="text-white"> {t.ezo}</p>
-                  <a href="/ezo"><p className="text-white">{t.readmore}</p></a>
-                </Col>
-                </Container>
-              </div>
-            </Container>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
-            <video  loop autoPlay muted className="video">
-              <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
-            </video>
-            <Container>
-              <div className="overlay">
-              <Container className="innerContent">
-                <Col xl="4">
-                <p className="text-white">Apart Development</p>
-                  <h2 className="text-white banner__header">
-                  {t.taghih}
-                  </h2>
-                  <p className="text-white"> {t.taghi}</p>
-                  <a href="/taghi"><p className="text-white">{t.readmore}</p></a>
-                </Col>
-                </Container>
-              </div>
-            </Container>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
-            <video loop  autoPlay muted className="video">
-              <source
-                src="https://apart.ge/Bukhaidze_6_Intro.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <Container>
-              <div className="overlay">
-              <Container className="innerContent">
-                <Col xl="4">
-                <p className="text-white">Apart Development</p>
-                  <h2 className="text-white banner__header">
-                  {t.bukhaidzeh}
-                  </h2>
-                  <p className="text-white"> {t.bukhaidze}</p>
-                  <a href="/bukhaidze"><p className="text-white">{t.readmore}</p></a>
-                </Col>
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={Ezo} className="slider_logo" />
+                    <p className="text-white"> {t.ezo}</p>
+                    <a href="/ezo">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
                 </Container>
               </div>
             </Container>
@@ -120,22 +74,61 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.ge/Bukhaidze_6a_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
-              <Container className="innerContent">
-                <Col xl="4">
-                <p className="text-white">Apart Development</p>
-                  <h2 className="text-white banner__header">
-                  {t.bukhaidzeh}
-                  </h2>
-                  <p className="text-white"> {t.bukhaidze}</p>
-                  <a href="/bukhaidze"><p className="text-white">{t.readmore}</p></a>
-                </Col>
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={TaghiWhite} className="slider_logo" />
+                    <p className="text-white"> {t.taghi}</p>
+                    <a href="/taghi">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video loop autoPlay muted className="video">
+              <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
+                    <p className="text-white"> {t.bukhaidze}</p>
+                    <a href="/bukhaidze">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item interval={5000} className="fuul__width">
+          <div className="container__video">
+            <video loop autoPlay muted className="video">
+              <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
+                    <p className="text-white"> {t.bukhaidze}</p>
+                    <a href="/bukhaidze">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
                 </Container>
               </div>
             </Container>
@@ -164,22 +157,16 @@ export default function IndexPage() {
               <Row>
                 <Col xs="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`}>
-                        <Form.Check
-                          inline
-                          label="Studio"
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-1`}
-                        />
+                        <Form.Check inline label="Studio" name="group1" type={type} id={`inline-${type}-1`} />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className=" home--inputs">
                         <Form.Check
                           className="text-nowrap"
@@ -195,7 +182,7 @@ export default function IndexPage() {
                 </Col>
                 <Col xs="6" className="col-6">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
                         <Form.Check
                           inline
@@ -210,12 +197,7 @@ export default function IndexPage() {
                 </Col>
                 <Col className="mb-60">
                   <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                    <Form
-                      id="contact-form"
-                      name="contact-form"
-                      action="mail.php"
-                      method="POST"
-                    >
+                    <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
                       <Col xs="12">
                         <div className="md-form mb-0">
                           <Form.Control
@@ -286,29 +268,17 @@ export default function IndexPage() {
             <Row className="justify-content-between">
               <div className="col-4 ">
                 <div className="partners">
-                  <Image
-                    src={Apart_showroom}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
               <div className="col-4">
                 <div className="partners">
-                  <Image
-                    src={Malongo}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Malongo} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
               <div className="col-4 d-flex justify-content-end">
                 <div className="partners">
-                  <Image
-                    src={Tbc}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Tbc} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
             </Row>
