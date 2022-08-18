@@ -1233,6 +1233,18 @@ h2 {
 .dark-mode .section-1-form-subtext {
   color: white;
 }
+.dark-mode .projects__image{
+  display: none;
+}
+.dark-mode .projects__image_dark{
+  display: block;
+}
+.dark-mode .projects__image_dark .cursor{
+  width: 100%;
+}
+.projects__image_dark{
+  display: none;
+}
 .dark-mode .Taghi {
   filter: brightness(0) invert(1);
 }

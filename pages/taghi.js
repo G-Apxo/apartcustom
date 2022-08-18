@@ -9,12 +9,14 @@ import ge from "../locales/geTaghi";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projectmainphotos/taghi-main.png";
+import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg"
 import Footer from "../components/footer";
 import Taghi1 from "../assets/projectsInside/taghi1.jpg";
 import Taghi2 from "../assets/projectsInside/taghi2.jpg";
 import Taghi3 from "../assets/projectsInside/taghi3.jpg";
 import Taghi4 from "../assets/projectsInside/taghi4.jpg";
 import Taghi5 from "../assets/projectsInside/taghi5.jpg";
+
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -75,6 +77,11 @@ export default function IndexPage1() {
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
                 <Image className="cursor" src={Bukhaidze} />
+              </Link>
+            </div>
+            <div className="projects__image_dark">
+              <Link href="/ProjectsFloorSelector">
+                <Image className="cursor" src={Taghidark} />
               </Link>
             </div>
           </Col>

@@ -9,6 +9,7 @@ import ge from "../locales/geBukhaidze";
 import Link from "next/link";
 import Taghi from "../assets/projectslogofire/Bukh_6a_ENG_LOGO.png";
 import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6a-main.jpg";
+import Bukhadizedark from "../assets/projectmainphotos/bukhaidze-6-main-dark.jpg"
 import Footer from "../components/footer";
 import Bukhaidze1 from "../assets/projectsInside/bukhadize1.jpg";
 import Bukhaidze2 from "../assets/projectsInside/bukhadize2.jpg";
@@ -75,6 +76,11 @@ export default function IndexPage3() {
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
                 <Image className="cursor" src={Bukhaidze} />
+              </Link>
+            </div>
+            <div className="projects__image_dark">
+              <Link href="/ProjectsFloorSelector">
+                <Image className="cursor" src={Bukhadizedark} />
               </Link>
             </div>
           </Col>
