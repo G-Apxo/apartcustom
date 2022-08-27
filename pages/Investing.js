@@ -32,9 +32,9 @@ export default function IndexPage() {
               <Row>
                 <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <iframe
-                    width="580px"
-                    height="260"
-                    src="https://www.youtube.com/embed/ZVT5S0XYQDY"
+                    width="580"
+                    height="360"
+                    src="https://www.youtube.com/embed/PJbNd_1SC5c"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -156,7 +156,7 @@ export default function IndexPage() {
                             <div key={`inline-${type}`} className=" home--inputs">
                               <Form.Check
                                 inline
-                                label="2+ Bedrooms"
+                                label="3+ Bedrooms"
                                 name="group1"
                                 type={type}
                                 id={`inline-${type}-3`}

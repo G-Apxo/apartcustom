@@ -28,23 +28,24 @@ export default function IndexPage() {
                     <Row>
                       <Col xs="3" className=" contact__number">
                         <h3>{t.telnum}</h3>
-                        <h5>+995 2 11 11 44</h5>
+                        <h5>+995 32 2 11 11 44</h5>
                       </Col>
                       <Col xs="3" className="contact__number">
                         <h3>{t.vw}</h3>
-                        <h5>+995 544 44 44 31</h5>
+                        {/* ზუკასი */}
                         <h5>+995 544 44 44 39</h5>
+                        {/* ანის */}
+                        <h5>+995 544 44 44 31</h5>
                       </Col>
                       <Col xs="3" className="contact__number">
                         <h3>{t.email}</h3>
-                        <h5>info@apart.ge</h5>
+                        <h5>sales@apart.ge</h5>
                       </Col>
                       <Col xs="3" className=" contact__number">
                         <h3>{t.location}</h3>
                         <h5>{t.locPl}</h5>
                       </Col>
                       <Col xs="3" className="marginer-30 contact__number">
-                        <h3>{t.om}</h3>
                         <h5>Facebook</h5>
                       </Col>
                       <Col xs="3" className=" contact__number d-flex align-items-end">
@@ -101,7 +102,7 @@ export default function IndexPage() {
                                 <div key={`inline-${type}`} className="home--inputs">
                                   <Form.Check
                                     inline
-                                    label="2+ Bedrooms"
+                                    label="3+ Bedrooms"
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-3`}

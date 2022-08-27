@@ -1,8 +1,8 @@
 export default {
-  copy: "&#9400; Apart Development, all rights reserved",
+  copy: "Ⓒ Apart Development, all rights reserved",
   policy: "Policy regarding the processing of personal data",
   num: "+995 544 44 44 31",
-  info: "info@apart.ge",
+  info: "sales@apart.ge",
   fb: "Facebook",
   ig: "Instagram",
   yt: "Youtube",

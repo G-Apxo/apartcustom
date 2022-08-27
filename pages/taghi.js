@@ -9,7 +9,7 @@ import ge from "../locales/geTaghi";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projectmainphotos/taghi-main.png";
-import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg"
+import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg";
 import Footer from "../components/footer";
 import Taghi1 from "../assets/projectsInside/taghi1.jpg";
 import Taghi2 from "../assets/projectsInside/taghi2.jpg";

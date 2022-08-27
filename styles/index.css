@@ -1233,16 +1233,16 @@ h2 {
 .dark-mode .section-1-form-subtext {
   color: white;
 }
-.dark-mode .projects__image{
+.dark-mode .projects__image {
   display: none;
 }
-.dark-mode .projects__image_dark{
+.dark-mode .projects__image_dark {
   display: block;
 }
-.dark-mode .projects__image_dark .cursor{
+.dark-mode .projects__image_dark .cursor {
   width: 100%;
 }
-.projects__image_dark{
+.projects__image_dark {
   display: none;
 }
 .dark-mode .Taghi {
@@ -1950,7 +1950,8 @@ flickity-enabled {
   padding: 15% 32px;
   line-height: 1.5;
   text-align: center;
-  :last-child {
+
+  .overlay:last-child {
     margin-bottom: 0;
   }
   h1 {
@@ -1972,6 +1973,9 @@ flickity-enabled {
 .innerContent {
   text-align: left;
   margin-top: 10%;
+}
+.innerContent a {
+  text-decoration: none;
 }
 
 .full_desktop {

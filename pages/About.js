@@ -14,23 +14,24 @@ import Team3 from "../assets/teamfinal/tornikewilosani.JPG";
 import Team4 from "../assets/teamfinal/lashasabanidze.JPG";
 import Team5 from "../assets/teamfinal/vaxtangchixradze.JPG";
 import Team6 from "../assets/teamfinal/animurvanidze.JPG";
-import Team7 from "../assets/teamfinal/sabajanashia.JPG";
-import Team8 from "../assets/teamfinal/archilkurcxalia.JPG";
-import Team9 from "../assets/teamfinal/natukaxoperia.jpg";
-import Team10 from "../assets/teamfinal/giorgijaparidze.jpg";
-import Team11 from "../assets/teamfinal/iraklichrikashvili.JPG";
-import Team12 from "../assets/teamfinal/tikasamxaradze.jpg";
-import Team13 from "../assets/teamfinal/ananojigauri.jpg";
-import Team14 from "../assets/teamfinal/levankandelaki.JPG";
-import Team15 from "../assets/teamfinal/avtosepiashvili.JPG";
-import Team16 from "../assets/teamfinal/mamukabaratashvili.JPG";
-import Team17 from "../assets/teamfinal/sandroyavelashvili.JPG";
-import Team18 from "../assets/teamfinal/lizilazashvili.JPG";
-import Team19 from "../assets/teamfinal/kaxafircxalava.jpg";
-import Team20 from "../assets/teamfinal/irakliiobashvili.JPG";
-import Team21 from "../assets/teamfinal/lashachikobava.JPG";
-import Team22 from "../assets/teamfinal/tornikesixarulidze.jpg";
-import Team23 from "../assets/teamfinal/kaxagabatashvili.jpg";
+import Team7 from "../assets/teamfinal/zukaandguladze.JPG";
+import Team8 from "../assets/teamfinal/sabajanashia.JPG";
+import Team9 from "../assets/teamfinal/archilkurcxalia.JPG";
+import Team10 from "../assets/teamfinal/natukaxoperia.jpg";
+import Team11 from "../assets/teamfinal/giorgijaparidze.jpg";
+import Team12 from "../assets/teamfinal/iraklichrikashvili.JPG";
+import Team13 from "../assets/teamfinal/tikasamxaradze.jpg";
+import Team14 from "../assets/teamfinal/ananojigauri.jpg";
+import Team15 from "../assets/teamfinal/levankandelaki.JPG";
+import Team16 from "../assets/teamfinal/avtosepiashvili.JPG";
+import Team17 from "../assets/teamfinal/mamukabaratashvili.JPG";
+import Team18 from "../assets/teamfinal/giorgikajaia.JPG";
+import Team19 from "../assets/teamfinal/lizilazashvili.JPG";
+import Team20 from "../assets/teamfinal/kaxafircxalava.jpg";
+import Team21 from "../assets/teamfinal/irakliiobashvili.JPG";
+import Team22 from "../assets/teamfinal/lashachikobava.JPG";
+import Team23 from "../assets/teamfinal/tornikesixarulidze.jpg";
+import Team24 from "../assets/teamfinal/kaxagabatashvili.jpg";
 import Footer from "../components/footer";
 
 export default function IndexPage() {
@@ -271,19 +272,25 @@ export default function IndexPage() {
               <p>{t.tt18p}</p>
             </Col>
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-              <Image src={Team19} alt="banner immage" />
-
-              <h3>{t.tt19} </h3>
-              <p>{t.tt1p}</p>
-            </Col>
-            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team20} alt="banner immage" />
 
               <h3>{t.tt20} </h3>
               <p>{t.tt20p}</p>
             </Col>
+            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Image src={Team24} alt="banner immage" />
+
+              <h3>{t.tt24} </h3>
+              <p>{t.tt24p}</p>
+            </Col>
           </Row>
           <Row className="sixty-row">
+            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Image src={Team19} alt="banner immage" />
+
+              <h3>{t.tt19} </h3>
+              <p>{t.tt19p}</p>
+            </Col>
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team21} alt="banner immage" />
 
