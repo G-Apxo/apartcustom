@@ -23,10 +23,7 @@ export default function IndexPage() {
   const blogListFunc = () =>{
     var config = {
       method: 'get',
-      url: `https://c0e7-2a0b-6204-33bb-4a00-8990-8d22-911b-bfa9.ngrok.io/api/blogs/ge`,
-      headers: { 
-        'Authorization': 'Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5'
-      },
+      url: `https://aeaf-2a0b-6204-33bb-4a00-cd9d-e6e4-a177-3243.ngrok.io/api/blogs/ge`,
       data : data
     };
     
