@@ -11,7 +11,7 @@ export default {
   chooseTwo: "ორი",
   chooseThree: "სამი",
   name: "სახელი",
-  email: "ელექტრონული მეილი",
+  email: "ელ-ფოსტა",
   num: "+(__) ტელეფონის ნომერი",
   req: "მოითხოვე დარეკვა",
   aboutprj: "პროექტის შესახებ",

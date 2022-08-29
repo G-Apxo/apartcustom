@@ -41,8 +41,8 @@ export default function IndexPage() {
                     <p className="text-white">Apart Development</p>
                     <Image src={OCP} className="slider_logo mt-3" />
                     <p className="text-white"> {t.sliderd}</p>
-                    <a href="/oldcity">
-                      <p className="text-white">{t.readmore}</p>
+                    <a href="https://apart.ge/select-flat/bina_37/">
+                      <p className="text-white text-white-read-more">{t.readmore}</p>
                     </a>
                   </Col>
                 </Container>
@@ -186,7 +186,7 @@ export default function IndexPage() {
                       <div key={`inline-${type}`} className="home--inputs">
                         <Form.Check
                           inline
-                          label="2+ Bedrooms"
+                          label="3+ Bedrooms"
                           name="group1"
                           type={type}
                           id={`inline-${type}-3`}

@@ -20,11 +20,11 @@ export default {
   //line break
   //line break
   tt3: "Tornike Tsilosani",
-  tt3p: "Commercial Director",
+  tt3p: "Partner",
   //line break
   //line break
   tt4: "Lasha Sabadze",
-  tt4p: "Financial Manager",
+  tt4p: "Financial Director",
   //line break
   //line break
   tt5: "Vakhtang Chikhradze",
@@ -33,70 +33,74 @@ export default {
   //line break
   tt6: "Ani Murvanidze",
   tt6p: "Head of Sales Department",
+
+  // HERE COMES ZUKA
+  tt7: "Zuka Andghuladze",
+  tt7p: "Sales Manager",
   //line break
   //line break
-  tt7: "Saba Janashia",
-  tt7p: "Head of the Sefety Service",
+  tt8: "Saba Janashia",
+  tt8p: "Head of the Sefety Service",
   //line break
   //line break
-  tt8: "Archil Kurtskhalia",
-  tt8p: "Architect-Designer",
+  tt9: "Archil Kurtskhalia",
+  tt9p: "Architect-Designer",
   //line break
   //line break
-  tt9: "Natuka Khoperia",
-  tt9p: "Office Manager",
+  tt10: "Natuka Khoperia",
+  tt10p: "Office Manager",
   //line break
   //line break
-  tt10: "Giorgi Japaridze",
-  tt10p: "Chief Accountant",
+  tt11: "Giorgi Japaridze",
+  tt11p: "Chief Accountant",
   //line break
   //line break
-  tt11: "Irakli Chrikishvili",
-  tt11p: "Chief Lawyer",
+  tt12: "Irakli Chrikishvili",
+  tt12p: "Chief Lawyer",
   //line break
   //line break
-  tt12: "Tika Samkharadze",
-  tt12p: "Social Media Manager",
+  tt13: "Tika Samkharadze",
+  tt13p: "Social Media Manager",
   //line break
   //line break
-  tt13: "Anano Jighauri",
-  tt13p: "Public Relations Manager",
+  tt14: "Anano Jighauri",
+  tt14p: "Public Relations Manager",
   //line break
   //line break
-  tt14: "Levan Kandelaki",
-  tt14p: "Project Manager",
-  //line break
-  //line break
-  tt15: "Avtandil Sephiashvili",
+  tt15: "Levan Kandelaki",
   tt15p: "Project Manager",
   //line break
   //line break
-  tt16: "Mamuka Baratashvili",
-  tt16p: "Architect",
+  tt16: "Avtandil Sephiashvili",
+  tt16p: "Project Manager",
   //line break
   //line break
-  tt17: "Sandro Kavelashvili",
-  tt17p: "Junior Architect",
+  tt17: "Mamuka Baratashvili",
+  tt17p: "Architect",
   //line break
   //line break
-  tt18: "Liza Lazashvili",
-  tt18p: "Junior Lawyer",
+  tt18: "Giorgi Kajaia",
+  tt18p: "Analyst",
   //line break
   //line break
-  tt19: "Kakha Pirtskhalava",
-  tt19p: "Head of Construction",
+  tt19: "Liza Lazashvili",
+  tt19p: "Junior Lawyer",
   //line break
   //line break
-  tt20: "Irakli Iobashvili",
-  tt20p: "Logistics Manager",
+  tt20: "Kakha Pirtskhalava",
+  tt20p: "Head of Construction",
   //line break
-  tt21: "Lasha Chikobava",
-  tt21p: "Supply Manager",
   //line break
-  tt22: "Tornike Sikharulidze",
-  tt22p: "Warehouse Manager",
+  tt21: "Irakli Iobashvili",
+  tt21p: "Logistics Manager",
   //line break
-  tt23: "Kakha Gabatashvili",
-  tt23p: "Assistant to the Head of Construction",
+  tt22: "Lasha Chikobava",
+  tt22p: "Supply Manager",
+  //line break
+  tt23: "Tornike Sikharulidze",
+  tt23p: "Warehouse Manager",
+  //line break
+  tt24: "Kakha Gabatashvili",
+  tt24p: "Assistant to the Head of Construction",
   //line break
 };
