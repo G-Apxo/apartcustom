@@ -10,38 +10,20 @@ import Link from "next/link";
 import Footer from "../components/footer";
 import axios from "axios";
 
-export default function IndexPage() {
+export const getStaticProps = async() =>{
+  const res = await fetch('https://a1f3-2a0b-6204-33bb-4a00-40aa-4038-dd4c-c10d.ngrok.io/api/blogs/ge');
+  const data = await res.json();
+
+  return{
+    props : { blog: data }
+  }
+}
+
+const IndexPage = ({ blog }) =>{ 
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
-  const [blogList, setBlogst] = useState([])
-
-
-  var data = '';
-  const blogListFunc = () =>{
-    var config = {
-      method: 'get',
-      url: `https://aeaf-2a0b-6204-33bb-4a00-cd9d-e6e4-a177-3243.ngrok.io/api/blogs/ge`,
-      data : data
-    };
-    
-    axios(config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-      
-      const blogdata = response.data
-      setBlogst(blogdata)
-      console.log(blogList)
-      console.log(blogdata)
-      console.log(setBlogst)
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-  }
-
 
   return (
     <div>
@@ -49,11 +31,10 @@ export default function IndexPage() {
         <Nav />
         <div>
           <Container className="mb-120">
-            <h2 className="row-marginer mt-120 mb-60" onClick={blogListFunc}>Blog</h2>
+            <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <Row>
-            {blogList.map((blog) =>
+            {blog.map((blog) => (
               <Link className="blog-single-blog" href={"blog/"+ blog.url}>
-             
               <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
               <div className="">
                 <div className="blog-image__content">
@@ -64,7 +45,8 @@ export default function IndexPage() {
               </div>
             </Col>
               </Link>
-   )} 
+            ) 
+          )} 
             </Row>
           </Container>
         </div>
@@ -74,3 +56,4 @@ export default function IndexPage() {
     </div>
   );
 }
+export default IndexPage;

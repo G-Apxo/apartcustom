@@ -5,4 +5,5 @@ module.exports = {
     realDefaultLocale: 'ge',
     localeDetection: false
   },
+  largePageDataBytes: 128 * 100000, // 12800KB by default
 };
