@@ -2025,3 +2025,10 @@ flickity-enabled {
 .blogList{
   width: 100%;
 }
+.custom__column{
+  height: 100vh;
+  background-color: rgb(57, 57, 57);
+}
+.custom__pills{
+  color: white;
+}

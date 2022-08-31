@@ -133,7 +133,6 @@ const Blogpost = () => {
 
   return (
     <div className={styles.pageWrapper}>
-      <Nav />
 
       <Container className={styles.editorWrapper}>
         <Form >
@@ -172,13 +171,12 @@ const Blogpost = () => {
             onChange={value => blogContent=value}
           />
 
-          <Button variant="primary" onClick={testSubmit}>
-            Submit
+          <Button variant="success" onClick={testSubmit}>
+            success
           </Button>
         </Form>
       </Container>
 
-      <Footer />
     </div>
   );
 };

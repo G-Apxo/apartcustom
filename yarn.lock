@@ -221,6 +221,11 @@
   "resolved" "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
   "version" "1.0.2"
 
+"basic-auth-token@^0.4.2":
+  "integrity" "sha512-83xWdZGpzPNjB8zrsvNEEvpLxjeaQFrzKJxxa5eFFNWHTJmvb8o9zAbs5j8Fdk0xlyLloCuNLFvMbQU63GvreA=="
+  "resolved" "https://registry.npmjs.org/basic-auth-token/-/basic-auth-token-0.4.2.tgz"
+  "version" "0.4.2"
+
 "binary-extensions@^2.0.0":
   "integrity" "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA=="
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
