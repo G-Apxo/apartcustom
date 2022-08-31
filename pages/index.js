@@ -124,7 +124,7 @@ export default function IndexPage() {
                   <Col xl="4">
                     <p className="text-white">Apart Development</p>
                     <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
-                    <p className="text-white"> {t.bukhaidze}</p>
+                    <p className="text-white"> {t.bukhaidze2}</p>
                     <a href="/bukhaidze">
                       <p className="text-white">{t.readmore}</p>
                     </a>

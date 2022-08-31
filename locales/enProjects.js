@@ -9,14 +9,14 @@ export default {
   prj1ct: "2023",
 
   prj2d: "Ongoing",
-  prj2t: "EZO OLD TBILISI",
+  prj2t: "Ezo Old Tbilisi",
   prj2l: "Location",
   prj2lt: "Gorki Lane 1",
   prj2c: "Time of Submission",
   prj2ct: "2024",
 
   prj3d: "Ongoing",
-  prj3t: "TAGHI OLD TBILISI",
+  prj3t: "Taghi Old Tbilisi",
   prj3l: "Location",
   prj3lt: "Mikhail Bukhadze #48",
   prj3c: "Time of Submission",
@@ -30,7 +30,7 @@ export default {
   prj4ct: "2022",
 
   prj5d: "Completed",
-  prj5t: "Bukhaidze I Lane 6",
+  prj5t: "Bukhaidze 6",
   prj5l: "Location",
   prj5lt: "Bukhaidze I Lane 6",
   prj5c: "Time of Submission",

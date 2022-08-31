@@ -46,16 +46,24 @@ export default function IndexPage() {
                         <h5>{t.locPl}</h5>
                       </Col>
                       <Col xs="3" className="marginer-30 contact__number">
-                        <h5>Facebook</h5>
+                        <a href="https://www.facebook.com/apartdevelopment">
+                          <h5>Facebook</h5>
+                        </a>
                       </Col>
                       <Col xs="3" className=" contact__number d-flex align-items-end">
-                        <h5>Youtube</h5>
+                        <a href="https://www.instagram.com/apartdevelopment/">
+                          <h5>Instagram</h5>
+                        </a>
                       </Col>
                       <Col xs="3" className=" contact__number d-flex align-items-end">
-                        <h5>Instagram</h5>
+                        <a href="https://www.youtube.com/channel/UCJgX6dfa84r7FkWIBof3z7A">
+                          <h5>Youtube</h5>
+                        </a>
                       </Col>
                       <Col xs="3" className=" contact__number d-flex align-items-end">
-                        <h5>Linkedin</h5>
+                        <a href="https://www.linkedin.com/company/apart-development/">
+                          <h5>Linkedin</h5>
+                        </a>
                       </Col>
                     </Row>
                   </div>

@@ -1255,6 +1255,10 @@ h2 {
 .dark-mode .form-control {
   background-color: transparent !important;
   border: 1px solid white !important;
+  color: white !important;
+}
+.dark-mode .form-control::placeholder {
+  color: white !important;
 }
 .dark-mode .btn-send {
   background-color: transparent !important;
@@ -2000,6 +2004,9 @@ flickity-enabled {
   justify-content: center;
   color: #000;
 }
+.flex-helper a {
+  text-decoration: none;
+}
 
 .slider_logo {
   width: 59% !important;
@@ -2021,4 +2028,10 @@ flickity-enabled {
 .carousel-control-prev-icon {
   position: absolute;
   left: 20%;
+}
+.dark .contact-texts-for-dark {
+  color: white;
+}
+.contact__number a {
+  text-decoration: none;
 }

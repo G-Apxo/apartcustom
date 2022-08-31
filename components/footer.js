@@ -37,14 +37,22 @@ function Footer() {
             <Row>
               <Col xs="6">
                 <div className="box">
-                  <p className="social">{t.fb}</p>
-                  <p className="social">{t.ig}</p>
+                  <a href="https://www.facebook.com/apartdevelopment">
+                    <p className="social">{t.fb}</p>
+                  </a>
+                  <a href="https://www.instagram.com/apartdevelopment/">
+                    <p className="social">{t.ig}</p>
+                  </a>
                 </div>
               </Col>
               <Col xs="6">
                 <div className="box">
-                  <p className="social">{t.yt}</p>
-                  <p className="social">{t.p}</p>
+                  <a href="https://www.youtube.com/channel/UCJgX6dfa84r7FkWIBof3z7A">
+                    <p className="social">{t.yt}</p>
+                  </a>
+                  <a href="https://www.linkedin.com/company/apart-development/">
+                    <p className="social">{t.p}</p>
+                  </a>
                 </div>
               </Col>
             </Row>

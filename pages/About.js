@@ -266,30 +266,33 @@ export default function IndexPage() {
               <p>{t.tt17p}</p>
             </Col>
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Image src={Team19} alt="banner immage" />
+
+              <h3>{t.tt19} </h3>
+              <p>{t.tt19p}</p>
+            </Col>
+            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team18} alt="banner immage" />
 
               <h3>{t.tt18} </h3>
               <p>{t.tt18p}</p>
             </Col>
+
+            {/* kaxa */}
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team20} alt="banner immage" />
 
               <h3>{t.tt20} </h3>
               <p>{t.tt20p}</p>
             </Col>
+          </Row>
+          <Row className="sixty-row">
+            {/* lizi */}
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team24} alt="banner immage" />
 
               <h3>{t.tt24} </h3>
               <p>{t.tt24p}</p>
-            </Col>
-          </Row>
-          <Row className="sixty-row">
-            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-              <Image src={Team19} alt="banner immage" />
-
-              <h3>{t.tt19} </h3>
-              <p>{t.tt19p}</p>
             </Col>
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team21} alt="banner immage" />
