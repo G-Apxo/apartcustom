@@ -11,7 +11,7 @@ import { useState } from "react";
 export const getStaticPaths = async () =>{
 
 
-  const res = await fetch('https://a1f3-2a0b-6204-33bb-4a00-40aa-4038-dd4c-c10d.ngrok.io/api/urls/ge');
+  const res = await fetch('https://55fa-95-137-233-63.ngrok.io/api/urls/en');
   const data = await res.json();
 
   const paths = data.map(blog => {
@@ -28,7 +28,7 @@ export const getStaticPaths = async () =>{
 
 export const getStaticProps = async (context) => {
   const url = context.params.url;
-  const res = await fetch('https://a1f3-2a0b-6204-33bb-4a00-40aa-4038-dd4c-c10d.ngrok.io/api/blog/ge/' + url);
+  const res = await fetch('https://55fa-95-137-233-63.ngrok.io/api/blog/en/' + url);
   const data = await res.json();
   console.log(data)
   return{
@@ -51,7 +51,7 @@ const Post = ({blog}) =>{
                 </p>
               </div>
               <Col className="col-12 mb-80">
-                <img src={blog[0].mainImage} alt="banner immage" />
+                <img src={blog[0].mainImage} className="blog_banner__img" alt="banner immage" />
               </Col>
               <Row className="align-items-center  mb-20 mb-10 ">
                 <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">

@@ -1950,25 +1950,10 @@ flickity-enabled {
   padding: 15% 32px;
   line-height: 1.5;
   text-align: center;
-
+}
   .overlay:last-child {
     margin-bottom: 0;
   }
-  h1 {
-    font-size: 32pt;
-    font-weight: bold;
-    text-shadow: 0 0 0.3em #000;
-    margin: 0 0 1em;
-  }
-  p {
-    font-size: 11pt;
-    text-shadow: 0 0 0.3em #000;
-    margin: 1em 0;
-  }
-  a {
-    color: #fff;
-  }
-}
 
 .innerContent {
   text-align: left;
@@ -2031,4 +2016,7 @@ flickity-enabled {
 }
 .custom__pills{
   color: white;
+}
+.blog_banner__img{
+  width: 100%;
 }
