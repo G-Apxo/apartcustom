@@ -10,11 +10,16 @@ import Link from "next/link";
 import Taghi from "../assets/projectslogofire/Bukh_6_ENG_LOGO.png";
 import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6-main.jpg";
 import Footer from "../components/footer";
-import Bukhaidze1 from "../assets/prj_Bukhaidze/1.jpg";
-import Bukhaidze2 from "../assets/prj_Bukhaidze/2.jpg";
-import Bukhaidze3 from "../assets/prj_Bukhaidze/3.jpg";
+import Bukhaidze1 from "../assets/GAMISRENDEREBI/buxaidzis6/1.jpg";
+import Bukhaidze1d from "../assets/GAMISRENDEREBI/buxaidzis6/2.jpg";
+import Bukhaidze2 from "../assets/GAMISRENDEREBI/buxaidzis6/3.jpg";
+import Bukhaidze2d from "../assets/GAMISRENDEREBI/buxaidzis6/4.jpg";
+import Bukhaidze3 from "../assets/GAMISRENDEREBI/buxaidzis6/5.jpg";
+import Bukhaidze3d from "../assets/GAMISRENDEREBI/buxaidzis6/6.jpg";
 import Bukhaidze4 from "../assets/prj_Bukhaidze/4.jpg";
+import Bukhaidze4d from "../assets/prj_Bukhaidze/4.jpg";
 import Bukhaidze5 from "../assets/prj_Bukhaidze/6.jpeg";
+import Bukhaidze5d from "../assets/prj_Bukhaidze/6.jpeg";
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -76,7 +81,12 @@ export default function IndexPage3() {
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Bukhaidze} />
+                <Image className="cursor" src={Bukhaidze1} />
+              </Link>
+            </div>
+            <div className="projects__image_dark">
+              <Link href="/ProjectsFloorSelector">
+                <Image className="cursor" src={Bukhaidze1d} />
               </Link>
             </div>
           </Col>
@@ -210,7 +220,16 @@ export default function IndexPage3() {
           <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="4">
-                <Image src={Bukhaidze5} className="" />
+                <div className="projects__image">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Bukhaidze2} />
+                  </Link>
+                </div>
+                <div className="projects__image_dark">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Bukhaidze2d} />
+                  </Link>
+                </div>
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
@@ -218,13 +237,31 @@ export default function IndexPage3() {
                     <Image src={Bukhaidze2} style={styledpic} className="" />
                   </Col>
                   <Col xs="6">
-                    <Image src={Bukhaidze3} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze3} />
+                      </Link>
+                    </div>
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze3d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
                     <Image src={Bukhaidze4} className="" />
                   </Col>
                   <Col xs="6">
-                    <Image src={Bukhaidze1} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze1} />
+                      </Link>
+                    </div>
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze1d} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Col>
