@@ -8,8 +8,18 @@ import ru from "../locales/ruBlog";
 import ge from "../locales/geBlog";
 import Link from "next/link";
 import Footer from "../components/footer";
+import axios from "axios";
 
-export default function IndexPage() {
+export const getStaticProps = async() =>{
+  const res = await fetch('https://a1f3-2a0b-6204-33bb-4a00-40aa-4038-dd4c-c10d.ngrok.io/api/blogs/ge');
+  const data = await res.json();
+
+  return{
+    props : { blog: data }
+  }
+}
+
+const IndexPage = ({ blog }) =>{ 
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
@@ -20,74 +30,23 @@ export default function IndexPage() {
       <div className="hero">
         <Nav />
         <div>
-          <Container>
+          <Container className="mb-120">
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <Row>
-              <Link className="blog-single-blog" href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__1">
-                    <div className="blog-image__content">
-                      {/* ar mushaobs css */}
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
+            {blog.map((blog) => (
+              <Link className="blog-single-blog" href={"blog/"+ blog.url}>
+              <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+              <div className="">
+                <div className="blog-image__content">
+                  <img src={blog.mainImage} alt="banner immage" className="blogList"/>
+                  <p className="text-dark">{blog.createdAt}</p>
+                  <h2 className="text-dark">{blog.title}</h2>
+                </div>
+              </div>
+            </Col>
               </Link>
-              <Link className="blog-single-blog" href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__2">
-                    <div className="blog-image__content">
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
-              </Link>
-            </Row>
-            <Row>
-              <Link className="blog-single-blog" href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__3">
-                    <div className="blog-image__content">
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
-              </Link>
-              <Link className="blog-single-blog" href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__4">
-                    <div className="blog-image__content">
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
-              </Link>
-            </Row>
-            <Row>
-              <Link href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__5">
-                    <div className="blog-image__content">
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
-              </Link>
-              <Link href="/singleblog">
-                <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                  <div className="image__box blog__6">
-                    <div className="blog-image__content">
-                      <p>November 23. 2021</p>
-                      <h2>Bukhaidze I Turn 6 our new project</h2>
-                    </div>
-                  </div>
-                </Col>
-              </Link>
+            ) 
+          )} 
             </Row>
           </Container>
         </div>
@@ -97,3 +56,4 @@ export default function IndexPage() {
     </div>
   );
 }
+export default IndexPage;

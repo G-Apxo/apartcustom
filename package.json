@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^10.0.2",
     "axios": "^0.27.2",
+    "basic-auth-token": "^0.4.2",
     "bootstrap": "^5.2.0",
     "next": "^12.1.5",
     "react": "^18.1.0",

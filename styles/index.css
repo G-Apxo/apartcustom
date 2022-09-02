@@ -902,7 +902,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.blog__1 {
+/* .blog__1 {
   background-image: url("../assets/apart assets/blog/blog1.png");
 }
 .blog__2 {
@@ -919,7 +919,7 @@ h2 {
 }
 .blog__6 {
   background-image: url("../assets/apart assets/blog/blog6.png");
-}
+} */
 .blog-single-blog {
   margin-bottom: 20px;
 }
@@ -2034,4 +2034,14 @@ flickity-enabled {
 }
 .contact__number a {
   text-decoration: none;
+}
+.blogList {
+  width: 100%;
+}
+.custom__column {
+  height: 100vh;
+  background-color: rgb(57, 57, 57);
+}
+.custom__pills {
+  color: white;
 }
