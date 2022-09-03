@@ -324,7 +324,11 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
+                    <Col
+                      xs="8"
+                      className="projects-margin-fixer projects__image_dark"
+                      style={{ backgroundColor: "red" }}
+                    >
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -371,7 +375,7 @@ export default function IndexPage() {
                       </div>
                     </Col>
                     <Col className="border__left"></Col>
-                    <Col xs="8" className="projects-margin-fixer">
+                    <Col xs="8" className="projects-margin-fixer projects__image">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Ezo1} alt="banner immage" className="full_width" />
@@ -384,6 +388,27 @@ export default function IndexPage() {
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
                             <Image src={Ezo3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col
+                      xs="8"
+                      className="projects-margin-fixer projects__image_dark"
+                      style={{ backgroundColor: "red" }}
+                    >
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -421,7 +446,7 @@ export default function IndexPage() {
                       </div>
                     </Col>
                     <Col className="border__left"></Col>
-                    <Col xs="8" className="projects-margin-fixer">
+                    <Col xs="8" className="projects-margin-fixer projects__image">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Taghi1} alt="banner immage" className="full_width" />
@@ -434,6 +459,27 @@ export default function IndexPage() {
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
                             <Image src={Tagh3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col
+                      xs="8"
+                      className="projects-margin-fixer projects__image_dark"
+                      style={{ backgroundColor: "red" }}
+                    >
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -470,7 +516,7 @@ export default function IndexPage() {
                       </div>
                     </Col>
                     <Col className="border__left"></Col>
-                    <Col xs="8" className="projects-margin-fixer">
+                    <Col xs="8" className="projects-margin-fixer projects__image">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Bukhaidze1} alt="banner immage" className="full_width" />
@@ -483,6 +529,27 @@ export default function IndexPage() {
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
                             <Image src={Bukhaidze3} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col
+                      xs="8"
+                      className="projects-margin-fixer projects__image_dark"
+                      style={{ backgroundColor: "red" }}
+                    >
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
@@ -519,7 +586,7 @@ export default function IndexPage() {
                       </div>
                     </Col>
                     <Col className="border__left"></Col>
-                    <Col xs="8" className="projects-margin-fixer">
+                    <Col xs="8" className="projects-margin-fixer projects__image">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Bukhaidze4} alt="banner immage" className="full_width" />
@@ -532,6 +599,27 @@ export default function IndexPage() {
                         <Carousel.Item className="fuul__width full_desktop">
                           <Row>
                             <Image src={Bukhaidze6} alt="banner immage" className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                      </Carousel>
+                    </Col>
+                    <Col
+                      xs="8"
+                      className="projects-margin-fixer projects__image_dark"
+                      style={{ backgroundColor: "red" }}
+                    >
+                      <Carousel style={{ opacity: 1 }}>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Image src={Oldcity1} alt="banner immage" className="full_width" />
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity2} alt="banner immage " className="full_width" />
+                          </Row>
+                        </Carousel.Item>
+                        <Carousel.Item className="fuul__width full_desktop">
+                          <Row>
+                            <Image src={Oldcity3} alt="banner immage" className="full_width" />
                           </Row>
                         </Carousel.Item>
                       </Carousel>
