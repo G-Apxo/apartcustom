@@ -23,7 +23,7 @@ export default function IndexPage() {
   const [mode, setMode] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+  const t = locale === "ge" ? ge : locale === "ru" ? ru : en;
 
   return (
     <>
