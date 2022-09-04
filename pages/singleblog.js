@@ -16,44 +16,40 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  const [callonicalUrl1, setcallonicalUrl,] = useState('');
-  const [customurl, setURl,] = useState('');
-  const [title1, setTitle,] = useState('');
-  const [createDate, setCreateDate,] = useState('');
-  const [language, setLang] = useState(' ');
-  const [ base64img,setBase64img ] = useState(' ');
-  const [ blogContent, setBlogContent] = useState(' ');
+  const [callonicalUrl1, setcallonicalUrl] = useState("");
+  const [customurl, setURl] = useState("");
+  const [title1, setTitle] = useState("");
+  const [createDate, setCreateDate] = useState("");
+  const [language, setLang] = useState(" ");
+  const [base64img, setBase64img] = useState(" ");
+  const [blogContent, setBlogContent] = useState(" ");
 
-  
-  const data = []
+  const data = [];
 
   const blogDesc = () => {
     var config = {
-      method: 'get',
-      url: 'https://55fa-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart',
-      headers: { 
-        'Authorization': 'Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5'
-      }
+      method: "get",
+      url: "https://5dcc-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart",
+      headers: {
+        Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+      },
     };
-    
+
     axios(config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-      data = response.data[0]
-      const createdAtFormated = data.createdAt.split("T")[0]
-      setCreateDate(createdAtFormated)
-      setTitle(data.title)
-      setBlogContent(data.blogContent)
-      setBase64img(data.mainImage)
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-    
-  }
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        data = response.data[0];
+        const createdAtFormated = data.createdAt.split("T")[0];
+        setCreateDate(createdAtFormated);
+        setTitle(data.title);
+        setBlogContent(data.blogContent);
+        setBase64img(data.mainImage);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
   blogDesc();
-
-
 
   return (
     <div>
@@ -97,15 +93,31 @@ export default function IndexPage() {
               </Row>
               <Col className=" single-blog-texts col-12 d-flex justify-content-center mt-5">
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
-                    <div dangerouslySetInnerHTML={{__html: blogContent}}></div>
+                  <div dangerouslySetInnerHTML={{ __html: blogContent }}></div>
                 </Col>
               </Col>
-              <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
+              <Col
+                xs="12"
+                lg="6"
+                md="6"
+                sm="6"
+                xl="6"
+                xxl="6"
+                className="mb-5 mt-5"
+              >
                 <h2>{t.recentBlog}</h2>
                 <hr />
               </Col>
               <Row>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-5">
+                <Col
+                  xs="12"
+                  lg="6"
+                  md="6"
+                  sm="6"
+                  xl="6"
+                  xxl="6"
+                  className="mt-5"
+                >
                   <div className="image__box">
                     <div className="blog-image__content">
                       <p>{t.blogDesc}</p>
@@ -113,7 +125,15 @@ export default function IndexPage() {
                     </div>
                   </div>
                 </Col>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
+                <Col
+                  xs="12"
+                  lg="6"
+                  md="6"
+                  sm="6"
+                  xl="6"
+                  xxl="6"
+                  className="mb-5 mt-5"
+                >
                   <div className="image__box">
                     <div className="blog-image__content">
                       <p>{t.blogDesc}</p>

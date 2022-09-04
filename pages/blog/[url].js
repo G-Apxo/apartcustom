@@ -11,7 +11,7 @@ import { useState } from "react";
 export const getStaticPaths = async () =>{
 
 
-  const res = await fetch('https://55fa-95-137-233-63.ngrok.io/api/urls/en');
+  const res = await fetch('https://5dcc-95-137-233-63.ngrok.io/api/urls/en');
   const data = await res.json();
 
   const paths = data.map(blog => {
@@ -28,7 +28,7 @@ export const getStaticPaths = async () =>{
 
 export const getStaticProps = async (context) => {
   const url = context.params.url;
-  const res = await fetch('https://55fa-95-137-233-63.ngrok.io/api/blog/en/' + url);
+  const res = await fetch('https://5dcc-95-137-233-63.ngrok.io/api/blog/en/' + url);
   const data = await res.json();
   console.log(data)
   return{

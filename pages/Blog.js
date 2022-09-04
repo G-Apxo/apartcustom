@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 import axios from "axios";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://55fa-95-137-233-63.ngrok.io/api/blogs/en`);
+  const res = await fetch(`https://5dcc-95-137-233-63.ngrok.io/api/blogs/en`);
   const data = await res.json();
   console.log(data);
   return {
