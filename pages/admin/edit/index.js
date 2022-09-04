@@ -6,6 +6,7 @@ import axios from "axios";
 import Nav from "../../../components/nav";
 import Footer from "../../../components/footer";
 import Image from "react-bootstrap";
+import { Link } from "react-bootstrap-icons";
 
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {
@@ -159,7 +160,8 @@ const Blogpost = (blog) => {
   return (
     <div>
       <Container>
-        <Form>
+        <a href="/admin"><h1>go back</h1></a>
+        <Form className="mt-120">
           <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Upload image</Form.Label>
             <Form.Control

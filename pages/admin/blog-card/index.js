@@ -9,6 +9,8 @@ import { Container, Form } from "react-bootstrap";
 import axios from "axios";
 import { useState } from "react";
 import BlogEdit from "../edit/index"
+
+
 const index = ({ blog }) => {
   const [blogList, setBlogst] = useState([]);
 
@@ -72,7 +74,8 @@ const index = ({ blog }) => {
                   <Col xs="6">
                     <Button name={blog.lang}
                       id={blog.url}
-                       variant="success" onClick={() => { setShow(true,blog.url,blog.lang);}} >
+                      href="edit"
+                      variant="success" >
                       edit
                     </Button>
                   </Col>
@@ -93,7 +96,7 @@ const index = ({ blog }) => {
           </Col>
         ))}
       </Row>
-      <Modal
+      {/* <Modal
         show={show}
         onHide={() => setShow(false)}
         dialogClassName="modal-90w"
@@ -109,7 +112,7 @@ const index = ({ blog }) => {
           <BlogEdit/>
           </Container>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
     </>
   );
 };
