@@ -151,30 +151,30 @@ export default function Nav({ mode, setMode }) {
               </button>
               <div className="collapse navbar-collapse navbar13" id="navbarNav">
                 <ul className="navbar-nav ">
-                  <li className="nav-item active">
-                    <a className="nav-link text-white text-nowrap" href="/About">
+                  <li className="nav-link">
+                    <Link className="nav-link text-white text-nowrap" href="/About">
                       {t.about}
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white" href="/Investing">
+                  <li className="nav-link">
+                    <Link className="nav-link text-white" href="/Investing">
                       {t.investing}
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white" href="/projects">
+                  <li className="nav-link ">
+                    <Link className="nav-link text-white" href="/projects">
                       {t.projects}
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white" href="/Blog">
+                  <li className="nav-link ">
+                    <Link className="nav-link text-white" href="/Blog">
                       {t.blog}
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white" href="/Contact">
+                  <li className="nav-link ">
+                    <Link className="nav-link text-white" href="/Contact">
                       {t.contact}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

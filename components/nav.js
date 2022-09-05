@@ -10,7 +10,7 @@ import { Container, Form, Row, Col } from "react-bootstrap";
 export default function Nav({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+  const t = locale === "ge" ? ge : locale === "ru" ? ru : en;
 
   const changeLanguage = e => {
     const locale = e.target.value;
@@ -150,29 +150,29 @@ export default function Nav({ mode, setMode }) {
               <div className="collapse navbar-collapse navbar13" id="navbarNav">
                 <ul className="navbar-nav ">
                   <li className="nav-item active">
-                    <a className="nav-link text-nowrap" href="/About">
+                    <Link className="nav-link text-nowrap" href="/About">
                       {t.about}
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link " href="/Investing">
+                    <Link className="nav-link " href="/Investing">
                       {t.investing}
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link " href="/projects">
+                    <Link className="nav-link " href="/projects">
                       {t.projects}
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link " href="/Blog">
+                    <Link className="nav-link " href="/Blog">
                       {t.blog}
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link " href="/Contact">
+                    <Link className="nav-link " href="/Contact">
                       {t.contact}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

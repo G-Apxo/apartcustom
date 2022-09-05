@@ -30,7 +30,11 @@ export default function IndexPage() {
                 {/* <BsArrowUpLeft /> */}
                 {t.goBack}
               </p>
-              <Image src={RoomImage} alt="banner immage" className="rooom-select-img" />
+              <Image
+                src={RoomImage}
+                alt="banner immage"
+                className="rooom-select-img"
+              />
             </Col>
             <Col xs="6">
               <h3>{t.title}</h3>
@@ -56,7 +60,11 @@ export default function IndexPage() {
                 </Col>
                 <Row>
                   <Col xs="12">
-                    <Image src={RoomImageModel} alt="RoomImageModel immage" className="room--image--model" />
+                    <Image
+                      src={RoomImageModel}
+                      alt="RoomImageModel immage"
+                      className="room--image--model"
+                    />
                   </Col>
                 </Row>
                 <Row>
@@ -120,11 +128,23 @@ export default function IndexPage() {
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="3">
                 <label htmlFor="name"></label>
-                <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
+                <input
+                  className="btn-test"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder={t.name}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="email"></label>
-                <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
+                <input
+                  className="btn-test"
+                  type="mail"
+                  id="email"
+                  name="email"
+                  placeholder={t.email}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="tel"></label>
@@ -147,11 +167,15 @@ export default function IndexPage() {
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
+              <p className="projects--floor-about-text basic-texts-14">
+                {t.apt}
+              </p>
               <Col xs="12">
                 <Row>
                   <h3 className="advanteges__main_title">{t.adv}</h3>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -163,7 +187,9 @@ export default function IndexPage() {
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -175,7 +201,9 @@ export default function IndexPage() {
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">{t.first}</h5>
+                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                    {t.first}
+                  </h5>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>

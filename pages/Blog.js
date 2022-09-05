@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 import axios from "axios";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://55fa-95-137-233-63.ngrok.io/api/blogs/en`);
+  const res = await fetch(`https://e6e4-95-137-233-63.ngrok.io/api/blogs/en`);
   const data = await res.json();
   console.log(data);
   return {
@@ -46,13 +46,16 @@ const IndexPage = ({ blog }) => {
                   >
                     <div className="">
                       <div className="blog-image__content">
+                        <div className="text__contianer">
+                        <p className="text-white">{blog.createdAt}</p>
+                        <h2 className="text-white">{blog.title}</h2>
+                        </div>
+                       
                         <img
                           src={blog.mainImage}
                           alt="banner immage"
                           className="blogList"
                         />
-                        <p className="text-dark">{blog.createdAt}</p>
-                        <h2 className="text-dark">{blog.title}</h2>
                       </div>
                     </div>
                   </Col>
