@@ -7,6 +7,7 @@ import Nav from "../../../components/nav";
 import Footer from "../../../components/footer";
 import Image from "react-bootstrap";
 import { Link } from "react-bootstrap-icons";
+import { useRouter } from "next/router";
 
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {
@@ -24,7 +25,7 @@ const convertBase64 = (file) => {
 };
 
 const Blogpost = (blog) => {
- 
+    const { query } = useRouter();
 
   const QuillNoSSRWrapper = dynamic(import("react-quill"), {
     ssr: false,
@@ -102,7 +103,7 @@ const Blogpost = (blog) => {
   const getBlog = () => {
     var config = {
       method: "get",
-      url: `https://5dcc-95-137-233-63.ngrok.io/api/blogOnly/${blog.url}/${blog.lang}`,
+      url: `https://5dcc-95-137-233-63.ngrok.io/api/blogOnly/${query.lang}/${query.url}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         'Access-Control-Request-Origin': '*'
@@ -139,7 +140,7 @@ const Blogpost = (blog) => {
       
       var config = {
         method: 'put',
-        url: `https://5dcc-95-137-233-63.ngrok.io/api/blog/${blog.url}/${blog.lang}`,
+        url: `https://5dcc-95-137-233-63.ngrok.io/api/blog/${query.lang}/${query.url}`,
         headers: { 
           'Authorization': 'Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5', 
           'Content-Type': 'application/json',
@@ -155,12 +156,14 @@ const Blogpost = (blog) => {
       .catch(function (error) {
         // console.log(error);
       });
+      console.log(blog.url)
       
   }  
   return (
     <div>
       <Container>
         <a href="/admin"><h1>go back</h1></a>
+        <p>{query.url}</p>
         <Form className="mt-120">
           <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Upload image</Form.Label>

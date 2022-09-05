@@ -7,6 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import dynamic from "next/dynamic";
 import { Container, Form } from "react-bootstrap";
 import axios from "axios";
+import Link from "next/link";
 import { useState } from "react";
 import BlogEdit from "../edit/index"
 
@@ -72,12 +73,19 @@ const index = ({ blog }) => {
                 <Card.Title>{blog.lang}</Card.Title>
                 <Row>
                   <Col xs="6">
-                    <Button name={blog.lang}
+                    <Link  
+                      name={blog.lang}
                       id={blog.url}
-                      href="edit"
+                      href={{
+                        pathname: 'admin/edit',
+                        query: { url: blog.url,
+                          lang:blog.lang
+                          },
+                      }}
+                      // href="edit/?url="{...blog.url} {...blog.lang}
                       variant="success" >
                       edit
-                    </Button>
+                    </Link>
                   </Col>
                   <Col xs="6">
                     <Button
