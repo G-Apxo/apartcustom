@@ -25,7 +25,7 @@ const index = ({ blog }) => {
   const blogListFunct = () => {
     var config = {
       method: "get",
-      url: "https://5dcc-95-137-233-63.ngrok.io/api/blogs",
+      url: "https://e6e4-95-137-233-63.ngrok.io/api/blogs",
       data: data,
     };
 
@@ -45,7 +45,7 @@ const index = ({ blog }) => {
   const deleteBlog = (a) => {
     var config = {
       method: "delete",
-      url: `https://5dcc-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
+      url: `https://e6e4-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },

@@ -588,7 +588,7 @@ a {
   height: 300px;
 }
 .blog-image__content {
-  padding: 30px;
+  position: relative;
 }
 .blog-image__content h2 {
   color: white;
@@ -2043,4 +2043,9 @@ flickity-enabled {
 }
 .modal{
   --bs-modal-width: 90% !important;
+}
+.text__contianer{
+  position: absolute;
+  top: 15%;
+  left: 9%;
 }
