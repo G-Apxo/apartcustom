@@ -192,50 +192,33 @@ export default function IndexPage() {
             />
           </Col> */}
           <Row className="justify-content-between">
-            <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
+           <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
-                <Row className="whitespacerow">
-                  <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
-                    <h3 className="advanteges__main_title">{t.adv}</h3>
+                <Row>
+                  <p className="advanteges__main_title">{t.adv}</p>
+                  <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
-                  <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
-                    <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                      {t.first}
-                    </h5>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain2}</h5>
-                  </Col>
-                  <Col xs="2">
-                    <h5 className="advantages__sub_content">{t.bigBrain3}</h5>
-                  </Col>
-                </Row>
-                <Row className="whitespacerow">
-                  {/* <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head"></h5> */}
-                  <Col xs="4">
-                    <h5 className="advantages__sub_content">{t.bigBrain6}</h5>
-                  </Col>
-                  <Col xs="3">
-                    <h5 className="advantages__sub_content">{t.bigBrain4}</h5>
-                  </Col>
-                  <Col xs="3">
-                    <h5 className="advantages__sub_content">{t.bigBrain5}</h5>
-                  </Col>
-                  <Col xs="12">
-                    <h5 className="advantages__sub_content">{t.bigBrain8}</h5>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain3}</p>
                   </Col>
                 </Row>
                 <Row>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                    {t.first2}
-                  </h5>
-                  <Col xs="8">
-                    <h5 className="advantages__sub_content">{t.bigBrain7}</h5>
+                  {/* <p className="projects-floor-first-one text-secondary mt-2 "></p> */}
+                  <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                    <p className="basic-texts-14">{t.bigBrain4}</p>
+                  </Col>
+                </Row>
+                <Row>
+                  <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">{t.first2}</p>
+                  <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
+                    <h5 className="basic-texts-14">{t.bigBrain7}</h5>
                   </Col>
                 </Row>
               </Col>
@@ -252,8 +235,9 @@ export default function IndexPage() {
               <div className="">
                 <iframe
                   id="OCPFrame"
+                  className="iframe__mobile iframe_main"
                   allowFullScreen
-                  width="100%"
+                  // width="100%"
                   height="600"
                   loading="lazy"
                   frameBorder="0"

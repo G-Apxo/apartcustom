@@ -10,7 +10,7 @@ import { Container, Form, Row, Col } from "react-bootstrap";
 export default function Nav({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "ge" ? ge : locale === "ru" ? ru : en;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const changeLanguage = e => {
     const locale = e.target.value;

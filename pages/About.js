@@ -25,7 +25,7 @@ import Team14 from "../assets/teamfinal/ananojigauri.jpg";
 import Team15 from "../assets/teamfinal/levankandelaki.JPG";
 import Team16 from "../assets/teamfinal/avtosepiashvili.JPG";
 import Team17 from "../assets/teamfinal/mamukabaratashvili.JPG";
-import Team18 from "../assets/teamfinal/giorgikajaia.JPG";
+import Team18 from "../assets/teamfinal/giorgiqajaia.JPG";
 import Team19 from "../assets/teamfinal/lizilazashvili.JPG";
 import Team20 from "../assets/teamfinal/kaxafircxalava.jpg";
 import Team21 from "../assets/teamfinal/irakliiobashvili.JPG";

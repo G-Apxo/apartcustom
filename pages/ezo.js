@@ -205,9 +205,9 @@ export default function IndexPage2() {
               <div className="">
                 <iframe
                   id="OCPFrame"
-                  className="iframe__mobile"
+                  className="iframe__mobile iframe_main"
                   allowFullScreen
-                  width="100%"
+                  // width="100%"
                   height="600"
                   loading="lazy"
                   frameBorder="0"
