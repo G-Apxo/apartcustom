@@ -136,15 +136,15 @@ export default function IndexPage2() {
           </Row>
           <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
-              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -156,7 +156,7 @@ export default function IndexPage2() {
                   required
                 />
               </Col>
-              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>

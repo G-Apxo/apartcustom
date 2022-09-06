@@ -54,36 +54,68 @@ export default function IndexPage() {
               </Link>
             </Col>
           </Row>
-          <Row className="justify-content-between mt-5">
-            <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
-              <Image src={Taghi} className="Taghi" />
-            </Col>
-            {/* <Col xs="6" className="noneCol"></Col> */}
-            <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
-              <h3 className="projects-floor-title">{t.chooseApart}</h3>
-              <p>{t.chooseFloor}</p>
-            </Col>
-          </Row>
-          <Row className="justify-content-between mt-5">
-            <Col xs="6" lg="6" md="6" sm="6" xl="2" xxl="2">
-              <hr />
-              <p className="basic-texts-14">{t.treePlanted}</p>
-              <h3 className="projects-floor-yard">{t.treeNum}</h3>
-            </Col>
-            <Col xs="6" lg="6" md="3" sm="6" xl="3" xxl="3">
-              <hr />
-              <p className="basic-texts-14">{t.exhibitionSpace}</p>
-              <h3 className="projects-floor-yard">{t.esm}</h3>
-            </Col>
-            <Col xs="12" lg="4" md="4" sm="12" xl="4" xxl="4">
-              <Form.Select aria-label="Default select example">
-                <option>{t.chooseFloor}</option>
-                <option value="1">{t.chooseOne}</option>
-                <option value="2">{t.chooseTwo}</option>
-                <option value="3">{t.chooseThree}</option>
-              </Form.Select>
-            </Col>
-          </Row>
+          <div className="mob__view">
+            <Row className="justify-content-between mt-5">
+              <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2" className="mb-5">
+                <Image src={Taghi} className="Taghi" />
+              </Col>
+              <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
+                <hr />
+                <p className="basic-texts-14">{t.treePlanted}</p>
+                <h3 className="projects-floor-yard">{t.treeNum}</h3>
+              </Col>
+              <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+                <hr />
+                <p className="basic-texts-14">{t.exhibitionSpace}</p>
+                <h3 className="projects-floor-yard">{t.esm}</h3>
+              </Col>
+            </Row>
+            <Row className="justify-content-between mt-5">
+              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4" className="mt-3">
+                <h3 className="projects-floor-title"> {t.chooseApart}</h3>
+                <p>{t.chooseFloor}</p>
+              </Col>
+              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
+                <Form.Select aria-label="Default select example">
+                  <option>{t.chooseFloor}</option>
+                  <option value="1">{t.chooseOne}</option>
+                  <option value="2">{t.chooseTwo}</option>
+                  <option value="3">{t.chooseThree}</option>
+                </Form.Select>
+              </Col>
+            </Row>
+          </div>
+          <div className="desktop__view">
+            <Row className="justify-content-between mt-5">
+              <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
+                <Image src={Taghi} className="Taghi" />
+              </Col>
+              <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
+                <h3 className="projects-floor-title"> {t.chooseApart}</h3>
+                <p>{t.chooseFloor}</p>
+              </Col>
+            </Row>
+            <Row className="justify-content-between mt-5">
+              <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
+                <hr />
+                <p className="basic-texts-14">{t.treePlanted}</p>
+                <h3 className="projects-floor-yard">{t.treeNum}</h3>
+              </Col>
+              <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+                <hr />
+                <p className="basic-texts-14">{t.exhibitionSpace}</p>
+                <h3 className="projects-floor-yard">{t.esm}</h3>
+              </Col>
+              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
+                <Form.Select aria-label="Default select example">
+                  <option>{t.chooseFloor}</option>
+                  <option value="1">{t.chooseOne}</option>
+                  <option value="2">{t.chooseTwo}</option>
+                  <option value="3">{t.chooseThree}</option>
+                </Form.Select>
+              </Col>
+            </Row>
+          </div>
 
           <Col xs="12" className="mt-5">
             <div className="projects__image">
@@ -135,17 +167,17 @@ export default function IndexPage() {
           <Button variant="primary" type="submit">
             Submit
           </Button> */}
-          <form action="/send-data-here" method="post">
+        <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
-              <Col xs="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col xs="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col xs="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -157,7 +189,7 @@ export default function IndexPage() {
                   required
                 />
               </Col>
-              <Col xs="3">
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>
