@@ -1811,7 +1811,7 @@ flickity-enabled {
 .iframe_main{
   width: 650px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .iframe__mobile {
     width: 100% !important;
     height: 250px !important;
@@ -1830,7 +1830,7 @@ flickity-enabled {
     margin-top: 0px;
     padding-top: 0px;
   }
-  .destkop__view {
+  .desktop__view {
     display: none;
   }
   .mob__view {
