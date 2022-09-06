@@ -104,7 +104,22 @@ export default function IndexPage() {
                               ))}
                             </Form>
                           </Col>
-                          <Col xs="6" className="col-6">
+                          <Col xs="3">
+                            <Form>
+                              {["checkbox"].map(type => (
+                                <div key={`inline-${type}`} className="home--inputs">
+                                  <Form.Check
+                                    inline
+                                    label="2+ Bedrooms"
+                                    name="group1"
+                                    type={type}
+                                    id={`inline-${type}-3`}
+                                  />
+                                </div>
+                              ))}
+                            </Form>
+                          </Col>
+                          <Col xs="3">
                             <Form>
                               {["checkbox"].map(type => (
                                 <div key={`inline-${type}`} className="home--inputs">
@@ -113,7 +128,7 @@ export default function IndexPage() {
                                     label="3+ Bedrooms"
                                     name="group1"
                                     type={type}
-                                    id={`inline-${type}-3`}
+                                    id={`inline-${type}-4`}
                                   />
                                 </div>
                               ))}

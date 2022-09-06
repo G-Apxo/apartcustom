@@ -43,17 +43,20 @@ export default function IndexPage1() {
       <div className="hero">
         <Nav />
         <Container>
-          <Row className="mt-120-important">
-            <p className="goback">
-              {/* <BsArrowUpLeft /> */}
-              {t.goBack}
-            </p>
-          </Row>
+          <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+            <Link href="/projects">
+              <p className="goback">
+                {/* <BsArrowUpLeft /> */}
+                {t.goBack}
+              </p>
+            </Link>
+          </Col>
           <Row className="justify-content-between mt-5">
-            <Col xs="2">
+            <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
               <Image src={Taghi} className="Taghi" />
             </Col>
-            <Col xs="4">
+            <Col xs="6" className="noneCol"></Col>
+            <Col xs="4" lg="4" md="4" sm="4" xl="4" xxl="4">
               <h3 className="projects-floor-title">{t.chooseApart}</h3>
               <p>{t.chooseFloor}</p>
             </Col>
@@ -199,8 +202,9 @@ export default function IndexPage1() {
             <Col xs="6" className="d-flex justify-content-center align-items-center">
               <div className="">
                 <iframe
+                  id="OCPFrame"
                   allowFullScreen
-                  width="850"
+                  width="100%"
                   height="600"
                   loading="lazy"
                   frameBorder="0"

@@ -40,6 +40,8 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
+  const styledImg = "height: 400px";
+
   return (
     <div>
       <div className="hero">
@@ -271,7 +273,7 @@ export default function IndexPage() {
               <h3>{t.tt19} </h3>
               <p>{t.tt19p}</p>
             </Col>
-            <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+            <Col className="styledCol" xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team18} alt="banner immage" />
 
               <h3>{t.tt18} </h3>

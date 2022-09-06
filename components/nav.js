@@ -71,27 +71,27 @@ export default function Nav({ mode, setMode }) {
               </label>
               <ul className="menu__box">
                 <li>
-                  <a className="menu__item" href="#">
+                  <a className="menu__item" href="/About">
                     {t.about}
                   </a>
                 </li>
                 <li>
-                  <a className="menu__item" href="#">
+                  <a className="menu__item" href="/Investing">
                     {t.investing}
                   </a>
                 </li>
                 <li>
-                  <a className="menu__item" href="#">
+                  <a className="menu__item" href="/projects">
                     {t.projects}
                   </a>
                 </li>
                 <li>
-                  <a className="menu__item" href="#">
+                  <a className="menu__item" href="/Blog">
                     {t.blog}
                   </a>
                 </li>
                 <li>
-                  <a className="menu__item" href="#">
+                  <a className="menu__item" href="/Contact">
                     {t.contact}
                   </a>
                 </li>
@@ -127,7 +127,7 @@ export default function Nav({ mode, setMode }) {
           </Col>
         </Row>
       </Container>
-      <Container className="desktop__menu">
+      <Container className="desktop__menu otherNav">
         <Row className="align-items-center">
           <Col xs="2">
             <a className="navbar-brand nav_white" href="/">

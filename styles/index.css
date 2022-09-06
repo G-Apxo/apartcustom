@@ -509,9 +509,9 @@ a {
   color: white;
   text-decoration: none;
 }
-.nav-item  a{
+.nav-item a {
   text-decoration: none;
-  color: #121927ac ;
+  color: #121927ac;
   text-transform: uppercase;
   font-size: 11px !important;
   /* margin-left: 30px; */
@@ -560,6 +560,8 @@ a {
   border-radius: 0 !important;
   height: 40px;
   margin: 0 !important;
+  white-space: nowrap;
+
   /* max-width: 70%; */
 }
 .about--text__ptmod__mod {
@@ -696,7 +698,7 @@ a {
 .project--see {
   display: block;
   border-bottom: 1px solid black;
-  max-width: 38%;
+  max-width: 42%;
   margin-bottom: 10px;
   margin-top: 60px !important;
   line-height: 2rem;
@@ -961,6 +963,12 @@ h2 {
 }
 .goback {
   display: block;
+}
+.goBack::before {
+  content: url(../assets/goBack/goBackBlackArrow.png);
+}
+.dark-mode .goback::before {
+  content: url(../assets/goBack/goBackWhiteArrow.png);
 }
 @media screen and (max-width: 568px) {
   .innerContent {
@@ -1596,6 +1604,7 @@ flickity-enabled {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 } */
+
 .menu__item_mobile {
   margin-left: 25px;
 }
@@ -2036,17 +2045,64 @@ flickity-enabled {
   width: 100%;
 }
 
-.nav-link a{
+.nav-link a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 11px !important;
 }
-.modal{
+
+.modal {
   --bs-modal-width: 90% !important;
 }
-.text__contianer{
+.text__contianer {
   position: absolute;
   top: 15%;
   left: 9%;
 }
+.navbar-collapse {
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.box a {
+  text-decoration: none;
+}
+.homeNav .nav-link a {
+  color: white !important;
+}
+.otherNav .nav-link a {
+  color: black !important;
+}
+
+.dark-mode .nav-item a {
+  color: white;
+}
+@media screen and (max-width: 720px) {
+  /* #investingIframe {
+    width: 300px;
+  } */
+  .project--see {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project--see {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home--inputs {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #OCPFrame {
+    width: 850px;
+  }
+}
+/* @media screen and (max-width: 900) {
+  .noneCol {
+    display: none;
+  }
+} */

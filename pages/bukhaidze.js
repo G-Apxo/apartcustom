@@ -42,10 +42,14 @@ export default function IndexPage3() {
         <Nav />
         <Container>
           <Row className="mt-120-important">
-            <p className="goback">
-              {/* <BsArrowUpLeft /> */}
-              {t.goBack}
-            </p>
+            <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+              <Link href="/projects">
+                <p className="goback">
+                  {/* <BsArrowUpLeft /> */}
+                  {t.goBack}
+                </p>
+              </Link>
+            </Col>
           </Row>
           <Row className="justify-content-between mt-5">
             <Col xs="2">

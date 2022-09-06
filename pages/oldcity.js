@@ -45,32 +45,37 @@ export default function IndexPage() {
         <Nav />
         <Container>
           <Row className="mt-120-important">
-            <p className="goback">
-              {/* <BsArrowUpLeft /> */}
-              {t.goBack}
-            </p>
+            <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+              <Link href="/projects">
+                <p className="goback">
+                  {/* <BsArrowUpLeft /> */}
+                  {t.goBack}
+                </p>
+              </Link>
+            </Col>
           </Row>
           <Row className="justify-content-between mt-5">
-            <Col xs="2">
+            <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
               <Image src={Taghi} className="Taghi" />
             </Col>
-            <Col xs="4">
+            {/* <Col xs="6" className="noneCol"></Col> */}
+            <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
               <h3 className="projects-floor-title">{t.chooseApart}</h3>
               <p>{t.chooseFloor}</p>
             </Col>
           </Row>
           <Row className="justify-content-between mt-5">
-            <Col xs="2">
+            <Col xs="6" lg="6" md="6" sm="6" xl="2" xxl="2">
               <hr />
               <p className="basic-texts-14">{t.treePlanted}</p>
               <h3 className="projects-floor-yard">{t.treeNum}</h3>
             </Col>
-            <Col xs="3">
+            <Col xs="6" lg="6" md="3" sm="6" xl="3" xxl="3">
               <hr />
               <p className="basic-texts-14">{t.exhibitionSpace}</p>
               <h3 className="projects-floor-yard">{t.esm}</h3>
             </Col>
-            <Col xs="4">
+            <Col xs="12" lg="4" md="4" sm="12" xl="4" xxl="4">
               <Form.Select aria-label="Default select example">
                 <option>{t.chooseFloor}</option>
                 <option value="1">{t.chooseOne}</option>
@@ -94,7 +99,7 @@ export default function IndexPage() {
             </div>
           </Col>
           <Row className=" mt-40 mb-40 flex-helper">
-            <Col xxl="6">
+            <Col xs="6" lg="6" md="6" sm="6" xl="6" xxl="6">
               {" "}
               <a href="https://apart.ge/select-flat/fasadi/" target="_blank">
                 <i className=" cursor flex-helper">
@@ -102,7 +107,7 @@ export default function IndexPage() {
                 </i>
               </a>
             </Col>
-            <Col xxl="6">
+            <Col xs="6" lg="6" md="6" sm="6" xl="6" xxl="6">
               {" "}
               <a href="  https://apart.ge/360-ocp/  " target="_blank">
                 <i className=" cursor flex-helper">
@@ -187,15 +192,19 @@ export default function IndexPage() {
             />
           </Col> */}
           <Row className="justify-content-between">
-            <Col xs="5">
+            <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
                 <Row className="whitespacerow">
-                  <h3 className="advanteges__main_title">{t.adv}</h3>
-                  <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
-                    {t.first}
-                  </h5>
+                  <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
+                    <h3 className="advanteges__main_title">{t.adv}</h3>
+                  </Col>
+                  <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
+                    <h5 className="projects-floor-first-one text-secondary mt-2 advanteges___sub_head">
+                      {t.first}
+                    </h5>
+                  </Col>
                   <Col xs="2">
                     <h5 className="advantages__sub_content">{t.bigBrain}</h5>
                   </Col>
@@ -217,7 +226,7 @@ export default function IndexPage() {
                   <Col xs="3">
                     <h5 className="advantages__sub_content">{t.bigBrain5}</h5>
                   </Col>
-                  <Col xs="3">
+                  <Col xs="12">
                     <h5 className="advantages__sub_content">{t.bigBrain8}</h5>
                   </Col>
                 </Row>
@@ -231,11 +240,20 @@ export default function IndexPage() {
                 </Row>
               </Col>
             </Col>
-            <Col xs="6" className="d-flex justify-content-center align-items-center">
+            <Col
+              xs="12"
+              lg="12"
+              md="12"
+              sm="6"
+              xl="6"
+              xxl="6"
+              className="d-flex justify-content-center align-items-center"
+            >
               <div className="">
                 <iframe
+                  id="OCPFrame"
                   allowFullScreen
-                  width="850"
+                  width="100%"
                   height="600"
                   loading="lazy"
                   frameBorder="0"

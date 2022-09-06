@@ -30,9 +30,10 @@ export default function IndexPage() {
             </Container>
             <Container className="mt-60 ">
               <Row>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                <Col xs="12" lg="12" md="6" sm="6" xl="6" xxl="6">
                   <iframe
-                    width="580"
+                    id="investingIframe"
+                    width="100%"
                     height="360"
                     src="https://www.youtube.com/embed/PJbNd_1SC5c"
                     title="YouTube video player"
@@ -41,7 +42,7 @@ export default function IndexPage() {
                     allowfullscreen
                   ></iframe>
                 </Col>
-                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                <Col xs="12" lg="12" md="6" sm="6" xl="6" xxl="6">
                   <p className="investing-title_subtext">{t.tp2}</p>
                 </Col>
               </Row>
@@ -150,16 +151,31 @@ export default function IndexPage() {
                           ))}
                         </Form>
                       </Col>
-                      <Col xs="6" className="col-6">
+                      <Col xs="3">
                         <Form>
                           {["checkbox"].map(type => (
-                            <div key={`inline-${type}`} className=" home--inputs">
+                            <div key={`inline-${type}`} className="home--inputs">
+                              <Form.Check
+                                inline
+                                label="2+ Bedrooms"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-3`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
+                      </Col>
+                      <Col xs="3">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className="home--inputs">
                               <Form.Check
                                 inline
                                 label="3+ Bedrooms"
                                 name="group1"
                                 type={type}
-                                id={`inline-${type}-3`}
+                                id={`inline-${type}-4`}
                               />
                             </div>
                           ))}

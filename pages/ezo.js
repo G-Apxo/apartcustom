@@ -42,10 +42,14 @@ export default function IndexPage2() {
         <Nav />
         <Container>
           <Row className="mt-120-important">
-            <p className="goback">
-              {/* <BsArrowUpLeft /> */}
-              {t.goBack}
-            </p>
+            <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+              <Link href="/projects">
+                <p className="goback">
+                  {/* <BsArrowUpLeft /> */}
+                  {t.goBack}
+                </p>
+              </Link>
+            </Col>
           </Row>
           <div className="mob__view">
             <Row className="justify-content-between mt-5">
@@ -200,9 +204,10 @@ export default function IndexPage2() {
             >
               <div className="">
                 <iframe
+                  id="OCPFrame"
                   className="iframe__mobile"
                   allowFullScreen
-                  width="850"
+                  width="100%"
                   height="600"
                   loading="lazy"
                   frameBorder="0"

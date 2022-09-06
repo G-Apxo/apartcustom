@@ -324,11 +324,7 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col
-                      xs="8"
-                      className="projects-margin-fixer projects__image_dark"
-                      style={{ backgroundColor: "red" }}
-                    >
+                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -392,11 +388,7 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col
-                      xs="8"
-                      className="projects-margin-fixer projects__image_dark"
-                      style={{ backgroundColor: "red" }}
-                    >
+                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -463,11 +455,7 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col
-                      xs="8"
-                      className="projects-margin-fixer projects__image_dark"
-                      style={{ backgroundColor: "red" }}
-                    >
+                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -533,11 +521,7 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col
-                      xs="8"
-                      className="projects-margin-fixer projects__image_dark"
-                      style={{ backgroundColor: "red" }}
-                    >
+                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />
@@ -603,11 +587,7 @@ export default function IndexPage() {
                         </Carousel.Item>
                       </Carousel>
                     </Col>
-                    <Col
-                      xs="8"
-                      className="projects-margin-fixer projects__image_dark"
-                      style={{ backgroundColor: "red" }}
-                    >
+                    <Col xs="8" className="projects-margin-fixer projects__image_dark">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width full_desktop">
                           <Image src={Oldcity1} alt="banner immage" className="full_width" />

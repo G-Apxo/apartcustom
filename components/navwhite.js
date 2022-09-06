@@ -129,7 +129,7 @@ export default function Nav({ mode, setMode }) {
           </Col>
         </Row>
       </Container>
-      <Container className="desktop__menu">
+      <Container className="desktop__menu homeNav">
         <Row className="align-items-center">
           <Col xs="2">
             <a className="navbar-brand nav_white" href="/">
