@@ -25,7 +25,7 @@ const convertBase64 = (file) => {
 };
 
 const Blogpost = (blog) => {
-    const { query } = useRouter();
+  const { query } = useRouter();
 
   const QuillNoSSRWrapper = dynamic(import("react-quill"), {
     ssr: false,
