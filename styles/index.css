@@ -1814,6 +1814,7 @@ flickity-enabled {
 }
 @media screen and (max-width: 800px) {
   .iframe__mobile {
+    margin-top: 60px;
     width: 100% !important;
     height: 250px !important;
   }
@@ -2077,7 +2078,41 @@ flickity-enabled {
 }
 @media screen and (max-width: 720px) {
   #investingIframe {
-    width: 300px;
+    margin-bottom: 60px;
+  }
+  .section1-form-text {
+    margin-top: 60px;
+  }
+  .aboutIframe {
+    height: 300px;
+  }
+  .about--text__hmod {
+    margin-left: 0;
+  }
+  .cover {
+    min-height: 300px;
+  }
+
+  .about-htext-styles {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-htext-styles h3 {
+    font-size: 18px;
+  }
+  .about-htext-styles h2 {
+    font-size: 22px;
+  }
+  .test15 {
+    margin-top: 60px !important;
+  }
+  .hrClass {
+    padding-top: 15px !important;
+    margin-bottom: 15px !important;
   }
 }
 @media screen and (max-width: 1200px) {

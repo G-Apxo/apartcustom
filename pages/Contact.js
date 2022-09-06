@@ -95,7 +95,7 @@ export default function IndexPage() {
                                 <div key={`inline-${type}`}>
                                   <Form.Check
                                     inline
-                                    label="Studio"
+                                    label={t.b1}
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-1`}
@@ -111,7 +111,7 @@ export default function IndexPage() {
                                   <Form.Check
                                     className="text-nowrap"
                                     inline
-                                    label="1 Bedroom"
+                                    label={t.b2}
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-2`}
@@ -126,7 +126,7 @@ export default function IndexPage() {
                                 <div key={`inline-${type}`} className="home--inputs">
                                   <Form.Check
                                     inline
-                                    label="2+ Bedrooms"
+                                    label={t.b3}
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-3`}
@@ -141,7 +141,7 @@ export default function IndexPage() {
                                 <div key={`inline-${type}`} className="home--inputs">
                                   <Form.Check
                                     inline
-                                    label="3+ Bedrooms"
+                                    label={t.b4}
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-4`}

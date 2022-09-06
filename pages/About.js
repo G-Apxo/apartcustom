@@ -63,7 +63,7 @@ export default function IndexPage() {
               <Image src={Quote} alt="banner immage" />
             </Col>
           </Row>
-          <Row className="justify-content-between mb-60 mt-60">
+          <Row className="justify-content-between mb-60 mt-60 hrClass">
             <Col xs="5" lg="3" md="3" sm="3" xl="3" xxl="3">
               <hr />
             </Col>
@@ -136,6 +136,7 @@ export default function IndexPage() {
 
           <Col xs="12" className="mb-60 mt-60">
             <iframe
+              className="aboutIframe"
               width="100%"
               height="664"
               src="https://www.youtube.com/embed/ZVT5S0XYQDY"
@@ -178,9 +179,7 @@ export default function IndexPage() {
               <h3>{t.tt4} </h3>
               <p>{t.tt4p}</p>
             </Col>
-          </Row>
 
-          <Row className="sixty-row">
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team5} alt="banner immage" />
               {/* //19 */}
@@ -205,9 +204,7 @@ export default function IndexPage() {
               <h3>{t.tt8} </h3>
               <p>{t.tt8p}</p>
             </Col>
-          </Row>
 
-          <Row className="sixty-row">
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team9} alt="banner immage" />
               {/* //12 */}
@@ -232,9 +229,7 @@ export default function IndexPage() {
               <h3>{t.tt12} </h3>
               <p>{t.tt12p}</p>
             </Col>
-          </Row>
 
-          <Row className="sixty-row">
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team13} alt="banner immage" />
               {/* //17 */}
@@ -258,9 +253,7 @@ export default function IndexPage() {
               <h3>{t.tt16} </h3>
               <p>{t.tt16p}</p>
             </Col>
-          </Row>
 
-          <Row className="sixty-row">
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team17} alt="banner immage" />
 
@@ -287,8 +280,7 @@ export default function IndexPage() {
               <h3>{t.tt20} </h3>
               <p>{t.tt20p}</p>
             </Col>
-          </Row>
-          <Row className="sixty-row">
+
             {/* lizi */}
             <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
               <Image src={Team24} alt="banner immage" />

@@ -56,4 +56,8 @@ export default {
   subject: "Subject",
   textarea: "Text",
   getContacted: "Свяжитесь с нами",
+  b1: "Студия",
+  b2: "1 спальня",
+  b3: "2 спальни",
+  b4: "3+ спальни",
 };

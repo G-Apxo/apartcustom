@@ -144,17 +144,17 @@ export default function IndexPage1() {
           <Button variant="primary" type="submit">
             Submit
           </Button> */}
-                 <form action="/send-data-here" method="post">
+          <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -166,7 +166,7 @@ export default function IndexPage1() {
                   required
                 />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>
@@ -201,24 +201,20 @@ export default function IndexPage1() {
             />
           </Col> */}
           <Row className="justify-content-between">
-          <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
+            <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">
-                {t.apt}
-              </p>
+              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
-                  <p className=" basic-texts-14 text-secondary mt-2 ">
-                    {t.first}
-                  </p>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
                   </Col>
                 </Row>
@@ -229,9 +225,7 @@ export default function IndexPage1() {
                   </Col>
                 </Row>
                 <Row>
-                  <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">
-                    {t.first2}
-                  </p>
+                  <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">{t.first2}</p>
                   <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                     <h5 className="basic-texts-14">{t.bigBrain7}</h5>
                   </Col>
@@ -271,7 +265,7 @@ export default function IndexPage1() {
           </Col>
           <Col xs="12" className="mt-120 ">
             <Row>
-              <Col xs="4">
+              <Col xl="4">
                 <div className="projects__image">
                   <Link href="/ProjectsFloorSelector">
                     <Image className="cursor" src={Taghi2} />
@@ -284,9 +278,9 @@ export default function IndexPage1() {
                   </Link>
                 </div>
               </Col>
-              <Col xs="8" className="lastPhotos">
+              <Col xl="8" className="lastPhotos">
                 <Row>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi1} />
@@ -299,7 +293,7 @@ export default function IndexPage1() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi3} />
@@ -312,7 +306,7 @@ export default function IndexPage1() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi4} />
@@ -325,7 +319,7 @@ export default function IndexPage1() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi5} />

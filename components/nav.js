@@ -44,13 +44,13 @@ export default function Nav({ mode, setMode }) {
               </li>
               <li className="mobile_social_platgorms">
                 {" "}
-                <a className="soc__icon__mobile text-dark" href="#">
+                <a className="soc__icon__mobile text-dark" href="viber://chat?number=+995544444431">
                   {t.v}{" "}
                 </a>{" "}
                 <span className="text-dark soc__icon"> |</span>{" "}
               </li>
               <li className="mobile_social_platgorms">
-                <a className="soc__icon__mobile text-dark" href="#">
+                <a className="soc__icon__mobile text-dark" href="https://wa.me/995544444431">
                   {t.w}
                 </a>
               </li>
@@ -204,13 +204,13 @@ export default function Nav({ mode, setMode }) {
                 <span className="soc__icon text-dark"> | </span>{" "}
               </li>
               <li className="contact__platforms">
-                <a className="soc__icon text-dark" href="#">
+                <a className="soc__icon text-dark" href="viber://chat?number=+995544444431">
                   {t.v}{" "}
                 </a>
                 <span className="text-dark soc__icon"> |</span>{" "}
               </li>
               <li className="contact__platforms">
-                <a className="soc__icon text-dark" href="#">
+                <a className="soc__icon text-dark" href="https://wa.me/995544444431" target="_blank">
                   {t.w}
                 </a>
               </li>

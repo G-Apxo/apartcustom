@@ -41,7 +41,7 @@ export default function IndexPage() {
                     <p className="text-white">Apart Development</p>
                     <Image src={OCP} className="slider_logo mt-3" />
                     <p className="text-white"> {t.sliderd}</p>
-                    <a href="https://apart.ge/select-flat/bina_37/">
+                    <a href="/oldcity">
                       <p className="text-white text-white-read-more">{t.readmore}</p>
                     </a>
                   </Col>
@@ -159,7 +159,7 @@ export default function IndexPage() {
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`}>
-                        <Form.Check inline label="Studio" name="group1" type={type} id={`inline-${type}-1`} />
+                        <Form.Check inline label={t.b1} name="group1" type={type} id={`inline-${type}-1`} />
                       </div>
                     ))}
                   </Form>
@@ -171,7 +171,7 @@ export default function IndexPage() {
                         <Form.Check
                           className="text-nowrap"
                           inline
-                          label="1 Bedroom"
+                          label={t.b2}
                           name="group1"
                           type={type}
                           id={`inline-${type}-2`}
@@ -184,13 +184,7 @@ export default function IndexPage() {
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check
-                          inline
-                          label="2+ Bedrooms"
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-3`}
-                        />
+                        <Form.Check inline label={t.b3} name="group1" type={type} id={`inline-${type}-3`} />
                       </div>
                     ))}
                   </Form>
@@ -199,13 +193,7 @@ export default function IndexPage() {
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check
-                          inline
-                          label="3+ Bedrooms"
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-4`}
-                        />
+                        <Form.Check inline label={t.b4} name="group1" type={type} id={`inline-${type}-4`} />
                       </div>
                     ))}
                   </Form>
@@ -291,7 +279,7 @@ export default function IndexPage() {
                   <Image src={Malongo} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
-              <div className="col-4 d-flex justify-content-end">
+              <div className="col-4 d-flex justify-content-evenly">
                 <div className="partners">
                   <Image src={Tbc} alt="banner immage" className="partners_wite" />
                 </div>

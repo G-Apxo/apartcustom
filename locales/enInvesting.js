@@ -30,5 +30,10 @@ export default {
   email: "Email",
   subject: "Subject",
   textarea: "Text",
-  getContacted: "Get Contacted",
+  getContacted: "Contact Me",
+
+  b1: "Studio",
+  b2: "1 Bedroom",
+  b3: "2 Bedrooms",
+  b4: "3+ Bedrooms",
 };

@@ -44,13 +44,13 @@ export default function Nav({ mode, setMode }) {
               </li>
               <li className=" mobile_social_platgorms">
                 {" "}
-                <a className="soc__icon__mobile" href="#">
+                <a className="soc__icon__mobile" href="tel:+995 544 44 44 31">
                   {t.v}{" "}
                 </a>{" "}
                 <span className="soc__icon__mobile"> |</span>{" "}
               </li>
               <li className=" mobile_social_platgorms">
-                <a className="soc__icon__mobile" href="#">
+                <a className="soc__icon__mobile" href="tel:+995 544 44 44 39">
                   {t.w}
                 </a>
               </li>
@@ -208,13 +208,13 @@ export default function Nav({ mode, setMode }) {
               </li>
               <li className="contact__platforms">
                 {" "}
-                <a className="soc__icon" href="#">
+                <a className="soc__icon" href="tel:+995 544 44 44 31">
                   {t.v}{" "}
                 </a>{" "}
                 <span className="soc__icon"> |</span>{" "}
               </li>
               <li className="contact__platforms">
-                <a className="soc__icon" href="#">
+                <a className="soc__icon" href="tel:+995 544 44 44 39">
                   {t.w}
                 </a>
               </li>
