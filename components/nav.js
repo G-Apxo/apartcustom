@@ -37,7 +37,7 @@ export default function Nav({ mode, setMode }) {
             <ul className="navbar-nav">
               <li className="mobile_social_platgorms ">
                 {" "}
-                <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile text-dark">
+                <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile text-dark firstNum">
                   +995 32 2 11 11 44
                 </a>
                 <span className="soc__icon text-dark"> | </span>{" "}

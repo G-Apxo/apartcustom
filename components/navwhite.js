@@ -37,7 +37,7 @@ export default function Nav({ mode, setMode }) {
             <ul className="navbar-nav">
               <li className=" mobile_social_platgorms">
                 {" "}
-                <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile">
+                <a href="tel:+995-32-2-11-11-44" className="soc__icon__mobile firstNum">
                   +995 32 2 11 11 44
                 </a>
                 <span className="soc__icon__mobile"> | </span>{" "}
@@ -64,7 +64,7 @@ export default function Nav({ mode, setMode }) {
             </a>
           </Col>
           <Col xs="6">
-            <div className="hamburger-menu">
+            <div className="hamburger-menu navColor">
               <input id="menu__toggle" type="checkbox" />
               <label className="menu__btn" onClick={LebalHandler} htmlFor="menu__toggle">
                 <span></span>

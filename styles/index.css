@@ -1728,7 +1728,7 @@ flickity-enabled {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 50px;
+  top: 85px;
   right: 20px;
   width: 26px;
   height: 26px;
@@ -1806,6 +1806,7 @@ flickity-enabled {
 
   transition-duration: 0.25s;
 }
+
 .menu__item:hover {
   background-color: #cfd8dc;
 }
@@ -2111,7 +2112,7 @@ flickity-enabled {
     margin-top: 60px !important;
   }
   .hrClass {
-    padding-top: 15px !important;
+    margin-top: 15px !important;
     margin-bottom: 15px !important;
   }
 }
@@ -2137,4 +2138,9 @@ flickity-enabled {
 } */
 .contact__number_vw {
   white-space: nowrap;
+}
+.firstNum {
+  margin: 0 !important;
+}
+.navColor {
 }
