@@ -155,7 +155,7 @@ export default function IndexPage() {
               <p className="section1-form-text">{t.contactInfo}</p>
               <h4 className="section-1-form-subtext">{t.aparttype}</h4>
               <Row>
-                <Col xs="3">
+                <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`}>
@@ -164,7 +164,7 @@ export default function IndexPage() {
                     ))}
                   </Form>
                 </Col>
-                <Col xs="3">
+                <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className=" home--inputs">
@@ -180,7 +180,7 @@ export default function IndexPage() {
                     ))}
                   </Form>
                 </Col>
-                <Col xs="3">
+                <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
@@ -195,7 +195,7 @@ export default function IndexPage() {
                     ))}
                   </Form>
                 </Col>
-                <Col xs="3">
+                <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
                     {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">

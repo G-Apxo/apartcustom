@@ -26,36 +26,52 @@ export default function IndexPage() {
                   <h2 className="mt-60 mb-60">{t.lets}</h2>
                   <div className="contact__info">
                     <Row>
-                      <Col xs="3" className=" contact__number">
+                      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3" className=" contact__number">
                         <h3>{t.telnum}</h3>
                         <h5>+995 32 2 11 11 44</h5>
                       </Col>
                       <Col xs="3" className="contact__number">
                         <h3>{t.vw}</h3>
                         {/* ზუკასი */}
-                        <h5>+995 544 44 44 39</h5>
+                        <h5 className="contact__number_vw">+995 544 44 44 39</h5>
                         {/* ანის */}
-                        <h5>+995 544 44 44 31</h5>
+                        <h5 className="contact__number_vw">+995 544 44 44 31</h5>
                       </Col>
-                      <Col xs="3" className="contact__number">
+                      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3" className="contact__number">
                         <h3>{t.email}</h3>
                         <h5>sales@apart.ge</h5>
                       </Col>
-                      <Col xs="3" className=" contact__number">
+                      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3" className=" contact__number">
                         <h3>{t.location}</h3>
                         <h5>{t.locPl}</h5>
                       </Col>
-                      <Col xs="3" className="marginer-30 contact__number">
+                      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3" className="marginer-30 contact__number">
                         <a href="https://www.facebook.com/apartdevelopment">
                           <h5>Facebook</h5>
                         </a>
                       </Col>
-                      <Col xs="3" className=" contact__number d-flex align-items-end">
+                      <Col
+                        xs="6"
+                        lg="6"
+                        md="6"
+                        sm="6"
+                        xl="3"
+                        xxl="3"
+                        className=" contact__number d-flex align-items-end"
+                      >
                         <a href="https://www.instagram.com/apartdevelopment/">
                           <h5>Instagram</h5>
                         </a>
                       </Col>
-                      <Col xs="3" className=" contact__number d-flex align-items-end">
+                      <Col
+                        xs="6"
+                        lg="6"
+                        md="6"
+                        sm="6"
+                        xl="3"
+                        xxl="3"
+                        className=" contact__number d-flex align-items-end"
+                      >
                         <a href="https://www.youtube.com/channel/UCJgX6dfa84r7FkWIBof3z7A">
                           <h5>Youtube</h5>
                         </a>
@@ -73,7 +89,7 @@ export default function IndexPage() {
                         <p className="section1-form-text">{t.contactInfo}</p>
                         <h4 className="section-1-form-subtext">{t.aparttype}</h4>
                         <Row>
-                          <Col xs="3">
+                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                             <Form>
                               {["checkbox"].map(type => (
                                 <div key={`inline-${type}`}>
@@ -88,7 +104,7 @@ export default function IndexPage() {
                               ))}
                             </Form>
                           </Col>
-                          <Col xs="3">
+                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                             <Form>
                               {["checkbox"].map(type => (
                                 <div key={`inline-${type}`} className=" home--inputs">
@@ -104,7 +120,7 @@ export default function IndexPage() {
                               ))}
                             </Form>
                           </Col>
-                          <Col xs="3">
+                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                             <Form>
                               {["checkbox"].map(type => (
                                 <div key={`inline-${type}`} className="home--inputs">
@@ -119,7 +135,7 @@ export default function IndexPage() {
                               ))}
                             </Form>
                           </Col>
-                          <Col xs="3">
+                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                             <Form>
                               {["checkbox"].map(type => (
                                 <div key={`inline-${type}`} className="home--inputs">

@@ -509,9 +509,9 @@ a {
   color: white;
   text-decoration: none;
 }
-.nav-item  a{
+.nav-item a {
   text-decoration: none;
-  color: #121927ac ;
+  color: #121927ac;
   text-transform: uppercase;
   font-size: 11px !important;
   /* margin-left: 30px; */
@@ -963,7 +963,7 @@ h2 {
   display: block;
 }
 @media screen and (max-width: 568px) {
-  .special-margin-class{
+  .special-margin-class {
     margin-top: 120px;
   }
   .innerContent {
@@ -1293,6 +1293,7 @@ h2 {
 }
 .dark-mode .project--see {
   border-bottom: 1px solid white;
+  color: #fff;
 }
 .dark-mode .arrow {
   filter: brightness(0) invert(1);
@@ -1727,7 +1728,7 @@ flickity-enabled {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 85px;
+  top: 50px;
   right: 20px;
   width: 26px;
   height: 26px;
@@ -1808,7 +1809,7 @@ flickity-enabled {
 .menu__item:hover {
   background-color: #cfd8dc;
 }
-.iframe_main{
+.iframe_main {
   width: 650px;
 }
 @media screen and (max-width: 800px) {
@@ -2033,7 +2034,7 @@ flickity-enabled {
 }
 .custom__column {
   height: 100vh;
-  background-color: rgb(57, 57, 57); 
+  background-color: rgb(57, 57, 57);
 }
 .custom__pills {
   color: white;
@@ -2042,17 +2043,63 @@ flickity-enabled {
   width: 100%;
 }
 
-.nav-link a{
+.nav-link a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 11px !important;
 }
-.modal{
+.modal {
   --bs-modal-width: 90% !important;
 }
-.text__contianer{
+.text__contianer {
   position: absolute;
   top: 15%;
   left: 9%;
+}
+.navbar-collapse {
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.box a {
+  text-decoration: none;
+}
+.homeNav .nav-link a {
+  color: white !important;
+}
+.otherNav .nav-link a {
+  color: black !important;
+}
+
+.dark-mode .nav-item a {
+  color: white;
+}
+@media screen and (max-width: 720px) {
+  #investingIframe {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project--see {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home--inputs {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #OCPFrame {
+    width: 850px;
+  }
+}
+/* @media screen and (max-width: 900) {
+  .noneCol {
+    display: none;
+  }
+} */
+.contact__number_vw {
+  white-space: nowrap;
 }
