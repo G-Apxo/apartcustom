@@ -226,7 +226,7 @@ export default function IndexPage2() {
           </Col>
           <Col xs="12" className="mt-120 mb-120">
             <Row>
-              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
+              <Col xl="4">
                 <div className="projects__image">
                   <Link href="/ProjectsFloorSelector">
                     <Image className="cursor" src={Ezo2} />
@@ -239,9 +239,9 @@ export default function IndexPage2() {
                   </Link>
                 </div>
               </Col>
-              <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8" className="lastPhotos">
+              <Col xl="8" xxl="8" className="lastPhotos">
                 <Row>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo3} />
@@ -254,7 +254,7 @@ export default function IndexPage2() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo4} />
@@ -267,7 +267,7 @@ export default function IndexPage2() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo1} />
@@ -280,7 +280,7 @@ export default function IndexPage2() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo5} />
