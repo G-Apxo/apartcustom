@@ -10,11 +10,18 @@ import Link from "next/link";
 import Taghi from "../assets/projectslogofire/ocp_logo_black.png";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/panorama1.jpg";
-import Panorama2 from "../assets/projectsInside/panorama2.jpg";
-import Panorama3 from "../assets/projectsInside/panorama3.jpg";
-import Panorama4 from "../assets/projectsInside/panorama4.jpg";
-import Panorama5 from "../assets/projectsInside/panorama5.jpg";
+import Panorama1 from "../assets/GAMISRENDEREBI/OCP/9.jpg";
+import Panorama1d from "../assets/GAMISRENDEREBI/OCP/10.jpg";
+import Panorama2 from "../assets/GAMISRENDEREBI/OCP/11.jpg";
+import Panorama2d from "../assets/GAMISRENDEREBI/OCP/12.jpg";
+import Panorama3 from "../assets/GAMISRENDEREBI/OCP/5.jpg";
+import Panorama3d from "../assets/GAMISRENDEREBI/OCP/6.jpg";
+import Panorama4 from "../assets/GAMISRENDEREBI/OCP/3.jpg";
+import Panorama4d from "../assets/GAMISRENDEREBI/OCP/4.jpg";
+import Panorama5 from "../assets/GAMISRENDEREBI/OCP/17.jpg";
+import Panorama5d from "../assets/GAMISRENDEREBI/OCP/18.jpg";
+import Hero from "../assets/GAMISRENDEREBI/OCP/9.jpg";
+import Herod from "../assets/GAMISRENDEREBI/OCP/10.jpg";
 import Vector from "../assets/seeprjvector.png";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -72,10 +79,17 @@ export default function IndexPage() {
               </Form.Select>
             </Col>
           </Row>
+
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Panorama5} />
+                <Image className="cursor" src={Hero} />
+              </Link>
+            </div>
+
+            <div className="projects__image_dark">
+              <Link href="/ProjectsFloorSelector">
+                <Image className="cursor" src={Herod} />
               </Link>
             </div>
           </Col>
@@ -241,22 +255,73 @@ export default function IndexPage() {
           <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="4">
-                <Image src={Panorama3} className="" />
+                <div className="projects__image">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Panorama3} />
+                  </Link>
+                </div>
+
+                <div className="projects__image_dark">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Panorama3d} />
+                  </Link>
+                </div>
               </Col>
+
               <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
-                    <Image src={Panorama2} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama2} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama2d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama1} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama1} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama1d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama4} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama4} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama4d} />
+                      </Link>
+                    </div>
                   </Col>
 
                   <Col xs="6" className="">
-                    <Image src={Panorama5} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama5} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Panorama5d} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Col>

@@ -9,14 +9,14 @@ export default {
   prj1ct: "2023",
 
   prj2d: "მიმდინარე",
-  prj2t: "EZO OLD TBILISI",
+  prj2t: "Ezo Old Tbilisi",
   prj2l: "ლოკაცია",
   prj2lt: "გორკის შესახვევი 1-ლი",
   prj2c: "ჩაბარების დრო",
   prj2ct: "2024",
 
   prj3d: "მიმდინარე",
-  prj3t: "TAGHI OLD TBILISI",
+  prj3t: "Taghi Old Tbilisi",
   prj3l: "ლოკაცია",
   prj3lt: "მიხაილ ბუხაძის #48",
   prj3c: "ჩაბარების დრო",

@@ -9,14 +9,14 @@ export default {
   prj1ct: "2023",
 
   prj2d: "Текущий",
-  prj2t: "EZO OLD TBILISI",
+  prj2t: "Ezo Old Tbilisi",
   prj2l: "Локация",
   prj2lt: "ул. Горького, I–ый переулок",
   prj2c: "Время сдачи",
   prj2ct: "2024",
 
   prj3d: "Текущий",
-  prj3t: "TAGHI OLD TBILISI",
+  prj3t: "Taghi Old Tbilisi",
   prj3l: "Локация",
   prj3lt: "Михеила Бухаидзе №48",
   prj3c: "Время сдачи",

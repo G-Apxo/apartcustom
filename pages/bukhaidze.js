@@ -8,14 +8,18 @@ import ru from "../locales/ruBukhaidze";
 import ge from "../locales/geBukhaidze";
 import Link from "next/link";
 import Taghi from "../assets/projectslogofire/Bukh_6a_ENG_LOGO.png";
-import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6a-main.jpg";
-import Bukhadizedark from "../assets/projectmainphotos/bukhaidze-6-main-dark.jpg"
+import Bukhadizedark from "../assets/projectmainphotos/bukhaidze-6-main-dark.jpg";
 import Footer from "../components/footer";
-import Bukhaidze1 from "../assets/projectsInside/bukhadize1.jpg";
-import Bukhaidze2 from "../assets/projectsInside/bukhadize2.jpg";
-import Bukhaidze3 from "../assets/projectsInside/bukhadize3.jpg";
-import Bukhaidze4 from "../assets/projectsInside/bukhadize4.jpg";
-import Bukhaidze5 from "../assets/projectsInside/bukhadize5.jpg";
+import Bukhaidze1 from "../assets/GAMISRENDEREBI/6a/11.jpg";
+import Bukhaidze1d from "../assets/GAMISRENDEREBI/6a/12.jpg";
+import Bukhaidze2 from "../assets/GAMISRENDEREBI/6a/3.jpg";
+import Bukhaidze2d from "../assets/GAMISRENDEREBI/6a/4.jpg";
+import Bukhaidze3 from "../assets/GAMISRENDEREBI/6a/9.jpg";
+import Bukhaidze3d from "../assets/GAMISRENDEREBI/6a/10.jpg";
+import Bukhaidze4 from "../assets/GAMISRENDEREBI/6a/7.jpg";
+import Bukhaidze4d from "../assets/GAMISRENDEREBI/6a/8.jpg";
+import Bukhaidze5 from "../assets/GAMISRENDEREBI/6a/5.jpg";
+import Bukhaidze5d from "../assets/GAMISRENDEREBI/6a/6.jpg";
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -75,12 +79,12 @@ export default function IndexPage3() {
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Bukhaidze} />
+                <Image className="cursor" src={Bukhaidze1} />
               </Link>
             </div>
             <div className="projects__image_dark">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Bukhadizedark} />
+                <Image className="cursor" src={Bukhaidze1d} />
               </Link>
             </div>
           </Col>
@@ -214,21 +218,71 @@ export default function IndexPage3() {
           <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="4">
-                <Image src={Bukhaidze5} className="" />
+                <div className="projects__image">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Bukhaidze2} />
+                  </Link>
+                </div>
+
+                <div className="projects__image_dark">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Bukhaidze2d} />
+                  </Link>
+                </div>
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
-                    <Image src={Bukhaidze2} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze3} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze3d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Bukhaidze3} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze4} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze4d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Bukhaidze4} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze5} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze5d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Bukhaidze1} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze1} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Bukhaidze1d} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Col>

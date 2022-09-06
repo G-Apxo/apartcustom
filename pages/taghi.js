@@ -11,11 +11,16 @@ import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projectmainphotos/taghi-main.png";
 import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg";
 import Footer from "../components/footer";
-import Taghi1 from "../assets/projectsInside/taghi1.jpg";
-import Taghi2 from "../assets/projectsInside/taghi2.jpg";
-import Taghi3 from "../assets/projectsInside/taghi3.jpg";
-import Taghi4 from "../assets/projectsInside/taghi4.jpg";
-import Taghi5 from "../assets/projectsInside/taghi5.jpg";
+import Taghi1 from "../assets/GAMISRENDEREBI/48/1.jpg";
+import Taghi1d from "../assets/GAMISRENDEREBI/48/2.jpg";
+import Taghi2 from "../assets/GAMISRENDEREBI/48/3.png";
+import Taghi2d from "../assets/GAMISRENDEREBI/48/4.jpg";
+import Taghi3 from "../assets/GAMISRENDEREBI/48/7.jpg";
+import Taghi3d from "../assets/GAMISRENDEREBI/48/8.jpg";
+import Taghi4 from "../assets/GAMISRENDEREBI/48/9.jpg";
+import Taghi4d from "../assets/GAMISRENDEREBI/48/10.jpg";
+import Taghi5 from "../assets/GAMISRENDEREBI/48/5.jpg";
+import Taghi5d from "../assets/GAMISRENDEREBI/48/6.jpg";
 
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
@@ -76,12 +81,12 @@ export default function IndexPage1() {
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Bukhaidze} />
+                <Image className="cursor" src={Taghi1} />
               </Link>
             </div>
             <div className="projects__image_dark">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Taghidark} />
+                <Image className="cursor" src={Taghi1d} />
               </Link>
             </div>
           </Col>
@@ -215,21 +220,71 @@ export default function IndexPage1() {
           <Col xs="12" className="mt-120 ">
             <Row>
               <Col xs="4">
-                <Image src={Taghi1} className="" />
+                <div className="projects__image">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Taghi2} />
+                  </Link>
+                </div>
+
+                <div className="projects__image_dark">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Taghi2d} />
+                  </Link>
+                </div>
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
-                    <Image src={Taghi2} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi1} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi1d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Taghi3} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi3} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi3d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Taghi4} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi4} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi4d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Taghi5} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi5} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Taghi5d} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Col>

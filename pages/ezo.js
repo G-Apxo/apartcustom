@@ -8,13 +8,18 @@ import ru from "../locales/ruEzo";
 import ge from "../locales/geEzo";
 import Link from "next/link";
 import Taghi from "../assets/projectslogofire/ezo_logo_black.png";
-import Bukhaidze from "../assets/projectmainphotos/ezo-main.jpg";
+import Ezo1 from "../assets/GAMISRENDEREBI/ezo/1.jpg";
+import Ezo1d from "../assets/GAMISRENDEREBI/ezo/2.jpg";
+import Ezo2 from "../assets/GAMISRENDEREBI/ezo/3.jpg";
+import Ezo2d from "../assets/GAMISRENDEREBI/ezo/4.jpg";
+import Ezo3 from "../assets/GAMISRENDEREBI/ezo/5.jpg";
+import Ezo3d from "../assets/GAMISRENDEREBI/ezo/6.jpg";
+import Ezo4 from "../assets/GAMISRENDEREBI/ezo/7.jpg";
+import Ezo4d from "../assets/GAMISRENDEREBI/ezo/8.jpg";
+import Ezo5 from "../assets/GAMISRENDEREBI/ezo/9.jpg";
+import Ezo5d from "../assets/GAMISRENDEREBI/ezo/10.jpg";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/projectsInside/ezo1.jpg";
-import Panorama2 from "../assets/projectsInside/ezo2.jpg";
-import Panorama3 from "../assets/projectsInside/ezo3.jpg";
-import Panorama4 from "../assets/projectsInside/ezo4.jpg";
-import Panorama5 from "../assets/projectsInside/ezo5.jpg";
+
 export default function IndexPage2() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -108,7 +113,12 @@ export default function IndexPage2() {
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Bukhaidze} />
+                <Image className="cursor" src={Ezo1} />
+              </Link>
+            </div>
+            <div className="projects__image_dark">
+              <Link href="/ProjectsFloorSelector">
+                <Image className="cursor" src={Ezo1d} />
               </Link>
             </div>
           </Col>
@@ -212,21 +222,71 @@ export default function IndexPage2() {
           <Col xs="12" className="mt-120 mb-120">
             <Row>
               <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
-                <Image src={Panorama4} className="" />
+                <div className="projects__image">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Ezo2} />
+                  </Link>
+                </div>
+
+                <div className="projects__image_dark">
+                  <Link href="/ProjectsFloorSelector">
+                    <Image className="cursor" src={Ezo2d} />
+                  </Link>
+                </div>
               </Col>
               <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8" className="lastPhotos">
                 <Row>
                   <Col xs="6">
-                    <Image src={Panorama1} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo3} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo3d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama2} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo4} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo4d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama3} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo1} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo1d} />
+                      </Link>
+                    </div>
                   </Col>
                   <Col xs="6">
-                    <Image src={Panorama5} className="" />
+                    <div className="projects__image">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo5} />
+                      </Link>
+                    </div>
+
+                    <div className="projects__image_dark">
+                      <Link href="/ProjectsFloorSelector">
+                        <Image className="cursor" src={Ezo5d} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Col>
