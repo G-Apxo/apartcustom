@@ -288,7 +288,7 @@ export default function IndexPage() {
           </Col>
           <Col xs="12" className="mt-120 mb-120">
             <Row>
-              <Col xs="4">
+              <Col xl="4">
                 <div className="projects__image">
                   <Link href="/ProjectsFloorSelector">
                     <Image className="cursor" src={Panorama3} />
@@ -302,9 +302,9 @@ export default function IndexPage() {
                 </div>
               </Col>
 
-              <Col xs="8" className="lastPhotos">
+              <Col xl="8" className="lastPhotos">
                 <Row>
-                  <Col xs="6">
+                <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama2} />
@@ -317,7 +317,7 @@ export default function IndexPage() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama1} />
@@ -330,7 +330,7 @@ export default function IndexPage() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama4} />
@@ -344,7 +344,7 @@ export default function IndexPage() {
                     </div>
                   </Col>
 
-                  <Col xs="6" className="">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama5} />

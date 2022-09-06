@@ -238,7 +238,7 @@ export default function IndexPage3() {
           </Col>
           <Col xs="12" className="mt-120 mb-120">
             <Row>
-              <Col xs="4">
+              <Col xl="4">
                 <div className="projects__image">
                   <Link href="/ProjectsFloorSelector">
                     <Image className="cursor" src={Bukhaidze2} />
@@ -253,7 +253,7 @@ export default function IndexPage3() {
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
-                  <Col xs="6">
+                <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze3} />
@@ -266,7 +266,7 @@ export default function IndexPage3() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze4} />
@@ -279,7 +279,7 @@ export default function IndexPage3() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze5} />
@@ -292,7 +292,7 @@ export default function IndexPage3() {
                       </Link>
                     </div>
                   </Col>
-                  <Col xs="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze1} />
