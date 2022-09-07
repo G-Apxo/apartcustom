@@ -65,7 +65,7 @@ const index = ({ blog }) => {
       <h2 onClick={blogListFunct}>Blog List</h2>
       <Row>
         {blogList.map((blog) => (
-          <Col xs="4">
+          <Col xs="4" key={blog}>
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={blog.mainImage} />
               <Card.Body>

@@ -39,7 +39,7 @@ const IndexPage = ({ blog }) => {
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <Row>
               {blog.map((blog) => (
-                <Link className="blog-single-blog" href={"blog/" + blog.url}>
+                <Link className="blog-single-blog" key={blog} href={"blog/" + blog.url}>
                   <Col
                     className="cursor mt-5"
                     xs="12"
