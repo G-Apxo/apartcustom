@@ -6,4 +6,5 @@ module.exports = {
   },
   trailingSlash: true,
   largePageDataBytes: 128 * 100000, // 12800KB by default
+  staticPageGenerationTimeout:100
 };
