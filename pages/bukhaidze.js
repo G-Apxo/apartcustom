@@ -12,14 +12,16 @@ import Bukhadizedark from "../assets/projectmainphotos/bukhaidze-6-main-dark.jpg
 import Footer from "../components/footer";
 import Bukhaidze1 from "../assets/GAMISRENDEREBI/6a/11.jpg";
 import Bukhaidze1d from "../assets/GAMISRENDEREBI/6a/12.jpg";
-import Bukhaidze2 from "../assets/GAMISRENDEREBI/6a/3.jpg";
-import Bukhaidze2d from "../assets/GAMISRENDEREBI/6a/4.jpg";
-import Bukhaidze3 from "../assets/GAMISRENDEREBI/6a/9.jpg";
-import Bukhaidze3d from "../assets/GAMISRENDEREBI/6a/10.jpg";
-import Bukhaidze4 from "../assets/GAMISRENDEREBI/6a/7.jpg";
-import Bukhaidze4d from "../assets/GAMISRENDEREBI/6a/8.jpg";
-import Bukhaidze5 from "../assets/GAMISRENDEREBI/6a/5.jpg";
-import Bukhaidze5d from "../assets/GAMISRENDEREBI/6a/6.jpg";
+import Bukhaidze1b from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-5.jpg";
+import Bukhaidze1bd from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-5-night.jpg";
+import Bukhaidze2 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-1.jpg";
+import Bukhaidze2d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-1-night.jpg";
+import Bukhaidze3 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-2.jpg";
+import Bukhaidze3d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-2-night.jpg";
+import Bukhaidze4 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-3.jpg";
+import Bukhaidze4d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-3-night.jpg";
+import Bukhaidze5 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-4.jpg";
+import Bukhaidze5d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-4-night.jpg";
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -145,17 +147,17 @@ export default function IndexPage3() {
           <Button variant="primary" type="submit">
             Submit
           </Button> */}
-             <form action="/send-data-here" method="post">
+          <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -167,13 +169,13 @@ export default function IndexPage3() {
                   required
                 />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>
           </form>
 
-            <Row className="justify-content-between">
+          <Row className="justify-content-between">
             <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
@@ -253,7 +255,7 @@ export default function IndexPage3() {
               </Col>
               <Col xs="8" className="lastPhotos">
                 <Row>
-                <Col xl="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze3} />
@@ -280,28 +282,28 @@ export default function IndexPage3() {
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze5} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Bukhaidze5d} />
                       </Link>
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Bukhaidze1} />
+                        <Image className="cursor" src={Bukhaidze1b} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Bukhaidze1d} />
+                        <Image className="cursor" src={Bukhaidze1bd} />
                       </Link>
                     </div>
                   </Col>

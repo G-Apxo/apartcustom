@@ -10,16 +10,16 @@ import Link from "next/link";
 import Taghi from "../assets/projectslogofire/ocp_logo_black.png";
 import Bukhaidze from "../assets/projects_floor.png";
 import Footer from "../components/footer";
-import Panorama1 from "../assets/GAMISRENDEREBI/OCP/9.jpg";
-import Panorama1d from "../assets/GAMISRENDEREBI/OCP/10.jpg";
-import Panorama2 from "../assets/GAMISRENDEREBI/OCP/11.jpg";
-import Panorama2d from "../assets/GAMISRENDEREBI/OCP/12.jpg";
-import Panorama3 from "../assets/GAMISRENDEREBI/OCP/5.jpg";
-import Panorama3d from "../assets/GAMISRENDEREBI/OCP/6.jpg";
-import Panorama4 from "../assets/GAMISRENDEREBI/OCP/3.jpg";
-import Panorama4d from "../assets/GAMISRENDEREBI/OCP/4.jpg";
-import Panorama5 from "../assets/GAMISRENDEREBI/OCP/17.jpg";
-import Panorama5d from "../assets/GAMISRENDEREBI/OCP/18.jpg";
+import Panorama1 from "../assets/finalBotRenders/OCP/5-ocp-3.jpg";
+import Panorama1d from "../assets/finalBotRenders/OCP/5-ocp-3-night.jpg";
+import Panorama2 from "../assets/finalBotRenders/OCP/5-ocp-2.jpg";
+import Panorama2d from "../assets/finalBotRenders/OCP/5-ocp-2-night.jpg";
+import Panorama3 from "../assets/finalBotRenders/OCP/5-ocp-1.jpg";
+import Panorama3d from "../assets/finalBotRenders/OCP/5-ocp-1-night.jpg";
+import Panorama4 from "../assets/finalBotRenders/OCP/5-ocp-4.jpg";
+import Panorama4d from "../assets/finalBotRenders/OCP/5-ocp-4-night.jpg";
+import Panorama5 from "../assets/finalBotRenders/OCP/5-ocp-5.jpg";
+import Panorama5d from "../assets/finalBotRenders/OCP/5-ocp-5-night.jpg";
 import Hero from "../assets/GAMISRENDEREBI/OCP/9.jpg";
 import Herod from "../assets/GAMISRENDEREBI/OCP/10.jpg";
 import Vector from "../assets/seeprjvector.png";
@@ -167,17 +167,17 @@ export default function IndexPage() {
           <Button variant="primary" type="submit">
             Submit
           </Button> */}
-        <form action="/send-data-here" method="post">
+          <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -189,7 +189,7 @@ export default function IndexPage() {
                   required
                 />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>
@@ -224,7 +224,7 @@ export default function IndexPage() {
             />
           </Col> */}
           <Row className="justify-content-between">
-          <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
+            <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
@@ -256,10 +256,10 @@ export default function IndexPage() {
               </Col>
             </Col>
             <Col
-          xs="12"
-          lg="12"
-          md="12"
-          sm="12"
+              xs="12"
+              lg="12"
+              md="12"
+              sm="12"
               xl="6"
               xxl="6"
               className="d-flex justify-content-center align-items-center"
@@ -304,7 +304,7 @@ export default function IndexPage() {
 
               <Col xl="8" className="lastPhotos">
                 <Row>
-                <Col xl="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama2} />
@@ -331,13 +331,13 @@ export default function IndexPage() {
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama4} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama4d} />
                       </Link>
@@ -345,13 +345,13 @@ export default function IndexPage() {
                   </Col>
 
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama5} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Panorama5d} />
                       </Link>

@@ -10,14 +10,16 @@ import Link from "next/link";
 import Taghi from "../assets/projectslogofire/ezo_logo_black.png";
 import Ezo1 from "../assets/GAMISRENDEREBI/ezo/1.jpg";
 import Ezo1d from "../assets/GAMISRENDEREBI/ezo/2.jpg";
-import Ezo2 from "../assets/GAMISRENDEREBI/ezo/3.jpg";
-import Ezo2d from "../assets/GAMISRENDEREBI/ezo/4.jpg";
-import Ezo3 from "../assets/GAMISRENDEREBI/ezo/5.jpg";
-import Ezo3d from "../assets/GAMISRENDEREBI/ezo/6.jpg";
-import Ezo4 from "../assets/GAMISRENDEREBI/ezo/7.jpg";
-import Ezo4d from "../assets/GAMISRENDEREBI/ezo/8.jpg";
-import Ezo5 from "../assets/GAMISRENDEREBI/ezo/9.jpg";
-import Ezo5d from "../assets/GAMISRENDEREBI/ezo/10.jpg";
+import Ezo1b from "../assets/finalBotRenders/EZO/5-ezo-2.jpg";
+import Ezo1bd from "../assets/finalBotRenders/EZO/5-ezo-2-night.jpg";
+import Ezo2 from "../assets/finalBotRenders/EZO/5-ezo-1.jpg";
+import Ezo2d from "../assets/finalBotRenders/EZO/5-ezo-1-night.jpg";
+import Ezo3 from "../assets/finalBotRenders/EZO/5-ezo-3.jpg";
+import Ezo3d from "../assets/finalBotRenders/EZO/5-ezo-3-night.jpg";
+import Ezo4 from "../assets/finalBotRenders/EZO/5-ezo-4.jpg";
+import Ezo4d from "../assets/finalBotRenders/EZO/5-ezo-4-night.jpg";
+import Ezo5 from "../assets/finalBotRenders/EZO/5-ezo-5.jpg";
+import Ezo5d from "../assets/finalBotRenders/EZO/5-ezo-5-night.jpg";
 import Footer from "../components/footer";
 
 export default function IndexPage2() {
@@ -140,11 +142,11 @@ export default function IndexPage2() {
                 <label htmlFor="name"></label>
                 <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="email"></label>
                 <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <label htmlFor="tel"></label>
                 <input
                   className="btn-test"
@@ -156,13 +158,13 @@ export default function IndexPage2() {
                   required
                 />
               </Col>
-              <Col  xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
+              <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
                 <Button className="btn-send">{t.req}</Button>
               </Col>
             </Row>
           </form>
           <Row className="justify-content-between">
-          <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
+            <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
@@ -194,10 +196,10 @@ export default function IndexPage2() {
               </Col>
             </Col>
             <Col
-               xs="12"
-               lg="12"
-               md="12"
-               sm="12"
+              xs="12"
+              lg="12"
+              md="12"
+              sm="12"
               xl="6"
               xxl="6"
               className="d-flex justify-content-center align-items-center"
@@ -268,26 +270,26 @@ export default function IndexPage2() {
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo1} />
+                        <Image className="cursor" src={Ezo1b} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo1d} />
+                        <Image className="cursor" src={Ezo1bd} />
                       </Link>
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo5} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Ezo5d} />
                       </Link>

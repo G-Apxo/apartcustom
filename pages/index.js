@@ -30,7 +30,7 @@ export default function IndexPage() {
       <Navwhite mode={mode} setMode={setMode} />
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
+          <div className="container__video projects__image">
             <video loop autoPlay muted className="video vid-bg">
               <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
@@ -49,9 +49,28 @@ export default function IndexPage() {
               </div>
             </Container>
           </div>
+          <div className="container__video projects__image_dark">
+            <video loop autoPlay muted className="video vid-bg">
+              <source src="https://apart.ge/ocp-night.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={OCP} className="slider_logo mt-3" />
+                    <p className="text-white"> {t.sliderd}</p>
+                    <a href="/oldcity">
+                      <p className="text-white text-white-read-more">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
+          <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
               <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
@@ -70,9 +89,28 @@ export default function IndexPage() {
               </div>
             </Container>
           </div>
+          <div className="container__video projects__image_dark">
+            <video loop autoPlay muted className="video">
+              <source src="https://www.apart.ge/ezo-night.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={Ezo} className="slider_logo" />
+                    <p className="text-white"> {t.ezo}</p>
+                    <a href="/ezo">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
+          <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
               <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
@@ -91,9 +129,28 @@ export default function IndexPage() {
               </div>
             </Container>
           </div>
+          <div className="container__video projects__image_dark">
+            <video loop autoPlay muted className="video">
+              <source src="https://www.apart.ge/taghi-night.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <Image src={TaghiWhite} className="slider_logo" />
+                    <p className="text-white"> {t.taghi}</p>
+                    <a href="/taghi">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
+          <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
               <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
@@ -112,11 +169,49 @@ export default function IndexPage() {
               </div>
             </Container>
           </div>
+          <div className="container__video projects__image_dark">
+            <video loop autoPlay muted className="video">
+              <source src="https://www.apart.ge/bukhaidze-6-night.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <h2 className="text-white banner__header">{t.bukhaidzeha}</h2>
+                    <p className="text-white"> {t.bukhaidze}</p>
+                    <a href="/bukhaidze">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
-          <div className="container__video">
+          <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
               <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+            </video>
+            <Container>
+              <div className="overlay">
+                <Container className="innerContent">
+                  <Col xl="4">
+                    <p className="text-white">Apart Development</p>
+                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
+                    <p className="text-white"> {t.bukhaidze2}</p>
+                    <a href="/bukhaidze">
+                      <p className="text-white">{t.readmore}</p>
+                    </a>
+                  </Col>
+                </Container>
+              </div>
+            </Container>
+          </div>
+          <div className="container__video projects__image_dark">
+            <video loop autoPlay muted className="video">
+              <source src="https://www.apart.ge/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">

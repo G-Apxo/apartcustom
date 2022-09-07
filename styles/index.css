@@ -2147,3 +2147,19 @@ flickity-enabled {
 }
 .navColor {
 }
+
+.light-videos {
+}
+.dark-videos {
+  display: none;
+}
+
+.dark-mode .light-videos {
+  display: none;
+}
+.dark-mode .dark-videos {
+  display: block;
+}
+.ocpTest {
+  margin-top: 13px;
+}

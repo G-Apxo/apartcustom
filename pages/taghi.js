@@ -13,14 +13,16 @@ import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg";
 import Footer from "../components/footer";
 import Taghi1 from "../assets/GAMISRENDEREBI/48/1.jpg";
 import Taghi1d from "../assets/GAMISRENDEREBI/48/2.jpg";
-import Taghi2 from "../assets/GAMISRENDEREBI/48/3.png";
-import Taghi2d from "../assets/GAMISRENDEREBI/48/4.jpg";
-import Taghi3 from "../assets/GAMISRENDEREBI/48/7.jpg";
-import Taghi3d from "../assets/GAMISRENDEREBI/48/8.jpg";
-import Taghi4 from "../assets/GAMISRENDEREBI/48/9.jpg";
-import Taghi4d from "../assets/GAMISRENDEREBI/48/10.jpg";
-import Taghi5 from "../assets/GAMISRENDEREBI/48/5.jpg";
-import Taghi5d from "../assets/GAMISRENDEREBI/48/6.jpg";
+import Taghi1b from "../assets/finalBotRenders/Taghi/5-taghi-2.jpg";
+import Taghi1bd from "../assets/finalBotRenders/Taghi/5-taghi-2-night.jpg";
+import Taghi2 from "../assets/finalBotRenders/Taghi/5-taghi-1.jpg";
+import Taghi2d from "../assets/finalBotRenders/Taghi/5-taghi-1-night.jpg";
+import Taghi3 from "../assets/finalBotRenders/Taghi/5-taghi-4.jpg";
+import Taghi3d from "../assets/finalBotRenders/Taghi/5-taghi-4-night.jpg";
+import Taghi4 from "../assets/finalBotRenders/Taghi/5-taghi-5.jpg";
+import Taghi4d from "../assets/finalBotRenders/Taghi/5-taghi-5-night.jpg";
+import Taghi5 from "../assets/finalBotRenders/Taghi/5-taghi-3.jpg";
+import Taghi5d from "../assets/finalBotRenders/Taghi/5-taghi-3-night.jpg";
 
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
@@ -283,13 +285,13 @@ export default function IndexPage1() {
                   <Col xl="6">
                     <div className="projects__image">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi1} />
+                        <Image className="cursor" src={Taghi1b} />
                       </Link>
                     </div>
 
                     <div className="projects__image_dark">
                       <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi1d} />
+                        <Image className="cursor" src={Taghi1bd} />
                       </Link>
                     </div>
                   </Col>
@@ -307,26 +309,26 @@ export default function IndexPage1() {
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi4} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi4d} />
                       </Link>
                     </div>
                   </Col>
                   <Col xl="6">
-                    <div className="projects__image">
+                    <div className="projects__image ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi5} />
                       </Link>
                     </div>
 
-                    <div className="projects__image_dark">
+                    <div className="projects__image_dark ocpTest">
                       <Link href="/ProjectsFloorSelector">
                         <Image className="cursor" src={Taghi5d} />
                       </Link>
