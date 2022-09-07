@@ -42,7 +42,7 @@ export default function IndexPage1() {
 
   return (
     <div>
-      <div className="hero">
+      <div className="hero mb-120">
         <Nav />
         <Container>
           <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
