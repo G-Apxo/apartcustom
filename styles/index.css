@@ -1294,6 +1294,7 @@ h2 {
 .dark-mode .project--see {
   border-bottom: 1px solid white;
   color: #fff;
+  filter: brightness(1000);
 }
 .dark-mode .arrow {
   filter: brightness(0) invert(1);
@@ -1745,10 +1746,11 @@ flickity-enabled {
   width: 100%;
   height: 2px;
 
-  background-color: #fdfdfd;
+  background-color: rgb(255, 255, 255);
 
   transition-duration: 0.25s;
 }
+
 .menu__dark > span,
 .menu__dark > span::before,
 .menu__dark > span::after {

@@ -66,7 +66,7 @@ export default function Nav({ mode, setMode }) {
           <Col xs="6">
             <div className="hamburger-menu navColor">
               <input id="menu__toggle" type="checkbox" />
-              <label className="menu__btn" onClick={LebalHandler} htmlFor="menu__toggle">
+              <label className="menu__btn dark__x" onClick={LebalHandler} htmlFor="menu__toggle">
                 <span></span>
               </label>
               <ul className="menu__box">
