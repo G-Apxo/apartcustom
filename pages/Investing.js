@@ -7,7 +7,8 @@ import en from "../locales/enInvesting";
 import ru from "../locales/ruInvesting";
 import ge from "../locales/geInvesting";
 import Video from "../assets/video.svg";
-import Sample from "../assets/sample.png";
+import day from "../assets/finalsep9/investing-day.jpg";
+import night from "../assets/finalsep9/investing-night.jpg";
 import Footer from "../components/footer";
 
 export default function IndexPage() {
@@ -55,35 +56,27 @@ export default function IndexPage() {
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
                   <Row>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">1</p>
                       <p className="counter_content">{t.spa}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">2</p>
                       <p className="counter_content">{t.pool}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">3</p>
                       <p className="counter_content">{t.fitness}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
-                      <p className="counter_number">4</p>
                       <p className="counter_content">{t.cafe}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">5</p>
                       <p className="counter_content">{t.room}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">6</p>
                       <p className="counter_content">{t.consierge}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">7</p>
                       <p className="counter_content">{t.hour}</p>
                     </Col>
                     <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3" className="mt-3">
-                      <p className="counter_number">8</p>
                       <p className="counter_content">{t.cleaning}</p>
                     </Col>
                   </Row>
@@ -103,7 +96,12 @@ export default function IndexPage() {
                   <p className="investing-title_subtext mt-30">{t.textAp1}</p>
                 </Col>
                 <Col className="mt-80" xxl="4" xs="12" lg="4" md="4" sm="4" xl="4">
-                  <Image src={Sample} alt="#" />
+                  <div className="projects__image">
+                    <Image src={day} alt="#" />
+                  </div>
+                  <div className="projects__image_dark">
+                    <Image src={night} alt="#" />
+                  </div>
                 </Col>
                 <Col xxl="4" lg="4" md="4" sm="4" xl="4" xs="12">
                   <h3 className="special-margin-class">{t.apartForCommercialUse}</h3>

@@ -1,7 +1,7 @@
 export default {
   goBack: "უკან",
-  chooseApart: "აარჩიეთ აპარტამენტი",
-  chooseFloor: "აარჩიეთ სართული",
+  chooseApart: "აირჩიე აპარტამენტი",
+  chooseFloor: "აირჩიე სართული",
   treePlanted: "საერთო სივრცე",
   treeNum: "4000 ㎡",
   exhibitionSpace: "საგამოფენო სივრცე",

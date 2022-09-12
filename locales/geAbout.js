@@ -84,7 +84,7 @@ export default {
   tt18p: "ანალიტიკოსი",
   //line break
   //line break
-  tt19: "ლიზა ლაზაშვილი",
+  tt19: "ლიზა ლაზიშვილი",
   tt19p: "უმცროსი იურისტი",
   //line break
   //line break

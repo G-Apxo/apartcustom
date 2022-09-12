@@ -83,7 +83,7 @@ export default {
   tt18p: "Analyst",
   //line break
   //line break
-  tt19: "Liza Lazashvili",
+  tt19: "Liza Lazishvili",
   tt19p: "Junior Lawyer",
   //line break
   //line break

@@ -9,8 +9,8 @@ import ge from "../locales/geProjectsFloorSelector";
 // import Link from "next/link";
 // import Taghi from "../assets/Taghi_old_tbilisi.svg";
 // import Bukhaidze from "../assets/projects_floor.png";
-import RoomImage from "../assets/Asset41.png";
-import RoomImageModel from "../assets/apex.png";
+import RoomImage from "../assets/finalsep9/sep9/gegmebi/2-floor.svg";
+import RoomImageModel from "../assets/finalsep9/sep9/renderebi/test.png";
 import Footer from "../components/footer";
 
 export default function IndexPage() {
@@ -30,11 +30,7 @@ export default function IndexPage() {
                 {/* <BsArrowUpLeft /> */}
                 {t.goBack}
               </p>
-              <Image
-                src={RoomImage}
-                alt="banner immage"
-                className="rooom-select-img"
-              />
+              <Image src={RoomImage} alt="banner immage" className="rooom-select-img" />
             </Col>
             <Col xs="6">
               <h3>{t.title}</h3>
@@ -60,11 +56,7 @@ export default function IndexPage() {
                 </Col>
                 <Row>
                   <Col xs="12">
-                    <Image
-                      src={RoomImageModel}
-                      alt="RoomImageModel immage"
-                      className="room--image--model"
-                    />
+                    <Image src={RoomImageModel} alt="RoomImageModel immage" className="room--image--model" />
                   </Col>
                 </Row>
                 <Row>
@@ -128,23 +120,11 @@ export default function IndexPage() {
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="3">
                 <label htmlFor="name"></label>
-                <input
-                  className="btn-test"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t.name}
-                />
+                <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
               </Col>
               <Col xs="3">
                 <label htmlFor="email"></label>
-                <input
-                  className="btn-test"
-                  type="mail"
-                  id="email"
-                  name="email"
-                  placeholder={t.email}
-                />
+                <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
               </Col>
               <Col xs="3">
                 <label htmlFor="tel"></label>
@@ -167,9 +147,7 @@ export default function IndexPage() {
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">
-                {t.apt}
-              </p>
+              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
               <Col xs="12">
                 <Row>
                   <h3 className="advanteges__main_title">{t.adv}</h3>

@@ -15,9 +15,11 @@ import Navwhite from "../components/navwhite";
 import Malongo from "../assets/malongo-dark-mode.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
 import Readmore from "../assets/readmore.svg";
-import Ezo from "../assets/projectslider/ezo_logo_white.png";
+import Ezo from "../assets/sep10tika/ezologof.png";
 import OCP from "../assets/projectslider/ocp_logo_white.png";
-import TaghiWhite from "../assets/projectslider/taghi_logo_white.png";
+import TaghiWhite from "../assets/sep10tika/taghilogof.png";
+import BB1 from "../assets/finalsep9/bukhaidzeb1.png";
+import BB2 from "../assets/finalsep9/bukhaidzeb2.png";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -38,11 +40,10 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={OCP} className="slider_logo mt-3" />
-                    <p className="text-white"> {t.sliderd}</p>
+                    {/* <p className="text-white"> {t.sliderd}</p> */}
                     <a href="/oldcity">
-                      <p className="text-white text-white-read-more">{t.readmore}</p>
+                      <Image src={OCP} className="slider_logo mt-3" />
+                      {/* <p className="text-white text-white-read-more">{t.readmore}</p> */}
                     </a>
                   </Col>
                 </Container>
@@ -57,11 +58,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={OCP} className="slider_logo mt-3" />
-                    <p className="text-white"> {t.sliderd}</p>
                     <a href="/oldcity">
-                      <p className="text-white text-white-read-more">{t.readmore}</p>
+                      <Image src={OCP} className="slider_logo mt-3" />
                     </a>
                   </Col>
                 </Container>
@@ -78,11 +76,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={Ezo} className="slider_logo" />
-                    <p className="text-white"> {t.ezo}</p>
                     <a href="/ezo">
-                      <p className="text-white">{t.readmore}</p>
+                      <Image src={Ezo} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -97,11 +92,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={Ezo} className="slider_logo" />
-                    <p className="text-white"> {t.ezo}</p>
                     <a href="/ezo">
-                      <p className="text-white">{t.readmore}</p>
+                      <Image src={Ezo} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -118,11 +110,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={TaghiWhite} className="slider_logo" />
-                    <p className="text-white"> {t.taghi}</p>
                     <a href="/taghi">
-                      <p className="text-white">{t.readmore}</p>
+                      <Image src={TaghiWhite} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -134,14 +123,11 @@ export default function IndexPage() {
               <source src="https://www.apart.ge/taghi-night.mp4" type="video/mp4" />
             </video>
             <Container>
-              <div className="overlay">
+              <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <Image src={TaghiWhite} className="slider_logo" />
-                    <p className="text-white"> {t.taghi}</p>
                     <a href="/taghi">
-                      <p className="text-white">{t.readmore}</p>
+                      <Image src={TaghiWhite} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -158,11 +144,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <h2 className="text-white banner__header">{t.bukhaidzeha}</h2>
-                    <p className="text-white"> {t.bukhaidze}</p>
-                    <a href="/bukhaidze">
-                      <p className="text-white">{t.readmore}</p>
+                    <a href="/BukhaidzeB1">
+                      <Image src={BB1} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -174,14 +157,11 @@ export default function IndexPage() {
               <source src="https://www.apart.ge/bukhaidze-6-night.mp4" type="video/mp4" />
             </video>
             <Container>
-              <div className="overlay">
+              <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <h2 className="text-white banner__header">{t.bukhaidzeha}</h2>
-                    <p className="text-white"> {t.bukhaidze}</p>
-                    <a href="/bukhaidze">
-                      <p className="text-white">{t.readmore}</p>
+                    <a href="/BukhaidzeB1">
+                      <Image src={BB1} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -198,11 +178,8 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
-                    <p className="text-white"> {t.bukhaidze2}</p>
-                    <a href="/bukhaidze">
-                      <p className="text-white">{t.readmore}</p>
+                    <a href="/BukhaidzeB2">
+                      <Image src={BB2} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>
@@ -214,14 +191,11 @@ export default function IndexPage() {
               <source src="https://www.apart.ge/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
-              <div className="overlay">
+              <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <p className="text-white">Apart Development</p>
-                    <h2 className="text-white banner__header">{t.bukhaidzeh}</h2>
-                    <p className="text-white"> {t.bukhaidze2}</p>
-                    <a href="/bukhaidze">
-                      <p className="text-white">{t.readmore}</p>
+                    <a href="/BukhaidzeB2">
+                      <Image src={BB2} className="slider_logo" />
                     </a>
                   </Col>
                 </Container>

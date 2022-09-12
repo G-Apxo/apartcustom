@@ -1,8 +1,8 @@
 export default {
   goBack: "Go Back",
   title: "Project : TAGI",
-  chooseApart: "Chose your appartment",
-  cf: "Chose floor 1-10",
+  chooseApart: "Choose your appartment",
+  cf: "Choose floor 1-10",
   cf1: "One",
   cf2: "Two",
   cf3: "Three",
