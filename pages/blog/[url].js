@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const url = context.params.url;
   const res = await fetch(
-    "https://9ba0-95-137-233-63.ngrok.io/api/blog/en/" + url
+    `https://9ba0-95-137-233-63.ngrok.io/api/blog/en/` + url
   );
   const data = await res.json();
   console.log(data);
