@@ -4,7 +4,7 @@ export default {
   chooseFloor: "Choose floor",
   treePlanted: "Total Area",
   treeNum: "4000 ㎡",
-  exhibitionSpace: "Exhibition Spaces",
+  exhibitionSpace: "Recreational Space",
   esm: "3245 ㎡",
   chooseFloor: "Choose floor 1 - 10",
   chooseOne: "One",

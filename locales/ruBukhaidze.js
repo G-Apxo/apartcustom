@@ -4,7 +4,7 @@ export default {
   chooseFloor: "Выбрать этаж",
   treePlanted: "Общая площадь",
   treeNum: "4000 ㎡",
-  exhibitionSpace: "выставочные площади",
+  exhibitionSpace: "место для отдыха",
   esm: "3245 ㎡",
   chooseFloor: "Выбрать этаж 1 - 10",
   chooseOne: "Один",

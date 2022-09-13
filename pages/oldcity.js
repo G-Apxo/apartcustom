@@ -86,7 +86,7 @@ export default function IndexPage() {
             </Row>
           </div>
           <div className="desktop__view">
-            <Row className="justify-content-between mt-5">
+            {/* <Row className="justify-content-between mt-5">
               <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <Image src={Taghi} className="Taghi" />
               </Col>
@@ -94,26 +94,26 @@ export default function IndexPage() {
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
                 <p>{t.chooseFloor}</p>
               </Col>
-            </Row>
+            </Row> */}
             <Row className="justify-content-between mt-5">
-              <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
+              <Col xs="6" lg="2" md="2" sm="2" xl="4" xxl="4">
                 <hr />
                 <p className="basic-texts-14">{t.treePlanted}</p>
                 <h3 className="projects-floor-yard">{t.treeNum}</h3>
               </Col>
-              <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+              <Col xs="6" lg="3" md="3" sm="3" xl="4" xxl="5">
                 <hr />
                 <p className="basic-texts-14">{t.exhibitionSpace}</p>
                 <h3 className="projects-floor-yard">{t.esm}</h3>
               </Col>
-              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
+              {/* <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
                 <Form.Select aria-label="Default select example">
                   <option>{t.chooseFloor}</option>
                   <option value="1">{t.chooseOne}</option>
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
                 </Form.Select>
-              </Col>
+              </Col> */}
             </Row>
           </div>
 

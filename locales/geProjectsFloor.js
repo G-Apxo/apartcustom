@@ -4,7 +4,7 @@ export default {
   chooseFloor: "აირჩიე სართული",
   treePlanted: "საერთო სივრცე",
   treeNum: "4000 ㎡",
-  exhibitionSpace: "საგამოფენო სივრცე",
+  exhibitionSpace: "სარეკრეაციო სივრცეთი",
   esm: "3245 ㎡",
   chooseFloor: "აირჩიეთ სართული 1 - 10",
   chooseOne: "ერთი",
