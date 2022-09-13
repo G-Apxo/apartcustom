@@ -73,15 +73,17 @@ export default function IndexPage() {
             <Row className="justify-content-between mt-5">
               <Col xs="12" lg="12" md="12" sm="12" xl="4" xxl="4" className="mt-3">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
-                <p>{t.chooseFloor}</p>
+                {/* <p>{t.chooseFloor}</p> */}
               </Col>
               <Col xs="12" lg="12" md="12" sm="12" xl="4" xxl="4">
-                <Form.Select aria-label="Default select example">
+                {/* <Form.Select aria-label="Default select example">
                   <option>{t.chooseFloor}</option>
                   <option value="1">{t.chooseOne}</option>
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
-                </Form.Select>
+                </Form.Select> */}
+                <div className="coming-soon projects__image">Coming Soon</div>
+                <div className="coming-soon projects__image_dark">Coming Soon</div>
               </Col>
             </Row>
           </div>
@@ -90,30 +92,32 @@ export default function IndexPage() {
               <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <Image src={Taghi} className="Taghi" />
               </Col>
-              {/* <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
+              <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
-                <p>{t.chooseFloor}</p>
-              </Col> */}
+                {/* <p>{t.chooseFloor}</p> */}
+              </Col>
             </Row>
             <Row className="justify-content-between mt-5">
-              <Col xs="6" lg="2" md="2" sm="2" xl="4" xxl="4">
+              <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <hr />
                 <p className="basic-texts-14">{t.treePlanted}</p>
                 <h3 className="projects-floor-yard">{t.treeNum}</h3>
               </Col>
-              <Col xs="6" lg="3" md="3" sm="3" xl="4" xxl="5">
+              <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
                 <hr />
                 <p className="basic-texts-14">{t.exhibitionSpace}</p>
                 <h3 className="projects-floor-yard">{t.esm}</h3>
               </Col>
-              {/* <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
-                <Form.Select aria-label="Default select example">
+              <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4" className="coming-soon-container">
+                {/* <Form.Select aria-label="Default select example">
                   <option>{t.chooseFloor}</option>
                   <option value="1">{t.chooseOne}</option>
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
-                </Form.Select>
-              </Col> */}
+                </Form.Select> */}
+                <div className="coming-soon projects__image">Coming Soon</div>
+                <div className="coming-soon projects__image_dark">Coming Soon</div>
+              </Col>
             </Row>
           </div>
 

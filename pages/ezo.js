@@ -44,14 +44,14 @@ export default function IndexPage2() {
         <Nav />
         <Container>
           <Row className="mt-120-important">
-            <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+            {/* <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
               <Link href="/projects">
                 <p className="goback">
-                  {/* <BsArrowUpLeft /> */}
+                  <BsArrowUpLeft />
                   {t.goBack}
                 </p>
               </Link>
-            </Col>
+            </Col> */}
           </Row>
           <div className="mob__view">
             <Row className="justify-content-between mt-5">
@@ -72,26 +72,28 @@ export default function IndexPage2() {
             <Row className="justify-content-between mt-5">
               <Col xs="12" lg="12" md="12" sm="12" xl="4" xxl="4" className="mt-3">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
-                <p>{t.chooseFloor}</p>
+                {/* <p>{t.chooseFloor}</p> */}
               </Col>
               <Col xs="12" lg="12" md="12" sm="12" xl="4" xxl="4">
-                <Form.Select aria-label="Default select example">
+                {/* <Form.Select aria-label="Default select example">
                   <option>{t.chooseFloor}</option>
                   <option value="1">{t.chooseOne}</option>
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
-                </Form.Select>
+                </Form.Select> */}
+                <div className="coming-soon projects__image">Coming Soon</div>
+                <div className="coming-soon projects__image_dark">Coming Soon</div>
               </Col>
             </Row>
           </div>
-          <div className="desktop__view">
+          <div className="desktop__view mt-120">
             <Row className="justify-content-between mt-5">
               <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <Image src={Taghi} className="Taghi" />
               </Col>
               <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
-                <p>{t.chooseFloor}</p>
+                {/* <p>{t.chooseFloor}</p> */}
               </Col>
             </Row>
             <Row className="justify-content-between mt-5">
@@ -106,26 +108,28 @@ export default function IndexPage2() {
                 <h3 className="projects-floor-yard">{t.esm}</h3>
               </Col>
               <Col xs="12" lg="4" md="4" sm="4" xl="4" xxl="4">
-                <Form.Select aria-label="Default select example">
+                {/* <Form.Select aria-label="Default select example">
                   <option>{t.chooseFloor}</option>
                   <option value="1">{t.chooseOne}</option>
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
-                </Form.Select>
+                </Form.Select> */}
+                <div className="coming-soon projects__image">Coming Soon</div>
+                <div className="coming-soon projects__image_dark">Coming Soon</div>
               </Col>
             </Row>
           </div>
 
           <Col xs="12" className="mt-5">
             <div className="projects__image">
-              <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Ezo1} />
-              </Link>
+              {/* <Link href="/ProjectsFloorSelector"> */}
+              <Image className="cursor" src={Ezo1} />
+              {/* </Link> */}
             </div>
             <div className="projects__image_dark">
-              <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Ezo1d} />
-              </Link>
+              {/* <Link href="/ProjectsFloorSelector"> */}
+              <Image className="cursor" src={Ezo1d} />
+              {/* </Link> */}
             </div>
           </Col>
           <Row className="justify-content-between mt-5">
@@ -171,14 +175,17 @@ export default function IndexPage2() {
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
                   <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
-                    <p className="basic-texts-14">{t.bigBrain}</p>
-                  </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  {/* <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                    <p className="basic-texts-14">{t.bigBrain4}</p>
+                  </Col> */}
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
+                  </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                    <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
                 </Row>
                 <Row>

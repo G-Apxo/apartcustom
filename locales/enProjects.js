@@ -23,14 +23,14 @@ export default {
   prj3ct: "2024",
 
   prj4d: "Ongoing",
-  prj4t: "Bukhaidze I Lane 6a",
+  prj4t: "Bukhaidze B1",
   prj4l: "Location",
   prj4lt: "Bukhaidze I Lane 6a",
   prj4c: "Time of Submission",
   prj4ct: "2022",
 
   prj5d: "Completed",
-  prj5t: "Bukhaidze 6",
+  prj5t: "Bukhaidze B2",
   prj5l: "Location",
   prj5lt: "Bukhaidze I Lane 6",
   prj5c: "Time of Submission",
