@@ -25,7 +25,7 @@ const index = ({ blog }) => {
   const blogListFunct = () => {
     var config = {
       method: "get",
-      url: "https://9ba0-95-137-233-63.ngrok.io/api/blogs",
+      url: "https://8d58-95-137-233-63.ngrok.io/api/blogs",
       data: data,
     };
 
@@ -45,7 +45,7 @@ const index = ({ blog }) => {
   const deleteBlog = (a) => {
     var config = {
       method: "delete",
-      url: `https://9ba0-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
+      url: `https://8d58-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },
@@ -82,7 +82,6 @@ const index = ({ blog }) => {
                           lang:blog.lang
                           },
                       }}
-                      // href="edit/?url="{...blog.url} {...blog.lang}
                       variant="success" >
                       edit
                     </Link>
@@ -104,23 +103,6 @@ const index = ({ blog }) => {
           </Col>
         ))}
       </Row>
-      {/* <Modal
-        show={show}
-        onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            edit existing blog
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Container>
-          <BlogEdit/>
-          </Container>
-        </Modal.Body>
-      </Modal> */}
     </>
   );
 };
