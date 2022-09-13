@@ -8,9 +8,8 @@ import ge from "../../locales/geSingleBlog";
 import { useRouter } from "next/router";
 import { useState } from "react";
 export const getStaticPaths = async () => {
-  // const res = await fetch("https://8d58-95-137-233-63.ngrok.io/api/urls/en");
-  const data = [];
-  // await res.json();
+  const res = await fetch("https://8d58-95-137-233-63.ngrok.io/api/urls/en");
+  const data = await res.json();
 
   const paths = data.map(blog => {
     return {
