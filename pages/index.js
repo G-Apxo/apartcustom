@@ -70,7 +70,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source src="https://apart.ge/EZO_Intro.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -86,7 +86,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source src="https://www.apart.ge/ezo-night.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/ezo-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -104,7 +104,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source src="https://apart.ge/Taghi_Intro.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -120,7 +120,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source src="https://www.apart.ge/taghi-night.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/taghi-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -138,7 +138,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source src="https://apart.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -154,7 +154,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source src="https://www.apart.ge/bukhaidze-6-night.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/bukhaidze-6-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -172,7 +172,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source src="https://apart.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -188,7 +188,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source src="https://www.apart.ge/bukhaidze-6a-night.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
