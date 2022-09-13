@@ -696,7 +696,7 @@ a {
 .project--see {
   display: block;
   border-bottom: 1px solid black;
-  max-width: 38%;
+  max-width: 42%;
   margin-bottom: 10px;
   margin-top: 60px !important;
   line-height: 2rem;
@@ -1813,7 +1813,7 @@ flickity-enabled {
   background-color: #cfd8dc;
 }
 .iframe_main {
-  width: 650px;
+  width: 600px;
 }
 @media screen and (max-width: 800px) {
   .iframe__mobile {
@@ -2147,7 +2147,7 @@ flickity-enabled {
 }
 @media screen and (min-width: 1000px) {
   #OCPFrame {
-    width: 850px;
+    width: 800px;
   }
 }
 /* @media screen and (max-width: 900) {
@@ -2200,26 +2200,28 @@ p {
 .dark-mode .lang__drop {
   filter: brightness(100);
 }
-.overlay_choose{
-    width: 100vw;
-    height: 103vh;
-    position: absolute;
-    z-index: 99;
-    top: 0;
+.overlay_choose {
+  width: 100vw;
+  height: 103vh;
+  position: absolute;
+  z-index: 99;
+  top: 0;
 }
-.apart__day{
+.apart__day {
   background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
 
   height: 100vh;
 }
-.apart__night{
+.apart__night {
   background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
   height: 100vh;
- 
 }
-.headers__for_start{
+.headers__for_start {
   position: absolute;
   top: 50%;
   color: white;
   font-weight: 900;
+}
+.dark-mode .quote {
+  filter: brightness(100);
 }

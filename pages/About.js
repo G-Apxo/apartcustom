@@ -60,7 +60,7 @@ export default function IndexPage() {
               </div>
             </Col>
             <Col xs="2" className="no_mobile">
-              <Image src={Quote} alt="banner immage" />
+              <Image src={Quote} alt="banner immage" className="quote" />
             </Col>
           </Row>
           <Row className="justify-content-between mb-60 mt-60 hrClass">

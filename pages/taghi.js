@@ -225,6 +225,9 @@ export default function IndexPage1() {
                   <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                     <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col>
+                  <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                    <p className="basic-texts-14">{t.bigBrain}</p>
+                  </Col>
                 </Row>
                 <Row>
                   <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">{t.first2}</p>

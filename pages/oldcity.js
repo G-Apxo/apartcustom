@@ -231,31 +231,31 @@ export default function IndexPage() {
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
                   <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col>
                 </Row>
                 <Row>
                   {/* <p className="projects-floor-first-one text-secondary mt-2 "></p> */}
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain5}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain6}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain9}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain8}</p>
                   </Col>
                 </Row>
