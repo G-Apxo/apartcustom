@@ -8,10 +8,11 @@ import ge from "../../locales/geSingleBlog";
 import { useRouter } from "next/router";
 import { useState } from "react";
 export const getStaticPaths = async () => {
-  const res = await fetch("https://8d58-95-137-233-63.ngrok.io/api/urls/en");
-  const data = await res.json();
+  // const res = await fetch("https://8d58-95-137-233-63.ngrok.io/api/urls/en");
+  const data = [];
+  // await res.json();
 
-  const paths = data.map((blog) => {
+  const paths = data.map(blog => {
     return {
       params: { url: blog.url.toString() },
     };
@@ -23,11 +24,9 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async context => {
   const url = context.params.url;
-  const res = await fetch(
-    `https://8d58-95-137-233-63.ngrok.io/api/blog/en/` + url
-  );
+  const res = await fetch(`https://8d58-95-137-233-63.ngrok.io/api/blog/en/` + url);
   const data = await res.json();
   console.log(data);
   return {
@@ -51,11 +50,7 @@ const Post = ({ blog }) => {
           </p>
         </div>
         <Col className="col-12 mb-80">
-          <img
-            src={blog[0].mainImage}
-            className="blog_banner__img"
-            alt="banner immage"
-          />
+          <img src={blog[0].mainImage} className="blog_banner__img" alt="banner immage" />
         </Col>
         <Row className="align-items-center  mb-20 mb-10 ">
           <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">
@@ -83,9 +78,7 @@ const Post = ({ blog }) => {
         </Row>
         <Col className=" single-blog-texts col-12 d-flex justify-content-center mt-5">
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-            <div
-              dangerouslySetInnerHTML={{ __html: blog[0].blogContent }}
-            ></div>
+            <div dangerouslySetInnerHTML={{ __html: blog[0].blogContent }}></div>
           </Col>
         </Col>
         <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
@@ -96,25 +89,17 @@ const Post = ({ blog }) => {
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-5">
             <div className="blog-image__content">
               <div className="text__contianer">
-              <p>{blog[1].createdAt}</p>
-              <h2>{blog[1].title}</h2>
+                <p>{blog[1].createdAt}</p>
+                <h2>{blog[1].title}</h2>
               </div>
               <img src={blog[1].mainImage} alt="blog immage" />
             </div>
           </Col>
-          <Col
-            xs="12"
-            lg="6"
-            md="6"
-            sm="6"
-            xl="6"
-            xxl="6"
-            className="mb-5 mt-5"
-          >
-             <div className="blog-image__content">
+          <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
+            <div className="blog-image__content">
               <div className="text__contianer">
-              <p>{blog[2].createdAt}</p>
-              <h2>{blog[2].title}</h2>
+                <p>{blog[2].createdAt}</p>
+                <h2>{blog[2].title}</h2>
               </div>
               <img src={blog[2].mainImage} alt="blog immage" />
             </div>
