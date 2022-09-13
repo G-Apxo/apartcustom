@@ -1,4 +1,4 @@
-import { useState,setState } from "react";
+import { useState, setState } from "react";
 import dynamic from "next/dynamic";
 import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
@@ -14,8 +14,7 @@ var url = "";
 var blogContent = "";
 var callonicalUrl = "";
 
-
-const convertBase64 = (file) => {
+const convertBase64 = file => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
     fileReader.readAsDataURL(file);
@@ -24,7 +23,7 @@ const convertBase64 = (file) => {
       resolve(fileReader.result);
     };
 
-    fileReader.onerror = (error) => {
+    fileReader.onerror = error => {
       reject(error);
     };
   });
@@ -33,37 +32,36 @@ const convertBase64 = (file) => {
 const Blogpost = () => {
   const { register, handleSubmit } = useForm();
 
-  const [callonicalUrl1, setcallonicalUrl,] = useState('');
+  const [callonicalUrl1, setcallonicalUrl] = useState("");
   const handleChangecallonicalUrl = event => {
     setcallonicalUrl(event.target.value);
-    callonicalUrl1 = event.target.value
-    callonicalUrl = callonicalUrl1
+    callonicalUrl1 = event.target.value;
+    callonicalUrl = callonicalUrl1;
   };
-  const [customurl, setURl,] = useState('');
+  const [customurl, setURl] = useState("");
   const handleChangeURl = event => {
     setURl(event.target.value);
-    customurl = event.target.value
-    url = customurl
+    customurl = event.target.value;
+    url = customurl;
   };
-  const [title1, setTitle,] = useState('');
+  const [title1, setTitle] = useState("");
   const handleChangeTitle = event => {
     setTitle(event.target.value);
-    title1 = event.target.value
-    title = title1
+    title1 = event.target.value;
+    title = title1;
   };
 
-  const [language, setLang] = useState(' ');
+  const [language, setLang] = useState(" ");
   const handeLanguageSelector = event => {
     setLang(event.target.value);
-    language = event.target.value
+    language = event.target.value;
     lang = language;
-    
-  }
+  };
 
-  const handleChangeimg = async (event) => {
-    const file = event.target.files[0]
-    const base64img = await convertBase64(file)
-    mainImgBase64 = base64img
+  const handleChangeimg = async event => {
+    const file = event.target.files[0];
+    const base64img = await convertBase64(file);
+    mainImgBase64 = base64img;
   };
 
   const QuillNoSSRWrapper = dynamic(import("react-quill"), {
@@ -103,53 +101,56 @@ const Blogpost = () => {
   const testSubmit = values => {
     console.log(data);
     var data = JSON.stringify({
-      "lang": lang,
-      "mainImage": mainImgBase64,
-      "title": title,
-      "url": url,
-      "blogContent": blogContent,
-      "callonicalUrl": callonicalUrl
+      lang: lang,
+      mainImage: mainImgBase64,
+      title: title,
+      url: url,
+      blogContent: blogContent,
+      callonicalUrl: callonicalUrl,
     });
-     
+
     var config = {
-      method: 'post',
-      url: 'https://8d58-95-137-233-63.ngrok.io/api/blog',
-      headers: { 
-        'Authorization': 'Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5', 
-        'Content-Type': 'application/json'
+      method: "post",
+      url: "https://41b3-95-137-233-63.ngrok.io/api/blog",
+      headers: {
+        Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+        "Content-Type": "application/json",
       },
-      data : data
+      data: data,
     };
-     
+
     axios(config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
-  
 
   return (
     <div className={styles.pageWrapper}>
-
       <Container className={styles.editorWrapper}>
-        <Form >
+        <Form>
           <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Main Image</Form.Label>
-            <Form.Control type="file" onChange={handleChangeimg}/>
+            <Form.Control type="file" onChange={handleChangeimg} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>callonicalUrl</Form.Label>
-            <Form.Control type="text" placeholder="Text" value={callonicalUrl1} onChange={handleChangecallonicalUrl} />
-          </Form.Group> 
+            <Form.Control
+              type="text"
+              placeholder="Text"
+              value={callonicalUrl1}
+              onChange={handleChangecallonicalUrl}
+            />
+          </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>URL</Form.Label>
             <Form.Control type="text" placeholder="Text" value={customurl} onChange={handleChangeURl} />
-          </Form.Group> 
+          </Form.Group>
 
           <Form.Select aria-label="Default select example" onChange={handeLanguageSelector}>
             <option>Open this select lang</option>
@@ -161,14 +162,14 @@ const Blogpost = () => {
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Title</Form.Label>
             <Form.Control type="text" placeholder="Text" value={title1} onChange={handleChangeTitle} />
-          </Form.Group> 
+          </Form.Group>
 
           <QuillNoSSRWrapper
             modules={modules}
             formats={formats}
             theme="snow"
             className={styles.editor}
-            onChange={value => blogContent=value}
+            onChange={value => (blogContent = value)}
           />
 
           <Button variant="success" onClick={testSubmit}>
@@ -176,7 +177,6 @@ const Blogpost = () => {
           </Button>
         </Form>
       </Container>
-
     </div>
   );
 };

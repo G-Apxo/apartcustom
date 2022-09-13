@@ -9,15 +9,14 @@ import { Container, Form } from "react-bootstrap";
 import axios from "axios";
 import Link from "next/link";
 import { useState } from "react";
-import BlogEdit from "../edit/index"
-
+import BlogEdit from "../edit/index";
 
 const index = ({ blog }) => {
   const [blogList, setBlogst] = useState([]);
 
-  const [language , setLanguage] = useState([]);
+  const [language, setLanguage] = useState([]);
 
-  const [ url, setURl ] = useState([]);
+  const [url, setURl] = useState([]);
 
   const [show, setShow] = useState(false);
 
@@ -25,7 +24,7 @@ const index = ({ blog }) => {
   const blogListFunct = () => {
     var config = {
       method: "get",
-      url: "https://8d58-95-137-233-63.ngrok.io/api/blogs",
+      url: "https://41b3-95-137-233-63.ngrok.io/api/blogs",
       data: data,
     };
 
@@ -42,10 +41,10 @@ const index = ({ blog }) => {
       });
   };
 
-  const deleteBlog = (a) => {
+  const deleteBlog = a => {
     var config = {
       method: "delete",
-      url: `https://8d58-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
+      url: `https://41b3-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },
@@ -64,7 +63,7 @@ const index = ({ blog }) => {
     <>
       <h2 onClick={blogListFunct}>Blog List</h2>
       <Row>
-        {blogList.map((blog) => (
+        {blogList.map(blog => (
           <Col xs="4" key={blog}>
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={blog.mainImage} />
@@ -73,16 +72,15 @@ const index = ({ blog }) => {
                 <Card.Title>{blog.lang}</Card.Title>
                 <Row>
                   <Col xs="6">
-                    <Link  
+                    <Link
                       name={blog.lang}
                       id={blog.url}
                       href={{
-                        pathname: 'admin/edit',
-                        query: { url: blog.url,
-                          lang:blog.lang
-                          },
+                        pathname: "admin/edit",
+                        query: { url: blog.url, lang: blog.lang },
                       }}
-                      variant="success" >
+                      variant="success"
+                    >
                       edit
                     </Link>
                   </Col>

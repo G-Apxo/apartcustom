@@ -29,7 +29,7 @@ export default function IndexPage() {
   const blogDesc = () => {
     var config = {
       method: "get",
-      url: "https://8d58-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart",
+      url: "https://41b3-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart",
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },
@@ -96,28 +96,12 @@ export default function IndexPage() {
                   <div dangerouslySetInnerHTML={{ __html: blogContent }}></div>
                 </Col>
               </Col>
-              <Col
-                xs="12"
-                lg="6"
-                md="6"
-                sm="6"
-                xl="6"
-                xxl="6"
-                className="mb-5 mt-5"
-              >
+              <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
                 <h2>{t.recentBlog}</h2>
                 <hr />
               </Col>
               <Row>
-                <Col
-                  xs="12"
-                  lg="6"
-                  md="6"
-                  sm="6"
-                  xl="6"
-                  xxl="6"
-                  className="mt-5"
-                >
+                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-5">
                   <div className="image__box">
                     <div className="blog-image__content">
                       <p>{t.blogDesc}</p>
@@ -125,15 +109,7 @@ export default function IndexPage() {
                     </div>
                   </div>
                 </Col>
-                <Col
-                  xs="12"
-                  lg="6"
-                  md="6"
-                  sm="6"
-                  xl="6"
-                  xxl="6"
-                  className="mb-5 mt-5"
-                >
+                <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
                   <div className="image__box">
                     <div className="blog-image__content">
                       <p>{t.blogDesc}</p>
