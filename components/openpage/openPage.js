@@ -12,7 +12,7 @@ const openPage = () => {
   right.addEventListener("mouseenter", () => container.classList.add("hover-right"));
   right.addEventListener("mouseleave", () => container.classList.remove("hover-right"));
   return (
-    <div className="stat">
+    <div className="start">
       <div class="container">
         <div class="split left">
           <h1>Playstation 5</h1>

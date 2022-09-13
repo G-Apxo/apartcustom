@@ -1952,7 +1952,7 @@ flickity-enabled {
 }
 
 .overlay {
-  /* background-image: linear-gradient(to bottom right, #242424, #d2d2d2); */
+  /* background-image: linear-gradient(to bottom right, #000, #242424); */
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -1968,7 +1968,7 @@ flickity-enabled {
   text-align: center;
 }
 .overlayN {
-  /* background-image: linear-gradient(to bottom right, #636363, #242424); */
+  /* background-image: linear-gradient(to bottom right, #000, #242424); */
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -2187,4 +2187,10 @@ h5,
 h6,
 p {
   text-align: justify !important;
+}
+/* .nav__container {
+  background-color: #222;
+} */
+.nav-link a {
+  font-size: 13px;
 }
