@@ -34,7 +34,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video vid-bg">
-              <source src="https://apart.ge/OCP_Intro.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -52,7 +52,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video vid-bg">
-              <source src="https://apart.ge/ocp-night.mp4" type="video/mp4" />
+              <source src="https://apart.com.ge/ocp-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">

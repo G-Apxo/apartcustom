@@ -85,16 +85,16 @@ export default function IndexPage() {
               </Col>
             </Row>
           </div>
-          <div className="desktop__view">
-            {/* <Row className="justify-content-between mt-5">
+          <div className="desktop__view mt-120">
+            <Row className="justify-content-between mt-5 ">
               <Col xs="6" lg="2" md="2" sm="2" xl="2" xxl="2">
                 <Image src={Taghi} className="Taghi" />
               </Col>
-              <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
+              {/* <Col xs="6" lg="4" md="4" sm="4" xl="4" xxl="4">
                 <h3 className="projects-floor-title"> {t.chooseApart}</h3>
                 <p>{t.chooseFloor}</p>
-              </Col>
-            </Row> */}
+              </Col> */}
+            </Row>
             <Row className="justify-content-between mt-5">
               <Col xs="6" lg="2" md="2" sm="2" xl="4" xxl="4">
                 <hr />
@@ -119,15 +119,15 @@ export default function IndexPage() {
 
           <Col xs="12" className="mt-5">
             <div className="projects__image">
-              <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Hero} />
-              </Link>
+              {/* <Link href="/ProjectsFloorSelector"> */}
+              <Image className="cursor" src={Hero} />
+              {/* </Link> */}
             </div>
 
             <div className="projects__image_dark">
-              <Link href="/ProjectsFloorSelector">
-                <Image className="cursor" src={Herod} />
-              </Link>
+              {/* <Link href="/ProjectsFloorSelector"> */}
+              <Image className="cursor" src={Herod} />
+              {/* </Link> */}
             </div>
           </Col>
           <Row className=" mt-40 mb-40 flex-helper">
@@ -240,11 +240,23 @@ export default function IndexPage() {
                   <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
                   </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain4}</p>
+                  </Col>
                 </Row>
                 <Row>
                   {/* <p className="projects-floor-first-one text-secondary mt-2 "></p> */}
-                  <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                    <p className="basic-texts-14">{t.bigBrain4}</p>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain5}</p>
+                  </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain6}</p>
+                  </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain9}</p>
+                  </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
+                    <p className="basic-texts-14">{t.bigBrain8}</p>
                   </Col>
                 </Row>
                 <Row>

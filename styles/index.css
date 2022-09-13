@@ -2194,3 +2194,9 @@ p {
 .nav-link a {
   font-size: 13px;
 }
+.dark-mode .arrow-prj {
+  filter: brightness(100);
+}
+.dark-mode .lang__drop {
+  filter: brightness(100);
+}

@@ -25,7 +25,9 @@ export default {
   bigBrain8: "Concierge services",
   bigBrain5: "24/7 security",
   bigBrain6: "Cafe-restaurants",
-  first2: "Benefits",
   bigBrain7:
     "The real estate purchased from us is the best business investment, and the guarantee of this is that the project is implemented in the old district of Tbilisi, in the most active touristic zone, which determines the high demand on apartments throughout the year.",
+  bigBrain8: "Spa",
+  bigBrain9: "Room Service",
+  first2: "Benefits",
 };
