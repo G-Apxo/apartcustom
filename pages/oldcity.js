@@ -45,14 +45,14 @@ export default function IndexPage() {
         <Nav />
         <Container>
           <Row className="mt-120-important">
-            <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
+            {/* <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
               <Link href="/projects">
                 <p className="goback">
-                  {/* <BsArrowUpLeft /> */}
+                  <BsArrowUpLeft />
                   {t.goBack}
                 </p>
               </Link>
-            </Col>
+            </Col> */}
           </Row>
           <div className="mob__view">
             <Row className="justify-content-between mt-5">

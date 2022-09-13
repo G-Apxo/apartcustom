@@ -1,5 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
-&:root {
+.container {
   --left-bg-color: rgba(87, 84, 236, 0.7);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --left-btn-hover-color: rgba(87, 84, 236, 1);
@@ -7,17 +6,13 @@
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
-}
-* {
   box-sizing: border-box;
-}
-body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
 }
-h1 {
+.container > h1 {
   font-size: 4rem;
   color: #fff;
   position: absolute;
@@ -51,7 +46,7 @@ h1 {
     }
   }
   left: 0;
-  background: url("ps.jpg");
+  background: url("../../assets/sep13/opener/day1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all var(--speed) ease-in-out;
@@ -72,7 +67,7 @@ h1 {
     }
   }
   right: 0;
-  background: url("xbox.jpg");
+  background: url("../../assets/sep13/opener/night1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all var(--speed) ease-in-out;
@@ -114,7 +109,7 @@ h1 {
   }
 }
 @media (max-width: 800px) {
-  h1 {
+  .container > h1 {
     font-size: 2rem;
     top: 30%;
   }
