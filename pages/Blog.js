@@ -13,7 +13,7 @@ import axios from "axios";
 
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://9ba0-95-137-233-63.ngrok.io/api/blogs/`);
+  const res = await fetch(`https://8d58-95-137-233-63.ngrok.io/api/blogs/`);
   const data = await res.json();
   console.log(data);
   

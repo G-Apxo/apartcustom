@@ -16,7 +16,7 @@ import Card from "react-bootstrap/Card";
 
 
 // export const getStaticProps = async () => {
-//   const res = await fetch(`https://9ba0-95-137-233-63.ngrok.io/api/blogs/${locale}`);
+//   const res = await fetch(`https://8d58-95-137-233-63.ngrok.io/api/blogs/${locale}`);
 //   const data = await res.json();
 //   console.log(data);
   
@@ -39,7 +39,7 @@ const IndexPage = ({ blog }) => {
   const blogListFunct = () => {
     var config = {
       method: "get",
-      url: `https://9ba0-95-137-233-63.ngrok.io/api/blogs/${locale}`,
+      url: `https://8d58-95-137-233-63.ngrok.io/api/blogs/${locale}`,
       data: data,
     };
 
