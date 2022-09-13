@@ -28,16 +28,16 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  const darkmode = () =>{
+  const darkmode = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName('overlay_choose')[0].style.setProperty("display", "none")
-    console.log("open dark mode")
-  }
+    document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
+    console.log("open dark mode");
+  };
   const whitemode = () => {
-    document.getElementsByClassName('overlay_choose')[0].style.setProperty("display", "none")
-    console.log("open white mode")
-  }
+    document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
+    console.log("open white mode");
+  };
 
   return (
     <>
@@ -45,15 +45,29 @@ export default function IndexPage() {
       {/* <OpenPage/> */}
       <div className="overlay_choose">
         <Row>
-          <Col onClick={darkmode} xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="apart__day d-flex align-content-center align-items-cente justify-content-center">
-         
-              <h1 className="headers__for_start">Apart during night</h1>
-
+          <Col
+            onClick={whitemode}
+            xs="12"
+            lg="6"
+            md="6"
+            sm="6"
+            xl="6"
+            xxl="6"
+            className="apart__night d-flex align-content-center align-items-cente justify-content-center"
+          >
+            <h1 className="headers__for_start daytext">Apart at day</h1>
           </Col>
-          <Col onClick={whitemode}  xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="apart__night d-flex align-content-center align-items-cente justify-content-center">
-           
-              <h1 className="headers__for_start">Apart at day</h1>
-         
+          <Col
+            onClick={darkmode}
+            xs="12"
+            lg="6"
+            md="6"
+            sm="6"
+            xl="6"
+            xxl="6"
+            className="apart__day d-flex align-content-center align-items-cente justify-content-center"
+          >
+            <h1 className="headers__for_start nighttext">Apart during night</h1>
           </Col>
         </Row>
       </div>
@@ -61,10 +75,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video vid-bg">
-              <source
-                src="https://apart.com.ge/OCP_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -82,10 +93,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video vid-bg">
-              <source
-                src="https://apart.com.ge/ocp-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/ocp-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -103,10 +111,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/EZO_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -122,10 +127,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/ezo-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/ezo-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -143,10 +145,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/Taghi_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -162,10 +161,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/taghi-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/taghi-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -183,10 +179,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/Bukhaidze_6_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -202,10 +195,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/bukhaidze-6-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/bukhaidze-6-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -223,10 +213,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/Bukhaidze_6a_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -242,10 +229,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://apart.com.ge/bukhaidze-6a-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://apart.com.ge/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -283,22 +267,16 @@ export default function IndexPage() {
               <Row>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`}>
-                        <Form.Check
-                          inline
-                          label={t.b1}
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-1`}
-                        />
+                        <Form.Check inline label={t.b1} name="group1" type={type} id={`inline-${type}-1`} />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className=" home--inputs">
                         <Form.Check
                           className="text-nowrap"
@@ -314,42 +292,25 @@ export default function IndexPage() {
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check
-                          inline
-                          label={t.b3}
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-3`}
-                        />
+                        <Form.Check inline label={t.b3} name="group1" type={type} id={`inline-${type}-3`} />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map((type) => (
+                    {["checkbox"].map(type => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check
-                          inline
-                          label={t.b4}
-                          name="group1"
-                          type={type}
-                          id={`inline-${type}-4`}
-                        />
+                        <Form.Check inline label={t.b4} name="group1" type={type} id={`inline-${type}-4`} />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col className="mb-60">
                   <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                    <Form
-                      id="contact-form"
-                      name="contact-form"
-                      action="mail.php"
-                      method="POST"
-                    >
+                    <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
                       <Col xs="12">
                         <div className="md-form mb-0">
                           <Form.Control
@@ -420,29 +381,17 @@ export default function IndexPage() {
             <Row className="justify-content-between">
               <div className="col-4 ">
                 <div className="partners">
-                  <Image
-                    src={Apart_showroom}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
               <div className="col-4">
                 <div className="partners">
-                  <Image
-                    src={Malongo}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Malongo} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
               <div className="col-4 d-flex justify-content-evenly">
                 <div className="partners">
-                  <Image
-                    src={Tbc}
-                    alt="banner immage"
-                    className="partners_wite"
-                  />
+                  <Image src={Tbc} alt="banner immage" className="partners_wite" />
                 </div>
               </div>
             </Row>

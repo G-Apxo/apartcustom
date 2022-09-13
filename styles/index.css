@@ -2202,25 +2202,32 @@ p {
 }
 .overlay_choose {
   width: 100vw;
-  height: 103vh;
-  position: absolute;
+  height: 108vh;
+  position: fixed;
   z-index: 99;
-  top: 0;
+  top: -5%;
 }
 .apart__day {
-  background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
-
-  height: 100vh;
+  background-image: url("../assets/sep13/opener/night1.jpeg");
+  background-size: cover;
+  height: 108vh;
 }
 .apart__night {
-  background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
-  height: 100vh;
+  background-image: url("../assets/sep13/opener/day1.jpg");
+  background-size: cover;
+  height: 108vh;
 }
 .headers__for_start {
   position: absolute;
   top: 50%;
   color: white;
   font-weight: 900;
+}
+.daytext {
+  left: 10%;
+}
+.nighttext {
+  left: 60%;
 }
 .dark-mode .quote {
   filter: brightness(100);
