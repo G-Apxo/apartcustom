@@ -2200,3 +2200,26 @@ p {
 .dark-mode .lang__drop {
   filter: brightness(100);
 }
+.overlay_choose{
+    width: 100vw;
+    height: 103vh;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+}
+.apart__day{
+  background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
+
+  height: 100vh;
+}
+.apart__night{
+  background-image: url("../assets/GAMISRENDEREBI/ezo/1.jpg");
+  height: 100vh;
+ 
+}
+.headers__for_start{
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-weight: 900;
+}

@@ -17,7 +17,7 @@ const OpenPage = () => {
   return (
     <div className="start">
       <div className="container" ref={continerRef}>
-        <div onMouseEnter={continerRef.current.classList.add("hover-right")} className="split left">
+        {/* <div onMouseEnter={continerRef.current.classList.add("hover-right")} className="split left"> */}
           <a href="#" className="btn">
             <h1>Apart during day</h1>
           </a>
@@ -28,7 +28,7 @@ const OpenPage = () => {
           </a>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 export default OpenPage;
