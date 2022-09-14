@@ -32,11 +32,29 @@ export default function IndexPage() {
     const element = document.body;
     element.classList.add("dark-mode");
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
-    console.log("open dark mode");
   };
   const whitemode = () => {
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
-    console.log("open white mode");
+  };
+
+  const leftHandler = () => {
+    const left = document.querySelector(".apart__day");
+    left.addEventListener("mouseenter", () => left.classList.add("hover-left"));
+    console.log("im left");
+  };
+  const leftOutHandler = () => {
+    const left = document.querySelector(".apart__day");
+    left.addEventListener("mouseleave", () => left.classList.remove("hover-left"));
+    console.log("im right");
+  };
+
+  const rightHandler = () => {
+    const right = document.querySelector(".apart__night");
+    right.addEventListener("mouseenter", () => right.classList.add("hover-right"));
+  };
+  const rightOutHandler = () => {
+    const right = document.querySelector(".apart__day");
+    right.addEventListener("mouseleave", () => right.classList.remove("hover-right"));
   };
 
   return (
@@ -44,41 +62,45 @@ export default function IndexPage() {
       <Navwhite mode={mode} setMode={setMode} />
       {/* <OpenPage/> */}
       <div className="overlay_choose">
-        <Row>
-          <Col
+        <Row className="opener-container-n">
+          <div
+            onMouseEnter={leftHandler}
+            onMouseLeave={leftOutHandler}
             onClick={whitemode}
-            xs="12"
-            lg="6"
-            md="6"
-            sm="6"
-            xl="6"
-            xxl="6"
-            className="apart__night d-flex align-content-center align-items-cente justify-content-center"
+            // xs="12"
+            // lg="6"
+            // md="6"
+            // sm="6"
+            // xl="6"
+            // xxl="6"
+            className="apart__night d-flex align-content-center align-items-cente justify-content-center "
           >
             <h1 className="headers__for_start daytext">Apart at day</h1>
-          </Col>
-          <Col
+          </div>
+          {/* <div className="apart__night"></div>
+          <div className="apart__day"></div> */}
+
+          <div
+            onMouseEnter={rightHandler}
+            onMouseLeave={rightOutHandler}
             onClick={darkmode}
-            xs="12"
-            lg="6"
-            md="6"
-            sm="6"
-            xl="6"
-            xxl="6"
-            className="apart__day d-flex align-content-center align-items-cente justify-content-center"
+            // xs="12"
+            // lg="6"
+            // md="6"
+            // sm="6"
+            // xl="6"
+            // xxl="6"
+            className="apart__day d-flex align-content-center align-items-cente justify-content-center "
           >
             <h1 className="headers__for_start nighttext">Apart during night</h1>
-          </Col>
+          </div>
         </Row>
       </div>
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video vid-bg">
-              <source
-                src=" https://vdieos.netlify.app/src/OCP_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src=" https://vdieos.netlify.app/src/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -96,10 +118,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video vid-bg">
-              <source
-                src="https://vdieos.netlify.app/src/ocp-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/ocp-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -117,10 +136,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/EZO_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -136,10 +152,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/ezo-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/ezo-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -157,10 +170,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/Taghi_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -176,10 +186,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/taghi-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/taghi-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -197,10 +204,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/Bukhaidze_6_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -216,10 +220,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/bukhaidze-6-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/bukhaidze-6-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
@@ -237,10 +238,7 @@ export default function IndexPage() {
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/Bukhaidze_6a_Intro.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlay">
@@ -256,10 +254,7 @@ export default function IndexPage() {
           </div>
           <div className="container__video projects__image_dark">
             <video loop autoPlay muted className="video">
-              <source
-                src="https://vdieos.netlify.app/src/bukhaidze-6a-night.mp4"
-                type="video/mp4"
-              />
+              <source src="https://vdieos.netlify.app/src/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
               <div className="overlayN">
