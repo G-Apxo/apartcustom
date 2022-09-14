@@ -131,7 +131,7 @@ export default function IndexPage() {
                           </div>
                           <div className="mb-60 col">
                             <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                              <form id="contact-form" name="contact-form" action="https://formsubmit.co/gioapkhadze@gmail.com" method="POST" className="">
+                              <form id="contact-form" name="contact-form" action="https://formsubmit.co/sales@apart.ge" method="POST" className="">
                                 <div className="col-12">
                                   <div className="md-form mb-0 contact-placeholder-text">
                                     <input name="name"   placeholder={t.name} type="text" id="name" required className="form-control input__main form-control"/>
