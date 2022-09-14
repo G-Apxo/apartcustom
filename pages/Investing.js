@@ -183,7 +183,7 @@ export default function IndexPage() {
                         <div xs="12" className="mb-md-0 mb-5 home--inputs">
                           <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
                             <Col xs="12">
-                              <div className="md-form mb-0">
+                              <div className="md-form mb-0 contact-placeholder-text">
                                 <Form.Control
                                   type="text"
                                   id="name"
@@ -194,7 +194,7 @@ export default function IndexPage() {
                               </div>
                             </Col>
                             <Col xs="12">
-                              <div className="md-form mb-0">
+                              <div className="md-form mb-0 contact-placeholder-text">
                                 <Form.Control
                                   type="mail"
                                   id="email"
@@ -205,7 +205,7 @@ export default function IndexPage() {
                               </div>
                             </Col>
                             <Col xs="12">
-                              <div className="md-form mb-0">
+                              <div className="md-form mb-0 contact-placeholder-text">
                                 <Form.Control
                                   type="phone"
                                   id="email"

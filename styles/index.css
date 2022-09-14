@@ -2068,7 +2068,7 @@ flickity-enabled {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 11px !important;
+  font-size: 13px !important;
 }
 .modal {
   --bs-modal-width: 90% !important;
@@ -2246,4 +2246,13 @@ p {
 }
 .coming-soon-container {
   padding: 0 !important;
+}
+.contact__number_vw {
+  font-size: 13px;
+}
+.contact-placeholder-text > input::placeholder {
+  opacity: 0.6 !important;
+}
+ul.navbar-nav li a {
+  font-size: 13px !important;
 }
