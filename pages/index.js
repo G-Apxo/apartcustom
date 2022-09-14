@@ -60,40 +60,37 @@ export default function IndexPage() {
   return (
     <>
       <Navwhite mode={mode} setMode={setMode} />
-      {/* <OpenPage/> */}
+    
       <div className="overlay_choose">
         <Row className="opener-container-n">
-          <div
+          <Col
             onMouseEnter={leftHandler}
             onMouseLeave={leftOutHandler}
             onClick={whitemode}
-            // xs="12"
-            // lg="6"
-            // md="6"
-            // sm="6"
-            // xl="6"
-            // xxl="6"
+            xs="12"
+            lg="6"
+            md="6"
+            sm="6"
+            xl="6"
+            xxl="6"
             className="apart__night d-flex align-content-center align-items-cente justify-content-center "
           >
             <h1 className="headers__for_start daytext">Apart at day</h1>
-          </div>
-          {/* <div className="apart__night"></div>
-          <div className="apart__day"></div> */}
-
-          <div
+          </Col>
+          <Col
             onMouseEnter={rightHandler}
             onMouseLeave={rightOutHandler}
             onClick={darkmode}
-            // xs="12"
-            // lg="6"
-            // md="6"
-            // sm="6"
-            // xl="6"
-            // xxl="6"
+            xs="12"
+            lg="6"
+            md="6"
+            sm="6"
+            xl="6"
+            xxl="6"
             className="apart__day d-flex align-content-center align-items-cente justify-content-center "
           >
             <h1 className="headers__for_start nighttext">Apart during night</h1>
-          </div>
+          </Col>
         </Row>
       </div>
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
