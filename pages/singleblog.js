@@ -29,7 +29,7 @@ export default function IndexPage() {
   const blogDesc = () => {
     var config = {
       method: "get",
-      url: "https://3bfd-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart",
+      url: "https://ce1f-95-137-233-63.ngrok.io/api/blog/ge/new-complex-from-apart",
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },
