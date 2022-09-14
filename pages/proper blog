@@ -37,7 +37,7 @@ const IndexPage = ({ blog }) => null;
 // const blogListFunct = () => {
 //   var config = {
 //     method: "get",
-//     url: `https://3bfd-95-137-233-63.ngrok.io/api/blogs/${locale}`,
+//     url: `https://ce1f-95-137-233-63.ngrok.io/api/blogs/${locale}`,
 //     data: data,
 //   };
 
