@@ -2211,7 +2211,7 @@ p {
   flex: none !important;
 }
 .apart__day {
-  background-image: url("../assets/sep13/opener/night1.jpeg");
+  background-image: url("../assets/sep13/opener/night1.webp");
   background-size: cover;
   height: 108vh;
   border-right: 4px solid #121927;
@@ -2219,7 +2219,7 @@ p {
   position: relative;
 }
 .apart__night {
-  background-image: url("../assets/sep13/opener/day1.jpg");
+  background-image: url("../assets/sep13/opener/day1.webp");
   background-size: cover;
   height: 108vh;
   border: 4px solid #121927;

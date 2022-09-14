@@ -60,7 +60,7 @@ export default function IndexPage() {
   return (
     <>
       <Navwhite mode={mode} setMode={setMode} />
-    
+
       <div className="overlay_choose">
         <Row className="opener-container-n">
           <Col
@@ -75,7 +75,7 @@ export default function IndexPage() {
             xxl="6"
             className="apart__night d-flex align-content-center align-items-cente justify-content-center "
           >
-            <h1 className="headers__for_start daytext">Apart at day</h1>
+            <h1 className="headers__for_start daytext">Apart during day</h1>
           </Col>
           <Col
             onMouseEnter={rightHandler}
