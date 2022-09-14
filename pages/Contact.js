@@ -83,119 +83,81 @@ export default function IndexPage() {
                       </Col>
                     </Row>
                   </div>
-                  <Form>
-                    <Row>
-                      <Col xs="12" className="col-5 mt-60">
+                  <form className="">
+                    <div className="row">
+                      <div className="col-5 mt-60 col-12">
                         <p className="section1-form-text">{t.contactInfo}</p>
                         <h4 className="section-1-form-subtext">{t.aparttype}</h4>
-                        <Row>
-                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
-                            <Form>
-                              {["checkbox"].map(type => (
-                                <div key={`inline-${type}`}>
-                                  <Form.Check
-                                    inline
-                                    label={t.b1}
-                                    name="group1"
-                                    type={type}
-                                    id={`inline-${type}-1`}
-                                  />
+                        <div className="row">
+                          <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <form className="">
+                              <div>
+                                <div className="form-check form-check-inline">
+                                  <input name="group1" type="checkbox" className="form-check-input"/>
+                                  <label title="" className="form-check-label">{t.b1}</label>
                                 </div>
-                              ))}
-                            </Form>
-                          </Col>
-                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
-                            <Form>
-                              {["checkbox"].map(type => (
-                                <div key={`inline-${type}`} className=" home--inputs">
-                                  <Form.Check
-                                    className="text-nowrap"
-                                    inline
-                                    label={t.b2}
-                                    name="group1"
-                                    type={type}
-                                    id={`inline-${type}-2`}
-                                  />
-                                </div>
-                              ))}
-                            </Form>
-                          </Col>
-                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
-                            <Form>
-                              {["checkbox"].map(type => (
-                                <div key={`inline-${type}`} className="home--inputs">
-                                  <Form.Check
-                                    inline
-                                    label={t.b3}
-                                    name="group1"
-                                    type={type}
-                                    id={`inline-${type}-3`}
-                                  />
-                                </div>
-                              ))}
-                            </Form>
-                          </Col>
-                          <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
-                            <Form>
-                              {["checkbox"].map(type => (
-                                <div key={`inline-${type}`} className="home--inputs">
-                                  <Form.Check
-                                    inline
-                                    label={t.b4}
-                                    name="group1"
-                                    type={type}
-                                    id={`inline-${type}-4`}
-                                  />
-                                </div>
-                              ))}
-                            </Form>
-                          </Col>
-                          <Col className="mb-60">
-                            <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                              <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                                <Col xs="12">
-                                  <div className="md-form mb-0 contact-placeholder-text">
-                                    <Form.Control
-                                      type="text"
-                                      id="name"
-                                      name="name"
-                                      className="form-control input__main"
-                                      placeholder={t.name}
-                                    />
-                                  </div>
-                                </Col>
-                                <Col xs="12">
-                                  <div className="md-form mb-0 contact-placeholder-text">
-                                    <Form.Control
-                                      type="mail"
-                                      id="email"
-                                      name="email"
-                                      className="form-control input__main"
-                                      placeholder={t.email}
-                                    />
-                                  </div>
-                                </Col>
-                                <Col xs="12">
-                                  <div className="md-form mb-0 contact-placeholder-text">
-                                    <Form.Control
-                                      type="phone"
-                                      id="email"
-                                      name="email"
-                                      className="form-control input__main"
-                                      placeholder={t.telnum}
-                                    />
-                                  </div>
-                                </Col>
-                              </Form>
-                              <div className="text-center text-md-left home--get-contacted">
-                                <Button className="btn-send">{t.getContacted}</Button>
                               </div>
+                            </form>
+                          </div>
+                          <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <form className="">
+                              <div>
+                                <div className="form-check form-check-inline">
+                                  <input name="group1" type="checkbox" className="form-check-input"/>
+                                  <label title="" className="form-check-label">{t.b2}</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <form className="">
+                              <div>
+                                <div className="form-check form-check-inline">
+                                  <input name="group1" type="checkbox" className="form-check-input"/>
+                                  <label title="" className="form-check-label">{t.b3}</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <form className="">
+                              <div>
+                                <div className="form-check form-check-inline">
+                                  <input name="group1" type="checkbox" className="form-check-input"/>
+                                  <label title="" className="form-check-label">{t.b4}</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div className="mb-60 col">
+                            <div xs="12" className="mb-md-0 mb-5 home--inputs">
+                              <form id="contact-form" name="contact-form" action="https://formsubmit.co/gioapkhadze@gmail.com" method="POST" className="">
+                                <div className="col-12">
+                                  <div className="md-form mb-0 contact-placeholder-text">
+                                    <input name="name"   placeholder={t.name} type="text" id="name" required className="form-control input__main form-control"/>
+                                  </div>
+                                </div>
+                                <div className="col-12">
+                                  <div className="md-form mb-0 contact-placeholder-text">
+                                    <input name="email"  placeholder={t.email} type="mail" id="email" required className="form-control input__main form-control"/>
+                                  </div>
+                                </div>
+                                <div className="col-12">
+                                  <div className="md-form mb-0 contact-placeholder-text">
+                                    <input name="number" placeholder={t.telnum} type="phone" id="email" required className="form-control input__main form-control"/>
+                                  </div>
+                                </div>
+                                  <div className="text-center text-md-left home--get-contacted">
+                                    <button type="submit" className="btn-send btn btn-primary">{t.getContacted}</button>
+                                </div>
+                              </form>
                             </div>
-                          </Col>
-                        </Row>
-                      </Col>
-                    </Row>
-                  </Form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                 
                 </Col>
                 <Col className=" d-flex align-items-end" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <iframe

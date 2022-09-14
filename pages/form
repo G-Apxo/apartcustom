@@ -1,0 +1,97 @@
+<Form>
+<Row>
+  <Col xs="12" className="col-5 mt-60">
+    <p className="section1-form-text">{t.contactInfo}</p>
+    <h4 className="section-1-form-subtext">{t.aparttype}</h4>
+    <Row>
+      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
+        <Form>
+            <div>
+              <Form.Check
+                inline
+                label={t.b1}
+                name="group1"
+              />
+            </div>
+        </Form>
+      </Col>
+      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
+      <Form>
+            <div>
+              <Form.Check
+                inline
+                label={t.b2}
+                name="group1"
+              />
+            </div>
+        </Form>
+       
+      </Col>
+      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
+      <Form>
+            <div>
+              <Form.Check
+                inline
+                label={t.b3}
+                name="group1"
+              />
+            </div>
+        </Form>
+      </Col>
+      <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
+      <Form>
+            <div>
+              <Form.Check
+                inline
+                label={t.b4}
+                name="group1"
+              />
+            </div>
+        </Form>
+      </Col>
+      <Col className="mb-60">
+        <div xs="12" className="mb-md-0 mb-5 home--inputs">
+          <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <Col xs="12">
+              <div className="md-form mb-0 contact-placeholder-text">
+                <Form.Control
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="form-control input__main"
+                  placeholder={t.name}
+                />
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="md-form mb-0 contact-placeholder-text">
+                <Form.Control
+                  type="mail"
+                  id="email"
+                  name="email"
+                  className="form-control input__main"
+                  placeholder={t.email}
+                />
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="md-form mb-0 contact-placeholder-text">
+                <Form.Control
+                  type="phone"
+                  id="email"
+                  name="email"
+                  className="form-control input__main"
+                  placeholder={t.telnum}
+                />
+              </div>
+            </Col>
+          </Form>
+          <div className="text-center text-md-left home--get-contacted">
+            <Button className="btn-send">{t.getContacted}</Button>
+          </div>
+        </div>
+      </Col>
+    </Row>
+  </Col>
+</Row>
+</Form>
