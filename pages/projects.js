@@ -111,13 +111,13 @@ export default function IndexPage() {
                           <Link href="/oldcity">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1c}</h3>
+                              <h3>{t.prj1t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1t}</p>
+                            <p className="projects--texts__op">{t.prj1c}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
                               <i className="project--see cursor  ">
@@ -183,13 +183,13 @@ export default function IndexPage() {
                           <Link href="/oldcity">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1c}</h3>
+                              <h3>{t.prj2t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <p className="projects--texts__op">{t.prj2c}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/oldcity">
                               <i className="project--see cursor  ">
@@ -255,13 +255,13 @@ export default function IndexPage() {
                           <Link href="/BukhaidzeB1">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1c}</h3>
+                              <h3>{t.prj3t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <p className="projects--texts__op">{t.prj3c}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/BukhaidzeB1">
                               <i className="project--see cursor  ">
@@ -327,13 +327,13 @@ export default function IndexPage() {
                           <Link href="/BukhaidzeB2">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1c}</h3>
+                              <h3>{t.prj4t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <p className="projects--texts__op">{t.prj4c}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/BukhaidzeB2">
                               <i className="project--see cursor ">
@@ -399,13 +399,13 @@ export default function IndexPage() {
                           <Link href="/BukhaidzeB2">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
-                              <h3>{t.prj1c}</h3>
+                              <h3>{t.prj5t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <p className="projects--texts__op">{t.prj5c}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/BukhaidzeB2">
                               <i className="project--see cursor ">
