@@ -1,7 +1,7 @@
 export default {
   title: "Investment in Old Tbilisi",
-  tp1: "If you are looking for property for investment purposes, we offer apartments in different price categories, with conditions tailored to you. The average investment income of the project will be calculated by the financial group of Apart Development, taking into account the current data.",
-  tp2: "The company Apart Development was founded in 2019, however, the management of the company has a lot of experience in the field of construction and development. The first project we started during the pandemic has already been completed. After the increase in demand, we developed a plan for the renovation and development of Old Tbilisi, and within the framework of this concept, we started the construction of several distinctive, premium-class projects on Bukhaidze Street. We carry out construction in compliance with the highest standards, which means that our construction facilities are distinguished by structural and seismic resistance. Each current or future project of the company is distinguished by a sophisticated exterior, efficient interior planning and the best location.",
+  tp1: "If you are looking for an investment property, we offer apartments of different price categories on individual terms. The average volume of project investments, taking into account current data, will be calculated by the Apart Development financial group.",
+  tp2: "The Apart Development company was founded in 2019, although the company's management has significant experience in the field of construction and development. The first project we started during the pandemic has already been completed. Following an increase in demand, we developed a plan for the reconstruction and development of Old Tbilisi, and it was within this concept that we began the construction of several outstanding premium projects on Bukhaidze Street. We build to the highest standards, which means our buildings are both structurally and earthquake resistant. Each of the company's current and future projects is distinguished by an exquisite exterior, well-thought-out interior layout and a good location.",
   services: "Services",
   spa: "Spa",
   pool: "Pool",
@@ -9,13 +9,13 @@ export default {
   cafe: "Cafe-Restaurant",
   room: "Room Service",
   consierge: "Consierge",
-  hour: "24 Hour Security",
+  hour: "24/7 Hour Security",
   cleaning: "Cleaning",
   bonus: "Apart showroom service, we offer the repair services and discounts.",
   goal: "What is your goal?",
-  apartForPersonUse: "Apartment for personal use",
+  apartForPersonUse: "Apartment for living",
   textAp1:
-    "Given the ecological situation or the chaotic architectural situation in the city, the streets of old Tbilisi can really be considered as a place to live: the most important thing is a quiet environment - which has a positive impact on our mental or physical health. The recreation area, which will be built on the site of the Apart Developmet complex under construction, ensures oxygen quality, while the underground parking space isdesigned according to international standards.",
+    "Taking into account the existing ecological situation and the chaotic architectural situation in the city, the districts of Old Tbilisi can definitely be considered favorable for living. A calm environment has a positive effect on our physical and mental health. A space saturated with recreational areas ensures the quality of oxygen. Underground parking zones solve the problem of parking and make the stay of residents even more comfortable.",
   apartForCommercialUse: "Apartment for commercial use",
   textAp2:
     "Real estate is considered to be one of the most profitable ways to increase capital. The company Apart Development is located in a tourist active zone, in particular in Old Tbilisi. Our projects meet all criteria, be it a unique location, quiet environment, greenery or special services that will help you as a source of real estate income. The company has special conditions for residents that will make your project even more attractive from a commercial point of view: Benefits can be obtained through both short-term sales and leases. You can rent an apartment to tourists, register on travel platforms, which will make it much easier to find a client, as well as rent for a longer period and reinvest in a property of greater value.",

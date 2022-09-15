@@ -1,6 +1,6 @@
 export default {
   title: "ABOUT US",
-  tsubt: `Our company is still quite young, but we have big plans and healthy ambitions. By 2022-2023, our team is planning a 300% rise in the construction volume. We carry out construction in compliance with the highest standards, which means that our construction objects are structurally and seismically stable. Each current or future project that the company has, is designed for the comfort of the user with a sophisticated exterior, efficient interior planning and a distinguished location. Our value is to create only high-quality products and establish this standard in the Georgian market.`,
+  tsubt: `Our company is still quite young, but we have big plans and healthy ambitions. 2022-2023 Our team plans to increase the volume of construction by 300%. We carry out construction in compliance with the highest standards, and this means that our construction objects are structurally and seismically resistant. Each current or future project of the company is designed for user convenience with a refined appearance, efficient interior layout and outstanding location. Our value is such that we create only quality products and set this standard on the Georgian market. We intend not to deviate from the chosen path and pace, to decorate our city with Georgian architectural buildings and to make a definite contribution to the urban planning of Tbilisi. We want to give new life to old Tbilisi and create a service focused on the wishes and needs of the user. We have healthy ambitions that in a few years we will significantly increase the scale and create positive trends not only in the Georgian market, but also in the foreign market.`,
   tname: "Beka Khoperia",
   tpos: "Founder",
   ath: "Values",
@@ -60,7 +60,7 @@ export default {
   //line break
   //line break
   tt13: "Tika Samkharadze",
-  tt13p: "Social Media Manager",
+  tt13p: "Marketing Manager",
   //line break
   //line break
   tt14: "Anano Jighauri",

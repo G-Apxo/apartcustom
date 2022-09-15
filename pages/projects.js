@@ -14,39 +14,41 @@ import Oldcity1 from "../assets/projectslider/OLD CITY 1.jpg";
 import Oldcity2 from "../assets/projectslider/OLD CITY 2.jpg";
 import Oldcity3 from "../assets/projectslider/OLD CITY 3.jpg";
 
-import Bukhaidze1 from "../assets/GAMISRENDEREBI/6a/11.jpg";
-import Bukhaidze1d from "../assets/GAMISRENDEREBI/6a/12.jpg";
-import Bukhaidze2 from "../assets/GAMISRENDEREBI/6a/3.jpg";
-import Bukhaidze2d from "../assets/GAMISRENDEREBI/6a/4.jpg";
-import Bukhaidze3 from "../assets/GAMISRENDEREBI/6a/9.jpg";
-import Bukhaidze3d from "../assets/GAMISRENDEREBI/6a/10.jpg";
+import Bukhaidze1 from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-1.jpg";
+import Bukhaidze1d from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-1-night.jpg";
+import Bukhaidze2 from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-2.jpg";
+import Bukhaidze2d from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-2-night.jpg";
+import Bukhaidze3 from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-3.jpg";
+import Bukhaidze3d from "../assets/finalRenders/3photos/Bukhaidze 6a/3-bukhaidze-6a-3-night.jpg";
 
-import Bukhaidze61 from "../assets/GAMISRENDEREBI/buxaidzis6/1.jpg";
-import Bukhaidze61d from "../assets/GAMISRENDEREBI/buxaidzis6/2.jpg";
-import Bukhaidze62 from "../assets/GAMISRENDEREBI/buxaidzis6/3.jpg";
-import Bukhaidze62d from "../assets/GAMISRENDEREBI/buxaidzis6/4.jpg";
-import Bukhaidze63 from "../assets/GAMISRENDEREBI/buxaidzis6/5.jpg";
-import Bukhaidze63d from "../assets/GAMISRENDEREBI/buxaidzis6/6.jpg";
-import Taghi1 from "../assets/GAMISRENDEREBI/48/1.jpg";
-import Taghi1d from "../assets/GAMISRENDEREBI/48/2.jpg";
-import Taghi2 from "../assets/GAMISRENDEREBI/48/3.png";
-import Taghi2d from "../assets/GAMISRENDEREBI/48/4.jpg";
-import Taghi3 from "../assets/GAMISRENDEREBI/48/7.jpg";
-import Taghi3d from "../assets/GAMISRENDEREBI/48/8.jpg";
+import Bukhaidze61 from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-1.jpg";
+import Bukhaidze61d from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-1-night.jpg";
+import Bukhaidze62 from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-2.jpg";
+import Bukhaidze62d from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-2-night.jpg";
+import Bukhaidze63 from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-3.jpg";
+import Bukhaidze63d from "../assets/finalRenders/3photos/Bukhaidze 6/3-Bukhaidze-6-3-night.jpg";
 
-import Ezo1 from "../assets/GAMISRENDEREBI/ezo/1.jpg";
-import Ezo1d from "../assets/GAMISRENDEREBI/ezo/2.jpg";
-import Ezo2 from "../assets/GAMISRENDEREBI/ezo/3.jpg";
-import Ezo2d from "../assets/GAMISRENDEREBI/ezo/4.jpg";
-import Ezo3 from "../assets/GAMISRENDEREBI/ezo/5.jpg";
-import Ezo3d from "../assets/GAMISRENDEREBI/ezo/6.jpg";
+import Taghi1 from "../assets/finalRenders/3photos/Taghi/3-Taghi-1.jpg";
+import Taghi1d from "../assets/finalRenders/3photos/Taghi/3-Taghi-1-night.jpg";
+import Taghi2 from "../assets/finalRenders/3photos/Taghi/3-Taghi-2.jpg";
+import Taghi2d from "../assets/finalRenders/3photos/Taghi/3-Taghi-2-night.jpg";
+import Taghi3 from "../assets/finalRenders/3photos/Taghi/3-Taghi-3.jpg";
+import Taghi3d from "../assets/finalRenders/3photos/Taghi/3-Taghi-3-night.jpg";
 
-import Panorama4 from "../assets/GAMISRENDEREBI/OCP/3.jpg";
-import Panorama4d from "../assets/GAMISRENDEREBI/OCP/4.jpg";
-import Panorama5 from "../assets/GAMISRENDEREBI/OCP/17.jpg";
-import Panorama5d from "../assets/GAMISRENDEREBI/OCP/18.jpg";
-import Hero from "../assets/GAMISRENDEREBI/OCP/9.jpg";
-import Herod from "../assets/GAMISRENDEREBI/OCP/10.jpg";
+import Ezo1 from "../assets/finalRenders/3photos/Ezo/3-ezo-1.jpg";
+import Ezo1d from "../assets/finalRenders/3photos/Ezo/3-ezo-1-night.jpg";
+import Ezo2 from "../assets/finalRenders/3photos/Ezo/3-ezo-2.jpg";
+import Ezo2d from "../assets/finalRenders/3photos/Ezo/3-ezo-2-night.jpg";
+import Ezo3 from "../assets/finalRenders/3photos/Ezo/3-ezo-3.jpg";
+import Ezo3d from "../assets/finalRenders/3photos/Ezo/3-ezo-3-night.jpg";
+
+import Panorama4 from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-1.jpg";
+import Panorama4d from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-1-night.jpg";
+import Panorama5 from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-2.jpg";
+import Panorama5d from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-2-night.jpg";
+import Hero from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3.jpg";
+import Herod from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3-night.jpg";
+
 import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);

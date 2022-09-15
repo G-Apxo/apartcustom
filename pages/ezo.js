@@ -238,69 +238,69 @@ export default function IndexPage2() {
             <Row>
               <Col xl="4">
                 <div className="projects__image">
-                  <Link href="/ProjectsFloorSelector">
-                    <Image className="cursor" src={Ezo2} />
-                  </Link>
+                  {/* <Link href="/ProjectsFloorSelector"> */}
+                  <Image className="cursor" src={Ezo2} />
+                  {/* </Link> */}
                 </div>
 
                 <div className="projects__image_dark">
-                  <Link href="/ProjectsFloorSelector">
-                    <Image className="cursor" src={Ezo2d} />
-                  </Link>
+                  {/* <Link href="/ProjectsFloorSelector"> */}
+                  <Image className="cursor" src={Ezo2d} />
+                  {/* </Link> */}
                 </div>
               </Col>
               <Col xl="8" xxl="8" className="lastPhotos">
                 <Row>
                   <Col xl="6">
                     <div className="projects__image">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo3} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo3} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo3d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo3d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo4} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo4} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo4d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo4d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo1b} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo1b} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo1bd} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo1bd} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo5} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo5} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Ezo5d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Ezo5d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                 </Row>

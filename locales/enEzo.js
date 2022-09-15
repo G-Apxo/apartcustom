@@ -15,7 +15,7 @@ export default {
   num: "+(__) Phone Number",
   req: "Request Call",
   aboutprj: "About this project",
-  apt: "The yard and the neighborhood had a special place in the life of an old Tbilisi. We wanted our new project to have that old nostalgic environment and to preserve the main tradition of Old Tbilisi, that's why we named the project Yard in Old Tbilisi, the design of which reminds you of the old Tbilisi yard. The project has a minimalist design, which is combined with the style of Old Tbilisi, and makes it even more attractive. In addition, the complex is not multi-stored and organically merges with the architecture of the old city. + You can buy an apartment with a private yard in the complex.",
+  apt: "The residential complex includes a children's and recreation area, private and communal swimming pools, as well as several townhouse apartments. The complex is located in Old Tbilisi, offering amazing views of the entire city. The minimum area of ​​apartments in Komlek is 39 sq.m, the maximum is 260.9 sq.m. In addition, you have the opportunity to design your new apartment yourself together with our architect. The apartments are rented in a green frame condition, however, if desired, our partner Apart Showroom Company provides design using real materials, renovation and full furnishing of the apartment. ",
   adv: "Advantages",
   first: "Services",
   bigBrain: "Pool",

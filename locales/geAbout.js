@@ -61,7 +61,7 @@ export default {
   //line break
   //line break
   tt13: "თიკა სამხარაძე",
-  tt13p: "სოციალურური მედიის მენეჯერი",
+  tt13p: "მარკეტინგის მენეჯერი",
   //line break
   //line break
   tt14: "ანანო ჯიღაური",

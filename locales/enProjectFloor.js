@@ -15,7 +15,7 @@ export default {
   num: "+(__) Phone Number",
   req: "Request Call",
   aboutprj: "About this project",
-  apt: "started new project OLD CITY PANORAMA whitch is different and special poject in Tbilisi. Project perfectly suits the architectural style of Old Tbilisi, It is located on Bukhaidze Street, in the historical part of Tbilisi. Our goal is to match the exterior of the project perfectly with the wider city planning, which is why the Old City Panorama project includes three buildings and is only eight floors high. The project is also important because it has many sights close to it: one of the most important attractions of the city, the Holy Trinity Cathedral, just 250 meters away, the historic Metekhi Fortress and Temple, and Narikala and Rike Park.",
+  apt: "The premium-class residential complex consists of two stages: the construction process of the first stage is slowly coming to an end. Preparation of the site for the construction of the second stage and earthworks have begun. The advantage of the complex lies in the materials used and their quality. An experienced, professional team selects the best suppliers on the market with the appropriate certificates. As a result, we get a structurally stable, high-quality, safe building. The minimum area of ​​apartments in the project is 32 sq.m, the maximum is 400 sq.m. In addition, you have the opportunity to design your new apartment yourself together with our architect. The apartments are rented in a green frame condition, however, if desired, our partner Apart Showroom Company provides design using real materials, renovation and full furnishing of the apartment.",
   adv: "Advantages",
   first: "Services",
   bigBrain: "Pool",

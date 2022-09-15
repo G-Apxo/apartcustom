@@ -2179,15 +2179,6 @@ flickity-enabled {
 .ocpTest {
   margin-top: 13px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  text-align: justify !important;
-}
 /* .nav__container {
   background-color: #222;
 } */
@@ -2211,7 +2202,7 @@ p {
   flex: none !important;
 }
 .apart__day {
-  background-image: url("../assets/sep13/opener/night1.webp");
+  background-image: url("../assets/sep13/opener/night1sep15.jpeg");
   background-size: cover;
   height: 108vh;
   border-right: 4px solid #121927;
@@ -2219,7 +2210,7 @@ p {
   position: relative;
 }
 .apart__night {
-  background-image: url("../assets/sep13/opener/day1.webp");
+  background-image: url("../assets/sep13/opener/day1sep15.jpeg");
   background-size: cover;
   height: 108vh;
   border: 4px solid #121927;
@@ -2283,4 +2274,7 @@ ul.navbar-nav li a {
 
 .apart__day {
   width: 50% !important;
+}
+.form-check-input:checked {
+  background: transparant;
 }

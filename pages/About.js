@@ -77,11 +77,25 @@ export default function IndexPage() {
             {/* <Row> */}
             <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="test13">
               <Row>
-                <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
+                {/* <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
                   <h3 className="about--text__hmod">{t.ath} </h3>
                 </Col>
                 <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
                   <p className="about--text__ptmod2">{t.att}</p>
+                </Col> */}
+                <Col
+                  xs="12"
+                  lg="5"
+                  md="5"
+                  sm="5"
+                  xl="5"
+                  xxl="5"
+                  // className="mt-60 "
+                >
+                  <h3 className="about--text__hmod">{t.ath}</h3>
+                </Col>
+                <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
+                  <p className="about--text__ptmod__mod ">{t.att3}</p>
                 </Col>
               </Row>
             </Col>
@@ -106,7 +120,7 @@ export default function IndexPage() {
                   </Row>
                 </Col>
                 <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14">
-                  <Row>
+                  {/* <Row>
                     <Col
                       xs="12"
                       lg="5"
@@ -121,7 +135,7 @@ export default function IndexPage() {
                     <Col xs="12" lg="7" md="7" sm="7" xl="7" xxl="7">
                       <p className="about--text__ptmod__mod ">{t.att3}</p>
                     </Col>
-                  </Row>
+                  </Row> */}
                 </Col>
               </Row>
             </Col>

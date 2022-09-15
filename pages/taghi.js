@@ -223,19 +223,19 @@ export default function IndexPage1() {
                   <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                  {/* <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
-                  </Col>
+                  </Col> */}
                 </Row>
-                <Row>
-                  {/* <p className="projects-floor-first-one text-secondary mt-2 "></p> */}
+                {/* <Row>
+                  <p className="projects-floor-first-one text-secondary mt-2 "></p>
                   <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                     <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col>
                   <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                     <p className="basic-texts-14">{t.bigBrain8}</p>
                   </Col>
-                </Row>
+                </Row> */}
                 <Row>
                   <p className="projects-floor-first-one text-secondary mt-2 basic-texts-14">{t.first2}</p>
                   <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12">
@@ -279,69 +279,69 @@ export default function IndexPage1() {
             <Row>
               <Col xl="4">
                 <div className="projects__image">
-                  <Link href="/ProjectsFloorSelector">
-                    <Image className="cursor" src={Taghi2} />
-                  </Link>
+                  {/* <Link href="/ProjectsFloorSelector"> */}
+                  <Image className="cursor" src={Taghi2} />
+                  {/* </Link> */}
                 </div>
 
                 <div className="projects__image_dark">
-                  <Link href="/ProjectsFloorSelector">
-                    <Image className="cursor" src={Taghi2d} />
-                  </Link>
+                  {/* <Link href="/ProjectsFloorSelector"> */}
+                  <Image className="cursor" src={Taghi2d} />
+                  {/* </Link> */}
                 </div>
               </Col>
               <Col xl="8" className="lastPhotos">
                 <Row>
                   <Col xl="6">
                     <div className="projects__image">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi1b} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi1b} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi1bd} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi1bd} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi3} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi3} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi3d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi3d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi4} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi4} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi4d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi4d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                   <Col xl="6">
                     <div className="projects__image ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi5} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi5} />
+                      {/* </Link> */}
                     </div>
 
                     <div className="projects__image_dark ocpTest">
-                      <Link href="/ProjectsFloorSelector">
-                        <Image className="cursor" src={Taghi5d} />
-                      </Link>
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Taghi5d} />
+                      {/* </Link> */}
                     </div>
                   </Col>
                 </Row>
