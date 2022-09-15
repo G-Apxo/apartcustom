@@ -10,6 +10,7 @@ import Link from "next/link";
 import BannerImg from "../assets/singleblog.png";
 import Footer from "../components/footer";
 import axios from "axios";
+import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -50,7 +51,7 @@ export default function IndexPage() {
       });
   };
   blogDesc();
-
+  useTitle("Apart.ge");
   return (
     <div>
       <div className="hero">

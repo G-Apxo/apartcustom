@@ -23,6 +23,7 @@ import Panorama5d from "../assets/finalBotRenders/OCP/5-ocp-5-night.jpg";
 import Hero from "../assets/GAMISRENDEREBI/OCP/9.jpg";
 import Herod from "../assets/GAMISRENDEREBI/OCP/10.jpg";
 import Vector from "../assets/seeprjvector.png";
+import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -38,7 +39,7 @@ export default function IndexPage() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
-
+  useTitle("Old City Panorama - Apart Development");
   return (
     <div>
       <div className="hero">

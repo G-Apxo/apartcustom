@@ -47,12 +47,13 @@ import Panorama5 from "../assets/GAMISRENDEREBI/OCP/17.jpg";
 import Panorama5d from "../assets/GAMISRENDEREBI/OCP/18.jpg";
 import Hero from "../assets/GAMISRENDEREBI/OCP/9.jpg";
 import Herod from "../assets/GAMISRENDEREBI/OCP/10.jpg";
+import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
+  useTitle("Projects - Apart Development");
   return (
     <div>
       <div className="hero">

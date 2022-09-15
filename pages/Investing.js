@@ -10,12 +10,15 @@ import Video from "../assets/video.svg";
 import day from "../assets/finalsep9/investing-day.jpg";
 import night from "../assets/finalsep9/investing-night.jpg";
 import Footer from "../components/footer";
+import { useTitle } from "../components/title";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+
+  useTitle("Investing - Apart Development");
 
   return (
     <div>

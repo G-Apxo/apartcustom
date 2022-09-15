@@ -7,13 +7,14 @@ import en from "../locales/enContact";
 import ru from "../locales/ruContact";
 import ge from "../locales/geContact";
 import Link from "next/link";
+import { useTitle } from "../components/title";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
+  useTitle("Contact - Apart Development");
   return (
     <div>
       <div className="hero">
@@ -93,8 +94,10 @@ export default function IndexPage() {
                             <form className="">
                               <div>
                                 <div className="form-check form-check-inline">
-                                  <input name="group1" type="checkbox" className="form-check-input"/>
-                                  <label title="" className="form-check-label">{t.b1}</label>
+                                  <input name="group1" type="checkbox" className="form-check-input" />
+                                  <label title="" className="form-check-label">
+                                    {t.b1}
+                                  </label>
                                 </div>
                               </div>
                             </form>
@@ -103,8 +106,10 @@ export default function IndexPage() {
                             <form className="">
                               <div>
                                 <div className="form-check form-check-inline">
-                                  <input name="group1" type="checkbox" className="form-check-input"/>
-                                  <label title="" className="form-check-label">{t.b2}</label>
+                                  <input name="group1" type="checkbox" className="form-check-input" />
+                                  <label title="" className="form-check-label">
+                                    {t.b2}
+                                  </label>
                                 </div>
                               </div>
                             </form>
@@ -113,8 +118,10 @@ export default function IndexPage() {
                             <form className="">
                               <div>
                                 <div className="form-check form-check-inline">
-                                  <input name="group1" type="checkbox" className="form-check-input"/>
-                                  <label title="" className="form-check-label">{t.b3}</label>
+                                  <input name="group1" type="checkbox" className="form-check-input" />
+                                  <label title="" className="form-check-label">
+                                    {t.b3}
+                                  </label>
                                 </div>
                               </div>
                             </form>
@@ -123,32 +130,63 @@ export default function IndexPage() {
                             <form className="">
                               <div>
                                 <div className="form-check form-check-inline">
-                                  <input name="group1" type="checkbox" className="form-check-input"/>
-                                  <label title="" className="form-check-label">{t.b4}</label>
+                                  <input name="group1" type="checkbox" className="form-check-input" />
+                                  <label title="" className="form-check-label">
+                                    {t.b4}
+                                  </label>
                                 </div>
                               </div>
                             </form>
                           </div>
                           <div className="mb-60 col">
                             <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                              <form id="contact-form" name="contact-form" action="https://formsubmit.co/gioapkhadze@gmail.com" method="POST" className="">
+                              <form
+                                id="contact-form"
+                                name="contact-form"
+                                action="https://formsubmit.co/gioapkhadze@gmail.com"
+                                method="POST"
+                                className=""
+                              >
                                 <div className="col-12">
                                   <div className="md-form mb-0 contact-placeholder-text">
-                                    <input name="name"   placeholder={t.name} type="text" id="name" required className="form-control input__main form-control"/>
+                                    <input
+                                      name="name"
+                                      placeholder={t.name}
+                                      type="text"
+                                      id="name"
+                                      required
+                                      className="form-control input__main form-control"
+                                    />
                                   </div>
                                 </div>
                                 <div className="col-12">
                                   <div className="md-form mb-0 contact-placeholder-text">
-                                    <input name="email"  placeholder={t.email} type="mail" id="email" required className="form-control input__main form-control"/>
+                                    <input
+                                      name="email"
+                                      placeholder={t.email}
+                                      type="mail"
+                                      id="email"
+                                      required
+                                      className="form-control input__main form-control"
+                                    />
                                   </div>
                                 </div>
                                 <div className="col-12">
                                   <div className="md-form mb-0 contact-placeholder-text">
-                                    <input name="number" placeholder={t.telnum} type="phone" id="email" required className="form-control input__main form-control"/>
+                                    <input
+                                      name="number"
+                                      placeholder={t.telnum}
+                                      type="phone"
+                                      id="email"
+                                      required
+                                      className="form-control input__main form-control"
+                                    />
                                   </div>
                                 </div>
-                                  <div className="text-center text-md-left home--get-contacted">
-                                    <button type="submit" className="btn-send btn btn-primary">{t.getContacted}</button>
+                                <div className="text-center text-md-left home--get-contacted">
+                                  <button type="submit" className="btn-send btn btn-primary">
+                                    {t.getContacted}
+                                  </button>
                                 </div>
                               </form>
                             </div>
@@ -157,7 +195,6 @@ export default function IndexPage() {
                       </div>
                     </div>
                   </form>
-                 
                 </Col>
                 <Col className=" d-flex align-items-end" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <iframe

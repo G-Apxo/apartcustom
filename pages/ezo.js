@@ -21,6 +21,7 @@ import Ezo4d from "../assets/finalBotRenders/EZO/5-ezo-4-night.jpg";
 import Ezo5 from "../assets/finalBotRenders/EZO/5-ezo-5.jpg";
 import Ezo5d from "../assets/finalBotRenders/EZO/5-ezo-5-night.jpg";
 import Footer from "../components/footer";
+import { useTitle } from "../components/title";
 
 export default function IndexPage2() {
   const [showBanner, setBanner] = useState(true);
@@ -37,7 +38,7 @@ export default function IndexPage2() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
-
+  useTitle("Ezo - Apart Development");
   return (
     <div>
       <div className="hero">

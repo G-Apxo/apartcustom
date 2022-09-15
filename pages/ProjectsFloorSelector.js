@@ -12,13 +12,14 @@ import ge from "../locales/geProjectsFloorSelector";
 import RoomImage from "../assets/finalsep9/sep9/gegmebi/2-floor.svg";
 import RoomImageModel from "../assets/finalsep9/sep9/renderebi/test.png";
 import Footer from "../components/footer";
+import { useTitle } from "../components/title";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
+  useTitle("Apart Development");
   return (
     <div>
       <div className="hero">

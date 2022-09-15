@@ -9,6 +9,7 @@ import ge from "../locales/geBlog";
 import Link from "next/link";
 import Footer from "../components/footer";
 import axios from "axios";
+import { useTitle } from "../components/title";
 
 export const getStaticProps = async () => {
   const res = await fetch(`https://3bfd-95-137-233-63.ngrok.io/api/blogs/`);
@@ -25,7 +26,7 @@ const IndexPage = ({ blog }) => {
   const { locale } = router;
   console.log(locale);
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
+  useTitle("Blog - Apart Development");
   return (
     <div>
       <div className="hero">
@@ -35,9 +36,12 @@ const IndexPage = ({ blog }) => {
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <Row>
               {blog.map(blog => (
-                <Link className="blog-single-blog" key={blog} href="#"
-                //  href={"blog/" + blog.url}
-                 >
+                <Link
+                  className="blog-single-blog"
+                  key={blog}
+                  href="#"
+                  //  href={"blog/" + blog.url}
+                >
                   <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                     <div className="">
                       <div className="blog-image__content">

@@ -21,6 +21,7 @@ import TaghiWhite from "../assets/sep10tika/taghilogof.png";
 import BB1 from "../assets/finalsep9/bukhaidzeb1.png";
 import BB2 from "../assets/finalsep9/bukhaidzeb2.png";
 import OpenPage from "../components/openpage/openPage";
+import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -56,6 +57,8 @@ export default function IndexPage() {
     const right = document.querySelector(".apart__day");
     right.addEventListener("mouseleave", () => right.classList.remove("hover-right"));
   };
+
+  useTitle("Apart Development");
 
   return (
     <>

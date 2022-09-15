@@ -33,6 +33,7 @@ import Team22 from "../assets/teamfinal/lashachikobava.JPG";
 import Team23 from "../assets/teamfinal/tornikesixarulidze.jpg";
 import Team24 from "../assets/teamfinal/kaxagabatashvili.jpg";
 import Footer from "../components/footer";
+import { useTitle } from "../components/title";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -41,7 +42,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const styledImg = "height: 400px";
-
+  useTitle("About - Apart Development");
   return (
     <div>
       <div className="hero">

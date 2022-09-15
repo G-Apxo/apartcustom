@@ -10,13 +10,14 @@ import Link from "next/link";
 
 import cswhite from "../assets/sep13/comingsoon/cswhite.png";
 import csblack from "../assets/sep13/comingsoon/csblack.png";
+import { useTitle } from "../components/title";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-
+  useTitle("Apart.ge");
   return (
     <div>
       <div className="hero mt-30">

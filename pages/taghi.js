@@ -23,6 +23,7 @@ import Taghi4 from "../assets/finalBotRenders/Taghi/5-taghi-5.jpg";
 import Taghi4d from "../assets/finalBotRenders/Taghi/5-taghi-5-night.jpg";
 import Taghi5 from "../assets/finalBotRenders/Taghi/5-taghi-3.jpg";
 import Taghi5d from "../assets/finalBotRenders/Taghi/5-taghi-3-night.jpg";
+import { useTitle } from "../components/title";
 
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
@@ -39,7 +40,7 @@ export default function IndexPage1() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
-
+  useTitle("Taghi - Apart Development");
   return (
     <div>
       <div className="hero mb-120">
