@@ -337,9 +337,10 @@ a {
 /* Mobile adjustments */
 
 @media (max-width: 768px) {
-  /* .overlay_choose {
-    display: none;
-  } */
+  .projects--texts__op {
+    height: 36px;
+    white-space: nowrap;
+  }
   .bloc {
     text-align: center;
     -webkit-background-size: auto 200%;
@@ -2279,5 +2280,5 @@ ul.navbar-nav li a {
   width: 50% !important;
 }
 .form-check-input:checked {
-  background: transparant;
+  background: transparant !important;
 }

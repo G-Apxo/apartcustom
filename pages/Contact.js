@@ -143,7 +143,7 @@ export default function IndexPage() {
                               <form
                                 id="contact-form"
                                 name="contact-form"
-                                action="https://formsubmit.co/gioapkhadze@gmail.com"
+                                action="https://formsubmit.co/sales@apart.ge"
                                 method="POST"
                                 className=""
                               >

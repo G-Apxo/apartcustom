@@ -184,7 +184,7 @@ export default function IndexPage() {
                       </Col>
                       <Col className="mb-60">
                         <div xs="12" className="mb-md-0 mb-5 home--inputs">
-                          <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                          {/* <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
                             <Col xs="12">
                               <div className="md-form mb-0 contact-placeholder-text">
                                 <Form.Control
@@ -221,7 +221,56 @@ export default function IndexPage() {
                           </Form>
                           <div className="text-center text-md-left home--get-contacted">
                             <Button className="btn-send">{t.getContacted}</Button>
-                          </div>
+                          </div> */}
+                          <form
+                            id="contact-form"
+                            name="contact-form"
+                            action="https://formsubmit.co/sales@apart.ge"
+                            method="POST"
+                            className=""
+                          >
+                            <div className="col-12">
+                              <div className="md-form mb-0 contact-placeholder-text">
+                                <input
+                                  name="name"
+                                  placeholder={t.name}
+                                  type="text"
+                                  id="name"
+                                  required
+                                  className="form-control input__main form-control"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12">
+                              <div className="md-form mb-0 contact-placeholder-text">
+                                <input
+                                  name="email"
+                                  placeholder={t.email}
+                                  type="mail"
+                                  id="email"
+                                  required
+                                  className="form-control input__main form-control"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12">
+                              <div className="md-form mb-0 contact-placeholder-text">
+                                <input
+                                  name="number"
+                                  placeholder={t.telnum}
+                                  type="phone"
+                                  id="email"
+                                  required
+                                  className="form-control input__main form-control"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center text-md-left home--get-contacted">
+                              <button type="submit" className="btn-send btn btn-primary">
+                                {t.getContacted}
+                              </button>
+                            </div>
+                          </form>
                         </div>
                       </Col>
                     </Row>

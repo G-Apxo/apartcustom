@@ -8,6 +8,7 @@ import ru from "../locales/ruTaghi";
 import ge from "../locales/geTaghi";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
+import TaghiMob from "../assets/sep13/taghi_logo_black.png";
 import Bukhaidze from "../assets/projectmainphotos/taghi-main.png";
 import Taghidark from "../assets/projectmainphotos/taghi-main-dark.jpg";
 import Footer from "../components/footer";
@@ -59,7 +60,7 @@ export default function IndexPage1() {
           <div className="mob__view">
             <Row className="justify-content-between mt-5">
               <Col xs="12" lg="12" md="12" sm="12" xl="2" xxl="2" className="mb-5">
-                <Image src={Taghi} className="Taghi" />
+                <Image src={TaghiMob} className="Taghi" />
               </Col>
               <Col xs="6" lg="6" md="6" sm="6" xl="2" xxl="2">
                 <hr />
@@ -217,10 +218,10 @@ export default function IndexPage1() {
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
                   <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                  <Col xs="6" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                  <Col xs="6" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
                   {/* <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">

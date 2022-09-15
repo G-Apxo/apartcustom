@@ -179,10 +179,10 @@ export default function IndexPage2() {
                   {/* <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col> */}
-                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                  <Col xs="6" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
                   </Col>
-                  <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">
+                  <Col xs="6" lg="2" md="2" sm="2" xl="3" xxl="3">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
                   </Col>
                   <Col xs="4" lg="2" md="2" sm="2" xl="3" xxl="3">

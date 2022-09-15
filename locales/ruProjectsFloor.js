@@ -1,6 +1,6 @@
 export default {
   goBack: "Go Back",
-  chooseApart: "Выбрал квартиру",
+  chooseApart: "Выбрать квартиру",
   chooseFloor: "Выбрать этаж",
   treePlanted: "Общая площадь",
   treeNum: "4000 ㎡",

@@ -8,22 +8,21 @@ import ru from "../locales/ruBukhaidze";
 import ge from "../locales/geBukhaidze";
 import Link from "next/link";
 import Taghi from "../assets/projectslogofire/sep15/bukhaidzeb2prjlogo.png";
-import Bukhaidze from "../assets/projectmainphotos/bukhaidze-6-main.jpg";
+import Bukhadizedark from "../assets/projectmainphotos/bukhaidze-6-main-dark.jpg";
 import Footer from "../components/footer";
-import Bukhaidze1 from "../assets/GAMISRENDEREBI/buxaidzis6/1.jpg";
-import Bukhaidze1d from "../assets/GAMISRENDEREBI/buxaidzis6/2.jpg";
-import Bukhaidze1b from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-3.jpg";
-import Bukhaidze1bd from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-3-night.jpg";
-import Bukhaidze2 from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-1.jpg";
-import Bukhaidze2d from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-1-night.jpg";
-import Bukhaidze3 from "../assets/sep10tika/bukh1-day.jpg";
-import Bukhaidze3d from "../assets/sep10tika/bukh1-night.jpg";
-import Bukhaidze4 from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-4.jpg";
-import Bukhaidze4d from "../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-4-night.jpg";
-import Bukhaidze5 from "../assets/sep10tika/bukh2-day.jpg";
-import Bukhaidze5d from "../assets/sep10tika/bukh2-night.jpg";
+import Bukhaidze1 from "../assets/GAMISRENDEREBI/6a/11.jpg";
+import Bukhaidze1d from "../assets/GAMISRENDEREBI/6a/12.jpg";
+import Bukhaidze1b from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-5.jpg";
+import Bukhaidze1bd from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-5-night.jpg";
+import Bukhaidze2 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-1.jpg";
+import Bukhaidze2d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-1-night.jpg";
+import Bukhaidze3 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-2.jpg";
+import Bukhaidze3d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-2-night.jpg";
+import Bukhaidze4 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-3.jpg";
+import Bukhaidze4d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-3-night.jpg";
+import Bukhaidze5 from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-4.jpg";
+import Bukhaidze5d from "../assets/finalBotRenders/Bukhaidze6a/5-bukhaidze-6a-4-night.jpg";
 import { useTitle } from "../components/title";
-
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -39,8 +38,6 @@ export default function IndexPage3() {
   // const calculated = () => {
   //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
   // };
-
-  const styledpic = { height: "200px" };
   useTitle("Bukhaidze B2 - Apart Development");
   return (
     <div>
@@ -123,6 +120,7 @@ export default function IndexPage3() {
               </Col>
             </Row>
           </div>
+
           <Col xs="12" className="mt-5">
             <div className="projects__image">
               {/* <Link href="/ProjectsFloorSelector"> */}
@@ -143,6 +141,17 @@ export default function IndexPage3() {
               <hr />
             </Col>
           </Row>
+
+          {/* <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Control type="text" placeholder="Name" />
+            <Form.Control type="mail" placeholder="Email" />
+            <Form.Control type="tel" placeholder="+( ___ )     Phone number" required />
+            <Form.Control type="text" placeholder="Name" />
+          </Form.Group>
+
+          <Button variant="primary" type="submit">
+            Submit
+          </Button> */}
           <form action="/send-data-here" method="post">
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="12" lg="12" md="12" sm="12" xl="3" xxl="3" className="mt-1">
@@ -170,6 +179,7 @@ export default function IndexPage3() {
               </Col>
             </Row>
           </form>
+
           <Row className="justify-content-between">
             <Col xs="12" lg="12" md="12" sm="12" xl="5" xxl="5">
               <h3>{t.aboutprj}</h3>
@@ -177,12 +187,12 @@ export default function IndexPage3() {
               <Col xs="12">
                 <Row>
                   <p className="advanteges__main_title">{t.adv}</p>
-                  {/* <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p> */}
-                  <Col xs="4" lg="2" md="2" sm="2" xl="4" xxl="4">
-                    <p className="basic-texts-14">{t.bigBrain4}</p>
-                  </Col>
+                  {/* <p className=" basic-texts-14 text-secondary mt-2 ">{t.first}</p>     */}
                   <Col xs="4" lg="2" md="2" sm="2" xl="4" xxl="4">
                     <p className="basic-texts-14">{t.bigBrain2}</p>
+                  </Col>
+                  <Col xs="4" lg="2" md="2" sm="2" xl="4" xxl="4">
+                    <p className="basic-texts-14">{t.bigBrain4}</p>
                   </Col>
                   {/* <Col xs="4" lg="2" md="2" sm="2" xl="2" xxl="2">
                     <p className="basic-texts-14">{t.bigBrain3}</p>
@@ -235,62 +245,67 @@ export default function IndexPage3() {
           </Col>
           <Col xs="12" className="mt-120 mb-120">
             <Row>
-              <Col xl="4">
+              <Col xs="12" lg="12" md="12" sm="12" xl="4" xxl="4">
                 <div className="projects__image">
                   {/* <Link href="/ProjectsFloorSelector"> */}
                   <Image className="cursor" src={Bukhaidze2} />
                   {/* </Link> */}
                 </div>
+
                 <div className="projects__image_dark">
                   {/* <Link href="/ProjectsFloorSelector"> */}
                   <Image className="cursor" src={Bukhaidze2d} />
                   {/* </Link> */}
                 </div>
               </Col>
-              <Col xl="8" className="lastPhotos">
+              <Col xs="8" className="lastPhotos">
                 <Row>
-                  <Col xl="6">
-                    <div className="projects__image">
-                      {/* <Link href="/ProjectsFloorSelector"> */}
-                      <Image className="cursor" src={Bukhaidze4} />
-                      {/* </Link> */}
-                    </div>
-                    <div className="projects__image_dark ">
-                      {/* <Link href="/ProjectsFloorSelector"> */}
-                      <Image className="cursor" src={Bukhaidze4d} />
-                      {/* </Link> */}
-                    </div>
-                  </Col>
-                  <Col xl="6">
+                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
                     <div className="projects__image">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze3} />
                       {/* </Link> */}
                     </div>
-                    <div className="projects__image_dark ">
+
+                    <div className="projects__image_dark">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze3d} />
                       {/* </Link> */}
                     </div>
                   </Col>
-                  <Col xl="6">
+                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
+                    <div className="projects__image">
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Bukhaidze4} />
+                      {/* </Link> */}
+                    </div>
+
+                    <div className="projects__image_dark">
+                      {/* <Link href="/ProjectsFloorSelector"> */}
+                      <Image className="cursor" src={Bukhaidze4d} />
+                      {/* </Link> */}
+                    </div>
+                  </Col>
+                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
                     <div className="projects__image ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze5} />
                       {/* </Link> */}
                     </div>
+
                     <div className="projects__image_dark ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze5d} />
                       {/* </Link> */}
                     </div>
                   </Col>
-                  <Col xl="6">
+                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
                     <div className="projects__image ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze1b} />
                       {/* </Link> */}
                     </div>
+
                     <div className="projects__image_dark ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze1bd} />
