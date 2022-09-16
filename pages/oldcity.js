@@ -138,7 +138,7 @@ export default function IndexPage() {
           <Row className=" mt-40 mb-40 flex-helper">
             <Col xs="6" lg="6" md="6" sm="6" xl="6" xxl="6">
               {" "}
-              <a href="https://apart.ge/select-flat/fasadi/" target="_blank">
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2F63245bcdfcbd022913da8285--creative-mochi-845403.netlify.app%2Ffasadi%2F%3Ffbclid%3DIwAR3qjPum2ftAaHgD5-2udA0sUm3ea6XomfeXadKCNEKRpnI_3RrPKT4u0Ys&h=AT2LC6-Yeudc7iHT8L33NIlSmgZsD1rBbtBeqWGNOP4HsCNPxpU8FjZx-hY9whMmJePg7irIXtOy-PL6H9ORmtx4USBMerNTROP_rT1UuqA5KosnEUHRxXJzLvQWUdwVGMPjCLlgm70" target="_blank">
                 <i className=" cursor flex-helper">
                   LIVE preview <Image src={Vector} alt="arrow" className="arrow-prj" />
                 </i>
@@ -146,7 +146,7 @@ export default function IndexPage() {
             </Col>
             <Col xs="6" lg="6" md="6" sm="6" xl="6" xxl="6">
               {" "}
-              <a href="  https://apart.ge/360-ocp/  " target="_blank">
+              <a href="https://clinquant-creponne-8e6a3a.netlify.app/?fbclid=IwAR0oRKuhcRQ9I01uKj1sYaqT0ZL-le79aLsjqTMbAoHZmcJhOmti8j6w9jU  " target="_blank">
                 <i className=" cursor flex-helper">
                   360 preview <Image src={Vector} alt="arrow" className="arrow-prj" />
                 </i>
