@@ -64,16 +64,16 @@ export default function IndexPage() {
     <>
       <Navwhite mode={mode} setMode={setMode} />
 
-      <div className="overlay_choose">
+      <div className="overlay_choose desktop__view">
         <Row className="opener-container-n">
           <Col
             onMouseEnter={leftHandler}
             onMouseLeave={leftOutHandler}
             onClick={whitemode}
             xs="12"
-            lg="6"
-            md="6"
-            sm="6"
+            lg="12"
+            md="12"
+            sm="12"
             xl="6"
             xxl="6"
             className="apart__night d-flex align-content-center align-items-cente justify-content-center "
@@ -85,12 +85,44 @@ export default function IndexPage() {
             onMouseLeave={rightOutHandler}
             onClick={darkmode}
             xs="12"
-            lg="6"
-            md="6"
-            sm="6"
+            lg="12"
+            md="12"
+            sm="12"
             xl="6"
             xxl="6"
             className="apart__day d-flex align-content-center align-items-cente justify-content-center "
+          >
+            <h1 className="headers__for_start nighttext">Apart during night</h1>
+          </Col>
+        </Row>
+      </div>
+      <div className="overlay_choose mob__view">
+        <Row className="opener-container-n">
+          <Col
+            onMouseEnter={leftHandler}
+            onMouseLeave={leftOutHandler}
+            onClick={whitemode}
+            xs="12"
+            lg="12"
+            md="12"
+            sm="12"
+            xl="6"
+            xxl="6"
+            className="apart__night_mobile d-flex align-content-center align-items-cente justify-content-center "
+          >
+            <h1 className="headers__for_start daytext">Apart during day</h1>
+          </Col>
+          <Col
+            onMouseEnter={rightHandler}
+            onMouseLeave={rightOutHandler}
+            onClick={darkmode}
+            xs="12"
+            lg="12"
+            md="12"
+            sm="12"
+            xl="6"
+            xxl="6"
+            className="apart__day_mobile d-flex align-content-center align-items-cente justify-content-center "
           >
             <h1 className="headers__for_start nighttext">Apart during night</h1>
           </Col>

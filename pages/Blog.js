@@ -12,7 +12,7 @@ import axios from "axios";
 import { useTitle } from "../components/title";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://ce1f-95-137-233-63.ngrok.io/api/blogs/`);
+  const res = await fetch(`https://63d8-95-137-233-63.ngrok.io/api/blogs/`);
   const data = await res.json();
   console.log(data);
 
