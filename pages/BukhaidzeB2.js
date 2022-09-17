@@ -258,9 +258,9 @@ export default function IndexPage3() {
                   {/* </Link> */}
                 </div>
               </Col>
-              <Col xs="8" className="lastPhotos">
+              <Col xl="8" xxl="8" className="lastPhotos">
                 <Row>
-                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze3} />
@@ -273,7 +273,7 @@ export default function IndexPage3() {
                       {/* </Link> */}
                     </div>
                   </Col>
-                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
+                  <Col xl="6">
                     <div className="projects__image">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze4} />
@@ -286,7 +286,7 @@ export default function IndexPage3() {
                       {/* </Link> */}
                     </div>
                   </Col>
-                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
+                  <Col xl="6">
                     <div className="projects__image ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze5} />
@@ -299,7 +299,7 @@ export default function IndexPage3() {
                       {/* </Link> */}
                     </div>
                   </Col>
-                  <Col xs="12" lg="12" md="12" sm="12" xl="6" xxl="6">
+                  <Col xl="6">
                     <div className="projects__image ocpTest">
                       {/* <Link href="/ProjectsFloorSelector"> */}
                       <Image className="cursor" src={Bukhaidze1b} />
