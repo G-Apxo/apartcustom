@@ -1843,7 +1843,7 @@ flickity-enabled {
     display: none;
   }
   .mob__view {
-    display: block !important;
+    display: block ;
   }
 }
 .mobile_container {
