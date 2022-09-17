@@ -378,7 +378,9 @@ export default function IndexPage() {
                     <Col xs="12" className="projects__image">
                       <Carousel style={{ opacity: 1 }}>
                         <Carousel.Item className="fuul__width  ">
-                          <Image src={Bukhaidze1} alt="banner immage" className="full_width" />
+                          <Row>
+                            <Image src={Bukhaidze1} alt="banner immage" className="full_width" />
+                          </Row>
                         </Carousel.Item>
                         <Carousel.Item className="fuul__width">
                           <Row>
