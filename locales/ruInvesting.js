@@ -60,4 +60,5 @@ export default {
   b2: "1 спальня",
   b3: "2 спальни",
   b4: "3+ спальни",
+  titlet: "инвестирование - Apart Development",
 };

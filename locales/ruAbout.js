@@ -117,4 +117,5 @@ export default {
   tt25: "Каха Парцхалава",
   tt25p: "Начальник строительства",
   //line break
+  titlet: "о нас - Apart Development",
 };

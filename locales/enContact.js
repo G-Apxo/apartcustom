@@ -17,4 +17,5 @@ export default {
   b2: "1 Bedroom",
   b3: "2 Bedrooms",
   b4: "3+ Bedrooms",
+  titlet: "Contact - Apart Development",
 };

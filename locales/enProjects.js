@@ -35,4 +35,5 @@ export default {
   prj5lt: "Bukhaidze I Lane 6",
   prj5c: "Time of Submission",
   prj5ct: "2022",
+  titlet: "Projects - Apart Development",
 };

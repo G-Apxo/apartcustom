@@ -18,7 +18,7 @@ export default function IndexPage() {
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  useTitle("Investing - Apart Development");
+  useTitle(t.titlet);
 
   return (
     <div>

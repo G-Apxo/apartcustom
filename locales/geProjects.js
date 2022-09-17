@@ -35,4 +35,5 @@ export default {
   prj5lt: "ბუხაიძის შესახვევი 6",
   prj5c: "დასრულების თარიღი",
   prj5ct: "2022",
+  titlet: "პროექტები - Apart Development",
 };

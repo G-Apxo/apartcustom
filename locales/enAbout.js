@@ -103,4 +103,5 @@ export default {
   tt24: "Kakha Gabatashvili",
   tt24p: "Assistant to the Head of Construction",
   //line break
+  titlet: "About - Apart Development",
 };

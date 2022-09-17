@@ -42,7 +42,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const styledImg = "height: 400px";
-  useTitle("About - Apart Development");
+  useTitle(t.titlet);
   return (
     <div>
       <div className="hero">

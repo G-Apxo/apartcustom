@@ -35,4 +35,5 @@ export default {
   prj5lt: "ул. Михеила Бухаидзе,  I-ый переулок, 6",
   prj5c: "Дата завершения",
   prj5ct: "2022",
+  titlet: "Проекты - Apart Development",
 };

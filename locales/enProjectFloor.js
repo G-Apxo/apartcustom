@@ -30,4 +30,5 @@ export default {
   bigBrain8: "Spa",
   bigBrain9: "Room Service",
   first2: "Benefits",
+  title: "Old City Panorama - Apart Development",
 };

@@ -17,4 +17,5 @@ export default {
   b2: "1 ოთახიანი",
   b3: "2 ოთახიანი",
   b4: "3+ ოთახიანი",
+  titlet: "კონტაქტი - Apart Development",
 };

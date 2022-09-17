@@ -104,4 +104,5 @@ export default {
   tt24: "კახა გაბათაშვილი",
   tt24p: "მშენებლობის ხელმძღვანელის ასისტენტი",
   //line break
+  titlet: "ჩვენ შესახებ - Apart Development",
 };

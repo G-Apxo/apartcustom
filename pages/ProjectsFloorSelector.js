@@ -31,7 +31,7 @@ export default function IndexPage() {
                 {/* <BsArrowUpLeft /> */}
                 {t.goBack}
               </p>
-              <Image src={RoomImage} alt="banner immage" className="rooom-select-img" />
+              {/* <Image src={RoomImage} alt="banner immage" className="rooom-select-img" /> */}
             </Col>
             <Col xs="6">
               <h3>{t.title}</h3>
@@ -57,7 +57,7 @@ export default function IndexPage() {
                 </Col>
                 <Row>
                   <Col xs="12">
-                    <Image src={RoomImageModel} alt="RoomImageModel immage" className="room--image--model" />
+                    {/* <Image src={RoomImageModel} alt="RoomImageModel immage" className="room--image--model" /> */}
                   </Col>
                 </Row>
                 <Row>
