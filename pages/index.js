@@ -32,12 +32,19 @@ export default function IndexPage() {
   const darkmode = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
+    document.getElementsByClassName("overlay_choose ")[0].style.setProperty("display", "none");
   };
   const whitemode = () => {
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
   };
-
+  const darkmodemobile = () => {
+    const element = document.body;
+    element.classList.add("dark-mode");
+    document.getElementsByClassName("overlay_choose_mobile ")[0].style.setProperty("display", "none");
+  };
+  const whitemodemobile = () => {
+    document.getElementsByClassName("overlay_choose_mobile")[0].style.setProperty("display", "none");
+  };
   const leftHandler = () => {
     const left = document.querySelector(".apart__day");
     left.addEventListener("mouseenter", () => left.classList.add("hover-left"));
@@ -96,12 +103,10 @@ export default function IndexPage() {
           </Col>
         </Row>
       </div>
-      <div className="overlay_choose mob__view">
+      <div className="overlay_choose_mobile mob__view">
         <Row className="opener-container-n">
           <Col
-            onMouseEnter={leftHandler}
-            onMouseLeave={leftOutHandler}
-            onClick={whitemode}
+            onTouchStart={whitemodemobile}
             xs="12"
             lg="12"
             md="12"
@@ -113,9 +118,7 @@ export default function IndexPage() {
             <h1 className="headers__for_start daytext">Apart during day</h1>
           </Col>
           <Col
-            onMouseEnter={rightHandler}
-            onMouseLeave={rightOutHandler}
-            onClick={darkmode}
+            onTouchStart={darkmodemobile}
             xs="12"
             lg="12"
             md="12"
