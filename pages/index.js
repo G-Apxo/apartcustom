@@ -142,7 +142,7 @@ export default function IndexPage() {
                 <Container className="innerContent">
                   <Col xl="4">
                     {/* <p className="text-white"> {t.sliderd}</p> */}
-                    <a href="/oldcity">
+                    <a href="/projects/oldcity">
                       <Image src={OCP} className="slider_logo mt-3" />
                       {/* <p className="text-white text-white-read-more">{t.readmore}</p> */}
                     </a>
@@ -159,7 +159,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/oldcity">
+                  <a href="/projects/oldcity">
                       <Image src={OCP} className="slider_logo mt-3" />
                     </a>
                   </Col>
@@ -177,7 +177,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/ezo">
+                    <a href="/projects/ezo">
                       <Image src={Ezo} className="slider_logo" />
                     </a>
                   </Col>
@@ -193,7 +193,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/ezo">
+                    <a href="/projects/ezo">
                       <Image src={Ezo} className="slider_logo" />
                     </a>
                   </Col>
@@ -211,7 +211,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/taghi">
+                    <a href="/projects/taghi">
                       <Image src={TaghiWhite} className="slider_logo" />
                     </a>
                   </Col>
@@ -227,7 +227,7 @@ export default function IndexPage() {
               <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/taghi">
+                    <a href="/projects/taghi">
                       <Image src={TaghiWhite} className="slider_logo" />
                     </a>
                   </Col>
@@ -245,7 +245,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/BukhaidzeB1">
+                    <a href="/projects/BukhaidzeB1">
                       <Image src={BB1} className="slider_logo" />
                     </a>
                   </Col>
@@ -261,7 +261,7 @@ export default function IndexPage() {
               <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/BukhaidzeB1">
+                    <a href="/projects/BukhaidzeB1">
                       <Image src={BB1} className="slider_logo" />
                     </a>
                   </Col>
@@ -279,7 +279,7 @@ export default function IndexPage() {
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/BukhaidzeB2">
+                    <a href="/projects/BukhaidzeB2">
                       <Image src={BB2} className="slider_logo" />
                     </a>
                   </Col>
@@ -295,7 +295,7 @@ export default function IndexPage() {
               <div className="overlayN">
                 <Container className="innerContent">
                   <Col xl="4">
-                    <a href="/BukhaidzeB2">
+                    <a href="/projects/BukhaidzeB2">
                       <Image src={BB2} className="slider_logo" />
                     </a>
                   </Col>
