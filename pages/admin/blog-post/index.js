@@ -111,7 +111,7 @@ const Blogpost = () => {
 
     var config = {
       method: "post",
-      url: "https://4314-95-137-233-63.ngrok.io/api/blog",
+      url: "https://182a-95-137-233-63.ngrok.io/api/blog",
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Content-Type": "application/json",
