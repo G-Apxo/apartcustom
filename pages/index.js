@@ -134,7 +134,7 @@ export default function IndexPage() {
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline controls="true"  className="video vid-bg">
+            <video loop autoPlay muted playsinline   className="video vid-bg">
               <source src=" https://vdieos.netlify.app/src/OCP_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -152,7 +152,7 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline controls="true"  className="video vid-bg">
+            <video loop autoPlay muted playsinline   className="video vid-bg">
               <source src="https://vdieos.netlify.app/src/ocp-night.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -170,7 +170,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/EZO_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -186,7 +186,7 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/ezo-night.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -204,7 +204,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/Taghi_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -220,7 +220,7 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/taghi-night.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -238,7 +238,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/Bukhaidze_6_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -254,7 +254,7 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/bukhaidze-6-night.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -272,7 +272,7 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
             </video>
             <Container>
@@ -288,7 +288,7 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline controls="true"  className="video">
+            <video loop autoPlay muted playsinline   className="video">
               <source src="https://vdieos.netlify.app/src/bukhaidze-6a-night.mp4" type="video/mp4" />
             </video>
             <Container>
