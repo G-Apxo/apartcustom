@@ -2326,3 +2326,7 @@ ul.navbar-nav li a {
 .form-check-input:checked {
   background: transparant !important;
 }
+select.form-select.lang__drop_white option {
+  background: black !important;
+  color: white !important;
+}
