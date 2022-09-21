@@ -13,15 +13,15 @@ import { useTitle } from "../components/title";
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-// export const getStaticProps = async () => {
-//   const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
-//   const data = await res.json();
-//   console.log(data);
+export const getStaticProps = async () => {
+  const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
+  const data = await res.json();
+  console.log(data);
 
-//   return {
-//     props: { blog: data },
-//   };
-// };
+  return {
+    props: { blog: data },
+  };
+};
 
 const IndexPage = ({ blog }) => {
   const router = useRouter();
@@ -42,7 +42,7 @@ const IndexPage = ({ blog }) => {
           <Container className="mb-120">
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
             <h4>ბლოგი დაემატება მალე</h4>
-            {/* <Row>
+            <Row>
               {blog.map(blog => (
                 <Link
                   className="blog-single-blog"
@@ -63,7 +63,7 @@ const IndexPage = ({ blog }) => {
                   </Col>
                 </Link>
               ))}
-            </Row> */}
+            </Row>
           </Container>
         </div>
       </div>

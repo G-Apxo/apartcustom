@@ -1,47 +1,47 @@
-// import { useRouter } from "next/router";
-// import { useEffect, useState } from "react";
-// import { useForm } from "react-hook-form";
-// import { Col, Container, Form, Button } from "react-bootstrap";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { Col, Container, Form, Button } from "react-bootstrap";
 
-// import Nav from "../../../components/nav";
-// import Footer from "../../../components/footer";
+import Nav from "../../../components/nav";
+import Footer from "../../../components/footer";
 
-// const LoginPage = () => {
+const LoginPage = () => {
 
   
 
-//   return (
-//     <div>
-//       <Nav />
+  return (
+    <div>
+      <Nav />
 
-//       <Container>
-//         <Col className="mt-120 mb-120">
-//           <Form >
-//             <Form.Group className="mb-3" controlId="formBasicEmail">
-//               <Form.Label>Username</Form.Label>
-//               <Form.Control type="email" placeholder="Username" />
+      <Container>
+        <Col className="mt-120 mb-120">
+          <Form >
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Username</Form.Label>
+              <Form.Control type="email" placeholder="Username" />
             
-//             </Form.Group>
+            </Form.Group>
 
-//             <Form.Group className="mb-3" controlId="formBasicPassword">
-//               <Form.Label>Password</Form.Label>
-//               <Form.Control type="password" placeholder="Password"  />
-//             </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password"  />
+            </Form.Group>
 
-//             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-//               <Form.Check type="checkbox" label="Are you admin?"  />
-//             </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Are you admin?"  />
+            </Form.Group>
 
-//             <Button variant="primary" type="submit">
-//               Submit
-//             </Button>
-//           </Form>
-//         </Col>
-//       </Container>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Container>
 
-//       <Footer />
-//     </div>
-//   );
-// };
+      <Footer />
+    </div>
+  );
+};
 
-// export default LoginPage;
+export default LoginPage;
