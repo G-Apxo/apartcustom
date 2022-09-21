@@ -23,6 +23,12 @@ export default function Nav({ mode, setMode }) {
     element.classList.toggle("dark-mode");
     // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
+  function myFunctionMobile() {
+    var element = document.body;
+
+    element.classList.toggle("dark-mode");
+    // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
+  }
   function LebalHandler() {
     var element = document.body;
 
@@ -71,29 +77,29 @@ export default function Nav({ mode, setMode }) {
               </label>
               <ul className="menu__box">
                 <li>
-                  <a className="menu__item" href="/About">
+                  <Link className="menu__item" href="/About">
                     {t.about}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Investing">
+                  <Link className="menu__item" href="/Investing">
                     {t.investing}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/projects">
+                  <Link className="menu__item" href="/projects">
                     {t.projects}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Blog">
+                  <Link className="menu__item" href="/Blog">
                     {t.blog}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Contact">
+                  <Link className="menu__item" href="/Contact">
                     {t.contact}
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__item_mobile">
                   <select
@@ -115,7 +121,7 @@ export default function Nav({ mode, setMode }) {
                 <li>
                   <Form>
                     <Form.Check
-                      onClick={myFunction}
+                      onClick={myFunctionMobile}
                       type="switch"
                       id="custom-switch"
                       className="white__switcher"

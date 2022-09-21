@@ -24,6 +24,7 @@ import Bukhaidze5 from "../../assets/sep10tika/bukh2-day.jpg";
 import Bukhaidze5d from "../../assets/sep10tika/bukh2-night.jpg";
 import { useTitle } from "../../components/title";
 import Head from "next/head";
+import Layout from "../../components/Layout";
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -47,8 +48,9 @@ export default function IndexPage3() {
         <title>Bukhaidze B2 - Apart Development</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+        
         <Container>
           <Row className="mt-120-important">
             {/* <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
@@ -306,7 +308,7 @@ export default function IndexPage3() {
           </Col>
         </Container>
       </div>
-      <Footer />
+      </Layout>
     </div>
   );
 }

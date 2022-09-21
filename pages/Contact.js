@@ -9,6 +9,7 @@ import ge from "../locales/geContact";
 import Link from "next/link";
 import { useTitle } from "../components/title";
 import Head from "next/head";
+import Layout from "../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -21,8 +22,9 @@ export default function IndexPage() {
         <title>{t.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+       
         <div>
           <div className="contact__section">
             <Container>
@@ -214,6 +216,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
+      </Layout>
     </div>
   );
 }

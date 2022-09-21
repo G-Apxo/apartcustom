@@ -50,6 +50,7 @@ import Hero from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3.jpg";
 import Herod from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3-night.jpg";
 import Head from "next/head";
 import { useTitle } from "../components/title";
+import Layout from "../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -62,8 +63,9 @@ export default function IndexPage() {
         <title>{t.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+      
         <div>
           <div className="contact__section">
             <Container className="projects-title-distance">
@@ -783,7 +785,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      </Layout>
     </div>
   );
 }

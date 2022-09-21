@@ -14,6 +14,7 @@ import RoomImageModel from "../assets/finalsep9/sep9/renderebi/test.png";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
 import Head from "next/head";
+import Layout from "../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -26,8 +27,9 @@ export default function IndexPage() {
         <title>{t.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+       
         <Container>
           <Row>
             <Col xs="6">
@@ -215,7 +217,7 @@ export default function IndexPage() {
           </Col>
         </Container>
       </div>
-      <Footer />
+      </Layout>
     </div>
   );
 }

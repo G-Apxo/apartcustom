@@ -11,15 +11,17 @@ import Footer from "../components/footer";
 import axios from "axios";
 import { useTitle } from "../components/title";
 import Head from "next/head";
-export const getStaticProps = async () => {
-  const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
-  const data = await res.json();
-  console.log(data);
+import Layout from "../components/Layout";
 
-  return {
-    props: { blog: data },
-  };
-};
+// export const getStaticProps = async () => {
+//   const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
+//   const data = await res.json();
+//   console.log(data);
+
+//   return {
+//     props: { blog: data },
+//   };
+// };
 
 const IndexPage = ({ blog }) => {
   const router = useRouter();
@@ -33,12 +35,14 @@ const IndexPage = ({ blog }) => {
         <title>{t.title}Blog - Apart Development</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+       
         <div>
           <Container className="mb-120">
             <h2 className="row-marginer mt-120 mb-60">Blog</h2>
-            <Row>
+            <h4>ბლოგი დაემატება მალე</h4>
+            {/* <Row>
               {blog.map(blog => (
                 <Link
                   className="blog-single-blog"
@@ -59,12 +63,12 @@ const IndexPage = ({ blog }) => {
                   </Col>
                 </Link>
               ))}
-            </Row>
+            </Row> */}
           </Container>
         </div>
       </div>
-
-      <Footer />
+      </Layout>
+     
     </div>
   );
 };

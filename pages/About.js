@@ -35,6 +35,7 @@ import Team24 from "../assets/teamfinal/kaxagabatashvili.jpg";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
 import Head from "next/head";
+import Layout from "../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -49,8 +50,9 @@ export default function IndexPage() {
         <title>{t.title}Blog - Apart Development</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
+        {/* <Nav /> */}
         <Container className="mt-5">
           <h1 className="about-title ">{t.title}</h1>
           <Row className="row-marginer justify-content-end">
@@ -375,6 +377,7 @@ export default function IndexPage() {
         </Container>
       </div>
       <Footer />
+      </Layout>
     </div>
   );
 }

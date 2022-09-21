@@ -12,6 +12,7 @@ import night from "../assets/finalsep9/investing-night.jpg";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
 import Head from "next/head";
+import Layout from "../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -25,8 +26,8 @@ export default function IndexPage() {
         <title>{t.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Layout>
       <div className="hero">
-        <Nav />
         <div>
           <div className="contact__section">
             <Container className="mt-120 ">
@@ -284,7 +285,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      </Layout>
     </div>
   );
 }

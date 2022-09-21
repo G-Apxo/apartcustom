@@ -19,10 +19,10 @@ export default function Nav({ mode, setMode }) {
 
   function myFunction() {
     var element = document.body;
-
     element.classList.toggle("dark-mode");
-    element.classlist = "dark-mode" ? setMode(false) : setMode(true);
+    // element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
+  
   function LebalHandler() {
     var element = document.body;
 
@@ -71,33 +71,33 @@ export default function Nav({ mode, setMode }) {
               </label>
               <ul className="menu__box">
                 <li>
-                  <a className="menu__item" href="/About">
+                  <Link className="menu__item" href="/About">
                     {t.about}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Investing">
-                    {" "}
+                  <Link className="menu__item" href="/Investing">
+                   
                     {t.investing}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/projects">
-                    {" "}
+                  <Link className="menu__item" href="/projects">
+                  
                     {t.projects}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Blog">
-                    {" "}
+                  <Link className="menu__item" href="/Blog">
+                 
                     {t.blog}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="menu__item" href="/Contact">
-                    {" "}
+                  <Link className="menu__item" href="/Contact">
+                   
                     {t.contact}
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <select
@@ -221,76 +221,6 @@ export default function Nav({ mode, setMode }) {
             </ul>
           </Col>
         </Row>
-
-        {/* <nav className='navbar navbar-expand-lg navbar-light'>
-        <ul className="flex navbar-nav">
-          <li>
-            <Link href="/">
-            <a className="navbar-brand">
-              <Image src={Logo} alt="Picture of the author" />
-            </a>
-            </Link>
-          </li>
-          <ul className="flex items-center justify-between space-x-8">
-            <li>
-              <a
-                href="/About"
-                className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
-              >
-                {t.about}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Investing"
-                className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
-              >
-                {t.investing}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/projects"
-                className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
-              >
-                {t.projects}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Blog"
-                className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
-              >
-                {t.blog}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Contact"
-                className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
-              >
-                {t.contact}
-              </a>
-            </li>
-            <li>
-            <Form>
-                  <Form.Check  onClick={myFunction}
-                    type="switch"
-                    id="custom-switch"
-                  />
-                </Form>
-            </li>
-            <select
-              onChange={changeLanguage}
-              defaultValue={locale}
-              className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
-            >
-              <option className="text-black" value="en">EN</option>
-              <option className="text-black" value="ru">RU</option>
-            </select>
-          </ul>
-        </ul>
-      </nav> */}
       </Container>
     </div>
   );

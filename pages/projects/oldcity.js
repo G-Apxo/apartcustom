@@ -25,6 +25,7 @@ import Herod from "../../assets/GAMISRENDEREBI/OCP/10.jpg";
 import Vector from "../../assets/seeprjvector.png";
 import { useTitle } from "../../components/title";
 import Head from "next/head";
+import Layout from "../../components/Layout";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -47,8 +48,9 @@ export default function IndexPage() {
           <title>Bukhaidze B2 - Apart Development</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <Layout>
       <div className="hero">
-        <Nav />
+       
         <Container>
           <Row className="mt-120-important">
             {/* <Col xs="1" lg="1" md="1" sm="1" xl="1" xxl="1">
@@ -385,7 +387,7 @@ export default function IndexPage() {
           </Col>
         </Container>
       </div>
-      <Footer />
+      </Layout>
     </div>
   );
 }

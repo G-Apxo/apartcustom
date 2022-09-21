@@ -48,7 +48,7 @@ export default function IndexPage() {
   const darkmode = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName("overlay_choose ")[0].style.setProperty("display", "none");
+    document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
   };
   const whitemode = () => {
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
@@ -56,23 +56,23 @@ export default function IndexPage() {
   const darkmodemobile = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName("overlay_choose_mobile ")[0].style.setProperty("display", "none");
+    document.getElementsByClassName("overlay_choose_mobile")[0].style.setProperty("display", "none");
   };
   const whitemodemobile = () => {
     document.getElementsByClassName("overlay_choose_mobile")[0].style.setProperty("display", "none");
   };
 
-  useTitle("Apart Development");
+
 
   return (
     <>
       <Head>
-        <title>{t.title}Blog - Apart Development</title>
+        <title>{t.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navwhite mode={mode} setMode={setMode} />
 
-      <div className="overlay_choose desktop__view">
+      <div className="overlay_choose desktop__view" id="aDiv">
         <Row className="opener-container-n">
           <Col
             onClick={whitemode}
