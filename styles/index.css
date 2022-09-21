@@ -2327,6 +2327,6 @@ ul.navbar-nav li a {
   background: transparant !important;
 }
 select.form-select.lang__drop_white option {
-  background: black !important;
+  background: #333 !important;
   color: white !important;
 }
