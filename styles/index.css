@@ -1105,6 +1105,10 @@ h2 {
   }
 
   @media (max-width: 700px) {
+    .additional__padding {
+      padding: 0;
+    }
+
     .menu-button-container {
       display: flex;
     }
@@ -1843,7 +1847,7 @@ flickity-enabled {
     display: none;
   }
   .mob__view {
-    display: block ;
+    display: block;
   }
 }
 .mobile_container {
