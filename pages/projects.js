@@ -48,16 +48,20 @@ import Panorama5 from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-2.jpg";
 import Panorama5d from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-2-night.jpg";
 import Hero from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3.jpg";
 import Herod from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3-night.jpg";
-
+import Head from "next/head";
 import { useTitle } from "../components/title";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-  useTitle(t.titlet);
+
   return (
     <div>
+        <Head>
+        <title>{t.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <div>

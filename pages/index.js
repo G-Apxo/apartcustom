@@ -22,6 +22,7 @@ import BB1 from "../assets/finalsep9/bukhaidzeb1.png";
 import BB2 from "../assets/finalsep9/bukhaidzeb2.png";
 import OpenPage from "../components/openpage/openPage";
 import { useTitle } from "../components/title";
+import Head from "next/head";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const [mode, setMode] = useState(true);
@@ -32,50 +33,41 @@ export default function IndexPage() {
   const darkmode = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName("overlay_choose ")[0].style.setProperty("display", "none");
+    document
+      .getElementsByClassName("overlay_choose ")[0]
+      .style.setProperty("display", "none");
   };
   const whitemode = () => {
-    document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
+    document
+      .getElementsByClassName("overlay_choose")[0]
+      .style.setProperty("display", "none");
   };
   const darkmodemobile = () => {
     const element = document.body;
     element.classList.add("dark-mode");
-    document.getElementsByClassName("overlay_choose_mobile ")[0].style.setProperty("display", "none");
+    document
+      .getElementsByClassName("overlay_choose_mobile ")[0]
+      .style.setProperty("display", "none");
   };
   const whitemodemobile = () => {
-    document.getElementsByClassName("overlay_choose_mobile")[0].style.setProperty("display", "none");
-  };
-  const leftHandler = () => {
-    const left = document.querySelector(".apart__day");
-    left.addEventListener("mouseenter", () => left.classList.add("hover-left"));
-    console.log("im left");
-  };
-  const leftOutHandler = () => {
-    const left = document.querySelector(".apart__day");
-    left.addEventListener("mouseleave", () => left.classList.remove("hover-left"));
-    console.log("im right");
-  };
-
-  const rightHandler = () => {
-    const right = document.querySelector(".apart__night");
-    right.addEventListener("mouseenter", () => right.classList.add("hover-right"));
-  };
-  const rightOutHandler = () => {
-    const right = document.querySelector(".apart__day");
-    right.addEventListener("mouseleave", () => right.classList.remove("hover-right"));
+    document
+      .getElementsByClassName("overlay_choose_mobile")[0]
+      .style.setProperty("display", "none");
   };
 
   useTitle("Apart Development");
 
   return (
     <>
+      <Head>
+        <title>{t.title}Blog - Apart Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navwhite mode={mode} setMode={setMode} />
 
       <div className="overlay_choose desktop__view">
         <Row className="opener-container-n">
           <Col
-            onMouseEnter={leftHandler}
-            onMouseLeave={leftOutHandler}
             onClick={whitemode}
             xs="12"
             lg="12"
@@ -88,8 +80,6 @@ export default function IndexPage() {
             <h1 className="headers__for_start daytext">Apart during day</h1>
           </Col>
           <Col
-            onMouseEnter={rightHandler}
-            onMouseLeave={rightOutHandler}
             onClick={darkmode}
             xs="12"
             lg="12"
@@ -134,8 +124,11 @@ export default function IndexPage() {
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline   className="video vid-bg">
-              <source src=" https://vdieos.netlify.app/src/OCP_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video vid-bg">
+              <source
+                src=" https://vdieos.netlify.app/src/OCP_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -152,14 +145,17 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline   className="video vid-bg">
-              <source src="https://vdieos.netlify.app/src/ocp-night.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video vid-bg">
+              <source
+                src="https://vdieos.netlify.app/src/ocp-night.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
                 <Container className="innerContent">
                   <Col xl="4">
-                  <a href="/projects/oldcity">
+                    <a href="/projects/oldcity">
                       <Image src={OCP} className="slider_logo mt-3" />
                     </a>
                   </Col>
@@ -170,8 +166,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/EZO_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/EZO_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -186,8 +185,11 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/ezo-night.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/ezo-night.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -204,8 +206,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/Taghi_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/Taghi_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -220,8 +225,11 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/taghi-night.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/taghi-night.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlayN">
@@ -238,8 +246,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/Bukhaidze_6_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/Bukhaidze_6_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -254,8 +265,11 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/bukhaidze-6-night.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/bukhaidze-6-night.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlayN">
@@ -272,8 +286,11 @@ export default function IndexPage() {
         </Carousel.Item>
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/Bukhaidze_6a_Intro.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/Bukhaidze_6a_Intro.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlay">
@@ -288,8 +305,11 @@ export default function IndexPage() {
             </Container>
           </div>
           <div className="container__video projects__image_dark">
-            <video loop autoPlay muted playsinline   className="video">
-              <source src="https://vdieos.netlify.app/src/bukhaidze-6a-night.mp4" type="video/mp4" />
+            <video loop autoPlay muted playsinline className="video">
+              <source
+                src="https://vdieos.netlify.app/src/bukhaidze-6a-night.mp4"
+                type="video/mp4"
+              />
             </video>
             <Container>
               <div className="overlayN">
@@ -327,16 +347,22 @@ export default function IndexPage() {
               <Row>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`}>
-                        <Form.Check inline label={t.b1} name="group1" type={type} id={`inline-${type}-1`} />
+                        <Form.Check
+                          inline
+                          label={t.b1}
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-1`}
+                        />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`} className=" home--inputs">
                         <Form.Check
                           className="text-nowrap"
@@ -352,18 +378,30 @@ export default function IndexPage() {
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check inline label={t.b3} name="group1" type={type} id={`inline-${type}-3`} />
+                        <Form.Check
+                          inline
+                          label={t.b3}
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-3`}
+                        />
                       </div>
                     ))}
                   </Form>
                 </Col>
                 <Col xs="6" lg="6" md="6" sm="6" xl="3" xxl="3">
                   <Form>
-                    {["checkbox"].map(type => (
+                    {["checkbox"].map((type) => (
                       <div key={`inline-${type}`} className="home--inputs">
-                        <Form.Check inline label={t.b4} name="group1" type={type} id={`inline-${type}-4`} />
+                        <Form.Check
+                          inline
+                          label={t.b4}
+                          name="group1"
+                          type={type}
+                          id={`inline-${type}-4`}
+                        />
                       </div>
                     ))}
                   </Form>
@@ -452,7 +490,10 @@ export default function IndexPage() {
                         </div>
                       </div>
                       <div className="text-center text-md-left home--get-contacted">
-                        <button type="submit" className="btn-send btn btn-primary">
+                        <button
+                          type="submit"
+                          className="btn-send btn btn-primary"
+                        >
                           {t.getContacted}
                         </button>
                       </div>
@@ -490,17 +531,29 @@ export default function IndexPage() {
             <Row className="justify-content-between">
               <div className="col-4 ">
                 <div className="partners">
-                  <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Apart_showroom}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
               <div className="col-4">
                 <div className="partners">
-                  <Image src={Malongo} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Malongo}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
               <div className="col-4 d-flex justify-content-evenly">
                 <div className="partners">
-                  <Image src={Tbc} alt="banner immage" className="partners_wite" />
+                  <Image
+                    src={Tbc}
+                    alt="banner immage"
+                    className="partners_wite"
+                  />
                 </div>
               </div>
             </Row>

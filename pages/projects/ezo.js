@@ -22,7 +22,7 @@ import Ezo5 from "../../assets/finalBotRenders/EZO/5-ezo-5.jpg";
 import Ezo5d from "../../assets/finalBotRenders/EZO/5-ezo-5-night.jpg";
 import Footer from "../../components/footer";
 import { useTitle } from "../../components/title";
-
+import Head from "next/head";
 export default function IndexPage2() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -41,6 +41,10 @@ export default function IndexPage2() {
   useTitle("Ezo - Apart Development");
   return (
     <div>
+        <Head>
+          <title>Bukhaidze B2 - Apart Development</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
       <div className="hero">
         <Nav />
         <Container>

@@ -23,7 +23,7 @@ import Bukhaidze4d from "../../assets/finalBotRenders/Bukhaidze6/5-bukhaidze-6-4
 import Bukhaidze5 from "../../assets/sep10tika/bukh2-day.jpg";
 import Bukhaidze5d from "../../assets/sep10tika/bukh2-night.jpg";
 import { useTitle } from "../../components/title";
-
+import Head from "next/head";
 export default function IndexPage3() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -41,9 +41,12 @@ export default function IndexPage3() {
   // };
 
   const styledpic = { height: "200px" };
-  useTitle("Bukhaidze B2 - Apart Development");
   return (
     <div>
+          <Head>
+        <title>Bukhaidze B2 - Apart Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <Container>

@@ -13,7 +13,7 @@ import RoomImage from "../assets/finalsep9/sep9/gegmebi/2-floor.svg";
 import RoomImageModel from "../assets/finalsep9/sep9/renderebi/test.png";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
-
+import Head from "next/head";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -22,6 +22,10 @@ export default function IndexPage() {
   useTitle("Apart Development");
   return (
     <div>
+        <Head>
+        <title>{t.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <Container>

@@ -11,17 +11,20 @@ import day from "../assets/finalsep9/investing-day.jpg";
 import night from "../assets/finalsep9/investing-night.jpg";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
-
+import Head from "next/head";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
-  useTitle(t.titlet);
 
   return (
     <div>
+       <Head>
+        <title>{t.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <div>

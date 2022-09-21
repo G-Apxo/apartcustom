@@ -24,6 +24,7 @@ import Hero from "../../assets/GAMISRENDEREBI/OCP/9.jpg";
 import Herod from "../../assets/GAMISRENDEREBI/OCP/10.jpg";
 import Vector from "../../assets/seeprjvector.png";
 import { useTitle } from "../../components/title";
+import Head from "next/head";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -42,6 +43,10 @@ export default function IndexPage() {
   useTitle("Old City Panorama - Apart Development");
   return (
     <div>
+              <Head>
+          <title>Bukhaidze B2 - Apart Development</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
       <div className="hero">
         <Nav />
         <Container>

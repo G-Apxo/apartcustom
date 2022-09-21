@@ -11,6 +11,7 @@ import BannerImg from "../assets/singleblog.png";
 import Footer from "../components/footer";
 import axios from "axios";
 import { useTitle } from "../components/title";
+import Head from 'next/head';
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -51,9 +52,12 @@ export default function IndexPage() {
       });
   };
   blogDesc();
-  useTitle("Apart.ge");
   return (
     <div>
+        <Head>
+        <title>{t.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <div>

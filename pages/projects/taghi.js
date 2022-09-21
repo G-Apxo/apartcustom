@@ -25,7 +25,7 @@ import Taghi4d from "../../assets/finalBotRenders/Taghi/5-taghi-5-night.jpg";
 import Taghi5 from "../../assets/finalBotRenders/Taghi/5-taghi-3.jpg";
 import Taghi5d from "../../assets/finalBotRenders/Taghi/5-taghi-3-night.jpg";
 import { useTitle } from "../../components/title";
-
+import Head from "next/head";
 export default function IndexPage1() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -44,6 +44,10 @@ export default function IndexPage1() {
   useTitle("Taghi - Apart Development");
   return (
     <div>
+              <Head>
+          <title>Bukhaidze B2 - Apart Development</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
       <div className="hero mb-120">
         <Nav />
         <Container>

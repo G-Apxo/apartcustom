@@ -10,7 +10,7 @@ import Link from "next/link";
 import Footer from "../components/footer";
 import axios from "axios";
 import { useTitle } from "../components/title";
-
+import Head from "next/head";
 export const getStaticProps = async () => {
   const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
   const data = await res.json();
@@ -29,6 +29,10 @@ const IndexPage = ({ blog }) => {
   useTitle("Blog - Apart Development");
   return (
     <div>
+        <Head>
+        <title>{t.title}Blog - Apart Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <div>

@@ -34,7 +34,7 @@ import Team23 from "../assets/teamfinal/tornikesixarulidze.jpg";
 import Team24 from "../assets/teamfinal/kaxagabatashvili.jpg";
 import Footer from "../components/footer";
 import { useTitle } from "../components/title";
-
+import Head from "next/head";
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
@@ -42,18 +42,38 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const styledImg = "height: 400px";
-  useTitle(t.titlet);
+
   return (
     <div>
+      <Head>
+        <title>{t.title}Blog - Apart Development</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <Nav />
         <Container className="mt-5">
           <h1 className="about-title ">{t.title}</h1>
           <Row className="row-marginer justify-content-end">
-            <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="d-flex justify-content-center">
+            <Col
+              xs="12"
+              lg="3"
+              md="3"
+              sm="3"
+              xl="3"
+              xxl="3"
+              className="d-flex justify-content-center"
+            >
               <Image src={Beqa} alt="banner immage" />
             </Col>
-            <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5" className="align-items-center d-flex ">
+            <Col
+              xs="12"
+              lg="5"
+              md="5"
+              sm="5"
+              xl="5"
+              xxl="5"
+              className="align-items-center d-flex "
+            >
               <div className="about-htext-styles">
                 <p>{t.tsubt}</p>
                 <h2>{t.tname}</h2>
@@ -101,7 +121,15 @@ export default function IndexPage() {
             </Col>
             <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
               <Row>
-                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14 test15">
+                <Col
+                  xs="12"
+                  lg="12"
+                  md="12"
+                  sm="12"
+                  xl="12"
+                  xxl="12"
+                  className="test14 test15"
+                >
                   <Row>
                     <Col
                       xs="12"
@@ -119,7 +147,15 @@ export default function IndexPage() {
                     </Col>
                   </Row>
                 </Col>
-                <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="12" className="test14">
+                <Col
+                  xs="12"
+                  lg="12"
+                  md="12"
+                  sm="12"
+                  xl="12"
+                  xxl="12"
+                  className="test14"
+                >
                   {/* <Row>
                     <Col
                       xs="12"
@@ -281,7 +317,15 @@ export default function IndexPage() {
               <h3>{t.tt19} </h3>
               <p>{t.tt19p}</p>
             </Col>
-            <Col className="styledCol" xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
+            <Col
+              className="styledCol"
+              xs="6"
+              lg="3"
+              md="3"
+              sm="3"
+              xl="3"
+              xxl="3"
+            >
               <Image src={Team18} alt="banner immage" />
 
               <h3>{t.tt18} </h3>

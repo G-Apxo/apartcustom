@@ -20,6 +20,10 @@ export default function IndexPage() {
   useTitle("Apart.ge");
   return (
     <div>
+        <Head>
+        <title>{t.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero mt-30">
         <Nav />
         <div>
