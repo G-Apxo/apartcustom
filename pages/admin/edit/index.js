@@ -96,7 +96,7 @@ const Blogpost = blog => {
   const getBlog = () => {
     var config = {
       method: "get",
-      url: `https://284e-95-137-233-63.ngrok.io/api/blogOnly/${query.lang}/${query.url}`,
+      url: `https://efd2-2a0b-6204-33bb-4a00-8166-c098-5628-a4b4.ngrok.io/api/blogOnly/${query.lang}/${query.url}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Access-Control-Request-Origin": "*",
@@ -133,7 +133,7 @@ const Blogpost = blog => {
 
     var config = {
       method: "put",
-      url: `https://284e-95-137-233-63.ngrok.io/api/blog/${query.lang}/${query.url}`,
+      url: `https://efd2-2a0b-6204-33bb-4a00-8166-c098-5628-a4b4.ngrok.io/api/blog/${query.lang}/${query.url}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Content-Type": "application/json",

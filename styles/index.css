@@ -1801,7 +1801,7 @@ flickity-enabled {
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
 }
-.menu__box li a{
+.menu__box li a {
   display: block;
   padding: 12px 24px;
 
@@ -2293,6 +2293,7 @@ flickity-enabled {
   position: fixed;
   z-index: 99;
   top: -5%;
+  left: 0;
 }
 .headers__for_start {
   position: absolute;
@@ -2344,11 +2345,11 @@ select.form-select.lang__drop_white option {
   background: #333 !important;
   color: white !important;
 }
-.CookieConsent{
-  background-color: #121927!important;
+.CookieConsent {
+  background-color: #121927 !important;
 }
-#rcc-confirm-button{
-  background-color: transparent!important;
+#rcc-confirm-button {
+  background-color: transparent !important;
   color: white !important;
   border: 1px solid white !important;
 }
