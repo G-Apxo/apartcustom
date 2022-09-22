@@ -2344,3 +2344,11 @@ select.form-select.lang__drop_white option {
   background: #333 !important;
   color: white !important;
 }
+.CookieConsent{
+  background-color: #121927!important;
+}
+#rcc-confirm-button{
+  background-color: transparent!important;
+  color: white !important;
+  border: 1px solid white !important;
+}

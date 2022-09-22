@@ -36,7 +36,7 @@ import b1d1 from "../assets/mobilephotos/b1d1.png";
 import b1n1 from "../assets/mobilephotos/b1n1.png";
 import b2d1 from "../assets/mobilephotos/b2d1.png";
 import b2n1 from "../assets/mobilephotos/b2n1.png";
-
+import CookieConsent from "react-cookie-consent";
 export default function IndexPage() {
   const { width } = useWindowSize();
   const [showBanner, setBanner] = useState(true);
@@ -49,6 +49,7 @@ export default function IndexPage() {
     const element = document.body;
     element.classList.add("dark-mode");
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
+
   };
   const whitemode = () => {
     document.getElementsByClassName("overlay_choose")[0].style.setProperty("display", "none");
@@ -69,8 +70,9 @@ export default function IndexPage() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navwhite mode={mode} setMode={setMode} />
-
-      <div className="overlay_choose desktop__view" id="aDiv">
+      <CookieConsent>
+      This website uses cookies to enhance the user experience.
+      <div className="overlay_choose desktop__view">
         <Row className="opener-container-n">
           <Col
             onClick={whitemode}
@@ -126,6 +128,7 @@ export default function IndexPage() {
           </Col>
         </Row>
       </div>
+    </CookieConsent>
       <Carousel slide={true} style={{ opacity: 1 }} className="carousle__inner">
         <Carousel.Item interval={5000} className="fuul__width">
           <div className="container__video projects__image">
