@@ -62,12 +62,10 @@ export default function IndexPage() {
     document.getElementsByClassName("overlay_choose_mobile")[0].style.setProperty("display", "none");
   };
 
-
-
   return (
     <>
       <Head>
-        <title>{t.title}</title>
+        <title>{t.titlet}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navwhite mode={mode} setMode={setMode} />

@@ -8,7 +8,7 @@ import ge from "../../locales/geSingleBlog";
 import { useRouter } from "next/router";
 import { useState } from "react";
 export const getStaticPaths = async () => {
-  const res = await fetch("https://5f9e-95-137-233-63.ngrok.io/api/urls/en");
+  const res = await fetch("https://284e-95-137-233-63.ngrok.io/api/urls/en");
   const data = await res.json();
 
   const paths = data.map(blog => {
@@ -25,7 +25,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async context => {
   const url = context.params.url;
-  const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blog/en/` + url);
+  const res = await fetch(`https://284e-95-137-233-63.ngrok.io/api/blog/en/` + url);
   const data = await res.json();
   console.log(data);
   return {
@@ -43,33 +43,24 @@ const Post = ({ blog }) => {
       <Nav>...</Nav>
       <Container>
         <div className="mt-120 mb-80">
-          <p className="goback">
-          
-            {t.goBack}
-          </p>
+          <p className="goback">{t.goBack}</p>
         </div>
         <Col className="col-12 mb-80">
           <img src={blog[0].mainImage} className="blog_banner__img" alt="banner immage" />
         </Col>
         <Row className="align-items-center  mb-20 mb-10 ">
-          <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">
-           
-          </Col>
+          <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4"></Col>
           <Col xs="8" lg="4" md="4" sm="4" xl="4" xxl="4">
             <p className="text-center">{blog[0].createdAt}</p>
             <h4 className="text-center">{blog[0].title}</h4>
           </Col>
-          <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">
-           
-          </Col>
+          <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4"></Col>
         </Row>
         <Row className="align-items-center ">
           <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">
             <hr />
           </Col>
-          <Col xs="8" lg="4" md="4" sm="4" xl="4" xxl="4">
-           
-          </Col>
+          <Col xs="8" lg="4" md="4" sm="4" xl="4" xxl="4"></Col>
           <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4">
             <hr />
           </Col>

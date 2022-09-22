@@ -14,7 +14,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://5f9e-95-137-233-63.ngrok.io/api/blogs/`);
+  const res = await fetch(`https://284e-95-137-233-63.ngrok.io/api/blogs/`);
   const data = await res.json();
   console.log(data);
 
@@ -31,44 +31,45 @@ const IndexPage = ({ blog }) => {
   useTitle("Blog - Apart Development");
   return (
     <div>
-        <Head>
-        <title>{t.title}Blog - Apart Development</title>
+      <Head>
+        <title>
+          {/* {t.title} */}
+          Blog - Apart Development
+        </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>
-      <div className="hero">
-       
-        <div>
-          <Container className="mb-120">
-            <h2 className="row-marginer mt-120 mb-60">Blog</h2>
-            <h4>ბლოგი დაემატება მალე</h4>
-            <Row>
-              {blog.map(blog => (
-                <Link
-                  className="blog-single-blog"
-                  key={blog}
-                  href="#"
-                  //  href={"blog/" + blog.url}
-                >
-                  <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-                    <div className="">
-                      <div className="blog-image__content">
-                        <div className="text__contianer">
-                          <p className="text-white">{blog.createdAt}</p>
-                          <h2 className="text-white">{blog.title}</h2>
+        <div className="hero">
+          <div>
+            <Container className="mb-120">
+              <h2 className="row-marginer mt-120 mb-60">Blog</h2>
+              <h4>ბლოგი დაემატება მალე</h4>
+              <Row>
+                {blog.map(blog => (
+                  <Link
+                    className="blog-single-blog"
+                    key={blog}
+                    href="#"
+                    //  href={"blog/" + blog.url}
+                  >
+                    <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                      <div className="">
+                        <div className="blog-image__content">
+                          <div className="text__contianer">
+                            <p className="text-white">{blog.createdAt}</p>
+                            <h2 className="text-white">{blog.title}</h2>
+                          </div>
+                          <img src={blog.mainImage} alt="banner immage" className="blogList" />
                         </div>
-                        <img src={blog.mainImage} alt="banner immage" className="blogList" />
                       </div>
-                    </div>
-                  </Col>
-                </Link>
-              ))}
-            </Row>
-          </Container>
+                    </Col>
+                  </Link>
+                ))}
+              </Row>
+            </Container>
+          </div>
         </div>
-      </div>
       </Layout>
-     
     </div>
   );
 };
