@@ -2218,6 +2218,7 @@ flickity-enabled {
   position: fixed;
   z-index: 99;
   top: -5%;
+  left: 0;
   background-color: #000;
 }
 .overlay_choose .col {

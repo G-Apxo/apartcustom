@@ -336,7 +336,7 @@ export default function IndexPage() {
             </Row>
           </Container>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </Layout>
     </div>
   );
