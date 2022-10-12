@@ -43,8 +43,8 @@ const IndexPage = ({ blog }) => {
           <div>
             <Container className="mb-120">
               <h2 className="row-marginer mt-120 mb-60">Blog</h2>
-              <h4>ბლოგი დაემატება მალე</h4>
-              {/* <Row>
+              {/* <h4>ბლოგი დაემატება მალე</h4> */}
+              <Row>
                 {blog.map(blog => (
                   <Link
                     className="blog-single-blog"
@@ -65,7 +65,7 @@ const IndexPage = ({ blog }) => {
                     </Col>
                   </Link>
                 ))}
-              </Row> */}
+              </Row>
             </Container>
           </div>
         </div>
