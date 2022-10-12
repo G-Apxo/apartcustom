@@ -133,7 +133,7 @@ const Blogpost = blog => {
 
     var config = {
       method: "put",
-      url: `https://1a30-95-137-233-63.ngrok.io/api/blog/${query.lang}/${query.url}`,
+      url: `https://api.apart.ge/api/blog/${query.lang}/${query.url}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Content-Type": "application/json",

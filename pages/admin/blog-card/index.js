@@ -24,7 +24,7 @@ const index = ({ blog }) => {
   const blogListFunct = () => {
     var config = {
       method: "get",
-      url: "https://1a30-95-137-233-63.ngrok.io/api/blogs",
+      url: "https://api.apart.ge/api/blogs",
       data: data,
     };
 
