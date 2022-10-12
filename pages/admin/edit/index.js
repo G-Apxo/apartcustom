@@ -96,7 +96,7 @@ const Blogpost = blog => {
   const getBlog = () => {
     var config = {
       method: "get",
-      url: `https://1a30-95-137-233-63.ngrok.io/api/blogOnly/${query.lang}/${query.url}`,
+      url: `https://api.apart.ge/api/blogOnly/${query.lang}/${query.url}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
         "Access-Control-Request-Origin": "*",

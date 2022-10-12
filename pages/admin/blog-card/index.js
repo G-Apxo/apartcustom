@@ -44,7 +44,7 @@ const index = ({ blog }) => {
   const deleteBlog = a => {
     var config = {
       method: "delete",
-      url: `https://1a30-95-137-233-63.ngrok.io/api/blog/${a.target.name}/${a.target.id}`,
+      url: `https://api.apart.ge/api/blog/${a.target.name}/${a.target.id}`,
       headers: {
         Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
       },
