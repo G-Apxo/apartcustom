@@ -10,6 +10,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useState } from "react";
 import BlogEdit from "../edit/index";
+import { useEffect } from "react";
 
 const index = ({ blog }) => {
   const [blogList, setBlogst] = useState([]);
@@ -41,6 +42,12 @@ const index = ({ blog }) => {
       });
   };
 
+  // stop rendering blogListFunct() on every render
+  React.useEffect(() => {
+    blogListFunct();
+  }, []);
+  
+
   const deleteBlog = a => {
     var config = {
       method: "delete",
@@ -53,18 +60,22 @@ const index = ({ blog }) => {
     axios(config)
       .then(function (response) {
         console.log(JSON.stringify(response.data));
+        
       })
       .catch(function (error) {
         console.log(error);
       });
   };
 
+
   return (
     <>
-      <h2 onClick={blogListFunct}>Blog List</h2>
+      <h2>Blog List</h2>
       <Row>
         {blogList.map(blog => (
-          <Col xs="4" key={blog}>
+          <Col xs="4" 
+          key={blog.id}
+          >
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={blog.mainImage} />
               <Card.Body>

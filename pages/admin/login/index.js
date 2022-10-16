@@ -1,35 +1,46 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Col, Container, Form, Button } from "react-bootstrap";
-
-import Nav from "../../../components/nav";
-import Footer from "../../../components/footer";
+import { Col, Container, Form, Button,Row } from "react-bootstrap";
 
 const LoginPage = () => {
+  const router = useRouter();
+  const { register, handleSubmit } = useForm();
+  const [loginError, setLoginError] = useState(null);
 
-  
+  const onSubmit = ({ email, password}) => {
+    if (email === "apart@apart.com" && password === "Apart123#") {
+      router.push("/admin");
+      sessionStorage.setItem("isLogedInAdmin", "true");
+    } else {
+      setLoginError("you are not allowed to log in");
+    }
+  };
+  useEffect(() => {
+    if (sessionStorage.getItem("isLogedInAdmin")) {
+      router.replace("/admin");
+    }
+  }, []);
 
   return (
     <div>
-      <Nav />
-
       <Container>
-        <Col className="mt-120 mb-120">
-          <Form >
+        <Row className="justify-content-center mt-120">
+        <Col xl={6}>
+          <Form onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Username</Form.Label>
-              <Form.Control type="email" placeholder="Username" />
-            
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" {...register("email")} />
+              {loginError && <Form.Text className="text-muted">{loginError}</Form.Text>}
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password"  />
+              <Form.Control type="password" placeholder="Password" {...register("password")} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Are you admin?"  />
+              <Form.Check type="checkbox" label="Are you admin?" {...register("isAdmin")} />
             </Form.Group>
 
             <Button variant="primary" type="submit">
@@ -37,9 +48,9 @@ const LoginPage = () => {
             </Button>
           </Form>
         </Col>
+        </Row>
+   
       </Container>
-
-      <Footer />
     </div>
   );
 };

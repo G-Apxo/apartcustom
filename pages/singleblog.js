@@ -47,6 +47,7 @@ export default function IndexPage() {
         setTitle(data.title);
         setBlogContent(data.blogContent);
         setBase64img(data.mainImage);
+        setmetaDescription(data.metaDescription);
       })
       .catch(function (error) {
         console.log(error);

@@ -1,60 +1,60 @@
 // proper blog
 
-// import Nav from "../components/nav";
-// import Image from "next/image";
-// import { useRouter } from "next/router";
-// import { useState } from "react";
-// import { Button, Row, Container, Col, } from "react-bootstrap";
-// import en from "../locales/enBlog";
-// import ru from "../locales/ruBlog";
-// import ge from "../locales/geBlog";
-// import Link from "next/link";
-// import Footer from "../components/footer";
-// import axios from "axios";
-// import Card from "react-bootstrap/Card";
+import Nav from "../components/nav";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { Button, Row, Container, Col, } from "react-bootstrap";
+import en from "../locales/enBlog";
+import ru from "../locales/ruBlog";
+import ge from "../locales/geBlog";
+import Link from "next/link";
+import Footer from "../components/footer";
+import axios from "axios";
+import Card from "react-bootstrap/Card";
 
-// export const getStaticProps = async () => {
-//   const res = await fetch(`https://8d58-95-137-233-63.ngrok.io/api/blogs/${locale}`);
-//   const data = await res.json();
-//   console.log(data);
+export const getStaticProps = async () => {
+  const res = await fetch(`https://8d58-95-137-233-63.ngrok.io/api/blogs/${locale}`);
+  const data = await res.json();
+  console.log(data);
 
-//   return {
-//     props: { blog: data },
-//   };
+  return {
+    props: { blog: data },
+  };
 
-// };
+};
 
 const IndexPage = ({ blog }) => null;
 
-// const [blogList, setBlogst] = useState([]);
+const [blogList, setBlogst] = useState([]);
 
-// const router = useRouter();
-// const { locale } = router;
-// console.log(locale)
-// const t = locale === "en" ? en : locale === "ru" ? ru :ge;
-// var data = "";
+const router = useRouter();
+const { locale } = router;
+console.log(locale)
+const t = locale === "en" ? en : locale === "ru" ? ru :ge;
+var data = "";
 
-// const blogListFunct = () => {
-//   var config = {
-//     method: "get",
-//     url: `https://d74b-95-137-233-63.ngrok.io/api/blogs/${locale}`,
-//     data: data,
-//   };
+const blogListFunct = () => {
+  var config = {
+    method: "get",
+    url: `https://d74b-95-137-233-63.ngrok.io/api/blogs/${locale}`,
+    data: data,
+  };
 
-//   axios(config)
-//     .then(function (response) {
-//       console.log(JSON.stringify(response.data));
-//       const blogdata = response.data;
-//       setBlogst(blogdata);
-//       console.log(blogList);
-//       console.log(blogdata);
-//     })
-//     .catch(function (error) {
-//       console.log(error);
-//     });
-// };
+  axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+      const blogdata = response.data;
+      setBlogst(blogdata);
+      console.log(blogList);
+      console.log(blogdata);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};
 
-// blogListFunct()
+blogListFunct()
 
 // return (
 //   <div>

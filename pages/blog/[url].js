@@ -7,10 +7,12 @@ import ru from "../../locales/ruSingleBlog";
 import ge from "../../locales/geSingleBlog";
 import { useRouter } from "next/router";
 import { useState } from "react";
-export const getStaticPaths = async () => {
-  const res = await fetch("https://api.apart.ge/api/urls/en");
-  const data = await res.json();
+import Head from "next/head";
 
+
+export const getStaticPaths = async () => {
+  const res = await fetch(`https://api.apart.ge/api/blogs/`);
+  const data = await res.json();
   const paths = data.map(blog => {
     return {
       params: { url: blog.url.toString() },
@@ -24,22 +26,31 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async context => {
+
   const url = context.params.url;
-  const res = await fetch(`https://api.apart.ge/api/blog/en/` + url);
+  const lang = context.locale;
+  
+  const res = await fetch(`https://api.apart.ge/api/blog/${lang}/`+ url);
   const data = await res.json();
-  console.log(data);
+ 
   return {
     props: { blog: data },
   };
 };
 
 const Post = ({ blog }) => {
-  const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
   return (
     <>
+    <Head>
+      <title>
+        {blog[0].title}
+      </title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content={blog[0].description} />
+      </Head>
       <Nav>...</Nav>
       <Container>
         <div className="mt-120 mb-80">
@@ -74,7 +85,7 @@ const Post = ({ blog }) => {
           <h2>{t.recentBlog}</h2>
           <hr />
         </Col>
-        <Row>
+        {/* <Row>
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-5">
             <div className="blog-image__content">
               <div className="text__contianer">
@@ -93,7 +104,7 @@ const Post = ({ blog }) => {
               <img src={blog[2].mainImage} alt="blog immage" />
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
       <Footer></Footer>
     </>

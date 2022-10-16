@@ -65,6 +65,11 @@ const Blogpost = blog => {
     setcallonicalUrl(event.target.value);
     callonicalUrl1 = event.target.value;
   };
+  // const [metaDescription1, setmetaDescription] = useState("");
+  // const handleChangemetaDescription = event => {
+  //   setmetaDescription(event.target.value);
+  //   metaDescription1 = event.target.value;
+  // };
 
   const [customurl, setURl] = useState("");
   const handleChangeURl = event => {
@@ -115,6 +120,7 @@ const Blogpost = blog => {
         setcallonicalUrl(data.callonicalUrl);
         setBlogContent(data.blogContent);
         setBase64img(data.mainImage);
+        // setmetaDescription(data.metaDescription);
       })
       .catch(function (error) {
         // console.log(error);
@@ -129,6 +135,7 @@ const Blogpost = blog => {
       url: customurl,
       blogContent: blogContent,
       callonicalUrl: callonicalUrl1,
+      // metaDescription : metaDescription1,
     });
 
     var config = {
@@ -174,6 +181,15 @@ const Blogpost = blog => {
               onChange={handleChangecallonicalUrl}
             />
           </Form.Group>
+          {/* <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Meta description</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder={metaDescription1}
+              value={metaDescription1}
+              onChange={handleChangemetaDescription}
+            />
+          </Form.Group> */}
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>URL</Form.Label>

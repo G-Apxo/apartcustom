@@ -3,11 +3,10 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import Blogpost from './blog-post';
 import Blogcard from './blog-card'
 const index = () => {
+  
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
     <Row>

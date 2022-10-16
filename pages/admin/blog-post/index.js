@@ -4,10 +4,9 @@ import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import styles from "./style.module.css";
-import Nav from "../../../components/nav";
-import Footer from "../../../components/footer";
 
 var mainImgBase64 = "";
+var meta = "";
 var lang = "";
 var title = "";
 var url = "";
@@ -30,7 +29,13 @@ const convertBase64 = file => {
 };
 
 const Blogpost = () => {
-  const { register, handleSubmit } = useForm();
+  const [metaDescription1, setmetaDescription] = useState("");
+  const handleChangemetaDescription = event => {
+    setmetaDescription(event.target.value);
+    metaDescription1 = event.target.value;
+    meta = metaDescription1;
+};
+  // const { register, handleSubmit } = useForm();
 
   const [callonicalUrl1, setcallonicalUrl] = useState("");
   const handleChangecallonicalUrl = event => {
@@ -50,6 +55,7 @@ const Blogpost = () => {
     title1 = event.target.value;
     title = title1;
   };
+
 
   const [language, setLang] = useState(" ");
   const handeLanguageSelector = event => {
@@ -103,6 +109,7 @@ const Blogpost = () => {
     var data = JSON.stringify({
       lang: lang,
       mainImage: mainImgBase64,
+      meta:meta,
       title: title,
       url: url,
       blogContent: blogContent,
@@ -144,6 +151,15 @@ const Blogpost = () => {
               placeholder="Text"
               value={callonicalUrl1}
               onChange={handleChangecallonicalUrl}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Meta description</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Text"
+              value={metaDescription1}
+              onChange={handleChangemetaDescription}
             />
           </Form.Group>
 
