@@ -128,7 +128,7 @@ const Blogpost = () => {
 
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        alert(JSON.stringify(response.data));
       })
       .catch(function (error) {
         console.log(error);
