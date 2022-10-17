@@ -10,7 +10,7 @@ const LoginPage = () => {
 
   const onSubmit = ({ email, password}) => {
     if (email === "apart@apart.com" && password === "Apart123#") {
-      router.push("/admin");
+      router.push("/admin/dashboard");
       sessionStorage.setItem("isLogedInAdmin", "true");
     } else {
       setLoginError("you are not allowed to log in");
@@ -18,7 +18,7 @@ const LoginPage = () => {
   };
   useEffect(() => {
     if (sessionStorage.getItem("isLogedInAdmin")) {
-      router.replace("/admin");
+      router.replace("/admin/dashboard");
     }
   }, []);
 

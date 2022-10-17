@@ -3,8 +3,6 @@ import dynamic from "next/dynamic";
 import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Nav from "../../../components/nav";
-import Footer from "../../../components/footer";
 import Image from "react-bootstrap";
 import { Link } from "react-bootstrap-icons";
 import { useRouter } from "next/router";

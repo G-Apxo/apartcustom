@@ -17,7 +17,6 @@ export const getStaticProps = async () => {
   const res = await fetch(`https://api.apart.ge/api/blogs/`);
   const data = await res.json();
   console.log(data);
-
   return {
     props: { blog: data },
   };
@@ -26,9 +25,7 @@ export const getStaticProps = async () => {
 const IndexPage = ({ blog }) => {
   const router = useRouter();
   const { locale } = router;
-  console.log(locale);
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
-  useTitle("Blog - Apart Development");
 
   return (
     <div>
@@ -50,7 +47,6 @@ const IndexPage = ({ blog }) => {
                   <Link
                     className="blog-single-blog"
                     key={blog}
-                    // href={"blog/"+ blog.url}
                       name={blog.lang}
                       id={blog.url}
                       href={{
