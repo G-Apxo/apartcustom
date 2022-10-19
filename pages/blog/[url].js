@@ -30,6 +30,7 @@ export const getStaticProps = async context => {
   const url = context.params.url;
   const lang = context.locale;
   
+  //get language from context
   const res = await fetch(`https://api.apart.ge/api/blog/${lang}/`+ url);
   const data = await res.json();
  
@@ -40,6 +41,7 @@ export const getStaticProps = async context => {
 
 const Post = ({ blog }) => {
   const router = useRouter();
+  
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
   return (
