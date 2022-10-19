@@ -47,11 +47,10 @@ const IndexPage = ({ blog }) => {
                   <Link
                     className="blog-single-blog"
                     key={blog}
-                      name={blog.lang}
+                     
                       id={blog.url}
                       href={{
                         pathname: `/blog/${blog.url}`,
-                        query: { url: blog.url, lang: blog.lang },
                       }}
                   >
                     <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
