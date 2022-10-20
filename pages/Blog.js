@@ -14,7 +14,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://api.apart.ge/api/blogs/`);
+  const res = await fetch(`https://api.apart.ge/api/blogs/`); 
   const data = await res.json();
   console.log(data);
   return {
