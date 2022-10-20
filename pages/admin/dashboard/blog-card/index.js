@@ -82,7 +82,7 @@ const index = ({ blog }) => {
                 <Card.Title>{blog.title}</Card.Title>
                 <Card.Title>{blog.lang}</Card.Title>
                 <Row>
-                  <Col xs="6">
+                  <Col xs="6"> 
                     <Link
                       name={blog.lang}
                       id={blog.url}
