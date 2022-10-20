@@ -159,10 +159,10 @@ const Blogpost = blog => {
   return (
     <div>
       <Container>
-        <a href="/admin/dashboard">
+        <a href="/admin/dashboard"> 
           <h1>go back</h1>
         </a>
-        <p>{query.url}</p>
+        <h1>{query.url}</h1>
         <Form className="mt-120">
           <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Upload image</Form.Label>
