@@ -87,7 +87,7 @@ const index = ({ blog }) => {
                       name={blog.lang}
                       id={blog.url}
                       href={{
-                        pathname: "admin/edit",
+                        pathname: "dashboard/edit",
                         query: { url: blog.url, lang: blog.lang },
                       }}
                       variant="success"
