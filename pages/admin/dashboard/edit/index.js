@@ -159,7 +159,7 @@ const Blogpost = blog => {
   return (
     <div>
       <Container>
-        <a href="/admin">
+        <a href="/admin/dashboard">
           <h1>go back</h1>
         </a>
         <p>{query.url}</p>
