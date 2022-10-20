@@ -79,13 +79,13 @@ const index = ({ blog }) => {
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={blog.mainImage} />
               <Card.Body>
-                <Card.Title>{blog.title}</Card.Title>
+                <Card.Title>{blog.title}</Card.Title> 
                 <Card.Title>{blog.lang}</Card.Title>
                 <Row>
                   <Col xs="6"> 
                     <Link
                       name={blog.lang}
-                      id={blog.url}
+                      id={blog.url} 
                       href={{
                         pathname: "dashboard/edit",
                         query: { url: blog.url, lang: blog.lang },
