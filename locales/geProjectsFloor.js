@@ -30,4 +30,6 @@ export default {
   bigBrain8: "სპა",
   bigBrain9: "ოთახის მომსახურება",
   first2: "სარგებელი",
+  seeapart: "აპარტამენტის ნახვა",
+  view: "360 ში ნახვა",
 };

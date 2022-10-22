@@ -31,4 +31,6 @@ export default {
   bigBrain9: "Room Service",
   first2: "Benefits",
   title: "Old City Panorama - Apart Development",
+  seeapart: "See the apartment",
+  view: "360 preview",
 };

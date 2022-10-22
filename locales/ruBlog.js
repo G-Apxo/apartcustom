@@ -1,5 +1,5 @@
 export default {
-  title: "Blog",
+  title: "Блог",
   blogText: "Bukhaidze I Turn 6 our new project",
   blogDate: "November 23. 2021",
 };

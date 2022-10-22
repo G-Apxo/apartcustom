@@ -14,7 +14,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://api.apart.ge/api/blogs/`); 
+  const res = await fetch(`https://api.apart.ge/api/blogs/`);
   const data = await res.json();
   console.log(data);
   return {
@@ -40,18 +40,17 @@ const IndexPage = ({ blog }) => {
         <div className="hero">
           <div>
             <Container className="mb-120">
-              <h2 className="row-marginer mt-120 mb-60">Blog</h2>
+              <h2 className="row-marginer mt-120 mb-60">{t.title}</h2>
               {/* <h4>ბლოგი დაემატება მალე</h4> */}
               <Row>
                 {blog.map(blog => (
                   <Link
                     className="blog-single-blog"
                     key={blog}
-                     
-                      id={blog.url}
-                      href={{
-                        pathname: `/blog/${blog.url}`,
-                      }}
+                    id={blog.url}
+                    href={{
+                      pathname: `/blog/${blog.url}`,
+                    }}
                   >
                     <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                       <div className="">

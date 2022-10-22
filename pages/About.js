@@ -169,7 +169,7 @@ export default function IndexPage() {
             </Col>
           </Container>
 
-          <section className="cover mt-120"></section>
+          {/* <section className="cover mt-120"></section> */}
           <Container className="mb-120 mt-120">
             <Row className="row-marginer mb-60 ">
               <h1>{t.tth}</h1>
