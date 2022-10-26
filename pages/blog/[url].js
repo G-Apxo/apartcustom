@@ -15,10 +15,10 @@ export const getStaticPaths = async () => {
   const data = await res.json();
   const paths = data.map(blog => {
     return {
-      params: { url: blog.url.toString() },
+      params: { url: blog.url.toString() , lang : blog.lang.toString() },
     };
-  });
 
+  });
   return {
     paths,
     fallback: false,
@@ -28,22 +28,25 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async context => {
 
   const url = context.params.url;
-  const lang = context.locale;
+  const lang = context.params.lang;
   
   //get language from context
   const res = await fetch(`https://api.apart.ge/api/blog/${lang}/`+ url);
   const data = await res.json();
- 
-  return {
-    props: { blog: data },
-  };
+ console.log(data)
+ return {
+  props: {
+    data
+  },
+  revalidate: 10
+}
 };
 
 const Post = ({ blog }) => {
   const router = useRouter();
   
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+  const t = locale === "en" ? en : locale === "ru" ? ru : locale === "ge" ? ge : null;
 
 
   const [callonicalUrl1, setcallonicalUrl] = useState("");
