@@ -13,6 +13,7 @@ import { useTitle } from "../components/title";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import React from "react";
+import Router from "next/router";
 
 
 export const getStaticProps = async () => {
@@ -50,6 +51,7 @@ const IndexPage = ({ blog }) => {
 
 
   const router = useRouter();
+  console.log(router)
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
