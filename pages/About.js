@@ -40,7 +40,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : locale === "ge" ? ge : null;
+   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const styledImg = "height: 400px";
 

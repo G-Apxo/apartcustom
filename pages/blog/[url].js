@@ -46,7 +46,7 @@ const Post = ({ blog }) => {
   const router = useRouter();
   
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : locale === "ge" ? ge : null;
+   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
 
   const [callonicalUrl1, setcallonicalUrl] = useState("");
