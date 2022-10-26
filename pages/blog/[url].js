@@ -51,7 +51,7 @@ const Post = ({ blog }) => {
         {blog[0].title}
       </title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content={blog[0].description} />
+      <meta name="description" content={blog.description} />
       </Head>
       <Nav>...</Nav>
       <Container>
@@ -59,13 +59,13 @@ const Post = ({ blog }) => {
           <p className="goback">{t.goBack}</p>
         </div>
         <Col className="col-12 mb-80">
-          <img src={blog[0].mainImage} className="blog_banner__img" alt="banner immage" />
+          <img src={blog.mainImage} className="blog_banner__img" alt="banner immage" />
         </Col>
         <Row className="align-items-center  mb-20 mb-10 ">
           <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4"></Col>
           <Col xs="8" lg="4" md="4" sm="4" xl="4" xxl="4">
-            <p className="text-center">{blog[0].createdAt}</p>
-            <h4 className="text-center">{blog[0].title}</h4>
+            <p className="text-center">{blog.createdAt}</p>
+            <h4 className="text-center">{blog.title}</h4>
           </Col>
           <Col xs="2" lg="4" md="4" sm="4" xl="4" xxl="4"></Col>
         </Row>
@@ -80,7 +80,7 @@ const Post = ({ blog }) => {
         </Row>
         <Col className=" single-blog-texts col-12 d-flex justify-content-center mt-5">
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-            <div dangerouslySetInnerHTML={{ __html: blog[0].blogContent }}></div>
+            <div dangerouslySetInnerHTML={{ __html: blog.blogContent }}></div>
           </Col>
         </Col>
         <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mb-5 mt-5">
