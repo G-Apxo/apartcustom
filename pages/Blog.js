@@ -18,7 +18,7 @@ import React from "react";
 export const getStaticProps = async () => {
   const res = await fetch(`https://api.apart.ge/api/blogs/`);
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   return {
     props: { blog: data },
   };
@@ -37,11 +37,8 @@ const IndexPage = ({ blog }) => {
   
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
         const blogdata = response.data;
         setBlogst(blogdata);
-        console.log(blogList);
-        console.log(blogdata);
       })
       .catch(function (error) {
         console.log(error);
@@ -55,6 +52,9 @@ const IndexPage = ({ blog }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+
+
+  console.log(locale);
 
   return (
     <div>
@@ -73,6 +73,9 @@ const IndexPage = ({ blog }) => {
               {/* <h4>ბლოგი დაემატება მალე</h4> */}
               <Row>
               {blogList.map(blog => (
+
+                // if blog lang is same as current lang show only ge posts
+                locale === blog.lang  ? (
                   <Link
                     className="blog-single-blog"
                     key={blog}
@@ -85,14 +88,64 @@ const IndexPage = ({ blog }) => {
                       <div className="">
                         <div className="blog-image__content">
                           <div className="text__contianer">
-                            <p className="text-white">{blog.createdAt}</p>
+                            <p className="text-white">{blog.createdAt} </p>
                             <h2 className="text-white">{blog.title}</h2>
                           </div>
                           <img src={blog.mainImage} alt="banner immage" className="blogList" />
                         </div>
                       </div>
                     </Col>
+                   
                   </Link>
+                ) : 
+                // if blog lang is same as current lang show only en posts
+                locale === blog.lang  ?(
+           
+                  <Link
+                  className="blog-single-blog"
+                  key={blog}
+                  id={blog.url}
+                  href={{
+                    pathname: `/blog/${blog.url}`,
+                  }}
+                  >
+                  <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                    <div className="">
+                      <div className="blog-image__content">
+                        <div className="text__contianer">                     
+                          <p className="text-white">{blog.createdAt}</p>
+                          <h2 className="text-white">{blog.title}</h2>
+                        </div>
+                        <img src={blog.mainImage} alt="banner immage" className="blogList" />
+                      </div>
+                    </div>
+                  </Col>
+                </Link>
+          
+                ) :
+                // if blog lang is same as current lang show only ru posts
+                locale === blog.lang  ? (
+                  <Link
+                  className="blog-single-blog"
+                  key={blog}
+                  id={blog.url}
+                  href={{
+                    pathname: `/blog/${blog.url}`,
+                  }}
+                  >
+                  <Col className="cursor mt-5" xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+                    <div className="">
+                      <div className="blog-image__content">
+                        <div className="text__contianer">                     
+                          <p className="text-white">{blog.createdAt}</p>
+                          <h2 className="text-white">{blog.title}</h2>
+                        </div>
+                        <img src={blog.mainImage} alt="banner immage" className="blogList" />
+                      </div>
+                    </div>
+                  </Col>
+                </Link>
+                ) : null
                 ))}
               </Row>
             </Container>
