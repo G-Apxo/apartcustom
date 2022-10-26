@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async context => {
 
   const url = context.params.url;
-  const lang = context.params.lang;
+  const lang = context.locale;
   
   //get language from context
   const res = await fetch(`https://api.apart.ge/api/blog/${lang}/`+ url);
