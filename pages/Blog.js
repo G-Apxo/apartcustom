@@ -12,6 +12,8 @@ import axios from "axios";
 import { useTitle } from "../components/title";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import React from "react";
+
 
 export const getStaticProps = async () => {
   const res = await fetch(`https://api.apart.ge/api/blogs/`);
@@ -23,6 +25,33 @@ export const getStaticProps = async () => {
 };
 
 const IndexPage = ({ blog }) => {
+  const [blogList, setBlogst] = useState([]);
+
+  var data = "";
+  const blogListFunct = () => {
+    var config = {
+      method: "get",
+      url: `https://api.apart.ge/api/blogs/`,
+      data: data,
+    };
+  
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        const blogdata = response.data;
+        setBlogst(blogdata);
+        console.log(blogList);
+        console.log(blogdata);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+  React.useEffect(() => {
+    blogListFunct();
+  }, []);
+
+
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
@@ -43,7 +72,7 @@ const IndexPage = ({ blog }) => {
               <h2 className="row-marginer mt-120 mb-60">{t.title}</h2>
               {/* <h4>ბლოგი დაემატება მალე</h4> */}
               <Row>
-                {blog.map(blog => (
+              {blogList.map(blog => (
                   <Link
                     className="blog-single-blog"
                     key={blog}
