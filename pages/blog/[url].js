@@ -44,6 +44,49 @@ const Post = ({ blog }) => {
   
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+
+
+  const [callonicalUrl1, setcallonicalUrl] = useState("");
+  const [customurl, setURl] = useState("");
+  const [title1, setTitle] = useState("");
+  const [createDate, setCreateDate] = useState("");
+  const [language, setLang] = useState(" ");
+  const [base64img, setBase64img] = useState(" ");
+  const [blogContent, setBlogContent] = useState(" ");
+
+  const data = [];
+
+  const blogDesc = () => {
+
+
+
+    // const url = params.url;
+    const lang = locale;
+    var config = {
+      method: "get",
+      url: `https://api.apart.ge/api/blog/${lang}/`,
+      headers: {
+        Authorization: "Basic YXBhcnRfdXNlcm5hbWU6YXBhcnRfcGFzc3dvcmRfYnJhZ3p5",
+      },
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        data = response.data[0];
+        const createdAtFormated = data.createdAt.split("T")[0];
+        setCreateDate(createdAtFormated);
+        setTitle(data.title);
+        setBlogContent(data.blogContent);
+        setBase64img(data.mainImage);
+        setmetaDescription(data.metaDescription);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+  blogDesc();
+  
   return (
     <>
     <Head>
