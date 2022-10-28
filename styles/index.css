@@ -1962,9 +1962,9 @@ flickity-enabled {
   .otherPgs {
     margin: 10px 0 10px 25px !important;
   }
-  .fixed {
+  /* .fixed {
     position: fixed;
-  }
+  } */
   .nav__container {
     margin-top: 0;
   }
