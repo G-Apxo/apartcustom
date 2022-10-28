@@ -103,7 +103,6 @@ const Post = ({ blog }) => {
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta name='description' content={blog[0].description} />
             </Head>
-            <Nav>...</Nav>
             <Container>
                 <div className='mt-120 mb-80'>
                     <p className='goback'>{t.goBack}</p>
