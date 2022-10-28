@@ -15,7 +15,7 @@ export const getStaticPaths = async () => {
   const data = await res.json();
   const paths = data.map(blog => {
     return {
-      params: { url: blog.url.toString() , lang : blog.lang.toString() },
+      params: { url: blog.url.toString() },
     };
 
   });
@@ -29,16 +29,15 @@ export const getStaticProps = async context => {
 
   const url = context.params.url;
   const lang = context.locale;
+  console.log(lang);
   
   //get language from context
   const res = await fetch(`https://api.apart.ge/api/blog/${lang}/`+ url);
   const data = await res.json();
- console.log(data)
  return {
   props: {
     data
   },
-  revalidate: 10
 }
 };
 
