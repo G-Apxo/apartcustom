@@ -76,30 +76,12 @@ export default function IndexPage() {
             <Head>
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-                {/* <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
-                <Script>
-                    {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-H58RBQJ53W');
-        `}
-                </Script> */}
 
                 <Script
                     src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'
                     strategy='afterInteractive'
                 />
-                {/* <Script id='google-analytics' strategy='afterInteractive'>
-                    {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-H58RBQJ53W');
-        `}
-                </Script> */}
+                <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
             <CookieConsent>
