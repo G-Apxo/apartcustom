@@ -11,7 +11,7 @@ import Link from "next/link";
 import { useState } from "react";
 import BlogEdit from "../edit/index";
 import { useEffect } from "react";
-
+import Script from 'next/script'
 const index = ({ blog }) => {
   const [blogList, setBlogst] = useState([]);
 

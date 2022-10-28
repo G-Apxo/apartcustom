@@ -6,7 +6,7 @@ import axios from "axios";
 import Image from "react-bootstrap";
 import { Link } from "react-bootstrap-icons";
 import { useRouter } from "next/router";
-
+import Script from 'next/script'
 const convertBase64 = file => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();

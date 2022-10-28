@@ -8,7 +8,7 @@ import ge from '../../locales/geSingleBlog';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Head from 'next/head';
-
+import Script from 'next/script'
 export const getStaticPaths = async () => {
     const res = await fetch(`https://api.apart.ge/api/blogs/`);
     const data = await res.json();

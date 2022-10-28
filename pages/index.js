@@ -37,6 +37,7 @@ import b1n1 from '../assets/mobilephotos/b1n1.png';
 import b2d1 from '../assets/mobilephotos/b2d1.png';
 import b2n1 from '../assets/mobilephotos/b2n1.png';
 import CookieConsent from 'react-cookie-consent';
+import Script from 'next/script'
 export default function IndexPage() {
     const { width } = useWindowSize();
     const [showBanner, setBanner] = useState(true);

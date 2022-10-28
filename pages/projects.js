@@ -51,6 +51,7 @@ import Herod from "../assets/finalRenders/3photos/OCP/3-OLD-CITY-3-night.jpg";
 import Head from "next/head";
 import { useTitle } from "../components/title";
 import Layout from "../components/Layout";
+import Script from 'next/script'
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();

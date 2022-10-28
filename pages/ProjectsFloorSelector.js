@@ -15,6 +15,7 @@ import Footer from "../components/footer";
 import { useTitle } from "../components/title";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Script from 'next/script'
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
