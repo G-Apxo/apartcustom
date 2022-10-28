@@ -14,7 +14,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import React from 'react';
 import Router from 'next/router';
-import Script from 'next/script'
+import Script from 'next/script';
 export const getStaticProps = async () => {
     const res = await fetch(`https://api.apart.ge/api/blogs/`);
     const data = await res.json();
@@ -58,14 +58,11 @@ const IndexPage = ({ blog }) => {
     return (
         <div>
             <Head>
-                <title>
-                    {t.title}
-                    Blog - Apart Development
-                </title>
+                <title>{t.title}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
-                {`
+                    {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());

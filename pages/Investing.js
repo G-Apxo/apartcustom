@@ -13,7 +13,7 @@ import Footer from '../components/footer';
 import { useTitle } from '../components/title';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Script from 'next/script'
+import Script from 'next/script';
 export default function IndexPage() {
     const [showBanner, setBanner] = useState(true);
     const router = useRouter();
@@ -27,7 +27,7 @@ export default function IndexPage() {
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
-                {`
+                    {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -42,7 +42,7 @@ export default function IndexPage() {
                         <div className='contact__section'>
                             <Container className='mt-120 '>
                                 <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
-                                    <h3 className='investing-title'>{t.title}</h3>
+                                    <h1 className='investing-title'>{t.title}</h1>
                                     <p className='investing-title_subtext'>{t.tp1}</p>
                                 </Col>
                             </Container>
@@ -67,7 +67,7 @@ export default function IndexPage() {
                             </Container>
                             <Container className='mt-120 mb-120'>
                                 <Row className='mb-60'>
-                                    <h3>{t.services}</h3>
+                                    <h2>{t.services}</h2>
                                 </Row>
                                 <Row className='desktop__view'>
                                     <Col xs='12' lg='12' md='12' sm='12' xl='12' xxl='12'>
@@ -105,11 +105,11 @@ export default function IndexPage() {
                 <h3>{t.bonus}</h3>
               </Row> */}
                                 <Row className='investing-goal mb-80'>
-                                    <h3>{t.goal}</h3>
+                                    <h2>{t.goal}</h2>
                                 </Row>
                                 <Row>
                                     <Col xxl='4' xs='12' lg='4' md='4' sm='4' xl='4'>
-                                        <h3>{t.apartForPersonUse}</h3>
+                                        <h2>{t.apartForPersonUse}</h2>
                                         <p className='investing-title_subtext mt-30'>{t.textAp1}</p>
                                     </Col>
                                     <Col className='mt-80' xxl='4' xs='12' lg='4' md='4' sm='4' xl='4'>
@@ -121,13 +121,13 @@ export default function IndexPage() {
                                         </div>
                                     </Col>
                                     <Col xxl='4' lg='4' md='4' sm='4' xl='4' xs='12'>
-                                        <h3 className='special-margin-class'>{t.apartForCommercialUse}</h3>
+                                        <h2 className='special-margin-class'>{t.apartForCommercialUse}</h2>
                                         <p className='investing-title_subtext mt-30'>{t.textAp2}</p>
                                     </Col>
                                 </Row>
                                 <Row className='special-margin-row justify-content-between'>
                                     <Col xxl='6' xs='12' lg='6' md='6' sm='6' xl='6'>
-                                        <h3>{t.pmAndRs}</h3>
+                                        <h2>{t.pmAndRs}</h2>
                                         <p className='investing-title_subtext mt-30'>{t.pmText}</p>
                                     </Col>
                                     <Col xs='12' lg='5' md='5' sm='5' xl='5' xxl='5'>

@@ -36,7 +36,7 @@ import Footer from '../components/footer';
 import { useTitle } from '../components/title';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Script from 'next/script'
+import Script from 'next/script';
 export default function IndexPage() {
     const [showBanner, setBanner] = useState(true);
     const router = useRouter();
@@ -52,7 +52,7 @@ export default function IndexPage() {
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
-                {`
+                    {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -125,7 +125,7 @@ export default function IndexPage() {
                                         xxl='5'
                                         // className="mt-60 "
                                     >
-                                        <h3 className='about--text__hmod'>{t.ath}</h3>
+                                        <h2 className='about--text__hmod'>{t.ath}</h2>
                                     </Col>
                                     <Col xs='12' lg='7' md='7' sm='7' xl='7' xxl='7'>
                                         <p className='about--text__ptmod__mod '>{t.att3}</p>
@@ -153,7 +153,7 @@ export default function IndexPage() {
                                                 xxl='5'
                                                 // className="mt-60 "
                                             >
-                                                <h3 className='about--text__hmod'>{t.ath2}</h3>
+                                                <h2 className='about--text__hmod'>{t.ath2}</h2>
                                             </Col>
                                             <Col xs='12' lg='7' md='7' sm='7' xl='7' xxl='7'>
                                                 <p className='about--text__ptmod__mod '>{t.att2}</p>
