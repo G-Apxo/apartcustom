@@ -97,7 +97,7 @@ const Post = ({ blog }) => {
                     <h2>{t.recentBlog}</h2>
                     <hr />
                 </Col>
-                {/* <Row>
+                <Row>
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6" className="mt-5">
             <div className="blog-image__content">
               <div className="text__contianer">
@@ -116,7 +116,7 @@ const Post = ({ blog }) => {
               <img src={blog[2].mainImage} alt="blog immage" />
             </div>
           </Col>
-        </Row> */}
+        </Row>
             </Container>
             </Layout>
         </>
