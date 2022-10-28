@@ -1,7 +1,7 @@
 import Nav from '../components/nav';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Row, Col, Container, Form, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import en from '../locales/enHome';
@@ -37,7 +37,7 @@ import b1n1 from '../assets/mobilephotos/b1n1.png';
 import b2d1 from '../assets/mobilephotos/b2d1.png';
 import b2n1 from '../assets/mobilephotos/b2n1.png';
 import CookieConsent from 'react-cookie-consent';
-import Script from 'next/script'
+import Script from 'next/script';
 export default function IndexPage() {
     const { width } = useWindowSize();
     const [showBanner, setBanner] = useState(true);
@@ -63,21 +63,43 @@ export default function IndexPage() {
         document.getElementsByClassName('overlay_choose_mobile')[0].style.setProperty('display', 'none');
     };
 
+    useEffect(() => {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', '<G-H58RBQJ53W>');
+    }, []);
     return (
         <>
             <Head>
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-                <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
+                {/* <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
-                {`
+                    {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-H58RBQJ53W');
         `}
-                </Script>
+                </Script> */}
+
+                <Script
+                    src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'
+                    strategy='afterInteractive'
+                />
+                {/* <Script id='google-analytics' strategy='afterInteractive'>
+                    {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-H58RBQJ53W');
+        `}
+                </Script> */}
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
             <CookieConsent>
