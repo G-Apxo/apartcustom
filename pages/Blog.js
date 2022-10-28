@@ -90,7 +90,6 @@ const IndexPage = ({ blog }) => {
                                             id={blog.url}
                                             href={{
                                                 pathname: `/blog/${blog.url}`,
-                                                query: { url: blog.url, lang: blog.lang },
                                             }}
                                         >
                                             <Col
