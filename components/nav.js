@@ -77,12 +77,12 @@ export default function Nav({ mode, setMode }) {
               </label>
               <ul className="menu__box">
                 <li>
-                  <Link className="menu__item" href="/About">
+                  <Link className="menu__item" href="/about">
                     {t.about}
                   </Link>
                 </li>
                 <li>
-                  <Link className="menu__item" href="/Investing">
+                  <Link className="menu__item" href="/invest-in-real-estate-in-tbilisi">
                     {t.investing}
                   </Link>
                 </li>
@@ -92,12 +92,12 @@ export default function Nav({ mode, setMode }) {
                   </Link>
                 </li>
                 <li>
-                  <Link className="menu__item" href="/Blog">
+                  <Link className="menu__item" href="/blog">
                     {t.blog}
                   </Link>
                 </li>
                 <li>
-                  <Link className="menu__item" href="/Contact">
+                  <Link className="menu__item" href="/contact">
                     {t.contact}
                   </Link>
                 </li>
@@ -156,12 +156,12 @@ export default function Nav({ mode, setMode }) {
               <div className="collapse navbar-collapse navbar13" id="navbarNav">
                 <ul className="navbar-nav ">
                   <li className="nav-item active">
-                    <Link className="nav-link text-nowrap" href="/About">
+                    <Link className="nav-link text-nowrap" href="/about">
                       {t.about}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link " href="/Investing">
+                    <Link className="nav-link " href="/invest-in-real-estate-in-tbilisi">
                       {t.investing}
                     </Link>
                   </li>
@@ -171,12 +171,12 @@ export default function Nav({ mode, setMode }) {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link " href="/Blog">
+                    <Link className="nav-link " href="/blog">
                       {t.blog}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link " href="/Contact">
+                    <Link className="nav-link " href="/contact">
                       {t.contact}
                     </Link>
                   </li>
@@ -236,7 +236,7 @@ export default function Nav({ mode, setMode }) {
         <ul className="flex items-center justify-between space-x-8">
           <li>
             <a
-              href="/About"
+              href="/about"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
               {t.about}
@@ -244,7 +244,7 @@ export default function Nav({ mode, setMode }) {
           </li>
           <li>
             <a
-              href="/Investing"
+              href="/invest-in-real-estate-in-tbilisi"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
               {t.investing}
@@ -260,7 +260,7 @@ export default function Nav({ mode, setMode }) {
           </li>
           <li>
             <a
-              href="/Blog"
+              href="/blog"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
               {t.blog}
@@ -268,7 +268,7 @@ export default function Nav({ mode, setMode }) {
           </li>
           <li>
             <a
-              href="/Contact"
+              href="/contact"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
               {t.contact}
