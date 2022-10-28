@@ -89,11 +89,16 @@ const Post = ({ blog }) => {
             <Head>
                 <title>
                     {blog[0].title}
-                    <script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-                        gtag('js', new Date()); gtag('config', 'G-H58RBQJ53W');
-                    </script>
+                    <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
+                <Script>
+                            {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){window.dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-H58RBQJ53W');
+                    `}
+                            </Script>
                 </title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta name='description' content={blog[0].description} />
