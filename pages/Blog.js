@@ -60,7 +60,6 @@ const IndexPage = ({ blog }) => {
         });
     }, []);
 
-
     console.log(locale);
 
     return (
