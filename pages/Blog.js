@@ -58,7 +58,7 @@ const IndexPage = ({ blog }) => {
     return (
         <div>
             <Head>
-                <title>{t.title}</title>
+                <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
