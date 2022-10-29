@@ -53,6 +53,14 @@ const IndexPage = ({ blog }) => {
     const { locale } = router;
     const t = locale === 'en' ? en : locale === 'ru' ? ru : ge;
 
+    // on locale change reload component
+    React.useEffect(() => {
+        Router.events.on('routeChangeComplete', () => {
+            window.location.reload();
+        });
+    }, []);
+
+
     console.log(locale);
 
     return (
