@@ -33,4 +33,5 @@ export default {
     b3: '2 Bedrooms',
     b4: '3+ Bedrooms',
     titlet: 'Apart Developement',
+    metad: 'Development Development & Construction Company - Apart Development',
 };

@@ -248,12 +248,22 @@ export default function IndexPage() {
                                                         <form
                                                             id='contact-form'
                                                             name='contact-form'
-                                                            action='https://formsubmit.co/sales@apart.ge'
+                                                            action='https://api.web3forms.com/submit'
                                                             method='POST'
                                                             className=''
                                                         >
                                                             <div className='col-12'>
                                                                 <div className='md-form mb-0 contact-placeholder-text'>
+                                                                    <input
+                                                                        type='hidden'
+                                                                        name='access_key'
+                                                                        value='0b36f189-a7cf-4271-a8ff-2db000435c2b'
+                                                                    />
+                                                                    <input
+                                                                        type='hidden'
+                                                                        name='redirect'
+                                                                        value='https://web3forms.com/success'
+                                                                    />
                                                                     <input
                                                                         name='name'
                                                                         placeholder={t.name}

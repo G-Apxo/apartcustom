@@ -342,13 +342,19 @@ export default function IndexPage() {
                                 <Col xl='4'>
                                     <div className='projects__image'>
                                         {/* <Link href="/ProjectsFloorSelector"> */}
-                                        <Image className='cursor' src={Panorama3} />
+                                        <Image
+                                            // className='cursor'
+                                            src={Panorama3}
+                                        />
                                         {/* </Link> */}
                                     </div>
 
                                     <div className='projects__image_dark'>
                                         {/* <Link href="/ProjectsFloorSelector"> */}
-                                        <Image className='cursor' src={Panorama3d} />
+                                        <Image
+                                            // className='cursor'
+                                            src={Panorama3d}
+                                        />
                                         {/* </Link> */}
                                     </div>
                                 </Col>
@@ -358,39 +364,57 @@ export default function IndexPage() {
                                         <Col xl='6'>
                                             <div className='projects__image'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama2} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama2}
+                                                />
                                                 {/* </Link> */}
                                             </div>
 
                                             <div className='projects__image_dark'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama2d} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama2d}
+                                                />
                                                 {/* </Link> */}
                                             </div>
                                         </Col>
                                         <Col xl='6'>
                                             <div className='projects__image'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama1} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama1}
+                                                />
                                                 {/* </Link> */}
                                             </div>
 
                                             <div className='projects__image_dark'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama1d} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama1d}
+                                                />
                                                 {/* </Link> */}
                                             </div>
                                         </Col>
                                         <Col xl='6'>
                                             <div className='projects__image ocpTest'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama4} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama4}
+                                                />
                                                 {/* </Link> */}
                                             </div>
 
                                             <div className='projects__image_dark ocpTest'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama4d} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama4d}
+                                                />
                                                 {/* </Link> */}
                                             </div>
                                         </Col>
@@ -398,13 +422,19 @@ export default function IndexPage() {
                                         <Col xl='6'>
                                             <div className='projects__image ocpTest'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama5} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama5}
+                                                />
                                                 {/* </Link> */}
                                             </div>
 
                                             <div className='projects__image_dark ocpTest'>
                                                 {/* <Link href="/ProjectsFloorSelector"> */}
-                                                <Image className='cursor' src={Panorama5d} />
+                                                <Image
+                                                    // className='cursor'
+                                                    src={Panorama5d}
+                                                />
                                                 {/* </Link> */}
                                             </div>
                                         </Col>

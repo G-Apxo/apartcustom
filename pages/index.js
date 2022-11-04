@@ -82,6 +82,11 @@ export default function IndexPage() {
                     strategy='afterInteractive'
                 />
                 <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
+                <meta name='description' content={t.metad}></meta>
+                <meta
+                    property='og:image'
+                    content='https://umbrelladigital.spanderashvili.com/wp-content/uploads/2022/11/apartlogometa.jpeg'
+                />
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
             <CookieConsent>
@@ -572,15 +577,44 @@ export default function IndexPage() {
                     <div className="text-center text-md-left home--get-contacted">
                       <Button className="btn-send">{t.getContacted}</Button>
                     </div> */}
+                                        {/* <form action='https://api.web3forms.com/submit' method='POST'>
+                                            <input
+                                                type='hidden'
+                                                name='access_key'
+                                                value='YOUR_ACCESS_KEY_HERE'
+                                            />
+
+                                            <input type='text' name='name' required />
+                                            <input type='email' name='email' required />
+                                            <textarea name='message' required></textarea>
+                                            <input
+                                                type='hidden'
+                                                name='redirect'
+                                                value='https://web3forms.com/success'
+                                            />
+
+                                            <button type='submit'>Submit Form</button>
+                                        </form> */}
+
                                         <form
                                             id='contact-form'
                                             name='contact-form'
-                                            action='https://formsubmit.co/sales@apart.ge'
+                                            action='https://api.web3forms.com/submit'
                                             method='POST'
                                             className=''
                                         >
                                             <div className='col-12'>
                                                 <div className='md-form mb-0 contact-placeholder-text'>
+                                                    <input
+                                                        type='hidden'
+                                                        name='access_key'
+                                                        value='0b36f189-a7cf-4271-a8ff-2db000435c2b'
+                                                    />
+                                                    <input
+                                                        type='hidden'
+                                                        name='redirect'
+                                                        value='https://web3forms.com/success'
+                                                    />
                                                     <input
                                                         name='name'
                                                         placeholder={t.name}
