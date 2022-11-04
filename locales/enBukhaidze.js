@@ -27,4 +27,6 @@ export default {
     first2: 'Benefits',
     bigBrain7:
         'The real estate purchased from us is the best business investment, and the guarantee of this is that the project is implemented in the old district of Tbilisi, in the most active touristic zone, which determines the high demand on apartments throughout the year.',
+    titlet1: 'Bukhaidze B1 - Apart Development',
+    titlet2: 'Bukhaidze B2 - Apart Development',
 };
