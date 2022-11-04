@@ -484,7 +484,7 @@ export default function IndexPage() {
                                         <Col xs='12'>
                                             <Row>
                                                 <Col xs='12'>
-                                                    <Link href='/projects/bukhaidzeB1'>
+                                                    <Link href='/projects/bukhaidzeB2'>
                                                         <div className='mb-5 projects--title cursor'>
                                                             <p>{t.prj1d}</p>
                                                             <h2>{t.prj4t}</h2>
@@ -497,7 +497,7 @@ export default function IndexPage() {
                                                         <h3 className='project--location__mod projects--texts__basics'>
                                                             {t.prj1lt}
                                                         </h3>
-                                                        <Link href='/projects/bukhaidzeB1'>
+                                                        <Link href='/projects/bukhaidzeB2'>
                                                             <i className='project--see cursor '>
                                                                 {t.viewPrj}{' '}
                                                                 <Image
@@ -593,7 +593,7 @@ export default function IndexPage() {
                                         <Col xs='12'>
                                             <Row>
                                                 <Col xs='12'>
-                                                    <Link href='/projects/bukhaidzeB2'>
+                                                    <Link href='/projects/bukhaidzeB1'>
                                                         <div className='mb-5 projects--title cursor'>
                                                             <p>{t.prj1d}</p>
                                                             <h2>{t.prj5t}</h2>
@@ -606,7 +606,7 @@ export default function IndexPage() {
                                                         <h3 className='project--location__mod projects--texts__basics'>
                                                             {t.prj1lt}
                                                         </h3>
-                                                        <Link href='/projects/bukhaidzeB2'>
+                                                        <Link href='/projects/bukhaidzeB1'>
                                                             <i className='project--see cursor '>
                                                                 {t.viewPrj}{' '}
                                                                 <Image
@@ -928,7 +928,7 @@ export default function IndexPage() {
                             <Container className='container-borderer'>
                                 <Row>
                                     <Col xs='3' className=''>
-                                        <Link href='/projects/bukhaidzeB2'>
+                                        <Link href='/projects/bukhaidzeB1'>
                                             <div className='mb-5 projects--title cursor'>
                                                 <p>{t.prj4d}</p>
                                                 <h2 className='mt-3'>{t.prj4t}</h2>
@@ -949,7 +949,7 @@ export default function IndexPage() {
                                             </h3>
                                         </div>
                                         <div>
-                                            <Link href='/projects/bukhaidzeB2'>
+                                            <Link href='/projects/bukhaidzeB1'>
                                                 <i className='project--see cursor '>
                                                     {t.viewPrj} <Image src={Vector} />
                                                 </i>
@@ -1025,7 +1025,7 @@ export default function IndexPage() {
                             <Container className='container-borderer'>
                                 <Row>
                                     <Col xs='3' className=''>
-                                        <Link href='/projects/bukhaidzeB1'>
+                                        <Link href='/projects/bukhaidzeB2'>
                                             <div className='mb-5 projects--title cursor'>
                                                 <p>{t.prj5d}</p>
                                                 <h2 className='mt-3'>{t.prj5t}</h2>
@@ -1046,7 +1046,7 @@ export default function IndexPage() {
                                             </h3>
                                         </div>
                                         <div>
-                                            <Link href='/projects/bukhaidzeB1'>
+                                            <Link href='/projects/bukhaidzeB2'>
                                                 <i className='project--see cursor '>
                                                     {t.viewPrj} <Image src={Vector} />
                                                 </i>
