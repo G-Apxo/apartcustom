@@ -39,11 +39,11 @@ export default function IndexPage2() {
     // const calculated = () => {
     //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
     // };
-    useTitle('Ezo - Apart Development');
+    // useTitle('Ezo - Apart Development');
     return (
         <div>
             <Head>
-                <title>Bukhaidze B2 - Apart Development</title>
+                <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
             </Head>
             <Layout>

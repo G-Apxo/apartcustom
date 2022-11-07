@@ -42,11 +42,11 @@ export default function IndexPage() {
     // const calculated = () => {
     //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
     // };
-    useTitle('Old City Panorama - Apart Development');
+    // useTitle('Old City Panorama - Apart Development');
     return (
         <div>
             <Head>
-                <title>Bukhaidze B2 - Apart Development</title>
+                <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
             </Head>
             <Layout>

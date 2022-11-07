@@ -42,11 +42,11 @@ export default function IndexPage1() {
     // const calculated = () => {
     //   setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
     // };
-    useTitle('Taghi - Apart Development');
+    // useTitle('Taghi - Apart Development');
     return (
         <div>
             <Head>
-                <title>Bukhaidze B2 - Apart Development</title>
+                <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
             </Head>
             <Layout>
