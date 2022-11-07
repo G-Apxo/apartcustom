@@ -27,6 +27,7 @@ import Taghi5d from '../../assets/finalBotRenders/Taghi/5-taghi-3-night.jpg';
 import { useTitle } from '../../components/title';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Arrow from '../../assets/arrow/objrotate.png';
 export default function IndexPage1() {
     const [showBanner, setBanner] = useState(true);
     const router = useRouter();
@@ -284,6 +285,11 @@ export default function IndexPage1() {
                                         frameBorder='0'
                                         src='https://62fd4f37f9e47a000991e35d--fluffy-fairy-e91678.netlify.app/'
                                     ></iframe>
+                                    <div className='anim-arrow'>
+                                        <div>
+                                            <Image src={Arrow} alt='arrow' />
+                                        </div>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

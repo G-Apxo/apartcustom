@@ -24,6 +24,7 @@ import Footer from '../../components/footer';
 import { useTitle } from '../../components/title';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Arrow from '../../assets/arrow/objrotate.png';
 export default function IndexPage2() {
     const [showBanner, setBanner] = useState(true);
     const router = useRouter();
@@ -242,6 +243,11 @@ export default function IndexPage2() {
                                         frameBorder='0'
                                         src='https://62fd4ca20bd127049fb816fa--flourishing-jelly-8045ee.netlify.app/'
                                     ></iframe>
+                                    <div className='anim-arrow'>
+                                        <div>
+                                            <Image src={Arrow} alt='arrow' />
+                                        </div>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

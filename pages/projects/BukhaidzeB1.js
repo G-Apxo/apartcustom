@@ -25,6 +25,7 @@ import Bukhaidze5d from '../../assets/sep10tika/bukh2-night.jpg';
 import { useTitle } from '../../components/title';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Arrow from '../../assets/arrow/objrotate.png';
 export default function IndexPage3() {
     const [showBanner, setBanner] = useState(true);
     const router = useRouter();
@@ -240,6 +241,11 @@ export default function IndexPage3() {
                                         frameBorder='0'
                                         src='https://62fd551c99358d0009e6e11b--genuine-sprite-2fa12c.netlify.app/'
                                     ></iframe>
+                                    <div className='anim-arrow'>
+                                        <div>
+                                            <Image src={Arrow} alt='arrow' />
+                                        </div>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

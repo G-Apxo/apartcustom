@@ -296,7 +296,7 @@ export default function IndexPage() {
                                             {t.first2}
                                         </p>
                                         <Col xs='12' lg='12' md='12' sm='12' xl='12' xxl='12'>
-                                            <h5 className='basic-texts-14'>{t.bigBrain7}</h5>
+                                            <h5 className='basic-texts-14 code-overlay'>{t.bigBrain7}</h5>
                                         </Col>
                                     </Row>
                                 </Col>

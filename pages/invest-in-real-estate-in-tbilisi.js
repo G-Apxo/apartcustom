@@ -257,7 +257,7 @@ export default function IndexPage() {
                                                                     <input
                                                                         type='hidden'
                                                                         name='access_key'
-                                                                        value='0b36f189-a7cf-4271-a8ff-2db000435c2b'
+                                                                        value='b6497681-c3af-4de3-aadc-3245d46562dd'
                                                                     />
                                                                     <input
                                                                         type='hidden'

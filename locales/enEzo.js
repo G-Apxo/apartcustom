@@ -14,7 +14,9 @@ export default {
     email: 'Email',
     num: '+(__) Phone Number',
     req: 'Request Call',
-    aboutprj: 'About this project',
+    // aboutprj: 'About this project',
+    aboutprj: 'Ezo Old Tbilisi',
+
     apt: "The residential complex includes a children's and recreation area, private and communal swimming pools, as well as several townhouse apartments. The complex is located in Old Tbilisi, offering amazing views of the entire city. The minimum area of ​​apartments in Komlek is 39 sq.m, the maximum is 260.9 sq.m. In addition, you have the opportunity to design your new apartment yourself together with our architect. The apartments are rented in a green frame condition, however, if desired, our partner Apart Showroom Company provides design using real materials, renovation and full furnishing of the apartment. ",
     adv: 'Advantages',
     first: 'Services',
