@@ -83,6 +83,7 @@ export default function IndexPage() {
                 />
                 <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
                 <meta name='description' content={t.metad}></meta>
+                <meta property='og:title' content={t.titlet} />
                 <meta property='og:image' content='https://imageholder.netlify.app/imgs/index.jpg' />
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
