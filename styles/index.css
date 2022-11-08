@@ -961,6 +961,12 @@ h2 {
 }
 .goback {
     display: block;
+
+}
+.goback_blog{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 .projects_page {
     height: auto;

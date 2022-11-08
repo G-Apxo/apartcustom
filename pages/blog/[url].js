@@ -51,7 +51,7 @@ const Post = ({ blog }) => {
                 <title>
                     {blog[0].title}
                     <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
-                <Script>
+                    <Script>
                             {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){window.dataLayer.push(arguments);}
@@ -59,7 +59,7 @@ const Post = ({ blog }) => {
 
                     gtag('config', 'G-H58RBQJ53W');
                     `}
-                            </Script>
+                    </Script>
                 </title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property="og:image" content={blog[0].mainImage} />
@@ -68,7 +68,7 @@ const Post = ({ blog }) => {
             <Layout>
             <Container>
                 <div className='mt-120 mb-80'>
-                    <Link href='/Blog' className='goback'>{t.goBack}</Link>
+                <a href='/Blog' className='goback'>{t.goBack}</a>
                 </div>
                 <Col className='col-12 mb-80'>
                     <img src={blog[0].mainImage} className='blog_banner__img' alt='banner immage' />
