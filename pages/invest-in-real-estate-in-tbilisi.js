@@ -44,7 +44,7 @@ export default function IndexPage() {
                         <div className='contact__section'>
                             <Container className='mt-120 '>
                                 <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
-                                    <h1 className='investing-title'>{t.titlet}</h1>
+                                    <h1 className='investing-title'>{t.titlett}</h1>
                                     <p className='investing-title_subtext'>{t.tp1}</p>
                                 </Col>
                             </Container>

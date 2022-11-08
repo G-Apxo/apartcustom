@@ -1,10 +1,22 @@
+const { trueGray } = require('tailwindcss/colors');
+
 module.exports = {
-  i18n: {
-    locales: ["default","en", "ru", "ge"],
-    defaultLocale: "ge",
-    localeDetection: false
-  },
-  trailingSlash: true,
-  largePageDataBytes: 128 * 100000, // 12800KB by default
-  staticPageGenerationTimeout:100
+    // reactStrictMode: true,
+    redirects: async () => {
+        return [
+            {
+                source: '/Investing/',
+                destination: '/invest-in-real-estate-in-tbilisi/',
+                permanent: true,
+            },
+        ];
+    },
+    i18n: {
+        locales: ['default', 'en', 'ru', 'ge'],
+        defaultLocale: 'ge',
+        localeDetection: false,
+    },
+    trailingSlash: true,
+    largePageDataBytes: 128 * 100000, // 12800KB by default
+    staticPageGenerationTimeout: 100,
 };
