@@ -42,4 +42,5 @@ export default {
     seeapart: 'See the apartment',
     view: '360 preview',
     titlet: 'Old City Panorama - Apart Development',
+    metad: 'Premium class multifunctional complex Old City Panorama - everything for your comfortable life',
 };

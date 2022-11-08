@@ -25,6 +25,8 @@ export default function IndexPage() {
             <Head>
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                <meta property='og:title' content={t.metad} />
+                <meta property='og:image' content='https://imageholder.netlify.app/imgs/investing.jpg' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
                     {`
@@ -42,7 +44,7 @@ export default function IndexPage() {
                         <div className='contact__section'>
                             <Container className='mt-120 '>
                                 <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
-                                    <h1 className='investing-title'>{t.title}</h1>
+                                    <h1 className='investing-title'>{t.titlet}</h1>
                                     <p className='investing-title_subtext'>{t.tp1}</p>
                                 </Col>
                             </Container>
@@ -55,9 +57,9 @@ export default function IndexPage() {
                                             height='360'
                                             src='https://www.youtube.com/embed/PJbNd_1SC5c'
                                             title='YouTube video player'
-                                            frameborder='0'
+                                            frameBorder='0'
                                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                                            allowfullscreen
+                                            allowFullScreen
                                         ></iframe>
                                     </Col>
                                     <Col xs='12' lg='12' md='6' sm='6' xl='6' xxl='6'>

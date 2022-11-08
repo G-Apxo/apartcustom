@@ -36,4 +36,5 @@ export default {
     b3: '2 Bedrooms',
     b4: '3+ Bedrooms',
     titlet: 'Invest in Real-estate in Old Tbilisi - Apart Development',
+    metad: 'The best choice for those looking for real estate for investment purposes',
 };

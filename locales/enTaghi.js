@@ -30,4 +30,5 @@ export default {
     bigBrain7:
         'The real estate purchased from us is the best business investment, and the guarantee of this is that the project is implemented in the old district of Tbilisi, in the most active touristic zone, which determines the high demand on apartments throughout the year.',
     titlet: 'Taghi - Apart Development',
+    metad: `The complex includes a children's entertainment and recreation area, private and shared swimming pools, as well as several "townhouse" type apartments.`,
 };

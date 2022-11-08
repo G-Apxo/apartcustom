@@ -34,4 +34,5 @@ export default {
     seeapart: 'Посмотреть квартиру',
     view: 'показать в 360',
     titlet: 'Old City Panorama - Апарт Девелопмент',
+    metad: 'Многофункциональный комплекс премиум-класса Old City Panorama - все для комфортной жизни',
 };

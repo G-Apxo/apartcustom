@@ -46,6 +46,8 @@ export default function IndexPage2() {
             <Head>
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                <meta property='og:title' content={t.metad} />
+                <meta property='og:image' content='https://imageholder.netlify.app/imgs/ezo.jpg' />
             </Head>
             <Layout>
                 <div className='hero'>

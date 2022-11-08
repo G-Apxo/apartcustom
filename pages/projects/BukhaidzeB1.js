@@ -48,6 +48,8 @@ export default function IndexPage3() {
             <Head>
                 <title>{t.titlet1}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                <meta property='og:title' content={t.metad1} />
+                <meta property='og:image' content='https://imageholder.netlify.app/imgs/b1.jpg' />
             </Head>
             <Layout>
                 <div className='hero'>
