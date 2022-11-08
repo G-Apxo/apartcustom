@@ -68,7 +68,7 @@ const Post = ({ blog }) => {
             <Layout>
             <Container>
                 <div className='mt-120 mb-80'>
-                <a href='/Blog' className='goback'>{t.goBack}</a>
+                <a href='/Blog' className='goback_blog'>{t.goBack}</a>
                 </div>
                 <Col className='col-12 mb-80'>
                     <img src={blog[0].mainImage} className='blog_banner__img' alt='banner immage' />
@@ -76,7 +76,7 @@ const Post = ({ blog }) => {
                 <Row className='align-items-center  mb-20 mb-10 '>
                     <Col xs='2' lg='4' md='4' sm='4' xl='4' xxl='4'></Col>
                     <Col xs='8' lg='4' md='4' sm='4' xl='4' xxl='4'>
-                        <p className='text-center'>{blog[0].createdAt}</p>
+                        {/* <p className='text-center'>{blog[0].createdAt}</p> */}
                         <h1 className='text-center blog_title'>{blog[0].title}</h1>
                     </Col>
                     <Col xs='2' lg='4' md='4' sm='4' xl='4' xxl='4'></Col>
