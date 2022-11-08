@@ -10,6 +10,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "../../components/Layout";
+import { Link } from "react-bootstrap-icons";
 // export const getStaticPaths = async () => {
 //   const res = await fetch(`https://api.apart.ge/api/blogs/`);
 //   const data = await res.json();
@@ -61,12 +62,13 @@ const Post = ({ blog }) => {
                             </Script>
                 </title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                <meta property="og:image" content={blog[0].mainImage} />
                 <meta name='description' content={blog[0].description} />
             </Head>
             <Layout>
             <Container>
                 <div className='mt-120 mb-80'>
-                    <p className='goback'>{t.goBack}</p>
+                    <Link href='/Blog' className='goback'>{t.goBack}</Link>
                 </div>
                 <Col className='col-12 mb-80'>
                     <img src={blog[0].mainImage} className='blog_banner__img' alt='banner immage' />
@@ -75,7 +77,7 @@ const Post = ({ blog }) => {
                     <Col xs='2' lg='4' md='4' sm='4' xl='4' xxl='4'></Col>
                     <Col xs='8' lg='4' md='4' sm='4' xl='4' xxl='4'>
                         <p className='text-center'>{blog[0].createdAt}</p>
-                        <h4 className='text-center'>{blog[0].title}</h4>
+                        <h1 className='text-center blog_title'>{blog[0].title}</h1>
                     </Col>
                     <Col xs='2' lg='4' md='4' sm='4' xl='4' xxl='4'></Col>
                 </Row>
@@ -90,7 +92,7 @@ const Post = ({ blog }) => {
                 </Row>
                 <Col className=' single-blog-texts col-12 d-flex justify-content-center mt-5'>
                     <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
-                        <div dangerouslySetInnerHTML={{ __html: blog[0].blogContent }}></div>
+                        <div className="blog_content" dangerouslySetInnerHTML={{ __html: blog[0].blogContent }}></div>
                     </Col>
                 </Col>
                 <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6' className='mb-5 mt-5'>

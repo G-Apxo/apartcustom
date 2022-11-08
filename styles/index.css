@@ -2388,3 +2388,12 @@ code {
     font-size: 14px !important;
     font-family: 'rockridge' !important;
 }
+.blog_content p img{
+    width: 100%;
+    height: auto;
+}
+.blog_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
