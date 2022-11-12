@@ -17,6 +17,6 @@ module.exports = {
         localeDetection: false,
     },
     trailingSlash: true,
-    largePageDataBytes: 128 * 100000, // 12800KB by default
+    largePageDataBytes: 500 * 100000, // 12800KB by default
     staticPageGenerationTimeout: 100,
 };
