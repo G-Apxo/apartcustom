@@ -20,11 +20,11 @@ module.exports = {
     largePageDataBytes: 500 * 100000, // 12800KB by default
     staticPageGenerationTimeout: 100,
 
-    webpack: (config, { isServer }) => {
-        if (isServer) {
-          require('./scripts/generate-sitemap.js')
-        }
+    // webpack: (config, { isServer }) => {
+    //     if (isServer) {
+    //       require('./scripts/generate-sitemap.js')
+    //     }
     
-        return config
-      },
+    //     return config
+    //   },
 };
