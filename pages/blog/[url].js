@@ -68,7 +68,7 @@ const Post = ({ blog }) => {
             <Layout>
             <Container>
                 <div className='mt-120 mb-80'>
-                <a href='/Blog' className='goback_blog'>{t.goBack}</a>
+                <a href='/About' className='goback_blog'>{t.goBack}</a>
                 </div>
                 <Col className='col-12 mb-80'>
                     <img src={blog[0].mainImage} className='blog_banner__img' alt='banner immage' />

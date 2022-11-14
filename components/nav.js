@@ -87,7 +87,7 @@ export default function Nav({ mode, setMode }) {
                             </label>
                             <ul className='menu__box'>
                                 <li>
-                                    <Link className='menu__item' href='/about'>
+                                    <Link className='menu__item' href='/About'>
                                         {t.about}
                                     </Link>
                                 </li>
@@ -102,12 +102,12 @@ export default function Nav({ mode, setMode }) {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className='menu__item' href='/blog'>
+                                    <Link className='menu__item' href='/About'>
                                         {t.blog}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className='menu__item' href='/contact'>
+                                    <Link className='menu__item' href='/About'>
                                         {t.contact}
                                     </Link>
                                 </li>
@@ -166,7 +166,7 @@ export default function Nav({ mode, setMode }) {
                             <div className='collapse navbar-collapse navbar13' id='navbarNav'>
                                 <ul className='navbar-nav '>
                                     <li className='nav-item active'>
-                                        <Link className='nav-link text-nowrap' href='/about'>
+                                        <Link className='nav-link text-nowrap' href='/About'>
                                             {t.about}
                                         </Link>
                                     </li>
@@ -181,12 +181,12 @@ export default function Nav({ mode, setMode }) {
                                         </Link>
                                     </li>
                                     <li className='nav-item'>
-                                        <Link className='nav-link ' href='/blog'>
+                                        <Link className='nav-link ' href='/About'>
                                             {t.blog}
                                         </Link>
                                     </li>
                                     <li className='nav-item'>
-                                        <Link className='nav-link ' href='/contact'>
+                                        <Link className='nav-link ' href='/About'>
                                             {t.contact}
                                         </Link>
                                     </li>
