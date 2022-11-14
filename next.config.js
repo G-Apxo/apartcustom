@@ -20,11 +20,38 @@ module.exports = {
     largePageDataBytes: 500 * 100000, // 12800KB by default
     staticPageGenerationTimeout: 100,
 
-    // webpack: (config, { isServer }) => {
-    //     if (isServer) {
-    //       require('./scripts/generate-sitemap.js')
-    //     }
-    
-    //     return config
-    //   },
+    async redirects() {
+        return [
+            {
+                source: '/Contact/',
+                destination: '/contact/',
+                permanent: true
+            },
+            {
+                source: '/Blog/',
+                destination: '/blog/',
+                permanent: true
+            },
+            {
+                source: '/Contact/',
+                destination: '/contact/',
+                permanent: true
+            },
+            {
+                source: '/About/',
+                destination: '/about/',
+                permanent: true
+            },
+            {
+                source: '/BukhaidzeB1/',
+                destination: '/bukhaidzeB1/',
+                permanent: true
+            },
+            {
+                source: '/BukhaidzeB2/',
+                destination: '/bukhaidzeB2/',
+                permanent: true
+            },
+        ]
+    }
 };
