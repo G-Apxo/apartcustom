@@ -181,12 +181,12 @@ export default function Nav({ mode, setMode }) {
                                         </Link>
                                     </li>
                                     <li className='nav-item'>
-                                        <Link className='nav-link ' href='/About'>
+                                        <Link className='nav-link ' href='/Blog'>
                                             {t.blog}
                                         </Link>
                                     </li>
                                     <li className='nav-item'>
-                                        <Link className='nav-link ' href='/About'>
+                                        <Link className='nav-link ' href='/Contact'>
                                             {t.contact}
                                         </Link>
                                     </li>
