@@ -76,15 +76,38 @@ export default function IndexPage() {
             <Head>
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
+                <meta name='description' content={t.metad}></meta>
+                <meta property='og:title' content={t.titlet} />
+                <meta property='og:image' content='https://imageholder.netlify.app/imgs/index.jpg' />
 
                 <Script
                     src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'
                     strategy='afterInteractive'
                 />
-                <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
-                <meta name='description' content={t.metad}></meta>
-                <meta property='og:title' content={t.titlet} />
-                <meta property='og:image' content='https://imageholder.netlify.app/imgs/index.jpg' />
+                {/* 
+                <script>
+                    {`
+                        !function(f,b,e,v,n,t,s)
+                        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                        n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.src=v;s=b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t,s)}(window, document,'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '677034560498786');
+                        fbq('track', 'PageView');
+                        `}
+                </script>
+                <noscript>
+                    <img
+                        height='1'
+                        width='1'
+                        style='display:none'
+                        src='https://www.facebook.com/tr?id=677034560498786&ev=PageView&noscript=1'
+                    />
+                </noscript> */}
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
             <CookieConsent>

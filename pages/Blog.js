@@ -108,7 +108,7 @@ const IndexPage = ({ blog }) => {
                                                 xl='6'
                                                 xxl='6'
                                             >
-                                                <div className=''>
+                                                <div className='overlay--blog'>
                                                     <div className='blog-image__content'>
                                                         <div className='text__contianer'>
                                                             <p className='text-white'>{blog.createdAt} </p>

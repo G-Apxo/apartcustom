@@ -586,12 +586,18 @@ a {
     background-image: url('../assets/aboutbannerimg.svg');
     height: 300px;
 }
+.overlay--blog {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .blog-image__content {
     position: relative;
+    z-index: -1;
 }
 .blog-image__content h2 {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
@@ -961,9 +967,8 @@ h2 {
 }
 .goback {
     display: block;
-
 }
-.goback_blog{
+.goback_blog {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -2394,11 +2399,11 @@ code {
     font-size: 14px !important;
     font-family: 'rockridge' !important;
 }
-.blog_content p img{
+.blog_content p img {
     width: 100%;
     height: auto;
 }
-.blog_title{
+.blog_title {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
