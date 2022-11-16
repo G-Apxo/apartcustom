@@ -154,7 +154,7 @@ export default function IndexPage() {
                                         <Col xs='12'>
                                             <Row>
                                                 <Col xs='12'>
-                                                    <Link href='/projects/oldcity'>
+                                                    <Link href='/projects/old-city-panorama'>
                                                         <div className='mb-5 projects--title cursor'>
                                                             <p>{t.prj1d}</p>
                                                             <h2>{t.prj1t}</h2>
@@ -167,7 +167,7 @@ export default function IndexPage() {
                                                         <h3 className='project--location__mod projects--texts__basics'>
                                                             {t.prj1lt}
                                                         </h3>
-                                                        <Link href='/projects/oldcity'>
+                                                        <Link href='/projects/old-city-panorama'>
                                                             <i className='project--see cursor  '>
                                                                 {t.viewPrj}{' '}
                                                                 <Image
@@ -644,7 +644,7 @@ export default function IndexPage() {
                             <Container className='container-borderer'>
                                 <Row>
                                     <Col xs='3' className=''>
-                                        <Link href='/projects/oldcity'>
+                                        <Link href='/projects/old-city-panorama'>
                                             <div className='mb-5 projects--title cursor'>
                                                 <p>{t.prj1d}</p>
                                                 <h2 className='mt-3'>{t.prj1t}</h2>
@@ -665,7 +665,7 @@ export default function IndexPage() {
                                             </h3>
                                         </div>
                                         <div>
-                                            <Link href='/projects/oldcity'>
+                                            <Link href='/projects/old-city-panorama'>
                                                 <i className='project--see cursor  '>
                                                     {t.viewPrj} <Image src={Vector} />
                                                 </i>
