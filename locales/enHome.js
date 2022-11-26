@@ -14,8 +14,8 @@ export default {
         ' The minimum squareness of the apartments in the project starts from 45 sq.m., and the maximum is 121 sq.m. The project includes 4 floors; parking; It has a view of Mtatsminda and old Tbilisi. ',
 
     aabout: 'About Us',
-    aheader: 'RENEWED LIFE OF OLD TBILISI',
-    ap: 'For the Apart Development team, it is priority to preserve the charm of the old city, to use old architectural fragments in modern construction, and at the same time, taking into account modern technologies, to give new life to forgotten areas.Our finished, current and future projects are localized in Old Tbilisi. Right there, from where you can see a unique, panoramic view of the entire city, from Narikali to Lisi Lake.',
+    aheader: 'Invest in Real estate in Tbilisi',
+    ap: 'If you are interested in buying premium-class apartments in Tbilisi, then Apart Development is the company that creates hotel-type, high-class complexes in old Tbilisi, in the most active touristic area, which is the best decision, both for living and investment',
     readmore: 'Read more',
     partners: 'Partners',
     pm: 'Project’s Map',

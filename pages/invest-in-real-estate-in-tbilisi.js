@@ -1,5 +1,6 @@
 import Nav from '../components/nav';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Button, Row, Container, Col, input, Form } from 'react-bootstrap';
@@ -7,8 +8,14 @@ import en from '../locales/enInvesting';
 import ru from '../locales/ruInvesting';
 import ge from '../locales/geInvesting';
 import Video from '../assets/video.svg';
-import day from '../assets/finalsep9/investing-day.jpg';
+import day from '../public/apartNov25/invest.jpg';
 import night from '../assets/finalsep9/investing-night.jpg';
+import ocpDay from '../public/apartNov25/investCards/OLDCITYDAY.jpg';
+import ocpNight from '../public/apartNov25/investCards/OLDCITYNIGHT.jpg';
+import ezoDay from '../public/apartNov25/investCards/EZODAY.jpg';
+import ezoNight from '../public/apartNov25/investCards/EZONIGHT.jpg';
+import taghiDay from '../public/apartNov25/investCards/TAGHIDAY.jpg';
+import taghiNight from '../public/apartNov25/investCards/TAGHINIGHT.jpg';
 import Footer from '../components/footer';
 import { useTitle } from '../components/title';
 import Head from 'next/head';
@@ -44,10 +51,24 @@ export default function IndexPage() {
                     <div>
                         <div className='contact__section'>
                             <Container className='mt-120 '>
-                                <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
-                                    <h1 className='investing-title'>{t.titlett}</h1>
-                                    <p className='investing-title_subtext'>{t.tp1}</p>
-                                </Col>
+                                <Row>
+                                    <Col xs='12' lg='6' md='6' sm='6' xl='6' xxl='6'>
+                                        <h1 className='investing-title'>{t.titlett}</h1>
+                                        <p className='investing-title_subtext'>{t.tp1}</p>
+                                    </Col>
+                                    <Col xs='12' lg='12' md='6' sm='6' xl='6' xxl='6'>
+                                        <iframe
+                                            id='investingIframe'
+                                            width='100%'
+                                            height='360'
+                                            src='https://www.youtube.com/embed/byWDpnrPMa8'
+                                            title='YouTube video player'
+                                            frameBorder='0'
+                                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                            allowFullScreen
+                                        ></iframe>
+                                    </Col>
+                                </Row>
                             </Container>
                             <Container className='mt-60 '>
                                 <Row>
@@ -64,7 +85,16 @@ export default function IndexPage() {
                                         ></iframe>
                                     </Col>
                                     <Col xs='12' lg='12' md='6' sm='6' xl='6' xxl='6'>
+                                        <h2 className='investing-title'>{t.titlett2}</h2>
                                         <p className='investing-title_subtext'>{t.tp2}</p>
+                                    </Col>
+                                </Row>
+                            </Container>
+                            <Container>
+                                <Row>
+                                    <Col xs='12' lg='12' md='12' sm='12' xl='12' xxl='12'>
+                                        <h2 className='investing-title mt-60'>{t.titlett3}</h2>
+                                        <p className='investing-title_subtext'>{t.tp3}</p>
                                     </Col>
                                 </Row>
                             </Container>
@@ -104,6 +134,64 @@ export default function IndexPage() {
                                 </Row>
                             </Container>
                             <Container>
+                                <Row>
+                                    <Col xs='12' lg='12' md='12' sm='12' xl='12' xxl='12'>
+                                        <h2 className='investing-title mt-60'>{t.cardTitle}</h2>
+                                        <Row className='mb-60 '>
+                                            <Col xs='12' lg='4' md='12' sm='12' xl='4' xxl='4'>
+                                                <div className='projects__image'>
+                                                    <Link href='/projects/old-city-panorama' passHref>
+                                                        <a>
+                                                            <Image src={ocpDay} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                                <div className='projects__image_dark'>
+                                                    <Link href='/projects/old-city-panorama' passHref>
+                                                        <a>
+                                                            <Image src={ocpNight} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                            </Col>
+                                            <Col xs='12' lg='4' md='12' sm='12' xl='4' xxl='4'>
+                                                <div className='projects__image'>
+                                                    <Link href='/projects/ezo' passHref>
+                                                        <a>
+                                                            <Image src={ezoDay} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                                <div className='projects__image_dark'>
+                                                    <Link href='/projects/ezo' passHref>
+                                                        <a>
+                                                            <Image src={ezoNight} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                            </Col>
+                                            <Col xs='12' lg='4' md='12' sm='12' xl='4' xxl='4'>
+                                                <div className='projects__image'>
+                                                    <Link href='/projects/taghi' passHref>
+                                                        <a>
+                                                            <Image src={taghiDay} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                                <div className='projects__image_dark'>
+                                                    <Link href='/projects/taghi' passHref>
+                                                        <a>
+                                                            <Image src={taghiNight} alt='projects' />
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
+                            </Container>
+
+                            <Container>
                                 {/* <Row className="investing-goal mb-80">
                 <h3>{t.bonus}</h3>
               </Row> */}
@@ -117,10 +205,10 @@ export default function IndexPage() {
                                     </Col>
                                     <Col className='mt-80' xxl='4' xs='12' lg='4' md='4' sm='4' xl='4'>
                                         <div className='projects__image'>
-                                            <Image src={day} alt='#' />
+                                            <Image src={day} alt='marketing' />
                                         </div>
                                         <div className='projects__image_dark'>
-                                            <Image src={night} alt='#' />
+                                            <Image src={day} alt='marketing' />
                                         </div>
                                     </Col>
                                     <Col xxl='4' lg='4' md='4' sm='4' xl='4' xs='12'>
@@ -132,6 +220,7 @@ export default function IndexPage() {
                                     <Col xxl='6' xs='12' lg='6' md='6' sm='6' xl='6'>
                                         <h2>{t.pmAndRs}</h2>
                                         <p className='investing-title_subtext mt-30'>{t.pmText}</p>
+                                        <p className='investing-title_subtext mt-30 bold'>{t.pmText2}</p>
                                     </Col>
                                     <Col xs='12' lg='5' md='5' sm='5' xl='5' xxl='5'>
                                         <Col xs='12' className='col-5 mb-120'>

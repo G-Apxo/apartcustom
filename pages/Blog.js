@@ -98,30 +98,35 @@ const IndexPage = ({ blog }) => {
                                             href={{
                                                 pathname: `/blog/${blog.url}`,
                                             }}
+                                            passHref
                                         >
-                                            <Col
-                                                className='cursor mt-5'
-                                                xs='12'
-                                                lg='6'
-                                                md='6'
-                                                sm='6'
-                                                xl='6'
-                                                xxl='6'
-                                            >
-                                                <div className='overlay--blog'>
-                                                    <div className='blog-image__content'>
-                                                        <div className='text__contianer'>
-                                                            <p className='text-white'>{blog.createdAt} </p>
-                                                            <h2 className='text-white'>{blog.title}</h2>
+                                            <a>
+                                                <Col
+                                                    className='cursor mt-5'
+                                                    xs='12'
+                                                    lg='6'
+                                                    md='6'
+                                                    sm='6'
+                                                    xl='6'
+                                                    xxl='6'
+                                                >
+                                                    <div className='overlay--blog'>
+                                                        <div className='blog-image__content'>
+                                                            <div className='text__contianer'>
+                                                                <p className='text-white'>
+                                                                    {blog.createdAt}{' '}
+                                                                </p>
+                                                                <h2 className='text-white'>{blog.title}</h2>
+                                                            </div>
+                                                            <img
+                                                                src={blog.mainImage}
+                                                                alt='banner immage'
+                                                                className='blogList'
+                                                            />
                                                         </div>
-                                                        <img
-                                                            src={blog.mainImage}
-                                                            alt='banner immage'
-                                                            className='blogList'
-                                                        />
                                                     </div>
-                                                </div>
-                                            </Col>
+                                                </Col>
+                                            </a>
                                         </Link>
                                     ) : // if blog lang is same as current lang show only en posts
                                     locale === blog.lang ? (
@@ -134,30 +139,33 @@ const IndexPage = ({ blog }) => {
                                                 pathname: `/blog/${blog.url}`,
                                                 query: { url: blog.url, lang: blog.lang },
                                             }}
+                                            passHref
                                         >
-                                            <Col
-                                                className='cursor mt-5'
-                                                xs='12'
-                                                lg='6'
-                                                md='6'
-                                                sm='6'
-                                                xl='6'
-                                                xxl='6'
-                                            >
-                                                <div className=''>
-                                                    <div className='blog-image__content'>
-                                                        <div className='text__contianer'>
-                                                            <p className='text-white'>{blog.createdAt}</p>
-                                                            <h2 className='text-white'>{blog.title}</h2>
+                                            <a>
+                                                <Col
+                                                    className='cursor mt-5'
+                                                    xs='12'
+                                                    lg='6'
+                                                    md='6'
+                                                    sm='6'
+                                                    xl='6'
+                                                    xxl='6'
+                                                >
+                                                    <div className=''>
+                                                        <div className='blog-image__content'>
+                                                            <div className='text__contianer'>
+                                                                <p className='text-white'>{blog.createdAt}</p>
+                                                                <h2 className='text-white'>{blog.title}</h2>
+                                                            </div>
+                                                            <img
+                                                                src={blog.mainImage}
+                                                                alt='banner immage'
+                                                                className='blogList'
+                                                            />
                                                         </div>
-                                                        <img
-                                                            src={blog.mainImage}
-                                                            alt='banner immage'
-                                                            className='blogList'
-                                                        />
                                                     </div>
-                                                </div>
-                                            </Col>
+                                                </Col>
+                                            </a>
                                         </Link>
                                     ) : // if blog lang is same as current lang show only ru posts
                                     locale === blog.lang ? (
@@ -169,30 +177,33 @@ const IndexPage = ({ blog }) => {
                                                 pathname: `/blog/${blog.url}`,
                                                 query: { url: blog.url, lang: blog.lang },
                                             }}
+                                            passHref
                                         >
-                                            <Col
-                                                className='cursor mt-5'
-                                                xs='12'
-                                                lg='6'
-                                                md='6'
-                                                sm='6'
-                                                xl='6'
-                                                xxl='6'
-                                            >
-                                                <div className=''>
-                                                    <div className='blog-image__content'>
-                                                        <div className='text__contianer'>
-                                                            <p className='text-white'>{blog.createdAt}</p>
-                                                            <h2 className='text-white'>{blog.title}</h2>
+                                            <a>
+                                                <Col
+                                                    className='cursor mt-5'
+                                                    xs='12'
+                                                    lg='6'
+                                                    md='6'
+                                                    sm='6'
+                                                    xl='6'
+                                                    xxl='6'
+                                                >
+                                                    <div className=''>
+                                                        <div className='blog-image__content'>
+                                                            <div className='text__contianer'>
+                                                                <p className='text-white'>{blog.createdAt}</p>
+                                                                <h2 className='text-white'>{blog.title}</h2>
+                                                            </div>
+                                                            <img
+                                                                src={blog.mainImage}
+                                                                alt='banner immage'
+                                                                className='blogList'
+                                                            />
                                                         </div>
-                                                        <img
-                                                            src={blog.mainImage}
-                                                            alt='banner immage'
-                                                            className='blogList'
-                                                        />
                                                     </div>
-                                                </div>
-                                            </Col>
+                                                </Col>
+                                            </a>
                                         </Link>
                                     ) : null
                                 )}

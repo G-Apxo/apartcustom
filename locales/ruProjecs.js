@@ -37,4 +37,9 @@ export default {
     prj5ct: '2022',
     titlet: 'Проекты - Apart Development',
     metad: 'Проекты расположены в самом туристически активном районе Старого Тбилиси, поэтому стоимость аренды выше стандартной',
+    ocpLink: 'ru/projects/old-city-panorama',
+    ezoLink: 'ru/projects/ezo',
+    taghiLink: 'ru/projects/taghi',
+    b2Link: 'ru/projects/BukhaidzeB2',
+    b1Link: 'ru/projects/BukhaidzeB1',
 };

@@ -37,4 +37,10 @@ export default {
     prj5ct: '2022',
     titlet: 'Projects - Apart Development',
     metad: `The projects are located in the most touristically active area of Old Tbilisi, that's why the rental price is higher than the standard price`,
+
+    ocpLink: 'en/projects/old-city-panorama',
+    ezoLink: 'en/projects/ezo',
+    taghiLink: 'en/projects/taghi',
+    b2Link: 'en/projects/BukhaidzeB2',
+    b1Link: 'en/projects/BukhaidzeB1',
 };

@@ -866,6 +866,9 @@ h2 {
 .mb-80 {
     margin-bottom: 80px;
 }
+.bold {
+    font-weight: 800;
+}
 
 /* USE OF IMPORTANT */
 .mt-80 {
@@ -2407,4 +2410,42 @@ code {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+.seo-link {
+    text-decoration: none;
+    color: #333;
+}
+.seo-link:hover {
+    color: #333;
+}
+.four-oh-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #121927;
+}
+.four-oh-four h1 {
+    color: #fff;
+}
+.four-oh-four a {
+    text-decoration: none;
+    color: #fff;
+}
+/* .dark-mode .four-oh-four h1 {
+    color: #fff;
+}
+.dark-mode .four-oh-four a {
+    color: #fff;
+} */
+
+.btn-404 {
+    border: 1px solid white !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.text-white {
+    color: red;
 }

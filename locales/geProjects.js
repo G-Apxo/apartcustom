@@ -37,4 +37,9 @@ export default {
     prj5ct: '2022',
     titlet: 'პროექტები - Apart Development',
     metad: 'პროექტები მდებარეობს ძველ თბილისში ტურისტულად ყველაზე აქტიურ ზონაში, რის გამოც გაქირავების ფასი სტანდარტულზე მაღალია',
+    ocpLink: '/projects/old-city-panorama',
+    ezoLink: '/projects/ezo',
+    taghiLink: 'ge/projects/taghi',
+    b2Link: 'ge/projects/BukhaidzeB2',
+    b1Link: 'ge/projects/BukhaidzeB1',
 };
