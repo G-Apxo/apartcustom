@@ -202,6 +202,10 @@ export default function IndexPage() {
                                     <Col xxl='4' xs='12' lg='4' md='4' sm='4' xl='4'>
                                         <h2>{t.apartForPersonUse}</h2>
                                         <p className='investing-title_subtext mt-30'>{t.textAp1}</p>
+
+                                        {/* TODO ADD texts
+                                         <p className='investing-title_subtext '>{t.test1}</p>
+                                        <p className='investing-title_subtext '>{t.test2}</p> */}
                                     </Col>
                                     <Col className='mt-80' xxl='4' xs='12' lg='4' md='4' sm='4' xl='4'>
                                         <div className='projects__image'>

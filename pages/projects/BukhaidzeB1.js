@@ -73,12 +73,12 @@ export default function IndexPage3() {
                                 <Col xs='6' lg='6' md='6' sm='6' xl='2' xxl='2'>
                                     <hr />
                                     <p className='basic-texts-14'>{t.treePlanted}</p>
-                                    <h3 className='projects-floor-yard'>{t.treeNum}</h3>
+                                    <h3 className='projects-floor-yard'>{t.treeNumb1}</h3>
                                 </Col>
                                 <Col xs='6' lg='6' md='6' sm='6' xl='3' xxl='3'>
                                     <hr />
                                     <p className='basic-texts-14'>{t.exhibitionSpace}</p>
-                                    <h3 className='projects-floor-yard'>{t.esm}</h3>
+                                    <h3 className='projects-floor-yard'>{t.esmb1}</h3>
                                 </Col>
                             </Row>
                             <Row className='justify-content-between mt-5'>
@@ -112,12 +112,12 @@ export default function IndexPage3() {
                                 <Col xs='6' lg='2' md='2' sm='2' xl='2' xxl='2'>
                                     <hr />
                                     <p className='basic-texts-14'>{t.treePlanted}</p>
-                                    <h3 className='projects-floor-yard'>{t.treeNum}</h3>
+                                    <h3 className='projects-floor-yard'>{t.treeNumb1}</h3>
                                 </Col>
                                 <Col xs='6' lg='3' md='3' sm='3' xl='3' xxl='3'>
                                     <hr />
                                     <p className='basic-texts-14'>{t.exhibitionSpace}</p>
-                                    <h3 className='projects-floor-yard'>{t.esm}</h3>
+                                    <h3 className='projects-floor-yard'>{t.esmb1}</h3>
                                 </Col>
                                 <Col xs='12' lg='4' md='4' sm='4' xl='4' xxl='4'>
                                     {/* <Form.Select aria-label="Default select example">
