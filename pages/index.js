@@ -87,14 +87,14 @@ export default function IndexPage() {
                     strategy='afterInteractive'
                 />
 
-                {/* <noscript>
+                <noscript>
                     <img
                         height='1'
                         width='1'
-                        style='display:none'
+                        // style='display:none'
                         src='https://www.facebook.com/tr?id=677034560498786&ev=PageView&noscript=1'
                     />
-                </noscript> */}
+                </noscript>
             </Head>
             <Navwhite mode={mode} setMode={setMode} />
             <CookieConsent>
