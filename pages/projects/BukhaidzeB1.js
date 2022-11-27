@@ -83,7 +83,7 @@ export default function IndexPage3() {
                             </Row>
                             <Row className='justify-content-between mt-5'>
                                 <Col xs='12' lg='12' md='12' sm='12' xl='4' xxl='4' className='mt-3'>
-                                    <h3 className='projects-floor-title'> {t.chooseApart}</h3>
+                                    {/* <h3 className='projects-floor-title'> {t.chooseApart}</h3> */}
                                     {/* <p>{t.chooseFloor}</p> */}
                                 </Col>
                                 <Col xs='12' lg='12' md='12' sm='12' xl='4' xxl='4'>
@@ -93,8 +93,8 @@ export default function IndexPage3() {
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
                 </Form.Select> */}
-                                    <div className='coming-soon projects__image'>Coming Soon</div>
-                                    <div className='coming-soon projects__image_dark'>Coming Soon</div>
+                                    {/* <div className='coming-soon projects__image'>Coming Soon</div> */}
+                                    {/* <div className='coming-soon projects__image_dark'>Coming Soon</div> */}
                                 </Col>
                             </Row>
                         </div>
@@ -104,7 +104,7 @@ export default function IndexPage3() {
                                     <Image src={Taghi} className='Taghi' />
                                 </Col>
                                 <Col xs='6' lg='4' md='4' sm='4' xl='4' xxl='4'>
-                                    <h3 className='projects-floor-title'> {t.chooseApart}</h3>
+                                    {/* <h3 className='projects-floor-title'> {t.chooseApart}</h3> */}
                                     {/* <p>{t.chooseFloor}</p> */}
                                 </Col>
                             </Row>
@@ -126,8 +126,8 @@ export default function IndexPage3() {
                   <option value="2">{t.chooseTwo}</option>
                   <option value="3">{t.chooseThree}</option>
                 </Form.Select> */}
-                                    <div className='coming-soon projects__image'>Coming Soon</div>
-                                    <div className='coming-soon projects__image_dark'>Coming Soon</div>
+                                    {/* <div className='coming-soon projects__image'>Coming Soon</div> */}
+                                    {/* <div className='coming-soon projects__image_dark'>Coming Soon</div> */}
                                 </Col>
                             </Row>
                         </div>
