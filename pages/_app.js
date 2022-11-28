@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 677034560498786);
+            fbq('init', 819167662644146);
           `,
                 }}
             />

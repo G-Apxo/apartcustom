@@ -92,7 +92,7 @@ export default function IndexPage() {
                         height='1'
                         width='1'
                         // style='display:none'
-                        src='https://www.facebook.com/tr?id=677034560498786&ev=PageView&noscript=1'
+                        src='https://www.facebook.com/tr?id=819167662644146&ev=PageView&noscript=1'
                     />
                 </noscript>
             </Head>
