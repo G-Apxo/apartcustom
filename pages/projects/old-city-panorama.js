@@ -51,6 +51,7 @@ export default function IndexPage() {
                 <meta property='og:title' content={t.titlet} />
                 <meta name='description' content={t.metad}></meta>
                 <meta property='og:image' content='https://imageholder.netlify.app/imgs/ocp.jpg' />
+                <meta name='facebook-domain-verification' content='lj973bqb1is3jcy6uh3xa972y05kuu' />
             </Head>
             <Layout>
                 <div className='hero'>

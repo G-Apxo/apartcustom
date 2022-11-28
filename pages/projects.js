@@ -66,6 +66,7 @@ export default function IndexPage() {
                 <meta property='og:title' content={t.titlet} />
                 <meta name='description' content={t.metad}></meta>
                 <meta property='og:image' content='https://imageholder.netlify.app/imgs/prj.jpg' />
+                <meta name='facebook-domain-verification' content='lj973bqb1is3jcy6uh3xa972y05kuu' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>
                 <Script>
                     {`
