@@ -90,7 +90,7 @@ export default function Nav({ mode, setMode }) {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className='menu__item' href='/Blog'>
+                                    <Link className='menu__item' href='/posts'>
                                         {t.blog}
                                     </Link>
                                 </li>
@@ -170,12 +170,12 @@ export default function Nav({ mode, setMode }) {
                                         </Link>
                                     </li>
                                     <li className='nav-link '>
-                                        <Link className='nav-link text-white' href='/About'>
+                                        <Link className='nav-link text-white' href='/posts'>
                                             {t.blog}
                                         </Link>
                                     </li>
                                     <li className='nav-link '>
-                                        <Link className='nav-link text-white' href='/About'>
+                                        <Link className='nav-link text-white' href='/contact-us'>
                                             {t.contact}
                                         </Link>
                                     </li>
