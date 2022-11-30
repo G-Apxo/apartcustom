@@ -46,6 +46,19 @@ export default function IndexPage() {
     return (
         <div>
             <Head>
+                {useEffect(() => {
+                    import('react-facebook-pixel')
+                        .then(x => x.default)
+                        .then(ReactPixel => {
+                            ReactPixel.init('819167662644146');
+                            ReactPixel.pageView();
+
+                            router.events.on('routeChangeComplete', () => {
+                                ReactPixel.pageView();
+                            });
+                            console.log('works');
+                        });
+                }, [router.events])}
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property='og:title' content={t.titlet} />
