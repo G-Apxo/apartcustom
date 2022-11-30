@@ -5,11 +5,12 @@ import Script from 'next/script';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useAnalytics } from '../hooks/useWindowSize/useAnalytics';
-import { usePixel } from '../hooks/useWindowSize/usePixel';
-import * as fbq from '../lib/fpixel';
+// import { usePixel } from '../hooks/useWindowSize/usePixel';
+// import * as fbq from '../lib/fpixel';
 
 function MyApp({ Component, pageProps }) {
     useAnalytics();
+    // usePixel();
 
     return (
         <>
@@ -23,7 +24,7 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-H58RBQJ53W');
         `}
             </Script>
-            <Script
+            {/* <Script
                 id='fb-pixel'
                 strategy='afterInteractive'
                 dangerouslySetInnerHTML={{
@@ -39,7 +40,7 @@ function MyApp({ Component, pageProps }) {
             fbq('init', 819167662644146);
           `,
                 }}
-            />
+            /> */}
             <Component {...pageProps} />
         </>
     );

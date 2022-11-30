@@ -1,31 +1,32 @@
 {
-  "name": "with-tailwindcss",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "postbuild": "next-sitemap",
-    "start": "next start",
-    "export": "next export"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.0.2",
-    "axios": "^0.27.2",
-    "basic-auth-token": "^0.4.2",
-    "bootstrap": "^5.2.0",
-    "globby": "^13.1.2",
-    "next": "^12.1.5",
-    "next-sitemap": "^3.1.31",
-    "react": "^18.1.0",
-    "react-bootstrap": "^2.5.0",
-    "react-bootstrap-icons": "^1.8.4",
-    "react-cookie-consent": "^8.0.1",
-    "react-dom": "^18.0.0",
-    "react-ga": "^3.3.1",
-    "react-hook-form": "^7.34.2",
-    "react-quill": "^2.0.0",
-    "sass": "^1.54.3",
-    "tailwindcss": "^2.2.19"
-  },
-  "license": "MIT"
+    "name": "with-tailwindcss",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "postbuild": "next-sitemap",
+        "start": "next start",
+        "export": "next export"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.0.2",
+        "axios": "^0.27.2",
+        "basic-auth-token": "^0.4.2",
+        "bootstrap": "^5.2.0",
+        "globby": "^13.1.2",
+        "next": "^12.1.5",
+        "next-sitemap": "^3.1.31",
+        "react": "^18.1.0",
+        "react-bootstrap": "^2.5.0",
+        "react-bootstrap-icons": "^1.8.4",
+        "react-cookie-consent": "^8.0.1",
+        "react-dom": "^18.0.0",
+        "react-facebook-pixel": "^1.0.4",
+        "react-ga": "^3.3.1",
+        "react-hook-form": "^7.34.2",
+        "react-quill": "^2.0.0",
+        "sass": "^1.54.3",
+        "tailwindcss": "^2.2.19"
+    },
+    "license": "MIT"
 }

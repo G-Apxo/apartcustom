@@ -72,9 +72,23 @@ export default function IndexPage() {
         window.gtag('js', new Date());
         window.gtag('config', '<G-H58RBQJ53W>');
     }, []);
+
     return (
         <>
             <Head>
+                {useEffect(() => {
+                    import('react-facebook-pixel')
+                        .then(x => x.default)
+                        .then(ReactPixel => {
+                            ReactPixel.init('819167662644146');
+                            ReactPixel.pageView();
+
+                            router.events.on('routeChangeComplete', () => {
+                                ReactPixel.pageView();
+                            });
+                            console.log('works');
+                        });
+                }, [router.events])}
                 <title>{t.titlet}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
@@ -86,6 +100,23 @@ export default function IndexPage() {
                 <Script
                     src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'
                     strategy='afterInteractive'
+                />
+                <Script
+                    id='fb-pixel'
+                    strategy='afterInteractive'
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', 819167662644146);
+          `,
+                    }}
                 />
 
                 <noscript>
