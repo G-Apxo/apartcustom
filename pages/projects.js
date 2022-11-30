@@ -1,7 +1,7 @@
 import Nav from '../components/nav';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button, Row, Container, Col, Carousel } from 'react-bootstrap';
 import en from '../locales/enProjects';
 import ru from '../locales/ruProjecs';

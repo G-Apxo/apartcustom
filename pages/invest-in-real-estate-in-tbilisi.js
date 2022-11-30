@@ -2,7 +2,7 @@ import Nav from '../components/nav';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button, Row, Container, Col, input, Form } from 'react-bootstrap';
 import en from '../locales/enInvesting';
 import ru from '../locales/ruInvesting';
