@@ -49,7 +49,7 @@ export default {
     pmAndRs: 'Payment Terms',
     pmText: "Apart Development has an interest-free installment plan, the terms of which are as follows: if you buy an apartment with us, you can use the 15-month interest-free installment plan, the down payment is 30% and the rest is distributed to the customer's request.",
     pmText2:
-        'If you are interested in investing in real estate in Old Tbilisi, contact us and the sales team of Apart Development. We will provide you with comprehensive information about the company and projects',
+        'If you are interested in investing in Real Estate in Old Tbilisi, contact us and the sales team of Apart Development. We will provide you with comprehensive information about the company and projects',
     contactInfo: 'Leave us your contact information and our team will reach out to you.',
     aparttype: 'Apartment type',
     name: 'Name',
@@ -65,7 +65,7 @@ export default {
     b3: '2 Bedrooms',
     b4: '3+ Bedrooms',
     titlet: 'Invest in Real-estate in Old Tbilisi - Apart Development',
-    titlett: 'Invest in Real-estate in Old Tbilisi',
+    titlett: 'Invest in Real Estate in Old Tbilisi',
     titlett2: 'Where to Invest In Real Estate In Tbilisi',
     titlett3: 'Buy an Apartment in Tbilisi at Apart Development',
     metad: 'The best choice for those looking for real estate for investment purposes',
