@@ -167,7 +167,7 @@ export default function IndexPage() {
                                 {/* </Link> */}
                             </div>
                         </Col>
-                        <Row className=' mt-40 mb-40 flex-helper'>
+                        {/* <Row className=' mt-40 mb-40 flex-helper'>
                             <Col xs='6' lg='6' md='6' sm='6' xl='6' xxl='6'>
                                 {' '}
                                 <a href='https://fasadi.netlify.app/fasadi/' target='_blank'>
@@ -184,7 +184,7 @@ export default function IndexPage() {
                                     </i>
                                 </a>
                             </Col>
-                        </Row>
+                        </Row> */}
                         <Row className='justify-content-between mt-5'>
                             <Col xs='3'>
                                 <hr />
