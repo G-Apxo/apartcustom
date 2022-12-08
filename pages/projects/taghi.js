@@ -306,7 +306,7 @@ export default function IndexPage1() {
                                     ></iframe>
                                     <div className='anim-arrow'>
                                         <div>
-                                            <Image src={Arrow} alt='arrow' />
+                                            <Image src={Arrow} alt='arrow' className='maket-spin' />
                                         </div>
                                     </div>
                                 </div>

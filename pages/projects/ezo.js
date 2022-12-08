@@ -262,7 +262,7 @@ export default function IndexPage2() {
                                     ></iframe>
                                     <div className='anim-arrow'>
                                         <div>
-                                            <Image src={Arrow} alt='arrow' />
+                                            <Image src={Arrow} alt='arrow' className='maket-spin' />
                                         </div>
                                     </div>
                                 </div>
