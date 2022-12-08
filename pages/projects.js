@@ -71,7 +71,6 @@ export default function IndexPage() {
                             router.events.on('routeChangeComplete', () => {
                                 ReactPixel.pageView();
                             });
-                            console.log('works');
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
