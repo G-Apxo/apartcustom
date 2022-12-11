@@ -60,7 +60,7 @@ export default function IndexPage3() {
                 <title>{t.titlet2}</title>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property='og:title' content={t.titlet2} />
-                <meta name='description' content={t.metad}></meta>
+                <meta name='description' content={t.metad2}></meta>
                 <meta property='og:image' content='https://imageholder.netlify.app/imgs/b2.jpg' />
                 <meta name='facebook-domain-verification' content='lj973bqb1is3jcy6uh3xa972y05kuu' />
             </Head>
