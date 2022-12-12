@@ -43,6 +43,7 @@ export default function IndexPage() {
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
+                <link rel='icon' href='/favicon/favicon.ico' />
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property='og:title' content={t.titlet} />
                 <meta name='description' content={t.metad}></meta>
@@ -371,7 +372,7 @@ export default function IndexPage() {
                                                                     <input
                                                                         type='hidden'
                                                                         name='redirect'
-                                                                        value='https://web3forms.com/success'
+                                                                        value='https://apart.ge/thank-you'
                                                                     />
                                                                     <input
                                                                         name='name'

@@ -74,6 +74,7 @@ export default function IndexPage() {
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
+                <link rel='icon' href='/favicon/favicon.ico' />
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property='og:title' content={t.titlet} />
                 <meta name='description' content={t.metad}></meta>

@@ -59,6 +59,7 @@ export default function IndexPage() {
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
+                <link rel='icon' href='/favicon/favicon.ico' />
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta property='og:title' content={t.titlet} />
                 <meta name='description' content={t.metad}></meta>
@@ -217,11 +218,7 @@ export default function IndexPage() {
                                         name='access_key'
                                         value='b6497681-c3af-4de3-aadc-3245d46562dd'
                                     />
-                                    <input
-                                        type='hidden'
-                                        name='redirect'
-                                        value='https://web3forms.com/success'
-                                    />
+                                    <input type='hidden' name='redirect' value='https://apart.ge/thank-you' />
                                     <label htmlFor='name'></label>
                                     <input
                                         className='btn-test'

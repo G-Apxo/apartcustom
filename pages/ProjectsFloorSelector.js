@@ -48,6 +48,7 @@ export default function IndexPage() {
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
+                <link rel='icon' href='/favicon/favicon.ico' />
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta name='facebook-domain-verification' content='lj973bqb1is3jcy6uh3xa972y05kuu' />
                 <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H58RBQJ53W'></Script>

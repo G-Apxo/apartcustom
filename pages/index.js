@@ -89,6 +89,8 @@ export default function IndexPage() {
                         });
                 }, [router.events])}
                 <title>{t.titlet}</title>
+
+                <link rel='icon' href='/favicon/favicon.ico' />
                 <meta name='viewport' content='initial-scale=1.0, width=device-width' />
                 <meta name='google-site-verification' content='cIkRtin0m8KmAFOyqdQ6_W4TU2G1TvuBeZeuQof7l3s' />
                 <meta name='description' content={t.metad}></meta>
@@ -629,7 +631,7 @@ export default function IndexPage() {
                                             <input
                                                 type='hidden'
                                                 name='redirect'
-                                                value='https://web3forms.com/success'
+                                                value='https://apart.ge/thank-you'
                                             />
 
                                             <button type='submit'>Submit Form</button>
@@ -652,7 +654,7 @@ export default function IndexPage() {
                                                     <input
                                                         type='hidden'
                                                         name='redirect'
-                                                        value='https://web3forms.com/success'
+                                                        value='https://apart.ge/thank-you'
                                                     />
                                                     <input
                                                         name='name'
