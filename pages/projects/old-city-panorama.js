@@ -203,9 +203,25 @@ export default function IndexPage() {
           <Button variant="primary" type="submit">
             Submit
           </Button> */}
-                        <form action='/send-data-here' method='post'>
+                        <form
+                            id='contact-form'
+                            name='contact-form'
+                            action='https://api.web3forms.com/submit'
+                            method='POST'
+                            className=''
+                        >
                             <Row className=' mt-5 form-row align-items-center'>
                                 <Col xs='12' lg='12' md='12' sm='12' xl='3' xxl='3' className='mt-1'>
+                                    <input
+                                        type='hidden'
+                                        name='access_key'
+                                        value='b6497681-c3af-4de3-aadc-3245d46562dd'
+                                    />
+                                    <input
+                                        type='hidden'
+                                        name='redirect'
+                                        value='https://web3forms.com/success'
+                                    />
                                     <label htmlFor='name'></label>
                                     <input
                                         className='btn-test'
