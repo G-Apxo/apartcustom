@@ -224,12 +224,12 @@ export default function IndexPage1() {
                                         id='phone'
                                         name='phone'
                                         placeholder={t.num}
-                                        pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                                        // pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
                                         required
                                     />
                                 </Col>
                                 <Col xs='12' lg='12' md='12' sm='12' xl='3' xxl='3' className='mt-1'>
-                                    <Button className='btn-send'>{t.req}</Button>
+                                    <button className='btn-send'>{t.req}</button>
                                 </Col>
                             </Row>
                         </form>
