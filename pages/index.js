@@ -44,6 +44,7 @@ export default function IndexPage() {
     const [showBanner, setBanner] = useState(true);
     const [mode, setMode] = useState(true);
     const router = useRouter();
+    const linkRouter = useRouter();
     const { locale } = router;
     const t = locale === 'en' ? en : locale === 'ru' ? ru : ge;
 
@@ -72,6 +73,7 @@ export default function IndexPage() {
         window.gtag('js', new Date());
         window.gtag('config', '<G-H58RBQJ53W>');
     }, []);
+    console.log(linkRouter.locale);
 
     return (
         <>
@@ -654,7 +656,7 @@ export default function IndexPage() {
                                                     <input
                                                         type='hidden'
                                                         name='redirect'
-                                                        value='https://apart.ge/thank-you'
+                                                        value={`https://apart.ge/${linkRouter.locale}/thank-you`}
                                                     />
                                                     <input
                                                         name='name'
