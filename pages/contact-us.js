@@ -75,9 +75,9 @@ export default function IndexPage() {
                                                 <Col xs='3' className='contact__number'>
                                                     <h3>{t.vw}</h3>
                                                     {/* ზუკასი */}
-                                                    <h5 className='contact__number_vw'>+995 544 44 44 39</h5>
+                                                    <h5 className='contact__number_vw'>+995 511 11 44 33</h5>
                                                     {/* ანის */}
-                                                    <h5 className='contact__number_vw'>+995 544 44 44 31</h5>
+                                                    <h5 className='contact__number_vw'>+995 511 11 44 33</h5>
                                                 </Col>
                                                 <Col
                                                     xs='6'
