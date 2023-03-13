@@ -43,11 +43,8 @@ export default function Nav({ mode, setMode }) {
                         <ul className='navbar-nav'>
                             <li className='mobile_social_platgorms '>
                                 {' '}
-                                <a
-                                    href='tel:+995-32-2-11-11-44'
-                                    className='soc__icon__mobile text-dark firstNum'
-                                >
-                                    +995 32 2 11 11 44
+                                <a href='tel:+995511114433' className='soc__icon__mobile text-dark firstNum'>
+                                    +995 511 11 44 33
                                 </a>
                                 <span className='soc__icon text-dark'> | </span>{' '}
                             </li>
@@ -55,14 +52,14 @@ export default function Nav({ mode, setMode }) {
                                 {' '}
                                 <a
                                     className='soc__icon__mobile text-dark'
-                                    href='viber://chat?number=+995544444431'
+                                    href='viber://chat?number=+995511114433'
                                 >
                                     {t.v}{' '}
                                 </a>{' '}
                                 <span className='text-dark soc__icon'> |</span>{' '}
                             </li>
                             <li className='mobile_social_platgorms'>
-                                <a className='soc__icon__mobile text-dark' href='https://wa.me/995544444431'>
+                                <a className='soc__icon__mobile text-dark' href='https://wa.me/995511114433 '>
                                     {t.w}
                                 </a>
                             </li>
@@ -223,13 +220,13 @@ export default function Nav({ mode, setMode }) {
                     <Col xs='3'>
                         <ul className='navbar-nav'>
                             <li className='contact__platforms '>
-                                <a href='tel:+995-32-2-11-11-44' className='soc__icon text-dark'>
-                                    +995 32 2 11 11 44
+                                <a href='tel:+995511114433' className='soc__icon text-dark'>
+                                    +995 511 11 44 33
                                 </a>
                                 <span className='soc__icon text-dark'> | </span>{' '}
                             </li>
                             <li className='contact__platforms'>
-                                <a className='soc__icon text-dark' href='viber://chat?number=+995544444431'>
+                                <a className='soc__icon text-dark' href='viber://chat?number=+995511114433'>
                                     {t.v}{' '}
                                 </a>
                                 <span className='text-dark soc__icon'> |</span>{' '}

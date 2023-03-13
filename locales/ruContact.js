@@ -20,7 +20,7 @@ export default {
     titlet: 'Контакт - Apart Development',
     metad: (
         <code>
-            +995 32 2 11 11 44; <a href='Sales@apart.ge'> Sales@apart.ge </a>
+            +995 511 11 44 33; <a href='Sales@apart.ge'> Sales@apart.ge </a>
         </code>
     ),
 };
